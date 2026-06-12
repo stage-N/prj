@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAGEN - アプリ情報</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+      color: #333;
+      line-height: 1.8;
+      background: #fafafa;
+    }
+    header {
+      background: #333;
+      color: #feffff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    .app-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      border: 1px solid #eee;
+    }
+    .app-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+    .app-card .app-desc {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .app-card .links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .app-card .links a {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .app-card .links a:hover { opacity: 0.8; }
+    .link-privacy { background: #15b788; color: #fff; }
+    .link-support { background: #1395ba; color: #fff; }
+    .github-link { color: #666; font-size: 0.85rem; margin-top: 0.5rem; }
+    .github-link a { color: #1395ba; text-decoration: none; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>STAGEN</h1>
+    <p>アプリケーション プライバシーポリシー &amp; サポート</p>
+  </header>
+
+  <div class="content">
+    <div class="app-card">
+      <h2>ZeiCal</h2>
+      <p class="app-desc">税務カレンダー — 決算月から法人税・消費税・源泉所得税・社会保険の期限を自動計算</p>
+      <div class="links">
+        <a href="zeical/privacy.html" class="link-privacy">プライバシーポリシー</a>
+        <a href="zeical/support.html" class="link-support">サポート</a>
+      </div>
+      <div class="github-link"><a href="https://github.com/ubermenschjo/zeical">GitHub →</a></div>
+    </div>
+
+    <div class="app-card">
+      <h2>WBGT Monitor</h2>
+      <p class="app-desc">暑さ指数モニター — リアルタイムWBGT表示、熱中症予防アプリ（事業者版/一般版）</p>
+      <div class="links">
+        <a href="wbgt-monitor/privacy.html" class="link-privacy">プライバシーポリシー</a>
+        <a href="wbgt-monitor/support.html" class="link-support">サポート</a>
+      </div>
+      <div class="github-link"><a href="https://github.com/ubermenschjo/wbgt-monitor">GitHub →</a></div>
+    </div>
+
+    <div class="app-card">
+      <h2>ラクビル</h2>
+      <p class="app-desc">請求書作成アプリ — 端末内で完結する個人事業主向け請求書管理</p>
+      <div class="links">
+        <a href="rakubill/privacy.html" class="link-privacy">プライバシーポリシー</a>
+        <a href="rakubill/support.html" class="link-support">サポート</a>
+      </div>
+      <div class="github-link"><a href="https://github.com/ubermenschjo/rakubill">GitHub →</a></div>
+    </div>
+
+    <div class="app-card">
+      <h2>Forest School</h2>
+      <p class="app-desc">3-5歳児向け教育ゲーム — 自然界の知識を遊びながら学ぶ</p>
+      <div class="links">
+        <a href="forest-school/privacy.html" class="link-privacy">プライバシーポリシー</a>
+        <a href="forest-school/support.html" class="link-support">サポート</a>
+      </div>
+      <div class="github-link"><a href="https://github.com/ubermenschjo/forest-school">GitHub →</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 STAGEN</p>
+  </footer>
+</body>
+</html>
