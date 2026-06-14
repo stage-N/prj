@@ -6,7 +6,7 @@ This repository exists because STAGEN app repositories are private, which preven
 
 ## Published at
 
-https://ubermenschjo.github.io/stagen-pages/
+- URL: https://stage-n.github.io/prj/
 
 ## Apps
 
