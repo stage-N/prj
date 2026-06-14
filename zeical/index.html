@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeiCal - 税務カレンダー | 1人法人・個人事業主の税務管理アプリ</title>
+  <meta name="description" content="決算月を入力するだけ。法人税・消費税・源泉所得税・社会保険の期限を自動計算。無料で使える1人法人・個人事業主向け税務カレンダーアプリ。">
+  <meta property="og:title" content="ZeiCal - 税務カレンダー">
+  <meta property="og:description" content="税理士費用でAIを。1人法人・個人事業主の税務管理を無料から。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ubermenschjo.github.io/stagen-pages/zeical/">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+      color: #333;
+      line-height: 1.8;
+      background: #feffff;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: #333;
+      color: #feffff;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(135deg, rgba(21,183,136,0.15) 0%, transparent 50%, rgba(19,149,186,0.1) 100%);
+    }
+    .hero-inner { position: relative; max-width: 720px; margin: 0 auto; }
+    .hero h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+    .hero h1 small { font-size: 1.2rem; font-weight: 400; display: block; color: #15b788; margin-top: 0.2rem; }
+    .hero .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      color: #15b788;
+    }
+    .hero .cost-visual {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+    .hero .cost-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 18px 24px;
+      min-width: 140px;
+    }
+    .hero .cost-card .label { font-size: 0.75rem; opacity: 0.7; margin-bottom: 4px; }
+    .hero .cost-card .amount { font-size: 1.5rem; font-weight: 700; color: #15b788; }
+    .hero .cost-card .amount .unit { font-size: 0.9rem; font-weight: 400; }
+    .hero .cost-total {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .hero .cost-total strong { color: #fff; }
+
+    /* ===== Section ===== */
+    section { padding: 80px 20px; }
+    section:nth-child(even) { background: #f8f9fa; }
+    .container { max-width: 800px; margin: 0 auto; }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: #888;
+      font-size: 0.95rem;
+      margin-bottom: 3rem;
+    }
+
+    /* ===== Problem / Insight ===== */
+    .insight-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      border: 1px solid #eee;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+    .insight-card h3 {
+      font-size: 1.1rem;
+      color: #1395ba;
+      margin-bottom: 0.8rem;
+    }
+    .insight-card p { font-size: 0.95rem; color: #555; }
+    .insight-card .big-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #333;
+      line-height: 1.2;
+    }
+    .insight-card .big-number .currency { font-size: 1.2rem; color: #15b788; }
+    .insight-card .vs {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 2px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin: 0 12px;
+    }
+
+    /* ===== Features ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      border: 1px solid #eee;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .feature-card .icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .feature-card h3 { font-size: 1rem; color: #333; margin-bottom: 0.5rem; }
+    .feature-card p { font-size: 0.85rem; color: #666; line-height: 1.6; }
+
+    /* ===== Pricing ===== */
+    .pricing-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .pricing-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      width: 280px;
+      border: 2px solid #eee;
+      text-align: center;
+    }
+    .pricing-card.featured {
+      border-color: #15b788;
+      box-shadow: 0 4px 20px rgba(21,183,136,0.12);
+    }
+    .pricing-card .plan-name { font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .pricing-card .plan-price { font-size: 2.2rem; font-weight: 800; color: #333; margin: 1rem 0; }
+    .pricing-card .plan-price .unit { font-size: 0.9rem; font-weight: 400; color: #888; }
+    .pricing-card .plan-desc { font-size: 0.85rem; color: #666; margin-bottom: 1.5rem; }
+    .pricing-card .plan-features { text-align: left; list-style: none; }
+    .pricing-card .plan-features li {
+      font-size: 0.85rem;
+      padding: 6px 0;
+      border-bottom: 1px solid #f0f0f0;
+      position: relative;
+      padding-left: 20px;
+    }
+    .pricing-card .plan-features li::before { content: '✓'; position: absolute; left: 0; color: #15b788; font-weight: 700; }
+    .pricing-card .plan-label {
+      display: inline-block;
+      background: #15b788;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 2px 12px;
+      border-radius: 100px;
+      font-weight: 600;
+    }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .cta-section p { font-size: 1.1rem; margin-bottom: 1.5rem; color: #555; }
+    .cta-section .btn {
+      display: inline-block;
+      background: #15b788;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+    .cta-section .btn:hover { background: #12a077; }
+    .cta-section .btn.secondary {
+      background: #1395ba;
+      margin-left: 12px;
+    }
+    .cta-section .btn.secondary:hover { background: #107a99; }
+    .cta-section .micro {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #999;
+    }
+    .cta-section .store-badges {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .cta-section .store-badge {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    footer a { color: #1395ba; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer .links { margin-bottom: 0.5rem; }
+    footer .links a { margin: 0 12px; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .hero .cost-visual { gap: 12px; }
+      .hero .cost-card { padding: 14px 18px; min-width: 100px; }
+      .hero .cost-card .amount { font-size: 1.2rem; }
+      .insight-card .big-number { font-size: 1.8rem; }
+      .pricing-card { width: 100%; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">#1人法人 #個人事業主 のための税務管理</div>
+      <h1>
+        ZeiCal
+        <small>税務カレンダー</small>
+      </h1>
+
+      <div class="cost-visual">
+        <div class="cost-card">
+          <div class="label">税理士 顧問料</div>
+          <div class="amount">¥20,000<span class="unit">/月</span></div>
+        </div>
+        <div class="cost-card">
+          <div class="label">記帳代行</div>
+          <div class="amount">¥10,000<span class="unit">/月</span></div>
+        </div>
+        <div class="cost-card">
+          <div class="label">申告時</div>
+          <div class="amount">¥200,000<span class="unit">/年</span></div>
+        </div>
+      </div>
+      <div class="cost-total">
+        年間 <strong>約56万円</strong> — これ、最新のAIサービスが全部使える金額です
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSIGHT ===== -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">1人法人・個人事業主の税理士問題</h2>
+      <p class="section-subtitle">
+        257万の事業者。毎月3〜5万円。年間56万円。<br>
+        そのコストで、本当に必要なサービスを受けられていますか？
+      </p>
+
+      <div class="insight-card">
+        <div class="big-number">
+          ¥560,000<span class="currency">/年</span>
+        </div>
+        <p style="margin-top:0.5rem;">
+          これが1人法人が税理士に支払う典型的な年間コスト。<br>
+          年1回の確定申告サポートと、月1回の記帳チェックのために。
+        </p>
+      </div>
+
+      <div class="insight-card" style="border-color: #15b788; background: #f0faf5;">
+        <h3>もし、この予算でAIを活用できたら？</h3>
+        <p>
+          Claude Pro 月¥3,300 + ChatGPT Pro 月¥3,300 = 月¥6,600。<br>
+          <strong>税理士費用の1/5以下</strong>で、365日24時間対応のAIアシスタントが手に入る。
+        </p>
+        <p style="margin-top:0.8rem; color:#1395ba; font-weight:600;">
+          もう、「高いからAIは無理」とは言わせない。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ZEICAL ===== -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">第1弾：ZeiCal（税カル）</h2>
+      <p class="section-subtitle">
+        AI時代の税務管理。その第一歩は、<strong>無料</strong>の税務カレンダーから。
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">📅</div>
+          <h3>自動スケジュール生成</h3>
+          <p>決算月を入力するだけ。法人税・消費税・源泉所得税・社会保険の全ての期限を自動計算。中間申告や納期の特例にも対応。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔔</div>
+          <h3>リマインダー通知（Pro）</h3>
+          <p>30日前・14日前・7日前・3日前・前日と段階的に通知。うっかり忘れをゼロに。「あの期限、いつだっけ？」がなくなる。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔒</div>
+          <h3>プライバシー重視</h3>
+          <p>アカウント登録不要。税務データはすべて端末内のみ保存。バックエンドサーバーも不要。オフラインで完全動作。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">✅</div>
+          <h3>進捗管理</h3>
+          <p>完了したタスクをチェックして視覚化。年間スケジュール一覧で全体を俯瞰。抜け漏れを防止。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">料金</h2>
+      <p class="section-subtitle">無料で始めて、便利ならランチ1回分の金額でProに。</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">無料</div>
+          <div class="plan-price">¥0</div>
+          <div class="plan-desc">税務スケジュールの閲覧・基本タスク管理</div>
+          <ul class="plan-features">
+            <li>決算年度2年分閲覧</li>
+            <li>法人1社まで</li>
+            <li>チェックリスト（一部）</li>
+            <li>オフライン完全動作</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="plan-label">おすすめ</div>
+          <div class="plan-name">Pro 年間</div>
+          <div class="plan-price">¥980<span class="unit">/年</span></div>
+          <div class="plan-desc">ランチ1回分。全ての機能が使い放題。</div>
+          <ul class="plan-features">
+            <li>リマインダー通知（30/14/7/3/1日前）</li>
+            <li>チェックリスト全文表示</li>
+            <li>PDF・CSV出力</li>
+            <li>端末カレンダー同期</li>
+            <li>ホームウィジェット</li>
+            <li>複数法人（最大5社）</li>
+            <li>決算年度5年分閲覧</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Pro 買い切り</div>
+          <div class="plan-price">¥2,480</div>
+          <div class="plan-desc">年間プランと同等の機能を永久利用</div>
+          <ul class="plan-features">
+            <li>年間プランと同機能</li>
+            <li>永続ライセンス</li>
+            <li>機種変更も再購入不要</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" style="background:#f8f9fa;">
+    <div class="container">
+      <h2 class="section-title">今すぐ始める</h2>
+      <p>アカウント登録不要。インストールして2タップ。<br>決算月を入れるだけで、年間の税務スケジュールが完成します。</p>
+      <div class="store-badges">
+        <span class="store-badge">📱 App Store — Coming Soon</span>
+        <span class="store-badge">📱 Google Play — Coming Soon</span>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="https://github.com/ubermenschjo/zeical" class="btn" target="_blank">GitHub で見る →</a>
+        <a href="support.html" class="btn secondary">サポート</a>
+      </div>
+      <p class="micro">
+        <a href="privacy.html">プライバシーポリシー</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="links">
+      <a href="https://ubermenschjo.github.io/stagen-pages/">STAGEN Apps</a>
+      <a href="https://github.com/ubermenschjo/zeical">GitHub</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="support.html">サポート</a>
+    </div>
+    <p>© 2026 STAGEN. Built by a 1-person company for 1-person companies.</p>
+  </footer>
+
+</body>
+</html>
