@@ -13,7 +13,8 @@ This repository exists because STAGEN app repositories are private, which preven
 | App | Description |
 |-----|-------------|
 | [ZeiCal](./zeical/) | Tax calendar — automatic deadline calculation |
-| [WBGT Monitor](./wbgt-monitor/) | Heat index monitor with business/consumer editions |
+| [熱中症レコーダー Pro](./wbgt-recorder/) | WBGT recorder for worksites — labor safety compliance |
+| [熱中症アラート](./wbgt-alert/) | Free heat stroke alert app for everyday use |
 | [ラクビル](./rakubill/) | Invoice creation app for freelancers |
 | [Forest School](./forest-school/) | Educational game for ages 3-5 |
 
