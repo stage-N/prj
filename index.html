@@ -3,144 +3,688 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STAGEN - アプリ情報</title>
+  <title>STAGEN | アプリケーション・システム・Webの企画・開発</title>
+  <meta name="description" content="STAGENはアプリケーションソフト、コンピュータシステム、Webサイトの企画・制作・運営を行う会社です。税務管理、労働安全、請求書作成など、実用的なプロダクトを提供しています。">
+  <meta property="og:title" content="STAGEN">
+  <meta property="og:description" content="We deliver on time, on budget, and on spec.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stage-n.github.io/prj/">
   <style>
+    :root {
+      --color-dark: #333;
+      --color-green: #15b788;
+      --color-blue: #1395ba;
+      --color-bg: #feffff;
+      --color-muted: #666;
+      --color-border: #e8e8e8;
+      --max-width: 1080px;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-      color: #333;
+      color: var(--color-dark);
       line-height: 1.8;
-      background: #fafafa;
+      background: var(--color-bg);
     }
-    header {
-      background: #333;
-      color: #feffff;
-      text-align: center;
-      padding: 60px 20px;
+
+    a { color: inherit; }
+
+    /* ===== Nav ===== */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(254, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      transition: box-shadow 0.2s;
     }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1rem;
-      opacity: 0.85;
-    }
-    .content {
-      max-width: 800px;
+    .site-nav.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+    .nav-inner {
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 40px 20px 80px;
-    }
-    .app-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      border: 1px solid #eee;
-    }
-    .app-card h2 {
-      font-size: 1.3rem;
-      margin-bottom: 0.3rem;
-      color: #333;
-    }
-    .app-card .app-desc {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    .app-card .links {
+      padding: 0 24px;
+      height: 64px;
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
     }
-    .app-card .links a {
-      display: inline-block;
-      padding: 8px 20px;
-      border-radius: 6px;
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo img { height: 32px; width: auto; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
       text-decoration: none;
       font-size: 0.9rem;
       font-weight: 500;
+      color: var(--color-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--color-green); }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--color-dark);
+      margin: 5px 0;
+      transition: transform 0.2s;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: var(--color-dark);
+      color: var(--color-bg);
+      padding: 140px 24px 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(21,183,136,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 80% 20%, rgba(19,149,186,0.14) 0%, transparent 70%);
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero-logo {
+      height: 56px;
+      width: auto;
+      margin-bottom: 1.5rem;
+    }
+    .hero-tagline {
+      font-size: 1.05rem;
+      color: rgba(254,255,255,0.75);
+      margin-bottom: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn:hover { opacity: 0.88; transform: translateY(-1px); }
+    .btn-primary { background: var(--color-green); color: #fff; }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+
+    /* ===== Sections ===== */
+    section { padding: 88px 24px; }
+    section:nth-child(even) { background: #f8f9fa; }
+    .container { max-width: var(--max-width); margin: 0 auto; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-green);
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    .section-lead {
+      color: var(--color-muted);
+      font-size: 1rem;
+      max-width: 640px;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ===== Purpose ===== */
+    .purpose-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .purpose-item {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .purpose-num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--color-green), var(--color-blue));
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .purpose-text { font-size: 0.92rem; line-height: 1.7; }
+
+    /* ===== Services ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 14px;
+      object-fit: contain;
+    }
+    .service-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    .service-card p {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+
+    /* ===== Products ===== */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .product-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+      border-color: rgba(21,183,136,0.3);
+    }
+    .product-thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #f0f4f3;
+    }
+    .product-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 0.6rem;
+    }
+    .product-title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 0;
+    }
+    .product-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .product-badge {
+      flex-shrink: 0;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: rgba(21,183,136,0.1);
+      color: var(--color-green);
+    }
+    .product-desc {
+      color: var(--color-muted);
+      font-size: 0.9rem;
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .product-links a {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
       transition: opacity 0.2s;
     }
-    .app-card .links a:hover { opacity: 0.8; }
-    .link-privacy { background: #15b788; color: #fff; }
-    .link-support { background: #1395ba; color: #fff; }
-    .github-link { color: #666; font-size: 0.85rem; margin-top: 0.5rem; }
-    .github-link a { color: #1395ba; text-decoration: none; }
+    .product-links a:hover { opacity: 0.8; }
+    .link-main { background: var(--color-dark); color: #fff; }
+    .link-privacy { background: var(--color-green); color: #fff; }
+    .link-support { background: var(--color-blue); color: #fff; }
+    .product-github {
+      margin-top: 12px;
+      font-size: 0.82rem;
+    }
+    .product-github a {
+      color: var(--color-blue);
+      text-decoration: none;
+    }
+    .product-github a:hover { text-decoration: underline; }
+
+    /* ===== About ===== */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .about-text p {
+      color: var(--color-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .about-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+    }
+    .about-visual img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    /* ===== Footer ===== */
     footer {
-      text-align: center;
-      padding: 24px;
+      background: var(--color-dark);
+      color: rgba(254,255,255,0.7);
+      padding: 48px 24px 32px;
+    }
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: start;
+    }
+    .footer-brand img { height: 36px; margin-bottom: 12px; }
+    .footer-brand p { font-size: 0.85rem; max-width: 320px; }
+    .footer-nav {
+      display: flex;
+      gap: 48px;
+    }
+    .footer-nav h4 {
+      font-size: 0.8rem;
+      color: #fff;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+    .footer-nav ul { list-style: none; }
+    .footer-nav li { margin-bottom: 6px; }
+    .footer-nav a {
       font-size: 0.85rem;
-      color: #888;
-      border-top: 1px solid #eee;
+      color: rgba(254,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--color-green); }
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 32px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #fff;
+        padding: 16px 24px 24px;
+        border-bottom: 1px solid var(--color-border);
+        gap: 16px;
+      }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: block; }
+      .hero { padding: 120px 20px 80px; }
+      .hero-logo { height: 44px; }
+      .about-content { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-nav { flex-direction: column; gap: 24px; }
+      .products-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>STAGEN</h1>
-    <p>アプリケーション プライバシーポリシー &amp; サポート</p>
+
+  <nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/branding/logo-symbol.svg" alt="STAGEN" width="32" height="32">
+        <img src="assets/branding/logo-wordmark.svg" alt="STAGEN" height="28">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">会社概要</a></li>
+        <li><a href="#purpose">事業目的</a></li>
+        <li><a href="#services">事業内容</a></li>
+        <li><a href="#products">プロダクト</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="assets/branding/logo-inverted.svg" alt="STAGEN — We deliver on time, on budget, and on spec." class="hero-logo">
+      <p class="hero-tagline">アプリケーション・システム・Webの企画から運営まで、<br>実用的なプロダクトで課題を解決します。</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">プロダクトを見る</a>
+        <a href="#about" class="btn btn-outline">会社について</a>
+      </div>
+    </div>
   </header>
 
-  <div class="content">
-    <div class="app-card">
-      <h2>ZeiCal</h2>
-      <p class="app-desc">税務カレンダー — 決算月から法人税・消費税・源泉所得税・社会保険の期限を自動計算。無料でスケジュール閲覧、Proでリマインダー通知・PDF出力など</p>
-      <div class="links">
-        <a href="zeical/" class="link-privacy" style="background:#333;">ZeiCalについて</a>
-        <a href="zeical/privacy.html" class="link-privacy">プライバシーポリシー</a>
-        <a href="zeical/support.html" class="link-support">サポート</a>
+  <section id="about">
+    <div class="container">
+      <span class="section-label">About</span>
+      <h2 class="section-title">STAGENについて</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>STAGENは、各種アプリケーションソフトウェアやコンピュータシステム、Webサイトの企画・制作・運営を手がける会社です。</p>
+          <p>税務管理、労働安全、ビジネスツール、教育など、多様な分野でユーザーに寄り添ったプロダクトを開発・提供しています。企画から開発、運用・保守まで一貫してサポートします。</p>
+          <p><strong>We deliver on time, on budget, and on spec.</strong></p>
+        </div>
+        <div class="about-visual">
+          <img src="assets/images/about.png" alt="STAGENのプロダクトエコシステムを表すイラスト">
+        </div>
       </div>
-      <div class="github-link"><a href="https://github.com/ubermenschjo/zeical">GitHub →</a></div>
     </div>
+  </section>
 
-    <div class="app-card">
-      <h2>熱中症レコーダー Pro</h2>
-      <p class="app-desc">作業現場の暑さ対策 — WBGTリアルタイム表示、作業記録、CSV/PDF書き出し、労安法対応の記録管理</p>
-      <div class="links">
-        <a href="wbgt-recorder/" class="link-privacy" style="background:#333;">熱中症レコーダー Pro について</a>
-        <a href="wbgt-recorder/privacy.html" class="link-privacy">プライバシーポリシー</a>
-        <a href="wbgt-recorder/support.html" class="link-support">サポート</a>
+  <section id="purpose">
+    <div class="container">
+      <span class="section-label">Purpose</span>
+      <h2 class="section-title">事業目的</h2>
+      <p class="section-lead">当社は以下の事業を目的として活動しています。</p>
+      <div class="purpose-grid">
+        <div class="purpose-item">
+          <span class="purpose-num">1</span>
+          <p class="purpose-text">各種アプリケーションソフトの企画、制作、販売、運営及び管理</p>
+        </div>
+        <div class="purpose-item">
+          <span class="purpose-num">2</span>
+          <p class="purpose-text">コンピュータシステムの企画、開発、販売及び保守に関する業務</p>
+        </div>
+        <div class="purpose-item">
+          <span class="purpose-num">3</span>
+          <p class="purpose-text">Ｗｅｂサイトの企画、制作、販売、運営及び管理</p>
+        </div>
+        <div class="purpose-item">
+          <span class="purpose-num">4</span>
+          <p class="purpose-text">人材育成に関するコンサルティング業務</p>
+        </div>
+        <div class="purpose-item">
+          <span class="purpose-num">5</span>
+          <p class="purpose-text">写真、動画の撮影、企画、制作及び販売</p>
+        </div>
+        <div class="purpose-item">
+          <span class="purpose-num">6</span>
+          <p class="purpose-text">マーケティング、プロモーション支援に関する業務</p>
+        </div>
+        <div class="purpose-item">
+          <span class="purpose-num">7</span>
+          <p class="purpose-text">前各号に附帯又は関連する一切の事業</p>
+        </div>
       </div>
-      <div class="github-link"><a href="https://github.com/ubermenschjo/wbgt-monitor">GitHub →</a></div>
     </div>
+  </section>
 
-    <div class="app-card">
-      <h2>熱中症アラート</h2>
-      <p class="app-desc">暑さ指数でいのちを守る — 無料の一般向け熱中症予防アプリ。WBGT表示、活動記録、梅雨モード</p>
-      <div class="links">
-        <a href="wbgt-alert/" class="link-privacy" style="background:#333;">熱中症アラート について</a>
-        <a href="wbgt-alert/privacy.html" class="link-privacy">プライバシーポリシー</a>
-        <a href="wbgt-alert/support.html" class="link-support">サポート</a>
+  <section id="services">
+    <div class="container">
+      <span class="section-label">Services</span>
+      <h2 class="section-title">事業内容</h2>
+      <p class="section-lead">企画から運用まで、テクノロジーを通じてお客様のビジネスを支援します。</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="assets/images/service-app.png" alt="" class="service-icon" aria-hidden="true">
+          <h3>アプリ開発</h3>
+          <p>iOS・Android向けアプリケーションの企画・設計・開発・運用</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/service-system.png" alt="" class="service-icon" aria-hidden="true">
+          <h3>システム開発</h3>
+          <p>業務システムの設計・構築・保守およびクラウドインフラ</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/service-web.png" alt="" class="service-icon" aria-hidden="true">
+          <h3>Web制作</h3>
+          <p>コーポレートサイト・ランディングページの企画・制作・運営</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/service-consulting.png" alt="" class="service-icon" aria-hidden="true">
+          <h3>コンサルティング</h3>
+          <p>人材育成・DX推進に関するアドバイザリー</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/images/service-media.png" alt="" class="service-icon" aria-hidden="true">
+          <h3>映像制作</h3>
+          <p>写真・動画の撮影、企画、制作およびプロモーション支援</p>
+        </div>
       </div>
-      <div class="github-link"><a href="https://github.com/ubermenschjo/wbgt-monitor">GitHub →</a></div>
     </div>
+  </section>
 
-    <div class="app-card">
-      <h2>ラクビル</h2>
-      <p class="app-desc">請求書作成アプリ — インボイス対応。端末内で完結する個人事業主向け請求書管理。無料月3通、プレミアム¥500買い切り</p>
-      <div class="links">
-        <a href="rakubill/" class="link-privacy" style="background:#333;">ラクビルについて</a>
-        <a href="rakubill/privacy.html" class="link-privacy">プライバシーポリシー</a>
-        <a href="rakubill/support.html" class="link-support">サポート</a>
-      </div>
-      <div class="github-link"><a href="https://github.com/ubermenschjo/rakubill">GitHub →</a></div>
-    </div>
+  <section id="products">
+    <div class="container">
+      <span class="section-label">Products</span>
+      <h2 class="section-title">プロダクト</h2>
+      <p class="section-lead">STAGENが開発・運営するアプリケーション一覧です。各プロダクトの詳細ページからご覧いただけます。</p>
+      <div class="products-grid">
 
-    <div class="app-card">
-      <h2>Forest School</h2>
-      <p class="app-desc">3-5歳児向け教育ゲーム — 自然界の知識を遊びながら学ぶ</p>
-      <div class="links">
-        <a href="forest-school/privacy.html" class="link-privacy">プライバシーポリシー</a>
-        <a href="forest-school/support.html" class="link-support">サポート</a>
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-title-row">
+              <img src="assets/images/product-zeical.png" alt="" class="product-thumb" width="56" height="56">
+              <h3>ZeiCal</h3>
+            </div>
+            <span class="product-badge">税務</span>
+          </div>
+          <p class="product-desc">税務カレンダー — 決算月から法人税・消費税・源泉所得税・社会保険の期限を自動計算。無料でスケジュール閲覧、Proでリマインダー通知・PDF出力など</p>
+          <div class="product-links">
+            <a href="zeical/" class="link-main">ZeiCalについて</a>
+            <a href="zeical/privacy.html" class="link-privacy">プライバシーポリシー</a>
+            <a href="zeical/support.html" class="link-support">サポート</a>
+          </div>
+          <p class="product-github"><a href="https://github.com/ubermenschjo/zeical">GitHub →</a></p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-title-row">
+              <img src="assets/images/product-wbgt-recorder.png" alt="" class="product-thumb" width="56" height="56">
+              <h3>熱中症レコーダー Pro</h3>
+            </div>
+            <span class="product-badge">労働安全</span>
+          </div>
+          <p class="product-desc">作業現場の暑さ対策 — WBGTリアルタイム表示、作業記録、CSV/PDF書き出し、労安法対応の記録管理</p>
+          <div class="product-links">
+            <a href="wbgt-recorder/" class="link-main">熱中症レコーダー Pro について</a>
+            <a href="wbgt-recorder/privacy.html" class="link-privacy">プライバシーポリシー</a>
+            <a href="wbgt-recorder/support.html" class="link-support">サポート</a>
+          </div>
+          <p class="product-github"><a href="https://github.com/ubermenschjo/wbgt-monitor">GitHub →</a></p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-title-row">
+              <img src="assets/images/product-wbgt-alert.png" alt="" class="product-thumb" width="56" height="56">
+              <h3>熱中症アラート</h3>
+            </div>
+            <span class="product-badge">労働安全</span>
+          </div>
+          <p class="product-desc">暑さ指数でいのちを守る — 無料の一般向け熱中症予防アプリ。WBGT表示、活動記録、梅雨モード</p>
+          <div class="product-links">
+            <a href="wbgt-alert/" class="link-main">熱中症アラート について</a>
+            <a href="wbgt-alert/privacy.html" class="link-privacy">プライバシーポリシー</a>
+            <a href="wbgt-alert/support.html" class="link-support">サポート</a>
+          </div>
+          <p class="product-github"><a href="https://github.com/ubermenschjo/wbgt-monitor">GitHub →</a></p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-title-row">
+              <img src="assets/images/product-rakubill.png" alt="" class="product-thumb" width="56" height="56">
+              <h3>ラクビル</h3>
+            </div>
+            <span class="product-badge">ビジネス</span>
+          </div>
+          <p class="product-desc">請求書作成アプリ — インボイス対応。端末内で完結する個人事業主向け請求書管理。無料月3通、プレミアム¥500買い切り</p>
+          <div class="product-links">
+            <a href="rakubill/" class="link-main">ラクビルについて</a>
+            <a href="rakubill/privacy.html" class="link-privacy">プライバシーポリシー</a>
+            <a href="rakubill/support.html" class="link-support">サポート</a>
+          </div>
+          <p class="product-github"><a href="https://github.com/ubermenschjo/rakubill">GitHub →</a></p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-title-row">
+              <img src="assets/images/product-forest-school.png" alt="" class="product-thumb" width="56" height="56">
+              <h3>Forest School</h3>
+            </div>
+            <span class="product-badge">教育</span>
+          </div>
+          <p class="product-desc">3-5歳児向け教育ゲーム — 自然界の知識を遊びながら学ぶ</p>
+          <div class="product-links">
+            <a href="forest-school/privacy.html" class="link-privacy">プライバシーポリシー</a>
+            <a href="forest-school/support.html" class="link-support">サポート</a>
+          </div>
+          <p class="product-github"><a href="https://github.com/ubermenschjo/forest-school">GitHub →</a></p>
+        </article>
+
       </div>
-      <div class="github-link"><a href="https://github.com/ubermenschjo/forest-school">GitHub →</a></div>
     </div>
-  </div>
+  </section>
 
   <footer>
-    <p>&copy; 2026 STAGEN</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/branding/logo-inverted.svg" alt="STAGEN">
+        <p>アプリケーション・システム・Webの企画から運営まで。We deliver on time, on budget, and on spec.</p>
+      </div>
+      <div class="footer-nav">
+        <div>
+          <h4>会社</h4>
+          <ul>
+            <li><a href="#about">会社概要</a></li>
+            <li><a href="#purpose">事業目的</a></li>
+            <li><a href="#services">事業内容</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>プロダクト</h4>
+          <ul>
+            <li><a href="zeical/">ZeiCal</a></li>
+            <li><a href="wbgt-recorder/">熱中症レコーダー Pro</a></li>
+            <li><a href="wbgt-alert/">熱中症アラート</a></li>
+            <li><a href="rakubill/">ラクビル</a></li>
+            <li><a href="forest-school/privacy.html">Forest School</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STAGEN. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    const nav = document.getElementById('siteNav');
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+    });
+
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => links.classList.remove('open'));
+    });
+  </script>
 </body>
 </html>
