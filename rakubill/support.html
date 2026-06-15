@@ -3,48 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サポート - ラクビル</title>
+  <title>サポート | ラクビル</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; color: #333333; line-height: 1.8; padding: 2rem 1rem; max-width: 720px; margin: 0 auto; background: #feffff; }
-    h1 { color: #333333; font-size: 1.5rem; margin-bottom: 0.5rem; border-bottom: 3px solid #15b788; padding-bottom: 0.5rem; }
-    h2 { color: #333333; font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.5rem; padding-left: 0.5rem; border-left: 4px solid #15b788; }
-    p, li { margin-bottom: 0.5rem; font-size: 0.95rem; }
-    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
-    .support-link { display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #15b788; color: #fff; text-decoration: none; border-radius: 6px; font-weight: bold; }
-    .support-link:hover { background: #12a077; }
-    .card { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 1.5rem; margin-top: 1.5rem; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif; line-height: 1.8; color: #333; max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 1.6rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; margin-bottom: 0.5rem; color: #1395ba; }
+    p { font-size: 0.95rem; margin-bottom: 0.8rem; }
+    ul { font-size: 0.95rem; margin-bottom: 0.8rem; padding-left: 1.5rem; }
+    a { color: #1395ba; }
+    .card { background: #f8f9fa; border-radius: 8px; padding: 20px; margin-top: 1.5rem; }
+    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.85rem; color: #666; }
   </style>
 </head>
 <body>
   <h1>サポート</h1>
   <p>ラクビルをご利用いただきありがとうございます。</p>
 
+  <h2>不具合報告・機能要望</h2>
+  <p>不具合の報告や機能のご要望は GitHub Issues にてお願いいたします：</p>
   <div class="card">
-    <h2 style="margin-top: 0;">お問い合わせ方法</h2>
-    <p>本アプリに関するお問い合わせ、不具合の報告、機能のリクエストは、すべて<strong>GitHub Issues</strong>にて受け付けております。</p>
-    <a href="https://github.com/ubermenschjo/rakubill/issues" class="support-link">GitHub Issues で問い合わせる →</a>
+    <p>🐛 <a href="https://github.com/ubermenschjo/rakubill/issues" target="_blank">GitHub Issues で報告する →</a></p>
   </div>
 
-  <h2>お問い合わせの手順</h2>
+  <h2>お問い合わせ</h2>
+  <div class="card">
+    <p>📩 <a href="https://github.com/ubermenschjo/rakubill/issues" target="_blank">GitHub Issues →</a></p>
+  </div>
+
+  <h2>よくある質問</h2>
+
+  <h3 style="margin-top:1rem; font-size:1rem;">Q. 無料版とプレミアムの違いは？</h3>
+  <p>無料版では月3通まで請求書を発行できます。プレミアム版（¥500買い切り）では以下の機能が追加されます：</p>
   <ul>
-    <li>上記リンクからGitHub Issuesページにアクセスしてください</li>
-    <li>「New Issue」ボタンをクリックして新しいIssueを作成してください</li>
-    <li>問題の内容をできるだけ詳しく記載してください</li>
+    <li>請求書の無制限発行</li>
+    <li>無料版の全機能（取引先管理・PDF出力・インボイス対応等）</li>
   </ul>
+  <p>設定画面の「プレミアム」から購入できます。サブスクリプションではなく、一度の買い切りです。</p>
 
-  <h2>記載いただきたい情報</h2>
-  <ul>
-    <li>ご利用の端末名とOSバージョン</li>
-    <li>アプリのバージョン</li>
-    <li>問題の詳細な説明</li>
-    <li>問題が発生する手順（再現手順）</li>
-    <li>スクリーンショット（可能であれば）</li>
-  </ul>
+  <h3 style="margin-top:1rem; font-size:1rem;">Q. 別端末で購入したプレミアムを復元できますか？</h3>
+  <p>はい。設定画面 →「プレミアム」→「購入を復元」から、以前の購入を復元できます。App Store / Google Play と同じ Apple ID / Google アカウントでログインしている必要があります。</p>
 
-  <h2>対応について</h2>
-  <p>お問い合わせいただいた内容は、順次確認・対応いたします。回答までお時間をいただく場合がございますが、ご了承ください。</p>
+  <h3 style="margin-top:1rem; font-size:1rem;">Q. データはどこに保存されますか？</h3>
+  <p>取引先情報・請求書データはすべてお使いの端末内にのみ保存されます。当社サーバーへの送信は行いません。プレミアムの購入・復元時のみ、App Store / Google Play 経由で課金処理のための通信が発生します。詳細は<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
 
-  <p style="margin-top: 2rem; text-align: right; color: #666; font-size: 0.85rem;">© STAGEN</p>
+  <h3 style="margin-top:1rem; font-size:1rem;">Q. 機種変更時にデータ移行はできますか？</h3>
+  <p>現在のバージョンではデータのエクスポート/インポート機能は未対応です。プレミアムの購入状態は「復元」機能で引き継げますが、請求書データ自体は端末内に保存されているため、機種変更時は再設定が必要です。</p>
+
+  <h3 style="margin-top:1rem; font-size:1rem;">Q. PDFはどのように出力しますか？</h3>
+  <p>請求書一覧から対象の請求書を選択し、PDFプレビュー画面から共有・保存できます。メールやチャットアプリでそのまま送付できます。</p>
+
+  <h3 style="margin-top:1rem; font-size:1rem;">Q. インボイス制度に対応していますか？</h3>
+  <p>はい。設定画面で適格請求書発行事業者登録番号を登録でき、請求書に記載されます。軽減税率（8%）・標準税率（10%）・非課税を明細ごとに設定可能です。</p>
+
+  <div class="footer">
+    <p>STAGEN</p>
+  </div>
 </body>
 </html>

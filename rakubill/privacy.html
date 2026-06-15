@@ -3,53 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー - ラクビル</title>
+  <title>プライバシーポリシー | ラクビル</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; color: #333333; line-height: 1.8; padding: 2rem 1rem; max-width: 720px; margin: 0 auto; background: #feffff; }
-    h1 { color: #333333; font-size: 1.5rem; margin-bottom: 0.5rem; border-bottom: 3px solid #15b788; padding-bottom: 0.5rem; }
-    h2 { color: #333333; font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.5rem; padding-left: 0.5rem; border-left: 4px solid #15b788; }
-    p, li { margin-bottom: 0.5rem; font-size: 0.95rem; }
-    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
-    .brand { color: #15b788; font-weight: bold; }
-    .updated { color: #666; font-size: 0.85rem; margin-bottom: 2rem; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif; line-height: 1.8; color: #333; max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 1.6rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; margin-bottom: 0.5rem; color: #15b788; }
+    p, li { font-size: 0.95rem; margin-bottom: 0.8rem; }
+    ul { padding-left: 1.5rem; }
+    a { color: #1395ba; }
+    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.85rem; color: #666; }
   </style>
 </head>
 <body>
   <h1>プライバシーポリシー</h1>
-  <p class="updated">最終更新日：2025年1月1日</p>
-  <p>STAGEN（以下「当社」）は、ラクビル（以下「本アプリ」）におけるユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+  <p>STAGEN（以下「当社」）は、ラクビル（以下「本アプリ」）における個人情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
 
   <h2>1. 収集する情報</h2>
-  <p>本アプリでは、以下の情報をユーザーの端末内にのみ保存します。</p>
+  <p>本アプリは<strong>ユーザー登録や広告目的の個人情報収集は行いません</strong>。以下のデータはユーザーの端末内にのみ保存されます。</p>
   <ul>
-    <li>会社プロフィール情報（社名、住所、登録番号等）</li>
+    <li>会社プロフィール情報（社名、住所、適格請求書発行事業者登録番号、銀行口座等）</li>
     <li>取引先情報（社名、住所、連絡先等）</li>
-    <li>請求書データ（品目、金額、税額、発行日等）</li>
+    <li>請求書データ（品目、金額、税額、発行日、支払期限等）</li>
   </ul>
 
   <h2>2. データの保存場所</h2>
-  <p>上記のすべてのデータは、<strong>ユーザーの端末内にのみ保存</strong>されます。当社のサーバーへのデータ送信は一切行いません。</p>
+  <p>上記のすべてのデータは、<strong>ユーザーの端末内にのみ保存</strong>されます。当社のサーバーへのデータ送信は一切行いません。請求書の作成・閲覧はオフラインでも利用できます。</p>
 
-  <h2>3. 外部サーバーへの送信</h2>
-  <p>本アプリは、ユーザーの個人情報や請求書データを外部サーバーに送信することはありません。</p>
-
-  <h2>4. 第三者サービス</h2>
-  <p>本アプリでは、プッシュ通知機能のために以下の第三者サービスを利用しています。</p>
+  <h2>3. プレミアム（アプリ内課金）について</h2>
+  <p>プレミアム版（¥500買い切り）の購入・復元時のみ、<strong>react-native-iap</strong> を経由して App Store / Google Play で課金処理が行われます。この際に送信されるのは、ストアが課金処理のために必要とする匿名の購入情報のみです。当社がユーザーの請求書データをストアに送信することはありません。</p>
   <ul>
-    <li><strong>Expo Notifications</strong>：支払期日のリマインダー通知の送信に使用します。通知トークンのみがExpoのサーバーに送信されます。請求書データや個人情報は送信されません。</li>
+    <li>購入状態の確認・復元のためインターネット接続が必要です</li>
+    <li>無料版でも月3通まで請求書の発行が可能です</li>
   </ul>
 
-  <h2>5. データの削除</h2>
+  <h2>4. 通知について</h2>
+  <p>本アプリは、支払期日のリマインダー通知のために <strong>Expo Notifications</strong> を使用します。通知は端末内でスケジュールされ、請求書データや個人情報は外部サーバーに送信されません。通知トークンのみが Expo のサーバーに送信される場合があります。</p>
+
+  <h2>5. 第三者への提供</h2>
+  <p>請求書データや取引先情報の第三者提供は行いません。プレミアム購入処理に限り、Apple / Google の各サービス提供者に課金に必要な情報が渡されます。</p>
+
+  <h2>6. データの削除</h2>
   <p>本アプリのすべてのデータは端末内に保存されているため、<strong>アプリをアンインストール</strong>することで、すべてのデータが完全に削除されます。</p>
 
-  <h2>6. お問い合わせ</h2>
-  <p>本ポリシーに関するお問い合わせは、GitHub Issuesよりお願いいたします。</p>
-  <p><a href="https://github.com/ubermenschjo/rakubill/issues" style="color: #15b788;">https://github.com/ubermenschjo/rakubill/issues</a></p>
+  <h2>7. お子様のプライバシー</h2>
+  <p>本アプリは13歳未満のお子様を対象としていません。</p>
 
-  <h2>7. ポリシーの変更</h2>
-  <p>当社は、必要に応じて本ポリシーを変更することがあります。変更があった場合は、本ページにて通知いたします。</p>
+  <h2>8. ポリシーの変更</h2>
+  <p>本ポリシーは予告なく変更される場合があります。変更後のポリシーは本ページに掲載した時点で効力を生じます。</p>
 
-  <p style="margin-top: 2rem; text-align: right; color: #666; font-size: 0.85rem;">© STAGEN</p>
+  <h2>9. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは<a href="support.html">サポートページ</a>よりご連絡ください。</p>
+
+  <div class="footer">
+    <p>制定日: 2026年6月15日</p>
+    <p>STAGEN</p>
+  </div>
 </body>
 </html>
