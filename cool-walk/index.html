@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Walk | 今、外出できる？</title>
+  <meta name="description" content="WBGTを見るだけでなく、今外出できるかを行動で提案。暑さ指数・UV・大気質を統合した外出判定アプリ。">
+  <meta property="og:title" content="Cool Walk - 外出判定">
+  <meta property="og:description" content="暑さ指数を「見る」から「行動する」へ。今すぐ外出 / 少し待つをワンタップで。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stage-n.github.io/prj/cool-walk/">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; color: #333; line-height: 1.8; background: #feffff; }
+    .hero { background: #333; color: #feffff; padding: 100px 20px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(21,183,136,0.2) 0%, transparent 55%, rgba(255,152,0,0.08) 100%); }
+    .hero-inner { position: relative; max-width: 720px; margin: 0 auto; }
+    .hero .eyebrow { display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 6px 18px; font-size: 0.8rem; margin-bottom: 1.5rem; color: #15b788; }
+    .hero h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 0.3rem; }
+    .hero h1 small { font-size: 1.15rem; font-weight: 400; display: block; color: #15b788; margin-top: 0.3rem; }
+    .hero .desc { font-size: 1rem; opacity: 0.9; max-width: 580px; margin: 1.5rem auto 0; }
+    .compare-hero { display: flex; justify-content: center; gap: 16px; margin-top: 2.5rem; flex-wrap: wrap; align-items: stretch; }
+    .compare-box { flex: 1; min-width: 140px; max-width: 220px; border-radius: 14px; padding: 20px 16px; text-align: center; }
+    .compare-box.before { background: rgba(255,255,255,0.06); border: 1px dashed rgba(255,255,255,0.25); opacity: 0.85; }
+    .compare-box.after { background: rgba(21,183,136,0.22); border: 2px solid #15b788; }
+    .compare-box .label { font-size: 0.7rem; letter-spacing: 0.08em; opacity: 0.7; margin-bottom: 8px; }
+    .compare-box .emoji { font-size: 2rem; margin-bottom: 6px; }
+    .compare-box .text { font-size: 0.9rem; font-weight: 600; line-height: 1.5; }
+    .compare-arrow { display: flex; align-items: center; font-size: 1.5rem; color: #15b788; font-weight: 700; }
+    section { padding: 80px 20px; }
+    section:nth-child(even) { background: #f8f9fa; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .section-title { font-size: 1.6rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
+    .section-subtitle { text-align: center; color: #888; font-size: 0.95rem; margin-bottom: 3rem; }
+    .pain-list { display: grid; gap: 16px; margin-bottom: 2rem; }
+    .pain-item { background: #fff; border-radius: 12px; padding: 20px 24px; border-left: 4px solid #ccc; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+    .pain-item strong { display: block; color: #555; margin-bottom: 4px; font-size: 0.95rem; }
+    .pain-item span { font-size: 0.9rem; color: #777; }
+    .solution-banner { background: linear-gradient(135deg, #eefaf5 0%, #fff8ee 100%); border-radius: 16px; padding: 28px 32px; text-align: center; border: 1px solid rgba(21,183,136,0.25); margin-bottom: 2rem; }
+    .solution-banner p { font-size: 1.05rem; color: #333; font-weight: 600; }
+    .solution-banner .highlight { color: #15b788; }
+    .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: center; margin: 2rem 0; }
+    .flow-step { background: #fff; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #eee; }
+    .flow-step .icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .flow-step h3 { font-size: 0.95rem; margin-bottom: 4px; }
+    .flow-step p { font-size: 0.8rem; color: #666; }
+    .flow-arrow { text-align: center; color: #15b788; font-size: 1.2rem; font-weight: 700; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .feature-card { background: #fff; border-radius: 12px; padding: 28px; border: 1px solid #eee; }
+    .feature-card .icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .feature-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .feature-card p { font-size: 0.85rem; color: #666; line-height: 1.6; }
+    .insight-card { background: #fff; border-radius: 16px; padding: 28px 32px; border: 1px solid #eee; margin-bottom: 16px; }
+    .insight-card h3 { font-size: 1.05rem; color: #15b788; margin-bottom: 0.6rem; }
+    .insight-card p { font-size: 0.95rem; color: #555; }
+    .cta-section { text-align: center; }
+    .cta-section .btn { display: inline-block; background: #15b788; color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 10px; font-weight: 700; margin: 6px; }
+    .cta-section .btn.secondary { background: #1395ba; }
+    .cta-section .micro { margin-top: 1rem; font-size: 0.8rem; color: #999; }
+    footer { text-align: center; padding: 32px 20px; border-top: 1px solid #eee; font-size: 0.85rem; color: #888; }
+    footer a { color: #1395ba; text-decoration: none; }
+    footer .links a { margin: 0 12px; }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .compare-arrow { width: 100%; justify-content: center; transform: rotate(90deg); margin: -8px 0; }
+      .flow-arrow { transform: rotate(90deg); }
+    }
+    .screenshot-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+    .screenshot-item {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      background: #fff;
+    }
+    .screenshot-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+    }
+    .screenshot-item img { width: 100%; height: auto; display: block; }
+    .screenshot-label {
+      display: block;
+      padding: 12px 16px;
+      font-size: 0.85rem;
+      color: #555;
+      text-align: center;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">#スーパーエルニーニョ #熱中症予防 #暑さ指数</div>
+      <h1>Cool Walk<small>暑さ指数を「見る」から「行動する」へ</small></h1>
+      <p class="desc">WBGT 28°C、UV指数8、PM2.5 35——数字が並んでも<strong>「今、何分まで外出していい？」</strong>はわかりません。Cool Walk は答えを行動で提案します。</p>
+
+      <div class="compare-hero">
+        <div class="compare-box before">
+          <div class="label">従来のWBGTアプリ</div>
+          <div class="emoji">🌡️</div>
+          <div class="text">WBGT 31°C<br><span style="font-weight:400;font-size:0.8rem;opacity:0.8">厳重警戒……で、どうすれば？</span></div>
+        </div>
+        <div class="compare-arrow" aria-hidden="true">→</div>
+        <div class="compare-box after">
+          <div class="label">Cool Walk</div>
+          <div class="emoji">🚶</div>
+          <div class="text">少しお待ちください<br><span style="font-weight:400;font-size:0.8rem">17時以降をおすすめ</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">数字だけでは、足りない</h2>
+      <p class="section-subtitle">2026年の記録的猛暑。知っているだけでは、熱中症は防げません。</p>
+
+      <div class="pain-list">
+        <div class="pain-item">
+          <strong>🏠 在宅ワーカー</strong>
+          <span>「ちょっとコンビニ」——何時なら安全？ ゲージの色だけでは判断できない。</span>
+        </div>
+        <div class="pain-item">
+          <strong>🚴 自転車・散歩</strong>
+          <span>ランニングと散歩では許容できる暑さが違う。一律の警告では不十分。</span>
+        </div>
+        <div class="pain-item">
+          <strong>🏗️ 屋外作業</strong>
+          <span>厳重警戒アラートは出るが、具体的に「何時まで」「どのルートなら」がない。</span>
+        </div>
+      </div>
+
+      <div class="solution-banner">
+        <p>Cool Walk は <span class="highlight">「今すぐ外出」</span> か <span class="highlight">「少し待つ」</span> か。<br>ワンタップで、次の行動が決まります。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">どうやって判断する？</h2>
+      <p class="section-subtitle">WBGT + UV + 大気質を、あなたの活動に合わせて統合。</p>
+
+      <div class="flow">
+        <div class="flow-step">
+          <div class="icon">📍</div>
+          <h3>現在地を取得</h3>
+          <p>Open-Meteo から気象・大気質データ</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="icon">🧮</div>
+          <h3>活動別に計算</h3>
+          <p>散歩・ラン・自転車・屋外作業</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="icon">✅</div>
+          <h3>行動を提案</h3>
+          <p>「今10分までOK」「17時以降推奨」</p>
+        </div>
+      </div>
+
+      <div class="insight-card" style="border-color:#15b788;background:#f0faf5;">
+        <h3>🌳 日陰ルートも提案</h3>
+        <p>どうしても今外出する必要があるとき、<strong>現在地から1.5km圏内の公園・緑地を自動で目的地候補</strong>に選び、15分以内の徒歩コースを地図上に表示します。目的地上の入力は不要です。「日陰」は建物の影ではなく、<strong>ルート上で公園・緑地の近く（40m以内）を通過する割合</strong>を指します。OpenStreetMap + OSRM で算出。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">主な機能</h2>
+      <p class="section-subtitle">数値を見せない。行動を提案する。</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">👆</div>
+          <h3>ワンタップ外出判定</h3>
+          <p>「今すぐ外出しましょう」/「少しお待ちください」を大きく表示。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📊</div>
+          <h3>24時間予報グラフ</h3>
+          <p>安全な時間帯を色分け。詳細が必要なときだけ確認。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🌳</div>
+          <h3>日陰ルート推薦</h3>
+          <p>近くの公園・緑地を自動選定。15分以内・緑地カバー率順の散歩コース。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔔</div>
+          <h3>スマート通知</h3>
+          <p>毎朝7時におすすめ時間帯。WBGT 28°C超で警告。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#f8f9fa;">
+    <div class="container">
+      <h2 class="section-title">アプリの実際の画面</h2>
+      <p class="section-subtitle">外出判定・予報・設定まで、ワンタップで行動が決まります。</p>
+      <div class="screenshot-gallery">
+        <div class="screenshot-item">
+          <img src="screenshot-gonow.png" alt="外出判定メイン画面" loading="lazy">
+          <span class="screenshot-label">外出判定メイン</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="screenshot-detail.png" alt="24時間 WBGT 予報" loading="lazy">
+          <span class="screenshot-label">24時間 WBGT 予報</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="screenshot-settings.png" alt="設定・外出アラート" loading="lazy">
+          <span class="screenshot-label">設定・外出アラート</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title">知るだけじゃ、足りない。</h2>
+      <p>スーパーエルニーニョの夏こそ、行動できるアプリを。</p>
+      <div style="margin-top:1.5rem;">
+        <a href="privacy.html" class="btn">プライバシーポリシー</a>
+        <a href="support.html" class="btn secondary">サポート</a>
+      </div>
+      <p class="micro">iOS · 無料 · アカウント不要 · データは端末内処理</p>
+      <p class="micro" style="margin-top:12px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.6;color:#888;font-size:0.75rem;">
+        本アプリは医療機器ではありません。健康に関する判断は医師等の専門家にご相談ください。
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="../">STAGEN</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="support.html">サポート</a>
+    </div>
+    <p>© 2026 STAGEN</p>
+  </footer>
+</body>
+</html>

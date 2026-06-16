@@ -17,6 +17,8 @@ This repository exists because STAGEN app repositories are private, which preven
 | [熱中症アラート](./wbgt-alert/) | Free heat stroke alert app for everyday use |
 | [ラクビル](./rakubill/) | Invoice creation app for freelancers |
 | [Forest School](./forest-school/) | Educational game for ages 3-5 |
+| [Shower Guard](./shower-guard/) | 「午後から雨」→ 5分後に降るかだけ。ゲリラ豪雨対策 |
+| [Cool Walk](./cool-walk/) | WBGTの数字→行動提案。外出判定・日陰ルート |
 
 ## Adding a new app
 
