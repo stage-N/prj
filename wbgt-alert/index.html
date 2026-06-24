@@ -44,7 +44,8 @@
     .cta-section { text-align: center; }
     .cta-section .btn { display: inline-block; background: #FF6B35; color: #fff; text-decoration: none; padding: 16px 40px; border-radius: 10px; font-weight: 700; }
     .cta-section .btn.secondary { background: #1395ba; margin-left: 12px; }
-    .cta-section .store-badge { display: inline-block; background: #333; color: #fff; padding: 12px 24px; border-radius: 8px; opacity: 0.5; margin: 0 8px; }
+    .cta-section .store-badge { display: inline-block; background: #333; color: #fff; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; text-decoration: none; margin: 0 8px; transition: background 0.2s, transform 0.15s; }
+    .cta-section .store-badge:hover { background: #111; transform: translateY(-1px); }
     footer { text-align: center; padding: 32px 20px; border-top: 1px solid #eee; font-size: 0.85rem; color: #888; }
     footer a { color: #1395ba; text-decoration: none; }
     footer .links a { margin: 0 12px; }
@@ -118,9 +119,10 @@
       <h2 class="section-title">今すぐ、暑さをチェック</h2>
       <p>アカウント登録不要。インストールしてすぐにWBGTを確認できます。</p>
       <div style="margin-top:1.5rem;">
-        <span class="store-badge">📱 App Store — Coming Soon</span>
-        <span class="store-badge">📱 Google Play — Coming Soon</span>
+        <a class="store-badge" href="https://apps.apple.com/app/id6780366425" target="_blank" rel="noopener">📱 App Store</a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.stagen.wbgt.consumer" target="_blank" rel="noopener">📱 Google Play</a>
       </div>
+      <p style="margin-top:1rem;font-size:0.9rem;color:#666;">業務・現場向けは <a href="https://apps.apple.com/app/id6780710276" target="_blank" rel="noopener">熱中症レコーダー Pro</a>（<a href="../wbgt-recorder/">詳細</a>）</p>
       <div style="margin-top:1.5rem;">
         <a href="https://github.com/ubermenschjo/wbgt-monitor" class="btn" target="_blank" rel="noopener">GitHub で見る →</a>
         <a href="support.html" class="btn secondary">サポート</a>

@@ -203,8 +203,11 @@
       font-size: 0.9rem;
       font-weight: 600;
       text-decoration: none;
-      opacity: 0.5;
-      cursor: not-allowed;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .cta-section .store-badge:hover {
+      background: #111;
+      transform: translateY(-1px);
     }
 
     footer {
@@ -424,8 +427,8 @@
       <h2 class="section-title">今すぐ始める</h2>
       <p>アカウント登録不要。インストールしてすぐに請求書を作成。<br>データはすべて端末内に保存されます。</p>
       <div class="store-badges">
-        <span class="store-badge">📱 App Store — Coming Soon</span>
-        <span class="store-badge">📱 Google Play — Coming Soon</span>
+        <a class="store-badge" href="https://apps.apple.com/app/id6780785397" target="_blank" rel="noopener">📱 App Store</a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.stagen.rakubill" target="_blank" rel="noopener">📱 Google Play</a>
       </div>
       <div style="margin-top:1.5rem;">
         <a href="https://github.com/ubermenschjo/rakubill" class="btn" target="_blank">GitHub で見る →</a>
