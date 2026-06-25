@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 
+function initHeroStage() {
 const canvas = document.getElementById('heroCanvas');
 const hero = document.querySelector('.hero');
 if (!canvas || !hero) return;
@@ -241,3 +242,6 @@ window.addEventListener('resize', resize, { passive: true });
 hero.addEventListener('pointermove', onPointerMove, { passive: true });
 visibilityObserver.observe(hero);
 animate();
+}
+
+initHeroStage();
