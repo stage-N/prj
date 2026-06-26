@@ -43,6 +43,9 @@
     .cta-section .btn { display: inline-block; background: #4CAF50; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: 700; margin: 6px; }
     .cta-section .btn.secondary { background: #FFC107; color: #333; }
     .cta-section .micro { margin-top: 1rem; font-size: 0.82rem; color: #888; }
+    .cta-section .store-badges { display: flex; justify-content: center; gap: 16px; margin-top: 1.5rem; flex-wrap: wrap; }
+    .cta-section .store-badge { display: inline-block; background: #333; color: #fff; padding: 12px 24px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .cta-section .store-badge:hover { background: #111; transform: translateY(-1px); }
     footer { text-align: center; padding: 32px 20px; border-top: 1px solid #eee; font-size: 0.85rem; color: #888; }
     footer a { color: #4CAF50; text-decoration: none; }
     footer .links a { margin: 0 12px; }
@@ -153,8 +156,11 @@
   <section class="cta-section">
     <div class="container">
       <h2 class="section-title">ダウンロード</h2>
-      <p class="section-subtitle">App Store / Google Play にて配信予定</p>
-      <span class="btn">近日公開</span>
+      <p class="section-subtitle">App Store / Google Play にて配信中</p>
+      <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/app/id6783620641" target="_blank" rel="noopener">📱 App Store</a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=jp.stagen.forestschool" target="_blank" rel="noopener">📱 Google Play</a>
+      </div>
       <a href="privacy.html" class="btn secondary">プライバシーポリシー</a>
       <a href="support.html" class="btn secondary">サポート</a>
       <p class="micro">対象年齢：3〜5歳 · 日本語・English · iPhone / iPad</p>
@@ -163,7 +169,7 @@
 
   <footer>
     <p class="links">
-      <a href="../">STAGEN</a>
+      <a href="../">STAGEN Apps</a>
       <a href="privacy.html">プライバシー</a>
       <a href="support.html">サポート</a>
       <a href="https://github.com/ubermenschjo/forest-school">GitHub</a>
