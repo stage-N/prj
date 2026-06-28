@@ -12,6 +12,7 @@ This repository exists because STAGEN app repositories are private, which preven
 
 | App | Description |
 |-----|-------------|
+| [ZaiTap](./zaitap/) | 在留手続をスマホで — 本人申請無料、複雑ケースは費用目安確認→行政書士相談 |
 | [ZeiCal](./zeical/) | Tax calendar — widget, tax simulator, deadline reminders (Pro) |
 | [熱中症レコーダー Pro](./wbgt-recorder/) | WBGT recorder for worksites — labor safety compliance |
 | [熱中症アラート](./wbgt-alert/) | Free heat stroke alert — activity tips, personal profile, WBGT |
