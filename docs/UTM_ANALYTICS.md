@@ -15,15 +15,28 @@ Cloudflare アカウントで Analytics Engine が **未有効** の場合、dep
 [code: 10089] You need to enable Analytics Engine
 ```
 
-### 1. Analytics Engine を有効化
+### 1. データセット作成 (Create Blank Dataset)
 
-1. [Cloudflare Dashboard](https://dash.cloudflare.com) にログイン
-2. アカウント `b42c688e...` (stage-N) を選択
-3. **Workers & Pages** → **Analytics Engine**  
-   直接: https://dash.cloudflare.com/b42c688e14d92d5ca33c92d375bb30e1/workers/analytics-engine
-4. **Enable Analytics Engine** (または Get started) をクリック — **無料枠**
+1. [Cloudflare Dashboard → Analytics Engine](https://dash.cloudflare.com/b42c688e14d92d5ca33c92d375bb30e1/workers/analytics-engine)
+2. **Create Blank Dataset** を開く
+3. 以下を **`wrangler.jsonc` と完全一致** で入力:
 
-> 有効化はダッシュボード操作のみ。wrangler からは不可。
+| フィールド | 入力値 |
+|-----------|--------|
+| **Dataset Name** | `utm_clicks` |
+| **Dataset Binding** | `UTM_ANALYTICS` |
+
+4. **Create Dataset** をクリック
+
+> Binding 名は Worker 内の `env.UTM_ANALYTICS` と一致必須。Dataset 名は `wrangler.jsonc` の `"dataset"` と一致必須。
+
+```jsonc
+// wrangler.jsonc (参照)
+"analytics_engine_datasets": [{
+  "binding": "UTM_ANALYTICS",
+  "dataset": "utm_clicks"
+}]
+```
 
 ### 2. デプロイ
 
