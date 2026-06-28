@@ -1,0 +1,37 @@
+{% set locale = loc.code %}
+{% set meta = pages["site-index"] %}
+{% if app %}
+  {% set meta = pages[app][pageName] %}
+  {% if pageName == "index" %}
+    {% set pagePath = "/" ~ app ~ "/" %}
+  {% else %}
+    {% set pagePath = "/" ~ app ~ "/" ~ pageName ~ ".html" %}
+  {% endif %}
+{% else %}
+  {% set pagePath = "/" %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ meta.title }}</title>
+  {% if meta.desc %}<meta name="description" content="{{ meta.desc }}">{% endif %}
+  {% if meta.ogTitle %}<meta property="og:title" content="{{ meta.ogTitle }}">{% endif %}
+  {% if meta.ogDesc %}<meta property="og:description" content="{{ meta.ogDesc }}">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ pagePath | localePath(locale) | absoluteUrl }}">
+  {% if meta.ogImage %}<meta property="og:image" content="{{ meta.ogImage }}">{% endif %}
+  {% for l in site.locales %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
+  {% if meta.icon %}<link rel="icon" href="{{ meta.icon | replace('../', '') }}" type="image/png">{% endif %}
+  <style>{% include "css/lang-switcher.css" %}</style>
+  {% if meta.styles %}<style>{{ meta.styles | safe }}</style>{% endif %}
+</head>
+<body>
+  {% include "partials/lang-switcher.njk" %}
+  {{ content | safe }}
+</body>
+</html>

@@ -1,0 +1,10 @@
+{# ponytail: locale switcher only — same-page links via localePath filter #}
+<nav class="lang-switcher" aria-label="Language">
+  {% for l in site.locales %}
+    {% if l.code == loc.code %}
+      <span class="lang-current">{{ l.label }}</span>
+    {% else %}
+      <a href="{{ pagePath | localePath(l.code) }}" hreflang="{{ l.code }}">{{ l.label }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>

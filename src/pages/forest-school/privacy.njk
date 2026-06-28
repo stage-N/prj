@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/forest-school/privacy.html{% else %}/{{ loc.code }}/forest-school/privacy.html{% endif %}"
+app: "forest-school"
+pageName: privacy
+eleventyExcludeFromCollections: true
+---

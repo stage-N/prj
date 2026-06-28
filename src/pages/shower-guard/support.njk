@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/shower-guard/support.html{% else %}/{{ loc.code }}/shower-guard/support.html{% endif %}"
+app: "shower-guard"
+pageName: support
+eleventyExcludeFromCollections: true
+---

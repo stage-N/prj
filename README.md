@@ -1,31 +1,73 @@
 # STAGEN Pages
 
-Privacy policy and support pages for STAGEN applications.
-
-This repository exists because STAGEN app repositories are private, which prevents GitHub Pages from being enabled on them directly. This public-facing repository serves as a centralized location for privacy policies and support pages.
+Privacy policy and support pages for STAGEN applications (ja / en / ko).
 
 ## Published at
 
-- URL: https://stage-n.github.io/prj/
+- Production: Cloudflare Workers (`prj`) — GitHub `stage-N/prj` 연동
+- Legacy URL: https://stage-n.github.io/prj/
+
+## Local development
+
+```bash
+npm install
+npm run dev    # watch + local server
+npm run build  # output → _site/
+```
+
+## Project structure
+
+```
+src/
+  pages/           # locale pagination entry (ja/en/ko × 25 pages)
+  _includes/
+    bodies/        # page body HTML (extracted from legacy files)
+    layouts/       # base shell + lang switcher + hreflang
+  _data/pages/     # per-page title, og, styles meta
+assets/            # shared branding & images
+{zaitap,...}/      # app-specific images (png, og-image)
+```
+
+## URL scheme
+
+| Locale | Example |
+|--------|---------|
+| ja (default) | `/zaitap/privacy.html` |
+| en | `/en/zaitap/privacy.html` |
+| ko | `/ko/zaitap/privacy.html` |
+
+## Adding a new app
+
+1. Add app images under `app-name/`
+2. Create legacy HTML (`app-name/index.html`, `privacy.html`, `support.html`) or edit `src/_includes/bodies/` directly
+3. Run `node scripts/bootstrap-pages.mjs` to regenerate stubs/meta (if using legacy HTML)
+4. Add passthrough app name to `APPS` in `eleventy.config.js`
+5. Add product card in `src/_includes/bodies/site-index.html`
+
+## Translating content
+
+- Default body: `src/_includes/bodies/{app}-{page}.html` (ja fallback for all locales)
+- Locale override: `src/_includes/bodies/{app}-{page}.{en|ko}.html` (future — wire via layout when added)
+
+## Deployment (Cloudflare)
+
+Build command (dashboard): `npm ci && npm run build`
+
+Deploy command: `npx wrangler deploy` (serves `_site/` per `wrangler.jsonc`)
+
+Preview: push to a non-`main` branch → Cloudflare branch preview URL (Builds for non-production branches: Enabled).
+
+Merge to `main` after preview verification.
 
 ## Apps
 
 | App | Description |
 |-----|-------------|
-| [ZaiTap](./zaitap/) | 在留手続をスマホで — 本人申請無料、複雑ケースは費用目安確認→行政書士相談 |
-| [ZeiCal](./zeical/) | Tax calendar — widget, tax simulator, deadline reminders (Pro) |
-| [熱中症レコーダー Pro](./wbgt-recorder/) | WBGT recorder for worksites — labor safety compliance |
-| [熱中症アラート](./wbgt-alert/) | Free heat stroke alert — activity tips, personal profile, WBGT |
-| [ラクビル](./rakubill/) | Invoicing — estimates, receipts, CSV export, payment reminders |
-| [Forest School](./forest-school/) | もりのがっこう — Educational game for ages 3-5 (5 mini-games) |
-| [Shower Guard](./shower-guard/) | 「午後から雨」→ 5分後に降るかだけ。ゲリラ豪雨対策 |
-| [Cool Walk](./cool-walk/) | WBGTの数字→行動提案。外出判定・日陰ルート |
-
-## Adding a new app
-
-1. Create `app-name/privacy.html` and `app-name/support.html`
-2. Add a card to `index.html`
-
-## Deployment
-
-This repo uses GitHub Pages. Push to `main` to deploy automatically.
+| [ZaiTap](./zaitap/) | 在留手続をスマホで |
+| [ZeiCal](./zeical/) | Tax calendar |
+| [熱中症レコーダー Pro](./wbgt-recorder/) | WBGT recorder for worksites |
+| [熱中症アラート](./wbgt-alert/) | Free heat stroke alert |
+| [ラクビル](./rakubill/) | Invoicing |
+| [Forest School](./forest-school/) | Educational game ages 3-5 |
+| [Shower Guard](./shower-guard/) | Hyperlocal rain alert |
+| [Cool Walk](./cool-walk/) | WBGT outdoor guidance |

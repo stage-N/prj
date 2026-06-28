@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/wbgt-alert/support.html{% else %}/{{ loc.code }}/wbgt-alert/support.html{% endif %}"
+app: "wbgt-alert"
+pageName: support
+eleventyExcludeFromCollections: true
+---
