@@ -1,13 +1,21 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "prj",
+  "main": "src/worker.js",
   "compatibility_date": "2026-06-26",
   "preview_urls": true,
   "observability": {
     "enabled": true
   },
+  "analytics_engine_datasets": [
+    {
+      "binding": "UTM_ANALYTICS",
+      "dataset": "utm_clicks"
+    }
+  ],
   "assets": {
-    "directory": "_site"
+    "directory": "_site",
+    "binding": "ASSETS"
   },
   "compatibility_flags": [
     "nodejs_compat"
