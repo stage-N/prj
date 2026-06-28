@@ -62,6 +62,20 @@ Preview: push to a non-`main` branch → Cloudflare branch preview URL (Builds f
 
 Merge to `main` after preview verification.
 
+### UTM Analytics Engine (必須 — 初回 deploy 前)
+
+Worker は UTM パラメータを Analytics Engine データセット `utm_clicks` に記録する。
+**deploy 前に Cloudflare ダッシュボードで Analytics Engine を有効化すること。**
+
+未有効時の deploy エラー: `[code: 10089] You need to enable Analytics Engine`
+
+1. Dashboard → **Workers & Pages** → **Analytics Engine** → **Enable**  
+   https://dash.cloudflare.com/b42c688e14d92d5ca33c92d375bb30e1/workers/analytics-engine
+2. `main` へ push（または `npx wrangler deploy`）
+3. UTM 付き URL でアクセス → Dashboard で `utm_clicks` 確認
+
+詳細: [docs/UTM_ANALYTICS.md](./docs/UTM_ANALYTICS.md)
+
 ## Apps
 
 | App | Description |
