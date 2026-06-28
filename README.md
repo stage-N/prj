@@ -62,6 +62,16 @@ Preview: push to a non-`main` branch → Cloudflare branch preview URL (Builds f
 
 Merge to `main` after preview verification.
 
+### UTM Analytics Engine (optional)
+
+Deploy fails with `[code: 10089]` until Analytics Engine is enabled on the account.
+
+1. Enable: [Workers Analytics Engine](https://dash.cloudflare.com/?to=/:account/workers/analytics-engine) (one-time)
+2. Merge `wrangler.analytics.jsonc` into `wrangler.jsonc` (or copy the `analytics_engine_datasets` block)
+3. Redeploy — `src/worker.js` logs UTM params to dataset `utm_clicks`
+
+Until step 1–2, the Worker still serves static assets; UTM query params are ignored.
+
 ## Apps
 
 | App | Description |

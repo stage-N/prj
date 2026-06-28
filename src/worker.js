@@ -9,7 +9,7 @@ export default {
     const medium = url.searchParams.get("utm_medium") || "";
     const campaign = url.searchParams.get("utm_campaign") || "";
 
-    if (source || medium || campaign) {
+    if ((source || medium || campaign) && env.UTM_ANALYTICS) {
       ctx.waitUntil(
         env.UTM_ANALYTICS.writeDataPoint({
           indexes: [source, medium, campaign],
