@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/rakubill/index.html{% else %}/{{ loc.code }}/rakubill/index.html{% endif %}"
+app: "rakubill"
+pageName: index
+eleventyExcludeFromCollections: true
+---

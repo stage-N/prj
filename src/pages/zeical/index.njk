@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/zeical/index.html{% else %}/{{ loc.code }}/zeical/index.html{% endif %}"
+app: "zeical"
+pageName: index
+eleventyExcludeFromCollections: true
+---

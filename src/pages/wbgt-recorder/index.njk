@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/wbgt-recorder/index.html{% else %}/{{ loc.code }}/wbgt-recorder/index.html{% endif %}"
+app: "wbgt-recorder"
+pageName: index
+eleventyExcludeFromCollections: true
+---

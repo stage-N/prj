@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/wbgt-alert/index.html{% else %}/{{ loc.code }}/wbgt-alert/index.html{% endif %}"
+app: "wbgt-alert"
+pageName: index
+eleventyExcludeFromCollections: true
+---

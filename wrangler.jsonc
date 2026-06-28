@@ -2,11 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "prj",
   "compatibility_date": "2026-06-26",
+  "preview_urls": true,
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": "_site"
   },
   "compatibility_flags": [
     "nodejs_compat"

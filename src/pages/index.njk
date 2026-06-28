@@ -1,0 +1,11 @@
+---
+layout: site.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/index.html{% else %}/{{ loc.code }}/index.html{% endif %}"
+app: false
+pageName: index
+eleventyExcludeFromCollections: true
+---

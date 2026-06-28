@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/rakubill/support.html{% else %}/{{ loc.code }}/rakubill/support.html{% endif %}"
+app: "rakubill"
+pageName: support
+eleventyExcludeFromCollections: true
+---
