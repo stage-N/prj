@@ -15,8 +15,22 @@ const LOCALES = [
   { code: "ko", label: "한국어" },
 ];
 
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const ROOT = path.dirname(fileURLToPath(import.meta.url));
+const BODIES_DIR = path.join(ROOT, "src/_includes/bodies");
+
 function localePrefix(locale) {
   return locale === "ja" ? "" : `/${locale}`;
+}
+
+function resolveBodyPath(baseName, locale) {
+  const localized = path.join(BODIES_DIR, `${baseName}.${locale}.html`);
+  const fallback = path.join(BODIES_DIR, `${baseName}.html`);
+  if (locale !== "ja" && fs.existsSync(localized)) return localized;
+  return fallback;
 }
 
 export default function (eleventyConfig) {
@@ -43,6 +57,10 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("localeList", () => LOCALES.map((l) => l.code));
+
+  eleventyConfig.addNunjucksAsyncShortcode("bodyContent", async (baseName, locale) => {
+    return fs.readFileSync(resolveBodyPath(baseName, locale), "utf8");
+  });
 
   // ponytail: site index at /en/ or /ko/ needs ../assets/ — only those two outputs
   eleventyConfig.addTransform("fixLocalizedAssetPaths", (content, outputPath) => {

@@ -1,13 +1,20 @@
 {% set locale = loc.code %}
 {% set meta = pages["site-index"] %}
+{% set locMeta = {} %}
 {% if app %}
   {% set meta = pages[app][pageName] %}
+  {% if i18n[app] and i18n[app][locale] and i18n[app][locale][pageName] %}
+    {% set locMeta = i18n[app][locale][pageName] %}
+  {% endif %}
   {% if pageName == "index" %}
     {% set pagePath = "/" ~ app ~ "/" %}
   {% else %}
     {% set pagePath = "/" ~ app ~ "/" ~ pageName ~ ".html" %}
   {% endif %}
 {% else %}
+  {% if i18n.site and i18n.site[locale] and i18n.site[locale].index %}
+    {% set locMeta = i18n.site[locale].index %}
+  {% endif %}
   {% set pagePath = "/" %}
 {% endif %}
 <!DOCTYPE html>
@@ -15,10 +22,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ meta.title }}</title>
-  {% if meta.desc %}<meta name="description" content="{{ meta.desc }}">{% endif %}
-  {% if meta.ogTitle %}<meta property="og:title" content="{{ meta.ogTitle }}">{% endif %}
-  {% if meta.ogDesc %}<meta property="og:description" content="{{ meta.ogDesc }}">{% endif %}
+  <title>{{ locMeta.title or meta.title }}</title>
+  {% set desc = locMeta.desc or meta.desc %}
+  {% if desc %}<meta name="description" content="{{ desc }}">{% endif %}
+  {% set ogTitle = locMeta.ogTitle or meta.ogTitle or locMeta.title or meta.title %}
+  {% if ogTitle %}<meta property="og:title" content="{{ ogTitle }}">{% endif %}
+  {% set ogDesc = locMeta.ogDesc or meta.ogDesc or desc %}
+  {% if ogDesc %}<meta property="og:description" content="{{ ogDesc }}">{% endif %}
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ pagePath | localePath(locale) | absoluteUrl }}">
   {% if meta.ogImage %}<meta property="og:image" content="{{ meta.ogImage }}">{% endif %}

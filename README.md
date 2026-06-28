@@ -46,8 +46,11 @@ assets/            # shared branding & images
 
 ## Translating content
 
-- Default body: `src/_includes/bodies/{app}-{page}.html` (ja fallback for all locales)
-- Locale override: `src/_includes/bodies/{app}-{page}.{en|ko}.html` (future — wire via layout when added)
+- Default body (Japanese): `src/_includes/bodies/{app}-{page}.html`
+- Locale override: `src/_includes/bodies/{app}-{page}.{en|ko}.html` — auto-selected by `bodyContent` shortcode
+- Page titles/descriptions: `src/_data/i18n.json`
+
+Example: edit `zaitap-privacy.en.html` for English privacy policy text.
 
 ## Deployment (Cloudflare)
 

@@ -1,0 +1,356 @@
+{
+  "site": {
+    "en": {
+      "index": {
+        "title": "STAGEN | There's more than one place to thrive",
+        "desc": "There's more than one place to thrive. As the places you belong grow, so does your world. STAGEN plans and develops apps, systems, and web products that deliver practical value.",
+        "ogTitle": "STAGEN",
+        "ogDesc": "There's more than one place to thrive. As the places you belong grow, so does your world."
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "STAGEN | 사람이 활약할 수 있는 자리는 하나뿐이 아닙니다",
+        "desc": "사람이 활약할 수 있는 자리는 하나뿐이 아닙니다. 몸을 둘 곳이 늘어나면 세계도 넓어집니다. STAGEN은 앱·시스템·웹 기획 개발로 실용적인 제품을 전달합니다.",
+        "ogTitle": "STAGEN",
+        "ogDesc": "사람이 활약할 수 있는 자리는 하나뿐이 아닙니다. 몸을 둘 곳이 늘어나면 세계도 넓어집니다."
+      }
+    }
+  },
+  "zaitap": {
+    "en": {
+      "index": {
+        "title": "ZaiTap | Residence procedures at a tap",
+        "desc": "Mobile app for foreign residents — self-filing is free; for complex cases, review fee estimates and consult an administrative scrivener. Handle residence procedures with smartphone NFC.",
+        "ogTitle": "ZaiTap - Residence procedures at a tap",
+        "ogDesc": "Skip half-day office visits, paperwork barriers, and unclear fees — on your phone. Give time back to residents and scriveners alike."
+      },
+      "privacy": {
+        "title": "Privacy Policy | ZaiTap",
+        "desc": "",
+        "ogTitle": "Privacy Policy | ZaiTap",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | ZaiTap",
+        "desc": "",
+        "ogTitle": "Support | ZaiTap",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "ZaiTap | 체류 절차를 탭으로",
+        "desc": "체류 외국인용 모바일 앱 — 본인 신청은 무료, 복잡한 경우 비용 견적을 확인하고 행정사에게 상담. 스마트폰 NFC로 체류 절차를.",
+        "ogTitle": "ZaiTap - 체류 절차를 탭으로",
+        "ogDesc": "창구 반나절·서류의 벽·비용의 불투명함을 스마트폰으로 넘어섭니다. 체류자와 행정사, 양쪽의 시간을 되찾습니다."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | ZaiTap",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | ZaiTap",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | ZaiTap",
+        "desc": "",
+        "ogTitle": "지원 | ZaiTap",
+        "ogDesc": ""
+      }
+    }
+  },
+  "zeical": {
+    "en": {
+      "index": {
+        "title": "ZeiCal - Tax Calendar | Tax management for solo corporations and sole proprietors",
+        "desc": "Enter your fiscal year-end month. Automatically calculates deadlines for corporate tax, consumption tax, withholding tax, and social insurance. Supports FY2026 tax reform. Pro adds home widget, tax simulator, and reminder notifications.",
+        "ogTitle": "ZeiCal - Tax Calendar",
+        "ogDesc": "Tax deadline calendar. Pro adds widget, approximate simulator, notifications, and PDF. For solo corporations and sole proprietors."
+      },
+      "privacy": {
+        "title": "Privacy Policy | ZeiCal - Tax Calendar",
+        "desc": "",
+        "ogTitle": "Privacy Policy | ZeiCal - Tax Calendar",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | ZeiCal - Tax Calendar",
+        "desc": "",
+        "ogTitle": "Support | ZeiCal - Tax Calendar",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "ZeiCal - 세무 캘린더 | 1인 법인·개인사업자용 세무 관리 앱",
+        "desc": "결산월만 입력하면 법인세·소비세·원천징수·사회보험 기한을 자동 계산. 2026년도 세제 개정 대응. Pro로 홈 위젯·세금 시뮬레이터·리마인더 알림.",
+        "ogTitle": "ZeiCal - 세무 캘린더",
+        "ogDesc": "세무 기한 캘린더. Pro로 위젯·개략 시뮬레이터·알림·PDF. 1인 법인·개인사업자용."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | ZeiCal - 세무 캘린더",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | ZeiCal - 세무 캘린더",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | ZeiCal - 세무 캘린더",
+        "desc": "",
+        "ogTitle": "지원 | ZeiCal - 세무 캘린더",
+        "ogDesc": ""
+      }
+    }
+  },
+  "wbgt-recorder": {
+    "en": {
+      "index": {
+        "title": "Heat Stroke Recorder Pro | WBGT recording for worksite heat safety",
+        "desc": "Measure and record WBGT (heat index) in real time. Worksites heat stroke prevention and compliant record keeping — all from your phone.",
+        "ogTitle": "Heat Stroke Recorder Pro",
+        "ogDesc": "Worksite heat safety. Real-time WBGT display, work records, CSV/PDF export."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Heat Stroke Recorder Pro",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Heat Stroke Recorder Pro",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Heat Stroke Recorder Pro",
+        "desc": "",
+        "ogTitle": "Support | Heat Stroke Recorder Pro",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "온열질환 레코더 Pro | 작업 현장 온열 대책·WBGT 기록 앱",
+        "desc": "온열지수(WBGT)를 실시간으로 측정·기록. 작업 현장 온열질환 대책과 노동 안전 보건법에 부합하는 기록 관리를 스마트폰 하나로.",
+        "ogTitle": "온열질환 레코더 Pro",
+        "ogDesc": "현장 온열 대책. WBGT 실시간 표시·작업 기록·CSV/PDF 내보내기."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | 온열질환 레코더 Pro",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | 온열질환 레코더 Pro",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | 온열질환 레코더 Pro",
+        "desc": "",
+        "ogTitle": "지원 | 온열질환 레코더 Pro",
+        "ogDesc": ""
+      }
+    }
+  },
+  "wbgt-alert": {
+    "en": {
+      "index": {
+        "title": "Heat Stroke Alert | Protect yourself with the heat index",
+        "desc": "Check WBGT (heat index) to protect against heat stroke. Activity recommendations, personal profile, 24-hour forecast, and activity logs. Free consumer heat stroke prevention app.",
+        "ogTitle": "Heat Stroke Alert",
+        "ogDesc": "Activity-based WBGT guidance and personalized warning thresholds. Check heat before going out or exercising."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Heat Stroke Alert",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Heat Stroke Alert",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Heat Stroke Alert",
+        "desc": "",
+        "ogTitle": "Support | Heat Stroke Alert",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "온열질환 알림 | 온열지수로 생명을 지키다",
+        "desc": "온열지수(WBGT)를 확인해 온열질환으로부터 몸을 지킵니다. 활동별 추천·개인 프로필·24시간 예보·활동 기록. 무료 일반용 온열질환 예방 앱.",
+        "ogTitle": "온열질환 알림",
+        "ogDesc": "활동별 WBGT 기준과 개인 맞춤 경고 임계값. 외출·스포츠 전에 더위를 확인하세요."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | 온열질환 알림",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | 온열질환 알림",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | 온열질환 알림",
+        "desc": "",
+        "ogTitle": "지원 | 온열질환 알림",
+        "ogDesc": ""
+      }
+    }
+  },
+  "rakubill": {
+    "en": {
+      "index": {
+        "title": "Rakubill | Simple invoice app with qualified invoice support",
+        "desc": "Simple invoicing for sole proprietors and freelancers. Supports Japan's qualified invoice system. Up to 3 invoices per month free; Premium is a ¥500 one-time purchase for unlimited use.",
+        "ogTitle": "Rakubill - Easy invoicing",
+        "ogDesc": "Create and export invoices from your phone. Data stays on your device only."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Rakubill",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Rakubill",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Rakubill",
+        "desc": "",
+        "ogTitle": "Support | Rakubill",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Rakubill | 인보이스 대응 간편 청구서 작성 앱",
+        "desc": "개인사업자·프리랜서용 간단한 청구서 작성 앱. 적격청구서(인보이스) 제도 대응. 월 3통까지 무료, 프리미엄은 ¥500 일회성 구매로 무제한.",
+        "ogTitle": "Rakubill - 간편 청구서 작성",
+        "ogDesc": "스마트폰 하나로 청구서 작성부터 PDF 출력까지. 데이터는 기기 내에만 저장."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Rakubill",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Rakubill",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Rakubill",
+        "desc": "",
+        "ogTitle": "지원 | Rakubill",
+        "ogDesc": ""
+      }
+    }
+  },
+  "forest-school": {
+    "en": {
+      "index": {
+        "title": "Forest School | Educational games for ages 3–5",
+        "desc": "Educational games for ages 3–5. Forest adventures with Kumorin. Five games: counting, ordering, drawing, animals, and tidying up. No ads, no in-app purchases, offline play.",
+        "ogTitle": "Forest School",
+        "ogDesc": "Forest adventures with Kumorin. Five mini-games to play and learn. An educational app for young children."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Forest School",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Forest School",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Forest School",
+        "desc": "",
+        "ogTitle": "Support | Forest School",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Forest School | 3~5세용 교육 게임",
+        "desc": "3~5세용 교육 게임. 구름이와 함께 숲 모험. 세기·나열·그리기·동물·정리하기 5가지 게임. 광고 없음·결제 없음·오프라인.",
+        "ogTitle": "Forest School",
+        "ogDesc": "구름이와 함께 숲 모험. 5가지 미니 게임으로 놀며 배우는 교육 앱."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Forest School",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Forest School",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Forest School",
+        "desc": "",
+        "ogTitle": "지원 | Forest School",
+        "ogDesc": ""
+      }
+    }
+  },
+  "shower-guard": {
+    "en": {
+      "index": {
+        "title": "Shower Guard | Know if it will rain in 5 minutes",
+        "desc": "Sudden shower protection — will it rain in 5 minutes? Just that. Decide in an instant whether to bring an umbrella.",
+        "ogTitle": "Shower Guard - 5-minute rain forecast",
+        "ogDesc": "No more panic over sudden rain. An ultra-simple app showing only the 5-minute precipitation forecast."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Shower Guard",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Shower Guard",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Shower Guard",
+        "desc": "",
+        "ogTitle": "Support | Shower Guard",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Shower Guard | 5분 뒤 비 오는지 알 수 있다",
+        "desc": "게릴라 호우 대책 — 5분 뒤에 비가 오는지, 딱 그것만. 우산을 들지 말지 순간적으로 결정할 수 있습니다.",
+        "ogTitle": "Shower Guard - 5분 비 예보",
+        "ogDesc": "갑작스러운 비에 더 이상 당황하지 마세요. 5분 뒤 강수 예보만 보여주는 초간단 앱."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Shower Guard",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Shower Guard",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Shower Guard",
+        "desc": "",
+        "ogTitle": "지원 | Shower Guard",
+        "ogDesc": ""
+      }
+    }
+  },
+  "cool-walk": {
+    "en": {
+      "index": {
+        "title": "Cool Walk | Can you go out now?",
+        "desc": "Not just WBGT numbers — actionable guidance on whether you can go out now. An outdoor decision app combining heat index, UV, and air quality.",
+        "ogTitle": "Cool Walk - Go / Wait guidance",
+        "ogDesc": "From watching heat index to acting on it. Go now or wait a bit — one tap away."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Cool Walk",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Cool Walk",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Cool Walk",
+        "desc": "",
+        "ogTitle": "Support | Cool Walk",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Cool Walk | 지금, 외출할 수 있을까?",
+        "desc": "WBGT를 보기만 하는 것이 아니라 지금 외출할 수 있는지 행동으로 제안. 온열지수·UV·대기질을 통합한 외출 판정 앱.",
+        "ogTitle": "Cool Walk - 외출 판정",
+        "ogDesc": "온열지수를 「본다」에서 「행동한다」로. 지금 외출 / 조금 기다리기를 원터치로."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Cool Walk",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Cool Walk",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Cool Walk",
+        "desc": "",
+        "ogTitle": "지원 | Cool Walk",
+        "ogDesc": ""
+      }
+    }
+  }
+}
