@@ -16,6 +16,7 @@ const APPS = [
   "forest-school",
   "shower-guard",
   "cool-walk",
+  "fuzen",
 ];
 const PAGES = ["index", "privacy", "support"];
 

@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/fuzen/index.html{% else %}/{{ loc.code }}/fuzen/index.html{% endif %}"
+app: "fuzen"
+pageName: index
+eleventyExcludeFromCollections: true
+---

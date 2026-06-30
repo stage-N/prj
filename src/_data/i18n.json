@@ -352,5 +352,47 @@
         "ogDesc": ""
       }
     }
+  },
+  "fuzen": {
+    "en": {
+      "index": {
+        "title": "Fuzen | Think in Fuzen — Your first programming education",
+        "desc": "Learn functional thinking with no setup. Even in the age of AI, the power to write, evaluate, and think is yours. A mobile education app with a built-in REPL.",
+        "ogTitle": "Fuzen - Think in Fuzen",
+        "ogDesc": "Think like functions, focus like zen. Your first programming education app."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Fuzen",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Fuzen",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Fuzen",
+        "desc": "",
+        "ogTitle": "Support | Fuzen",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Fuzen | Think in Fuzen — 처음 만나는 프로그래밍 교육",
+        "desc": "환경 구축 없이 함수형 사고를 체득. AI가 코드를 쓰는 시대에도 쓰고·평가하고·생각하는 힘은 당신의 것. 내장 REPL 모바일 교육 앱.",
+        "ogTitle": "Fuzen - Think in Fuzen",
+        "ogDesc": "함수처럼 생각하고, 선(禪)처럼 집중한다. 처음 만나는 프로그래밍 교육 앱."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Fuzen",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Fuzen",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Fuzen",
+        "desc": "",
+        "ogTitle": "지원 | Fuzen",
+        "ogDesc": ""
+      }
+    }
   }
 }

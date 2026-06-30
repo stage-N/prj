@@ -14,6 +14,7 @@ const APPS = [
   { slug: "wbgt-alert", name: "WBGT Alert", tagline: "熱中症アラート", color: "#e85d04" },
   { slug: "wbgt-recorder", name: "熱中症レコーダー Pro", tagline: "現場記録", color: "#e85d04" },
   { slug: "forest-school", name: "もりのがっこう", tagline: "完全無料・知育", color: "#2d6a4f" },
+  { slug: "fuzen", name: "Fuzen", tagline: "Think in Fuzen", color: "#15b788" },
 ];
 
 function svg({ name, tagline, color }) {

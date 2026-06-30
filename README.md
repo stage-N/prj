@@ -86,5 +86,6 @@ Worker は UTM パラメータを Analytics Engine データセット `utm_click
 | [熱中症アラート](./wbgt-alert/) | Free heat stroke alert |
 | [ラクビル](./rakubill/) | Invoicing |
 | [Forest School](./forest-school/) | Educational game ages 3-5 |
+| [Fuzen](./fuzen/) | Functional thinking — Think in Fuzen |
 | [Shower Guard](./shower-guard/) | Hyperlocal rain alert |
 | [Cool Walk](./cool-walk/) | WBGT outdoor guidance |
