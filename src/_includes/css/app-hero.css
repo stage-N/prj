@@ -1,0 +1,100 @@
+/* ponytail: app LP hero contrast — loaded after per-app styles in base.njk */
+
+section.hero {
+  isolation: isolate;
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
+section.hero::before {
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+section.hero .hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+section.hero h1,
+section.hero .desc,
+section.hero p {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+section.hero .desc {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+section.hero .desc strong {
+  color: #ffffff;
+}
+
+section.hero .eyebrow {
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.28) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  text-shadow: none;
+}
+
+section.hero h1 small {
+  color: #b8ffe8 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+section.hero .badge {
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  text-shadow: none;
+}
+
+/* Light panels inside dark hero — stop inheriting white text */
+section.hero .compare-box,
+section.hero .cost-card {
+  color: #222222 !important;
+  opacity: 1 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: #dddddd !important;
+  text-shadow: none;
+}
+
+section.hero .compare-box.before {
+  border-style: dashed !important;
+}
+
+section.hero .compare-box.after {
+  background: #eefaf5 !important;
+  border: 2px solid #15b788 !important;
+}
+
+section.hero .compare-box .label,
+section.hero .compare-box .text,
+section.hero .cost-card .label {
+  color: #444444 !important;
+  opacity: 1 !important;
+}
+
+section.hero .compare-box .text {
+  color: #222222 !important;
+}
+
+section.hero .compare-box .text span {
+  color: #555555 !important;
+}
+
+section.hero .cost-card .amount {
+  color: #0d7a5c !important;
+}
+
+section.hero .cost-total {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+section.hero .cost-total strong {
+  color: #ffffff !important;
+}

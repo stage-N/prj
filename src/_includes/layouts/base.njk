@@ -39,6 +39,7 @@
   {% if meta.icon %}<link rel="icon" href="{{ meta.icon | replace('../', '') }}" type="image/png">{% endif %}
   <style>{% include "css/lang-switcher.css" %}</style>
   {% if meta.styles %}<style>{{ meta.styles | safe }}</style>{% endif %}
+  {% if app %}<style>{% include "css/app-hero.css" %}</style>{% endif %}
 </head>
 <body>
   {% include "partials/lang-switcher.njk" %}
