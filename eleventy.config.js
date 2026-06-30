@@ -38,7 +38,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
 
   for (const app of APPS) {
-    eleventyConfig.addPassthroughCopy({ [`${app}/**/*.{png,jpg,jpeg,webp,svg}`]: app });
+    // ponytail: preserve subdirs (e.g. forest-school/screenshots/*.png)
+    eleventyConfig.addPassthroughCopy(`${app}/**/*.{png,jpg,jpeg,webp,svg}`);
   }
 
   eleventyConfig.addGlobalData("site", {
