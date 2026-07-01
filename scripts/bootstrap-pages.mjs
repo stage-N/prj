@@ -17,6 +17,7 @@ const APPS = [
   "shower-guard",
   "cool-walk",
   "fuzen",
+  "stock-pulse",
 ];
 const PAGES = ["index", "privacy", "support"];
 

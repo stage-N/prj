@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/stock-pulse/index.html{% else %}/{{ loc.code }}/stock-pulse/index.html{% endif %}"
+app: "stock-pulse"
+pageName: index
+eleventyExcludeFromCollections: true
+---

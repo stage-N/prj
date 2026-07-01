@@ -394,5 +394,47 @@
         "ogDesc": ""
       }
     }
+  },
+  "stock-pulse": {
+    "en": {
+      "index": {
+        "title": "StockPulse | Japanese stock portfolio analysis",
+        "desc": "3-layer analysis (fundamentals, technicals, supply/demand) for your holdings. Monitor institutional shorts, margin, and trending stocks daily.",
+        "ogTitle": "StockPulse - Japanese stock portfolio analysis",
+        "ogDesc": "Rule-based grading A–D with entry, target, and stop levels. Not investment advice."
+      },
+      "privacy": {
+        "title": "Privacy Policy | StockPulse",
+        "desc": "",
+        "ogTitle": "Privacy Policy | StockPulse",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | StockPulse",
+        "desc": "",
+        "ogTitle": "Support | StockPulse",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "StockPulse | 일본주 포트폴리오 분석",
+        "desc": "보유 종목 3층 분석(펀더멘털·테크니컬·수급). 기관 공매도·신용잔고·화제 종목을 매일 모니터링.",
+        "ogTitle": "StockPulse - 일본주 포트폴리오 분석",
+        "ogDesc": "규칙 기반 A~D 등급과 진입·목표·손절 수준 제시. 투자 조언이 아닙니다."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | StockPulse",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | StockPulse",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | StockPulse",
+        "desc": "",
+        "ogTitle": "지원 | StockPulse",
+        "ogDesc": ""
+      }
+    }
   }
 }

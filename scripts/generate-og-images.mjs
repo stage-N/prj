@@ -15,6 +15,7 @@ const APPS = [
   { slug: "wbgt-recorder", name: "熱中症レコーダー Pro", tagline: "現場記録", color: "#e85d04" },
   { slug: "forest-school", name: "もりのがっこう", tagline: "完全無料・知育", color: "#2d6a4f" },
   { slug: "fuzen", name: "Fuzen", tagline: "Think in Fuzen", color: "#15b788" },
+  { slug: "stock-pulse", name: "StockPulse", tagline: "日本株ポートフォリオ分析", color: "#1A237E" },
 ];
 
 function svg({ name, tagline, color }) {

@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/stock-pulse/privacy.html{% else %}/{{ loc.code }}/stock-pulse/privacy.html{% endif %}"
+app: "stock-pulse"
+pageName: privacy
+eleventyExcludeFromCollections: true
+---
