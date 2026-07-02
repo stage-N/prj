@@ -8,12 +8,14 @@ layout: blog-base.njk
     {% if tags and tags.length %}
     <ul class="blog-tags">
       {% for tag in tags %}
+      {% if tag != "blogPosts" %}
       <li>{{ tag }}</li>
+      {% endif %}
       {% endfor %}
     </ul>
     {% endif %}
   </header>
   <div class="blog-body">
-    {{ content }}
+    {{ content | safe }}
   </div>
 </article>
