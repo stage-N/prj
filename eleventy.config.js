@@ -72,6 +72,14 @@ export default function (eleventyConfig) {
         .replace(/src="assets\//g, 'src="../assets/')
         .replace(/href="assets\//g, 'href="../assets/');
     }
+  // ponytail: /en|ko/{app}/index.html — ja body fallback uses same-dir asset paths
+    const appIndex = outputPath.match(/\/(en|ko)\/([^/]+)\/index\.html$/);
+    if (appIndex && APPS.includes(appIndex[2])) {
+      const prefix = `../../${appIndex[2]}/`;
+      content = content
+        .replace(/src="(?!\\.\\.\/)(icon\.png|screenshot-)/g, `src="${prefix}$1`)
+        .replace(/src="(?!\\.\\.\/)(screenshots\/)/g, `src="${prefix}$1`);
+    }
     return content;
   });
 
