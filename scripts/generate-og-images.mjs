@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-/** Generate 1200x630 OG SVG images for Tier 1/2 marketing apps */
+/** Generate 1200x630 OG images (SVG source + PNG for X/OG crawlers) */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { Resvg } from "@resvg/resvg-js";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const BASE = "https://sta3e-n.com";
@@ -18,6 +19,8 @@ const APPS = [
   { slug: "stock-pulse", name: "StockPulse", tagline: "日本株ポートフォリオ分析", color: "#1A237E" },
 ];
 
+const SITE = { slug: "assets", name: "STAGEN", tagline: "人が活躍できる場は１つではない", color: "#15b788" };
+
 function svg({ name, tagline, color }) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -29,11 +32,19 @@ function svg({ name, tagline, color }) {
 </svg>`;
 }
 
-for (const app of APPS) {
-  const dir = path.join(ROOT, "..", app.slug);
+function writeOg(dir, app) {
+  const markup = svg(app);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "og-image.svg"), svg(app));
-  console.log(`${BASE}/${app.slug}/og-image.svg`);
+  fs.writeFileSync(path.join(dir, "og-image.svg"), markup);
+  const png = new Resvg(markup, { fitTo: { mode: "width", value: 1200 } }).render().asPng();
+  fs.writeFileSync(path.join(dir, "og-image.png"), png);
+  const urlPath = app.slug === "assets" ? "/assets/og-image.png" : `/${app.slug}/og-image.png`;
+  console.log(`${BASE}${urlPath}`);
 }
 
-console.log("done: 6 OG SVG files");
+for (const app of APPS) {
+  writeOg(path.join(ROOT, "..", app.slug), app);
+}
+writeOg(path.join(ROOT, "..", "assets"), SITE);
+
+console.log(`done: ${APPS.length + 1} OG PNG files`);

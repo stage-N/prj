@@ -3,6 +3,6 @@
   <rect width="1200" height="630" fill="#1a1a1a"/>
   <rect x="0" y="0" width="1200" height="8" fill="#1A237E"/>
   <text x="80" y="280" fill="#ffffff" font-family="system-ui,sans-serif" font-size="72" font-weight="800">StockPulse</text>
-  <text x="80" y="360" fill="#3949AB" font-family="system-ui,sans-serif" font-size="36" font-weight="600">�,*���թ��</text>
-  <text x="80" y="520" fill="#888888" font-family="system-ui,sans-serif" font-size="28">STAGEN  sta3e-n.com</text>
+  <text x="80" y="360" fill="#1A237E" font-family="system-ui,sans-serif" font-size="36" font-weight="600">日本株ポートフォリオ分析</text>
+  <text x="80" y="520" fill="#888888" font-family="system-ui,sans-serif" font-size="28">STAGEN — sta3e-n.com</text>
 </svg>

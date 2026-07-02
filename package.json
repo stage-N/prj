@@ -8,6 +8,7 @@
     "og": "node scripts/generate-og-images.mjs"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@resvg/resvg-js": "^2.6.2"
   }
 }

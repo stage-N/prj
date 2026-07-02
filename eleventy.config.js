@@ -44,7 +44,7 @@ export default function (eleventyConfig) {
   }
 
   eleventyConfig.addGlobalData("site", {
-    baseUrl: "https://stage-n.github.io/prj",
+    baseUrl: "https://sta3e-n.com",
     locales: LOCALES,
     defaultLocale: "ja",
     apps: APPS,
@@ -52,7 +52,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("localePrefix", localePrefix);
   eleventyConfig.addFilter("localePath", (path, locale) => `${localePrefix(locale)}${path}`);
-  eleventyConfig.addFilter("absoluteUrl", (path) => `https://stage-n.github.io/prj${path}`);
+  eleventyConfig.addFilter("absoluteUrl", (path) => `https://sta3e-n.com${path}`);
 
   eleventyConfig.addFilter("t", (translations, locale) => {
     if (!translations) return {};
