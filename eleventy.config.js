@@ -59,13 +59,25 @@ export default function (eleventyConfig) {
     return translations[locale] || translations.ja || {};
   });
 
+  eleventyConfig.addFilter("isoDate", (value) => new Date(value).toISOString().slice(0, 10));
+  eleventyConfig.addFilter("blogDateJa", (value) => {
+    const d = new Date(value);
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${d.getFullYear()}年${m}月${day}日`;
+  });
+
   eleventyConfig.addCollection("localeList", () => LOCALES.map((l) => l.code));
+
+  eleventyConfig.addCollection("blogPosts", (collection) =>
+    collection.getFilteredByTag("blogPosts").sort((a, b) => b.date - a.date)
+  );
 
   eleventyConfig.addNunjucksAsyncShortcode("bodyContent", async (baseName, locale) => {
     return fs.readFileSync(resolveBodyPath(baseName, locale), "utf8");
   });
 
-  // ponytail: site index at /en/ or /ko/ needs ../assets/ — only those two outputs
+  // ponytail: blog list + posts use absolute /assets/ in templates; no transform needed
   eleventyConfig.addTransform("fixLocalizedAssetPaths", (content, outputPath) => {
     if (outputPath.endsWith("/en/index.html") || outputPath.endsWith("/ko/index.html")) {
       return content

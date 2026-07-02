@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }}{% else %}ブログ | STAGEN{% endif %}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  <meta property="og:type" content="{% if layout == 'blog-post.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ ogTitle or title or 'ブログ | STAGEN' }}">
+  {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+  <meta property="og:url" content="https://sta3e-n.com{{ page.url }}">
+  {% set ogImg = ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <style>{% include "css/blog.css" %}</style>
+</head>
+<body class="blog-shell">
+  {% include "partials/blog-nav.njk" %}
+  <main class="blog-main">
+    {{ content | safe }}
+  </main>
+  <footer class="blog-footer">
+    <p><a href="/">STAGEN</a> · <a href="/blog/">ブログ</a></p>
+    <p>&copy; 2026 STAGEN</p>
+  </footer>
+</body>
+</html>

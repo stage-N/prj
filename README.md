@@ -20,6 +20,7 @@ npm run build  # output → _site/
 ```
 src/
   pages/           # locale pagination entry (ja/en/ko × 25 pages)
+  blog/posts/      # blog markdown (from stagen-ops queue or manual)
   _includes/
     bodies/        # page body HTML (extracted from legacy files)
     layouts/       # base shell + lang switcher + hreflang
@@ -51,6 +52,25 @@ assets/            # shared branding & images
 - Page titles/descriptions: `src/_data/i18n.json`
 
 Example: edit `zaitap-privacy.en.html` for English privacy policy text.
+
+## Blog (STAGEN サイト公開)
+
+マーケ記事は `src/blog/posts/*.md` に直接配置。Eleventy が `_site/blog/` にビルド。
+
+| URL | 内容 |
+|-----|------|
+| `/blog/` | 記事一覧 |
+| `/blog/{slug}/` | 個別記事 |
+
+### 記事の追加
+
+1. `/marketing` スキルまたは agy で `src/blog/posts/YYYY-MM-DD-{product}.md` を生成
+2. `bash stagen-ops/scripts/marketing/blog-content-check.sh` で検証
+3. `npm run build` — `_site/blog/` に静的 HTML 出力
+
+記事は日本語のみ（locale ページなし）。Cloudflare Worker は変更不要 — 既存の `ASSETS.fetch` で静的配信。
+
+front matter 必須: `title`, `description`, `date`, `permalink`, `layout: blog-post.njk`, `tags`（`posts.json` 経由で `blogPosts` コレクション）
 
 ## Deployment (Cloudflare)
 

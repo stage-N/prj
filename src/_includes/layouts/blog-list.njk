@@ -1,0 +1,19 @@
+---
+layout: blog-base.njk
+title: ブログ | STAGEN
+description: 1人法人・プロダクト開発のメモ。note 記事を STAGEN サイトでも公開しています。
+ogTitle: STAGEN ブログ
+---
+<div class="blog-list blog-container">
+  <header class="blog-list-header">
+    <h1>ブログ</h1>
+    <p class="blog-list-lead">STAGEN の開発メモ・制度整理。note と同内容を Web でも公開しています。</p>
+  </header>
+  {% for post in collections.blogPosts %}
+  <article class="blog-card">
+    <time datetime="{{ post.date | isoDate }}">{{ post.date | blogDateJa }}</time>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+  </article>
+  {% endfor %}
+</div>
