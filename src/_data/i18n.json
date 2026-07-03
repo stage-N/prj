@@ -48,7 +48,8 @@
           "shower-guard": "Shower Guard",
           "cool-walk": "Cool Walk",
           "fuzen": "Fuzen",
-          "stock-pulse": "StockPulse"
+          "stock-pulse": "StockPulse",
+          "touten": "Touten"
         },
         "categorySlugs": ["product", "business", "other"],
         "productSlugs": [
@@ -61,7 +62,8 @@
           "shower-guard",
           "cool-walk",
           "fuzen",
-          "stock-pulse"
+          "stock-pulse",
+          "touten"
         ]
       }
     },
@@ -113,7 +115,8 @@
           "shower-guard": "Shower Guard",
           "cool-walk": "Cool Walk",
           "fuzen": "Fuzen",
-          "stock-pulse": "StockPulse"
+          "stock-pulse": "StockPulse",
+          "touten": "Touten"
         },
         "categorySlugs": ["product", "business", "other"],
         "productSlugs": [
@@ -126,7 +129,8 @@
           "shower-guard",
           "cool-walk",
           "fuzen",
-          "stock-pulse"
+          "stock-pulse",
+          "touten"
         ]
       }
     }
@@ -547,6 +551,48 @@
         "title": "지원 | StockPulse",
         "desc": "",
         "ogTitle": "지원 | StockPulse",
+        "ogDesc": ""
+      }
+    }
+  },
+  "touten": {
+    "en": {
+      "index": {
+        "title": "Touten | Compare news stances across Japan's five dailies",
+        "desc": "AI maps political and economic tone from Yomiuri, Asahi, Mainichi, Sankei, and Nikkei. Side-by-side headlines, 3-line summaries, Premium deep dives.",
+        "ogTitle": "Touten - Media literacy for balanced news reading",
+        "ogDesc": "One story, five perspectives. Escape confirmation bias with a 2D stance map."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Touten",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Touten",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Touten",
+        "desc": "",
+        "ogTitle": "Support | Touten",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Touten | 일본 5대 일간지 보도 스탠스 비교",
+        "desc": "요미우리·아사히·마이니치·산케이·니케이 톱 기사를 AI 분석. 정치·경제 논조를 2차원 맵으로 시각화.",
+        "ogTitle": "Touten - 균형 잡힌 뉴스 읽기",
+        "ogDesc": "하나의 뉴스, 다섯 가지 시각. 확증 편향에서 벗어나는 메디어 리터러시."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Touten",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Touten",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Touten",
+        "desc": "",
+        "ogTitle": "지원 | Touten",
         "ogDesc": ""
       }
     }

@@ -18,6 +18,7 @@ const APPS = [
   "cool-walk",
   "fuzen",
   "stock-pulse",
+  "touten",
 ];
 const PAGES = ["index", "privacy", "support"];
 

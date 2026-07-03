@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/touten/privacy.html{% else %}/{{ loc.code }}/touten/privacy.html{% endif %}"
+app: "touten"
+pageName: privacy
+eleventyExcludeFromCollections: true
+---

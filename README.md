@@ -118,5 +118,6 @@ Worker は UTM パラメータを Analytics Engine データセット `utm_click
 | [Forest School](./forest-school/) | Educational game ages 3-5 |
 | [Fuzen](./fuzen/) | Functional thinking — Think in Fuzen |
 | [StockPulse](./stock-pulse/) | Japanese stock portfolio analysis |
+| [Touten](./touten/) | Japanese news stance comparison across five national dailies |
 | [Shower Guard](./shower-guard/) | Hyperlocal rain alert |
 | [Cool Walk](./cool-walk/) | WBGT outdoor guidance |

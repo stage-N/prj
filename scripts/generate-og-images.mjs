@@ -17,6 +17,7 @@ const APPS = [
   { slug: "forest-school", name: "もりのがっこう", tagline: "完全無料・知育", color: "#2d6a4f" },
   { slug: "fuzen", name: "Fuzen", tagline: "Think in Fuzen", color: "#15b788" },
   { slug: "stock-pulse", name: "StockPulse", tagline: "日本株ポートフォリオ分析", color: "#1A237E" },
+  { slug: "touten", name: "Touten", tagline: "日本5紙の報道スタンス比較", color: "#37474F" },
 ];
 
 const SITE = { slug: "assets", name: "STAGEN", tagline: "人が活躍できる場は１つではない", color: "#15b788" };
