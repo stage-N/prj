@@ -1,0 +1,118 @@
+---
+layout: contact-base.njk
+---
+{% set locale = loc.code %}
+{% if locale == "ja" %}
+  {% set c = pages.contact %}
+{% else %}
+  {% set c = i18n.site[locale].contact %}
+{% endif %}
+<div class="contact-container">
+  <header class="contact-header">
+    <h1>{{ c.heading }}</h1>
+    <p class="contact-lead">{{ c.lead }}</p>
+    <p class="contact-note">{{ c.bugNote }}</p>
+  </header>
+
+  <form class="contact-form" id="contactForm" novalidate
+    data-success="{{ c.success }}"
+    data-error="{{ c.error }}"
+    data-error-network="{{ c.errorNetwork }}"
+    data-submitting="{{ c.submitting }}">
+    <input type="hidden" name="locale" value="{{ locale }}">
+    <div class="contact-honeypot" aria-hidden="true">
+      <label for="website">Website</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div class="contact-field">
+      <label for="name">{{ c.labelName }}</label>
+      <input type="text" id="name" name="name" required maxlength="100" placeholder="{{ c.placeholderName }}" autocomplete="name">
+    </div>
+
+    <div class="contact-field">
+      <label for="email">{{ c.labelEmail }}</label>
+      <input type="email" id="email" name="email" required placeholder="{{ c.placeholderEmail }}" autocomplete="email">
+    </div>
+
+    <div class="contact-field">
+      <label for="category">{{ c.labelCategory }}</label>
+      <select id="category" name="category" required>
+        <option value="">{{ c.selectCategory }}</option>
+        {% for slug in c.categorySlugs %}
+        <option value="{{ slug }}">{{ c.categories[slug] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="contact-field">
+      <label for="product">{{ c.labelProduct }}</label>
+      <select id="product" name="product">
+        <option value="">{{ c.selectProduct }}</option>
+        {% for slug in c.productSlugs %}
+        <option value="{{ slug }}">{{ c.products[slug] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="contact-field">
+      <label for="message">{{ c.labelMessage }}</label>
+      <textarea id="message" name="message" required minlength="10" maxlength="4000" placeholder="{{ c.placeholderMessage }}"></textarea>
+    </div>
+
+    <button type="submit" class="contact-submit" id="contactSubmit">{{ c.submit }}</button>
+    <div class="contact-status" id="contactStatus" role="status" aria-live="polite"></div>
+  </form>
+</div>
+
+<script>
+(function () {
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("contactStatus");
+  const submitBtn = document.getElementById("contactSubmit");
+  const defaultLabel = submitBtn.textContent;
+
+  function showStatus(msg, ok) {
+    status.textContent = msg;
+    status.className = "contact-status is-visible " + (ok ? "is-success" : "is-error");
+  }
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    status.className = "contact-status";
+    submitBtn.disabled = true;
+    submitBtn.textContent = form.dataset.submitting;
+
+    const fd = new FormData(form);
+    const payload = {
+      name: fd.get("name"),
+      email: fd.get("email"),
+      category: fd.get("category"),
+      product: fd.get("product") || "",
+      message: fd.get("message"),
+      locale: fd.get("locale"),
+      website: fd.get("website") || "",
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json().catch(function () { return {}; });
+      if (res.ok && data.ok) {
+        showStatus(form.dataset.success, true);
+        form.reset();
+      } else {
+        showStatus(form.dataset.error, false);
+      }
+    } catch (err) {
+      showStatus(form.dataset.errorNetwork, false);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = defaultLabel;
+    }
+  });
+})();
+</script>

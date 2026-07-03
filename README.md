@@ -72,6 +72,16 @@ Example: edit `zaitap-privacy.en.html` for English privacy policy text.
 
 front matter 必須: `title`, `description`, `date`, `permalink`, `layout: blog-post.njk`, `tags`（`posts.json` 経由で `blogPosts` コレクション）
 
+## Contact form
+
+| URL | 言語 |
+|-----|------|
+| `/contact/` | 日本語 |
+| `/en/contact/` | English |
+| `/ko/contact/` | 한국어 |
+
+Slack App 連携・secrets 設定: [docs/CONTACT_FORM.md](./docs/CONTACT_FORM.md)
+
 ## Deployment (Cloudflare)
 
 Build command (dashboard): `npm ci && npm run build`

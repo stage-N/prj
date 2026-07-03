@@ -1,0 +1,9 @@
+---
+layout: contact-page.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/contact/index.html{% else %}/{{ loc.code }}/contact/index.html{% endif %}"
+eleventyExcludeFromCollections: true
+---

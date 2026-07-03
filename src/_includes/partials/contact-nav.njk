@@ -1,0 +1,21 @@
+{% set locale = loc.code %}
+{% set prefix = "" if locale == "ja" else "/" ~ locale %}
+{% if locale == "ja" %}
+  {% set c = pages.contact %}
+{% else %}
+  {% set c = i18n.site[locale].contact %}
+{% endif %}
+<nav class="contact-nav" aria-label="{% if locale == 'ja' %}サイト{% elif locale == 'ko' %}사이트{% else %}Site{% endif %}">
+  <div class="contact-nav-inner">
+    <a href="{{ prefix }}/" class="contact-nav-logo">
+      <img src="/assets/branding/logo-symbol.svg" alt="" width="28" height="28">
+      <img src="/assets/branding/logo-wordmark.svg" alt="STAGEN" height="24">
+    </a>
+    <ul class="contact-nav-links">
+      <li><a href="{{ prefix }}/">{{ c.navHome }}</a></li>
+      <li><a href="{{ prefix }}/blog/">{{ c.navBlog }}</a></li>
+      <li><a href="{{ prefix }}/#products">{{ c.navProducts }}</a></li>
+      <li><a href="{{ prefix }}/contact/" aria-current="page">{{ c.navContact }}</a></li>
+    </ul>
+  </div>
+</nav>

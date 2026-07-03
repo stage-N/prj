@@ -1,0 +1,35 @@
+{% set locale = loc.code %}
+{% if locale == "ja" %}
+  {% set c = pages.contact %}
+{% else %}
+  {% set c = i18n.site[locale].contact %}
+{% endif %}
+{% set prefix = "" if locale == "ja" else "/" ~ locale %}
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ c.title }}</title>
+  {% if c.desc %}<meta name="description" content="{{ c.desc }}">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ c.ogTitle or c.title }}">
+  {% if c.desc %}<meta property="og:description" content="{{ c.desc }}">{% endif %}
+  <meta property="og:url" content="https://sta3e-n.com{{ prefix }}/contact/">
+  {% set ogImg = c.ogImage or pages.contact.ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <style>{% include "css/contact.css" %}</style>
+</head>
+<body class="contact-shell">
+  {% include "partials/contact-nav.njk" %}
+  <main class="contact-main">
+    {{ content | safe }}
+  </main>
+  <footer class="contact-footer">
+    <p><a href="{{ prefix }}/">STAGEN</a> · <a href="{{ prefix }}/contact/">{{ c.navContact }}</a></p>
+    <p>&copy; 2026 STAGEN</p>
+  </footer>
+</body>
+</html>
