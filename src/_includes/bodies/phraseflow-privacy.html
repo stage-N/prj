@@ -1,3 +1,41 @@
-<h1>Privacy Policy</h1>
-<p>Phrase Flow stores account email and subscription status. Quotes are curated with AI assistance; see in-app disclaimers.</p>
-<p>Contact: support@sta3e-n.com</p>
+<h1>プライバシーポリシー</h1>
+  <p>株式会社 STAGEN（以下「当社」）は、Phrase Flow（フレーズフロー、以下「本サービス」）におけるユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+
+  <div class="highlight">
+    <strong>無料機能はアカウント登録なしで利用できます。Premium 購読時のみ、決済に必要な情報を Stripe 経由で処理します。</strong>
+  </div>
+
+  <h2>1. 収集する情報</h2>
+  <ul>
+    <li><strong>無料利用時:</strong> 名言の閲覧に氏名・メール等は不要です（行動追跡用の広告 SDK は使用しません）</li>
+    <li><strong>アカウント登録時:</strong> メールアドレスとパスワード（ハッシュ化して保存）を Cloudflare D1 に保存します</li>
+    <li><strong>Premium 購読時:</strong> Stripe 決済に必要なメールアドレス等を Stripe が処理します。当社は購読状態の管理に必要な識別子をサーバーに保存します</li>
+    <li><strong>メール配信（オプトイン）:</strong> 配信先メールアドレスと配信設定を保存します</li>
+    <li><strong>アクセスログ:</strong> Cloudflare のインフラログ（IP・リクエスト時刻等）が技術的に記録される場合があります</li>
+  </ul>
+
+  <h2>2. AI処理・名言データ</h2>
+  <p>本サービスは、キュレーションされた名言シードを Google Gemini API で背景・解説・対照意見に展開し、多言語テンプレートを生成します。生成されたコンテンツは表示・配信のために当社サーバー（Cloudflare D1）に保存されます。</p>
+  <p>ユーザーの端末から Gemini へ個人を特定できるデータが直接送信されることはありません（AI処理は当社バックエンドが行います）。</p>
+
+  <h2>3. 第三者サービス</h2>
+  <ul>
+    <li><strong>Stripe:</strong> 有料プランの決済・サブスクリプション管理</li>
+    <li><strong>Google Gemini API:</strong> 名言の背景・解説・対照意見の生成</li>
+    <li><strong>Cloudflare:</strong> ホスティング・データベース（D1）・セッション（KV）</li>
+    <li><strong>RevenueCat（アプリ）:</strong> モバイル購読状態の同期（予定）</li>
+  </ul>
+
+  <h2>4. 第三者への提供</h2>
+  <p>法令に基づく場合を除き、ユーザーの個人情報を第三者に販売・提供しません。</p>
+
+  <h2>5. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは<a href="support.html">サポートページ</a>よりご連絡ください。</p>
+
+  <h2>6. ポリシーの変更</h2>
+  <p>本ポリシーは予告なく変更される場合があります。変更後のポリシーは本ページに掲載した時点で効力を生じます。</p>
+
+  <div class="footer">
+    <p>制定日: 2026年7月6日</p>
+    <p>株式会社 STAGEN</p>
+  </div>

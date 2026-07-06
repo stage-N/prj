@@ -641,6 +641,26 @@
         "ogTitle": "지원 | Phrase Flow",
         "ogDesc": ""
       }
+    },
+    "ja": {
+      "index": {
+        "title": "Phrase Flow | 毎日の名言と対照的視点",
+        "desc": "世界の偉人の一節を、AIが歴史的背景・現代的解説とともに毎朝届ける。対立・類似の視点で確証バイアスから抜け出すリテラシーサービス。",
+        "ogTitle": "Phrase Flow — Daily Wisdom & Dual Perspectives",
+        "ogDesc": "ハルイチフレーズ、二つのレンズで読む時代の流れ。"
+      },
+      "privacy": {
+        "title": "プライバシーポリシー | Phrase Flow",
+        "desc": "",
+        "ogTitle": "プライバシーポリシー | Phrase Flow",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "サポート | Phrase Flow",
+        "desc": "",
+        "ogTitle": "サポート | Phrase Flow",
+        "ogDesc": ""
+      }
     }
   }
 }
