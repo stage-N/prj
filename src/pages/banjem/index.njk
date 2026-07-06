@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/banjem/index.html{% else %}/{{ loc.code }}/banjem/index.html{% endif %}"
+app: "banjem"
+pageName: index
+eleventyExcludeFromCollections: true
+---

@@ -19,6 +19,7 @@ const APPS = [
   { slug: "stock-pulse", name: "StockPulse", tagline: "日本株ポートフォリオ分析", color: "#1A237E" },
   { slug: "touten", name: "Touten", tagline: "日本5紙の報道スタンス比較", color: "#37474F" },
   { slug: "phraseflow", name: "Phrase Flow", tagline: "Daily Wisdom & Dual Perspectives", color: "#15b788" },
+  { slug: "banjem", name: "Banjem", tagline: "반점 — 한국 5개 언론 스탠스 비교", color: "#15b788" },
 ];
 
 const SITE = { slug: "assets", name: "STAGEN", tagline: "人が活躍できる場は１つではない", color: "#15b788" };
@@ -35,7 +36,71 @@ function svg({ name, tagline, color }) {
 }
 
 function writeOg(dir, app) {
-  const markup = svg(app);
+  let markup;
+  if (app.slug === "phraseflow") {
+    markup = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15b788"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1395ba"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#15b788" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#15b788" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  
+  <!-- Sleek Top Accent Line -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#greenGrad)"/>
+
+  <!-- Brand Symbol on the Right -->
+  <g transform="translate(860, 315)" filter="url(#shadow)">
+    <circle cx="-55" cy="0" r="130" fill="url(#greenGrad)" opacity="0.88"/>
+    <circle cx="55" cy="0" r="130" fill="url(#blueGrad)" opacity="0.88"/>
+    <text x="-75" y="40" font-family="Georgia, serif" font-size="140" font-weight="bold" fill="#ffffff" text-anchor="middle">“</text>
+    <text x="65" y="40" font-family="Georgia, serif" font-size="140" font-weight="bold" fill="#ffffff" text-anchor="middle">”</text>
+    <path d="M -100, 170 C -50, 190 -20, 150 15, 170 C 50, 190 70, 150 100, 170" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- Brand Info on the Left -->
+  <g transform="translate(100, 0)">
+    <!-- Eyebrow tag -->
+    <rect x="0" y="160" width="280" height="32" rx="16" fill="rgba(21,183,136,0.1)" stroke="rgba(21,183,136,0.2)" stroke-width="1"/>
+    <text x="140" y="181" fill="#15b788" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="middle">STAGEN LINEUP</text>
+
+    <!-- Main Title -->
+    <text x="0" y="270" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="76" font-weight="900" letter-spacing="-1">Phrase Flow</text>
+
+    <!-- Subtitle / English Tagline -->
+    <text x="0" y="340" fill="#15b788" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700">Daily Wisdom &amp; Dual Perspectives</text>
+
+    <!-- Slogans (from PRD) -->
+    <text x="0" y="415" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="500" opacity="0.9">"Daily wisdom, two perspectives on the flow of our time."</text>
+
+    <!-- Footer branding -->
+    <text x="0" y="505" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" letter-spacing="0.5">STAGEN — sta3e-n.com</text>
+  </g>
+</svg>`;
+  } else {
+    markup = svg(app);
+  }
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "og-image.svg"), markup);
   const png = new Resvg(markup, { fitTo: { mode: "width", value: 1200 } }).render().asPng();

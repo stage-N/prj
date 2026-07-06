@@ -16,6 +16,7 @@ const PRODUCTS = new Set([
   "stock-pulse",
   "touten",
   "phraseflow",
+  "banjem",
 ]);
 
 const CATEGORY_LABEL = {

@@ -42,7 +42,8 @@
     "fuzen": "Fuzen",
     "stock-pulse": "StockPulse",
     "touten": "Touten",
-    "phraseflow": "Phrase Flow"
+    "phraseflow": "Phrase Flow",
+    "banjem": "Banjem"
   },
   "categorySlugs": ["product", "business", "other"],
   "productSlugs": [
@@ -57,6 +58,7 @@
     "fuzen",
     "stock-pulse",
     "touten",
-    "phraseflow"
+    "phraseflow",
+    "banjem"
   ]
 }

@@ -20,6 +20,7 @@ const APPS = [
   "stock-pulse",
   "touten",
   "phraseflow",
+  "banjem",
 ];
 const PAGES = ["index", "privacy", "support"];
 

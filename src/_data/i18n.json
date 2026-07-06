@@ -50,7 +50,8 @@
           "fuzen": "Fuzen",
           "stock-pulse": "StockPulse",
           "touten": "Touten",
-          "phraseflow": "Phrase Flow"
+          "phraseflow": "Phrase Flow",
+          "banjem": "Banjem"
         },
         "categorySlugs": ["product", "business", "other"],
         "productSlugs": [
@@ -65,7 +66,8 @@
           "fuzen",
           "stock-pulse",
           "touten",
-          "phraseflow"
+          "phraseflow",
+          "banjem"
         ]
       }
     },
@@ -119,7 +121,8 @@
           "fuzen": "Fuzen",
           "stock-pulse": "StockPulse",
           "touten": "Touten",
-          "phraseflow": "Phrase Flow"
+          "phraseflow": "Phrase Flow",
+          "banjem": "Banjem"
         },
         "categorySlugs": ["product", "business", "other"],
         "productSlugs": [
@@ -134,7 +137,8 @@
           "fuzen",
           "stock-pulse",
           "touten",
-          "phraseflow"
+          "phraseflow",
+          "banjem"
         ]
       }
     }
@@ -659,6 +663,48 @@
         "title": "サポート | Phrase Flow",
         "desc": "",
         "ogTitle": "サポート | Phrase Flow",
+        "ogDesc": ""
+      }
+    }
+  },
+  "banjem": {
+    "en": {
+      "index": {
+        "title": "Banjem | Compare news stances across Korea's five major outlets",
+        "desc": "AI maps political and economic tone from Dong-A, Hankyung, Kyunghyang, Hankyoreh, and Yonhap. Side-by-side headlines, 3-line summaries, Premium deep dives.",
+        "ogTitle": "Banjem - Media literacy for balanced news reading (KR)",
+        "ogDesc": "One story, five perspectives. Escape confirmation bias with a 2D stance map."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Banjem",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Banjem",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Banjem",
+        "desc": "",
+        "ogTitle": "Support | Banjem",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "반점 (Banjem) | 한국 5개 언론 보도 스탠스 비교",
+        "desc": "동아·한국경제·경향·한겨레·연합 톱 기사를 AI 분석. 정치·경제 논조를 2차원 맵으로 시각화.",
+        "ogTitle": "반점 (Banjem) - 균형 잡힌 뉴스 읽기",
+        "ogDesc": "한 뉴스, 다섯 시각. 확증 편향에서, 한 박자."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Banjem",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Banjem",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Banjem",
+        "desc": "",
+        "ogTitle": "지원 | Banjem",
         "ogDesc": ""
       }
     }

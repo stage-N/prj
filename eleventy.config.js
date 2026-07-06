@@ -11,6 +11,7 @@ const APPS = [
   "stock-pulse",
   "touten",
   "phraseflow",
+  "banjem",
 ];
 
 const LOCALES = [
