@@ -40,7 +40,9 @@
     "shower-guard": "Shower Guard",
     "cool-walk": "Cool Walk",
     "fuzen": "Fuzen",
-    "stock-pulse": "StockPulse"
+    "stock-pulse": "StockPulse",
+    "touten": "Touten",
+    "phraseflow": "Phrase Flow"
   },
   "categorySlugs": ["product", "business", "other"],
   "productSlugs": [
@@ -53,6 +55,8 @@
     "shower-guard",
     "cool-walk",
     "fuzen",
-    "stock-pulse"
+    "stock-pulse",
+    "touten",
+    "phraseflow"
   ]
 }

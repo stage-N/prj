@@ -10,6 +10,7 @@ const APPS = [
   "fuzen",
   "stock-pulse",
   "touten",
+  "phraseflow",
 ];
 
 const LOCALES = [

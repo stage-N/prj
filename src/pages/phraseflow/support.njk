@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/phraseflow/support.html{% else %}/{{ loc.code }}/phraseflow/support.html{% endif %}"
+app: "phraseflow"
+pageName: support
+eleventyExcludeFromCollections: true
+---

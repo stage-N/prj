@@ -1,0 +1,32 @@
+{
+  "index": {
+    "title": "Phrase Flow | Daily Wisdom & Dual Perspectives",
+    "desc": "Curated quotes with historical context and contrasting views. Web, iOS, and Android.",
+    "ogTitle": "Phrase Flow — Daily Wisdom & Dual Perspectives",
+    "ogDesc": "One quote a day, two lenses on the era.",
+    "ogImage": "https://sta3e-n.com/phraseflow/og-image.svg",
+    "icon": "icon.png",
+    "styles": "body{font-family:Georgia,serif;max-width:720px;margin:0 auto;padding:2rem;line-height:1.7;color:#333}h1{color:#15b788}a{color:#15b788}",
+    "accent": "#15b788"
+  },
+  "privacy": {
+    "title": "Privacy | Phrase Flow",
+    "desc": "",
+    "ogTitle": "Privacy | Phrase Flow",
+    "ogDesc": "",
+    "ogImage": "",
+    "icon": "",
+    "styles": "body{font-family:sans-serif;max-width:720px;margin:0 auto;padding:2rem;line-height:1.7}",
+    "accent": "#15b788"
+  },
+  "support": {
+    "title": "Support | Phrase Flow",
+    "desc": "",
+    "ogTitle": "Support | Phrase Flow",
+    "ogDesc": "",
+    "ogImage": "",
+    "icon": "",
+    "styles": "body{font-family:sans-serif;max-width:720px;margin:0 auto;padding:2rem;line-height:1.7}",
+    "accent": "#15b788"
+  }
+}

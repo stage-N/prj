@@ -18,6 +18,7 @@ const APPS = [
   { slug: "fuzen", name: "Fuzen", tagline: "Think in Fuzen", color: "#15b788" },
   { slug: "stock-pulse", name: "StockPulse", tagline: "日本株ポートフォリオ分析", color: "#1A237E" },
   { slug: "touten", name: "Touten", tagline: "日本5紙の報道スタンス比較", color: "#37474F" },
+  { slug: "phraseflow", name: "Phrase Flow", tagline: "Daily Wisdom & Dual Perspectives", color: "#15b788" },
 ];
 
 const SITE = { slug: "assets", name: "STAGEN", tagline: "人が活躍できる場は１つではない", color: "#15b788" };

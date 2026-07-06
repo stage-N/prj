@@ -14,6 +14,8 @@ const PRODUCTS = new Set([
   "cool-walk",
   "fuzen",
   "stock-pulse",
+  "touten",
+  "phraseflow",
 ]);
 
 const CATEGORY_LABEL = {
