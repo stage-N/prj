@@ -1,0 +1,19 @@
+---
+layout: message-base.njk
+---
+{% set locale = loc.code %}
+{% if locale == "ja" %}
+  {% set m = pages.message %}
+{% else %}
+  {% set m = i18n.site[locale].message %}
+{% endif %}
+<article class="message-article message-container">
+  <header class="message-header">
+    <img src="/assets/images/ceo.jpg" alt="{{ m.ceoAlt }}" class="ceo-photo" width="160" height="160">
+    <h1>{{ m.heading }}</h1>
+    <p class="message-lead">{{ m.lead }}</p>
+  </header>
+  <div class="message-body">
+    {% bodyContent "message", loc.code %}
+  </div>
+</article>

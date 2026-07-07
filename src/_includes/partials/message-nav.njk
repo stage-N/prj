@@ -1,0 +1,22 @@
+{% set locale = loc.code %}
+{% set prefix = "" if locale == "ja" else "/" ~ locale %}
+{% if locale == "ja" %}
+  {% set m = pages.message %}
+{% else %}
+  {% set m = i18n.site[locale].message %}
+{% endif %}
+<nav class="message-nav" aria-label="{% if locale == 'ja' %}サイト{% elif locale == 'ko' %}사이트{% else %}Site{% endif %}">
+  <div class="message-nav-inner">
+    <a href="{{ prefix }}/" class="message-nav-logo">
+      <img src="/assets/branding/logo-symbol.svg" alt="" width="28" height="28">
+      <img src="/assets/branding/logo-wordmark.svg" alt="STAGEN" height="24">
+    </a>
+    <ul class="message-nav-links">
+      <li><a href="{{ prefix }}/">{{ m.navHome }}</a></li>
+      <li><a href="{{ prefix }}/message/" aria-current="page">{{ m.navMessage }}</a></li>
+      <li><a href="{{ prefix }}/blog/">{{ m.navBlog }}</a></li>
+      <li><a href="{{ prefix }}/#products">{{ m.navProducts }}</a></li>
+      <li><a href="{{ prefix }}/contact/">{{ m.navContact }}</a></li>
+    </ul>
+  </div>
+</nav>

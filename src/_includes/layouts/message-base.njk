@@ -1,0 +1,42 @@
+{% set locale = loc.code %}
+{% set prefix = "" if locale == "ja" else "/" ~ locale %}
+{% set pagePath = "/message/" %}
+{% if locale == "ja" %}
+  {% set m = pages.message %}
+{% else %}
+  {% set m = i18n.site[locale].message %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ m.title }}</title>
+  {% if m.desc %}<meta name="description" content="{{ m.desc }}">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ m.ogTitle or m.title }}">
+  {% if m.desc %}<meta property="og:description" content="{{ m.desc }}">{% endif %}
+  <meta property="og:url" content="https://sta3e-n.com{{ prefix }}/message/">
+  {% set ogImg = m.ogImage or pages.message.ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% for l in site.locales %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
+  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <style>{% include "css/lang-switcher.css" %}</style>
+  <style>{% include "css/message.css" %}</style>
+</head>
+<body class="message-shell">
+  {% include "partials/lang-switcher.njk" %}
+  {% include "partials/message-nav.njk" %}
+  <main class="message-main">
+    {{ content | safe }}
+  </main>
+  <footer class="message-footer">
+    <p><a href="{{ prefix }}/">STAGEN</a> · <a href="{{ prefix }}/message/">{{ m.navMessage }}</a></p>
+    <p>&copy; 2026 STAGEN</p>
+  </footer>
+</body>
+</html>

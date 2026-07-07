@@ -7,6 +7,20 @@
         "ogTitle": "STAGEN",
         "ogDesc": "There's more than one place to thrive. As the places you belong grow, so does your world."
       },
+      "message": {
+        "title": "Message from CEO | STAGEN",
+        "desc": "A greeting from the CEO of STAGEN Inc. — our vision, journey, and what drives our products.",
+        "ogTitle": "Message from CEO | STAGEN",
+        "ogImage": "https://sta3e-n.com/assets/images/ceo.jpg",
+        "heading": "Message from CEO",
+        "lead": "I run STAGEN as a one-person corporation, serving as a foreign national representative.",
+        "ceoAlt": "CEO of STAGEN",
+        "navHome": "Home",
+        "navMessage": "Message",
+        "navBlog": "Blog",
+        "navProducts": "Products",
+        "navContact": "Contact"
+      },
       "contact": {
         "title": "Contact | STAGEN",
         "desc": "Contact STAGEN about products, business partnerships, and other inquiries.",
@@ -30,6 +44,7 @@
         "error": "Could not send your message. Please check the form and try again.",
         "errorNetwork": "Network error. Please try again in a moment.",
         "navHome": "Home",
+        "navMessage": "Message",
         "navBlog": "Blog",
         "navProducts": "Products",
         "navContact": "Contact",
@@ -80,6 +95,20 @@
         "ogTitle": "STAGEN",
         "ogDesc": "사람이 활약할 수 있는 자리는 하나뿐이 아닙니다. 몸을 둘 곳이 늘어나면 세계도 넓어집니다."
       },
+      "message": {
+        "title": "대표 인사 | STAGEN",
+        "desc": "주식회사 STAGEN 대표 인사말. 비전, 여정, 제품에 담긴 생각을 전합니다.",
+        "ogTitle": "대표 인사 | STAGEN",
+        "ogImage": "https://sta3e-n.com/assets/images/ceo.jpg",
+        "heading": "대표 인사",
+        "lead": "외국인 대표로서 1인 법인 STAGEN을 운영하고 있습니다.",
+        "ceoAlt": "STAGEN 대표",
+        "navHome": "홈",
+        "navMessage": "대표 인사",
+        "navBlog": "블로그",
+        "navProducts": "제품",
+        "navContact": "문의"
+      },
       "contact": {
         "title": "문의하기 | STAGEN",
         "desc": "STAGEN 제품, 비즈니스 제휴 및 기타 문의는 이 폼을 이용해 주세요.",
@@ -103,6 +132,7 @@
         "error": "전송에 실패했습니다. 입력 내용을 확인한 뒤 다시 시도해 주세요.",
         "errorNetwork": "통신 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.",
         "navHome": "홈",
+        "navMessage": "대표 인사",
         "navBlog": "블로그",
         "navProducts": "제품",
         "navContact": "문의",

@@ -1,0 +1,9 @@
+---
+layout: message-page.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/message/index.html{% else %}/{{ loc.code }}/message/index.html{% endif %}"
+eleventyExcludeFromCollections: true
+---
