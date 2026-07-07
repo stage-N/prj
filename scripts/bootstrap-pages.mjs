@@ -21,6 +21,7 @@ const APPS = [
   "touten",
   "phraseflow",
   "banjem",
+  "newsprism",
 ];
 const PAGES = ["index", "privacy", "support"];
 

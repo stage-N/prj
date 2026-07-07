@@ -12,6 +12,7 @@ const APPS = [
   "touten",
   "phraseflow",
   "banjem",
+  "newsprism",
 ];
 
 const LOCALES = [

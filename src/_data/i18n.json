@@ -51,7 +51,8 @@
           "stock-pulse": "StockPulse",
           "touten": "Touten",
           "phraseflow": "Phrase Flow",
-          "banjem": "Banjem"
+          "banjem": "Banjem",
+          "newsprism": "NewsPrism"
         },
         "categorySlugs": ["product", "business", "other"],
         "productSlugs": [
@@ -67,7 +68,8 @@
           "stock-pulse",
           "touten",
           "phraseflow",
-          "banjem"
+          "banjem",
+          "newsprism"
         ]
       }
     },
@@ -122,7 +124,8 @@
           "stock-pulse": "StockPulse",
           "touten": "Touten",
           "phraseflow": "Phrase Flow",
-          "banjem": "Banjem"
+          "banjem": "Banjem",
+          "newsprism": "NewsPrism"
         },
         "categorySlugs": ["product", "business", "other"],
         "productSlugs": [
@@ -138,7 +141,8 @@
           "stock-pulse",
           "touten",
           "phraseflow",
-          "banjem"
+          "banjem",
+          "newsprism"
         ]
       }
     }
@@ -705,6 +709,48 @@
         "title": "지원 | Banjem",
         "desc": "",
         "ogTitle": "지원 | Banjem",
+        "ogDesc": ""
+      }
+    }
+  },
+  "newsprism": {
+    "en": {
+      "index": {
+        "title": "NewsPrism | Compare news stances across five US outlets",
+        "desc": "AI maps political and economic tone from The Hill, RealClearPolitics, ProPublica, Daily Kos, and Breitbart. Side-by-side headlines, 3-line summaries, Premium deep dives.",
+        "ogTitle": "NewsPrism - Media literacy for balanced news reading (US)",
+        "ogDesc": "One story, five lenses. Escape confirmation bias with a 2D stance map."
+      },
+      "privacy": {
+        "title": "Privacy Policy | NewsPrism",
+        "desc": "",
+        "ogTitle": "Privacy Policy | NewsPrism",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | NewsPrism",
+        "desc": "",
+        "ogTitle": "Support | NewsPrism",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "NewsPrism | 미국 5개 언론 보도 스탠스 비교",
+        "desc": "The Hill·RealClearPolitics·ProPublica·Daily Kos·Breitbart 톱 기사를 AI 분석. 정치·경제 논조를 2차원 맵으로 시각화.",
+        "ogTitle": "NewsPrism - 균형 잡힌 뉴스 읽기 (미국)",
+        "ogDesc": "한 뉴스, 다섯 시각. 확증 편향에서 벗어나기."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | NewsPrism",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | NewsPrism",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | NewsPrism",
+        "desc": "",
+        "ogTitle": "지원 | NewsPrism",
         "ogDesc": ""
       }
     }

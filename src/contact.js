@@ -17,6 +17,7 @@ const PRODUCTS = new Set([
   "touten",
   "phraseflow",
   "banjem",
+  "newsprism",
 ]);
 
 const CATEGORY_LABEL = {

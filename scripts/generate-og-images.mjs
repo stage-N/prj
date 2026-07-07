@@ -20,6 +20,7 @@ const APPS = [
   { slug: "touten", name: "Touten", tagline: "日本5紙の報道スタンス比較", color: "#37474F" },
   { slug: "phraseflow", name: "Phrase Flow", tagline: "Daily Wisdom & Dual Perspectives", color: "#15b788" },
   { slug: "banjem", name: "Banjem", tagline: "반점 — 한국 5개 언론 스탠스 비교", color: "#15b788" },
+  { slug: "newsprism", name: "NewsPrism", tagline: "US news stance comparison", color: "#15b788" },
 ];
 
 const SITE = { slug: "assets", name: "STAGEN", tagline: "人が活躍できる場は１つではない", color: "#15b788" };

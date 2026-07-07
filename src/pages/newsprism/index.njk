@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/newsprism/index.html{% else %}/{{ loc.code }}/newsprism/index.html{% endif %}"
+app: "newsprism"
+pageName: index
+eleventyExcludeFromCollections: true
+---

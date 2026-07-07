@@ -121,5 +121,6 @@ Worker は UTM パラメータを Analytics Engine データセット `utm_click
 | [Touten](./touten/) | Japanese news stance comparison across five national dailies |
 | [Phrase Flow](./phraseflow/) | Daily wisdom quotes with dual perspectives |
 | [Banjem](./banjem/) | Korean news stance comparison across five major outlets |
+| [NewsPrism](./newsprism/) | US news stance comparison across five major outlets |
 | [Shower Guard](./shower-guard/) | Hyperlocal rain alert |
 | [Cool Walk](./cool-walk/) | WBGT outdoor guidance |
