@@ -1,0 +1,32 @@
+{
+  "index": {
+    "title": "Solo Life | 1人暮らしの12ミニユーティリティ",
+    "desc": "Anticipate・Pantry・Ping など12モジュールを1つのアプリで。無料ティアで核心タスク完結、Solo Life Passで全モジュールプレミアム。",
+    "ogTitle": "Solo Life",
+    "ogDesc": "12 mini utilities for solo living in one hub app.",
+    "ogImage": "https://sta3e-n.com/solo-life/og-image.svg",
+    "icon": "icon.png",
+    "styles": "body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.8;color:#333;background:#f8fafc}.hero{background:#0f172a;color:#fff;padding:100px 20px;text-align:center}.hero h1{font-size:2.8rem;font-weight:800}.hero p{max-width:640px;margin:1.5rem auto 0;opacity:.9}.btn{display:inline-block;background:#6366f1;color:#fff;text-decoration:none;padding:14px 32px;border-radius:10px;font-weight:700;margin:8px}.container{max-width:800px;margin:0 auto;padding:60px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.card{background:#fff;border-radius:12px;padding:20px;border:1px solid #e2e8f0}footer{text-align:center;padding:32px;color:#888;font-size:.85rem}",
+    "accent": "#6366f1"
+  },
+  "privacy": {
+    "title": "プライバシー | Solo Life",
+    "desc": "Solo Life privacy policy",
+    "ogTitle": "Privacy | Solo Life",
+    "ogDesc": "Solo Life privacy policy",
+    "ogImage": "https://sta3e-n.com/solo-life/og-image.svg",
+    "icon": "icon.png",
+    "styles": "body{font-family:sans-serif;line-height:1.7;color:#333}.container{max-width:720px;margin:0 auto;padding:40px 20px}",
+    "accent": "#6366f1"
+  },
+  "support": {
+    "title": "サポート | Solo Life",
+    "desc": "Solo Life support",
+    "ogTitle": "Support | Solo Life",
+    "ogDesc": "Solo Life support",
+    "ogImage": "https://sta3e-n.com/solo-life/og-image.svg",
+    "icon": "icon.png",
+    "styles": "body{font-family:sans-serif;line-height:1.7;color:#333}.container{max-width:720px;margin:0 auto;padding:40px 20px}",
+    "accent": "#6366f1"
+  }
+}

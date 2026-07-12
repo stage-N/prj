@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/solo-life/index.html{% else %}/{{ loc.code }}/solo-life/index.html{% endif %}"
+app: "solo-life"
+pageName: index
+eleventyExcludeFromCollections: true
+---

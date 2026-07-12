@@ -11,8 +11,13 @@ const APPS = [
   "stock-pulse",
   "touten",
   "phraseflow",
+  "phraseflow-christianity",
+  "phraseflow-buddhism",
+  "phraseflow-islam",
+  "phraseflow-religion",
   "banjem",
   "newsprism",
+  "solo-life",
 ];
 
 const LOCALES = [

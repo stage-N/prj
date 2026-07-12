@@ -3,7 +3,6 @@
   <rect width="1200" height="630" fill="#1a1a1a"/>
   <rect x="0" y="0" width="1200" height="8" fill="#15b788"/>
   <text x="80" y="280" fill="#ffffff" font-family="system-ui,sans-serif" font-size="72" font-weight="800">Banjem</text>
-  <text x="80" y="360" fill="#15b788" font-family="system-ui,sans-serif" font-size="36" font-weight="600">반점 — 한국 5개 언론 스탠스 비교</text>
-  <text x="80" y="420" fill="#aaaaaa" font-family="system-ui,sans-serif" font-size="28">한 뉴스, 다섯 시각.</text>
+  <text x="80" y="360" fill="#15b788" font-family="system-ui,sans-serif" font-size="36" font-weight="600">Banjem — Korean news stance comparison</text>
   <text x="80" y="520" fill="#888888" font-family="system-ui,sans-serif" font-size="28">STAGEN — sta3e-n.com</text>
 </svg>

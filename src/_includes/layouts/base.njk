@@ -44,7 +44,7 @@
   <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
   {% endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
-  {% if meta.icon %}<link rel="icon" href="{{ meta.icon | replace('../', '') }}" type="image/png">{% endif %}
+  {% if meta.icon %}<link rel="icon" href="{{ meta.icon | replace('../', '') }}" type="{% if '.svg' in meta.icon %}image/svg+xml{% else %}image/png{% endif %}">{% endif %}
   <style>{% include "css/lang-switcher.css" %}</style>
   {% if meta.styles %}<style>{{ meta.styles | safe }}</style>{% endif %}
   {% if app %}<style>{% include "css/app-hero.css" %}</style>{% endif %}

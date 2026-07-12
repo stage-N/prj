@@ -19,7 +19,7 @@ const APPS = [
   { slug: "stock-pulse", name: "StockPulse", tagline: "日本株ポートフォリオ分析", color: "#1A237E" },
   { slug: "touten", name: "Touten", tagline: "日本5紙の報道スタンス比較", color: "#37474F" },
   { slug: "phraseflow", name: "Phrase Flow", tagline: "Daily Wisdom & Dual Perspectives", color: "#15b788" },
-  { slug: "banjem", name: "Banjem", tagline: "반점 — 한국 5개 언론 스탠스 비교", color: "#15b788" },
+  { slug: "banjem", name: "Banjem", tagline: "Banjem — Korean news stance comparison", color: "#15b788" },
   { slug: "newsprism", name: "NewsPrism", tagline: "US news stance comparison", color: "#15b788" },
 ];
 

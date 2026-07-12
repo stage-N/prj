@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#221e2e"/>
+      <stop offset="60%" stop-color="#221e2e"/>
+      <stop offset="100%" stop-color="#121214"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B8BB4"/>
+      <stop offset="100%" stop-color="#6B5B95"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A4063"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6B5B95" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6B5B95" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  
+  <!-- Sleek Top Accent Line -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#grad1)"/>
+
+  <!-- Brand Symbol on the Right -->
+  <g transform="translate(860, 315)" filter="url(#shadow)">
+    <circle cx="-55" cy="0" r="130" fill="url(#grad1)" opacity="0.88"/>
+    <circle cx="55" cy="0" r="130" fill="url(#grad2)" opacity="0.88"/>
+    <text x="-75" y="40" font-family="Georgia, serif" font-size="140" font-weight="bold" fill="#ffffff" text-anchor="middle">“</text>
+    <text x="65" y="40" font-family="Georgia, serif" font-size="140" font-weight="bold" fill="#ffffff" text-anchor="middle">”</text>
+    <path d="M -100, 170 C -50, 190 -20, 150 15, 170 C 50, 190 70, 150 100, 170" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- Brand Info on the Left -->
+  <g transform="translate(100, 0)">
+    <!-- Eyebrow tag -->
+    <rect x="0" y="160" width="280" height="32" rx="16" fill="rgba(255,255,255,0.05)" stroke="#9B8BB4" stroke-width="1.5" opacity="0.8"/>
+    <text x="140" y="181" fill="#9B8BB4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1.5" text-anchor="middle">PHRASE FLOW RELIGION</text>
+
+    <!-- Main Title -->
+    <text x="0" y="270" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="900" letter-spacing="-1">Daily Sacred Verse</text>
+
+    <!-- Subtitle / English Tagline -->
+    <text x="0" y="335" fill="#9B8BB4" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">Daily Wisdom &amp; Dual Perspectives</text>
+
+    <!-- Tagline -->
+    <text x="0" y="410" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="500" opacity="0.9">世界の宗教の知恵を、比較しながら毎朝</text>
+
+    <!-- Footer branding -->
+    <text x="0" y="505" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" letter-spacing="0.5">STAGEN — sta3e-n.com</text>
+  </g>
+</svg>

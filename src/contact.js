@@ -16,6 +16,10 @@ const PRODUCTS = new Set([
   "stock-pulse",
   "touten",
   "phraseflow",
+  "phraseflow-christianity",
+  "phraseflow-buddhism",
+  "phraseflow-islam",
+  "phraseflow-religion",
   "banjem",
   "newsprism",
 ]);

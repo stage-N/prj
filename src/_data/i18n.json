@@ -67,9 +67,17 @@
           "touten": "Touten",
           "phraseflow": "Phrase Flow",
           "banjem": "Banjem",
-          "newsprism": "NewsPrism"
+          "newsprism": "NewsPrism",
+          "phraseflow-christianity": "Daily Verse",
+          "phraseflow-buddhism": "Daily Sutra",
+          "phraseflow-islam": "Daily Quran",
+          "phraseflow-religion": "Daily Sacred Verse"
         },
-        "categorySlugs": ["product", "business", "other"],
+        "categorySlugs": [
+          "product",
+          "business",
+          "other"
+        ],
         "productSlugs": [
           "zeical",
           "rakubill",
@@ -83,6 +91,10 @@
           "stock-pulse",
           "touten",
           "phraseflow",
+          "phraseflow-religion",
+          "phraseflow-islam",
+          "phraseflow-buddhism",
+          "phraseflow-christianity",
           "banjem",
           "newsprism"
         ]
@@ -155,9 +167,17 @@
           "touten": "Touten",
           "phraseflow": "Phrase Flow",
           "banjem": "Banjem",
-          "newsprism": "NewsPrism"
+          "newsprism": "NewsPrism",
+          "phraseflow-christianity": "오늘의 말씀",
+          "phraseflow-buddhism": "오늘의 불경",
+          "phraseflow-islam": "오늘의 꾸란",
+          "phraseflow-religion": "오늘의 종교 구절"
         },
-        "categorySlugs": ["product", "business", "other"],
+        "categorySlugs": [
+          "product",
+          "business",
+          "other"
+        ],
         "productSlugs": [
           "zeical",
           "rakubill",
@@ -171,6 +191,10 @@
           "stock-pulse",
           "touten",
           "phraseflow",
+          "phraseflow-religion",
+          "phraseflow-islam",
+          "phraseflow-buddhism",
+          "phraseflow-christianity",
           "banjem",
           "newsprism"
         ]
@@ -781,6 +805,800 @@
         "title": "지원 | NewsPrism",
         "desc": "",
         "ogTitle": "지원 | NewsPrism",
+        "ogDesc": ""
+      }
+    }
+  },
+  "anticipate": {
+    "en": {
+      "index": {
+        "title": "Anticipate Home",
+        "desc": "Anticipate Home — reference utility",
+        "ogTitle": "Anticipate Home",
+        "ogDesc": "Anticipate Home"
+      },
+      "privacy": {
+        "title": "Privacy | Anticipate Home",
+        "desc": "",
+        "ogTitle": "Privacy | Anticipate Home",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Anticipate Home",
+        "desc": "",
+        "ogTitle": "Support | Anticipate Home",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Anticipate Home",
+        "desc": "Anticipate Home — 참고용 유틸",
+        "ogTitle": "Anticipate Home",
+        "ogDesc": "Anticipate Home"
+      },
+      "privacy": {
+        "title": "개인정보 | Anticipate Home",
+        "desc": "",
+        "ogTitle": "개인정보 | Anticipate Home",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Anticipate Home",
+        "desc": "",
+        "ogTitle": "지원 | Anticipate Home",
+        "ogDesc": ""
+      }
+    }
+  },
+  "subscript": {
+    "en": {
+      "index": {
+        "title": "Subscript",
+        "desc": "Subscript — reference utility",
+        "ogTitle": "Subscript",
+        "ogDesc": "Subscript"
+      },
+      "privacy": {
+        "title": "Privacy | Subscript",
+        "desc": "",
+        "ogTitle": "Privacy | Subscript",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Subscript",
+        "desc": "",
+        "ogTitle": "Support | Subscript",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Subscript",
+        "desc": "Subscript — 참고용 유틸",
+        "ogTitle": "Subscript",
+        "ogDesc": "Subscript"
+      },
+      "privacy": {
+        "title": "개인정보 | Subscript",
+        "desc": "",
+        "ogTitle": "개인정보 | Subscript",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Subscript",
+        "desc": "",
+        "ogTitle": "지원 | Subscript",
+        "ogDesc": ""
+      }
+    }
+  },
+  "chrono": {
+    "en": {
+      "index": {
+        "title": "Chrono Day",
+        "desc": "Chrono Day — reference utility",
+        "ogTitle": "Chrono Day",
+        "ogDesc": "Chrono Day"
+      },
+      "privacy": {
+        "title": "Privacy | Chrono Day",
+        "desc": "",
+        "ogTitle": "Privacy | Chrono Day",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Chrono Day",
+        "desc": "",
+        "ogTitle": "Support | Chrono Day",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Chrono Day",
+        "desc": "Chrono Day — 참고용 유틸",
+        "ogTitle": "Chrono Day",
+        "ogDesc": "Chrono Day"
+      },
+      "privacy": {
+        "title": "개인정보 | Chrono Day",
+        "desc": "",
+        "ogTitle": "개인정보 | Chrono Day",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Chrono Day",
+        "desc": "",
+        "ogTitle": "지원 | Chrono Day",
+        "ogDesc": ""
+      }
+    }
+  },
+  "provenance": {
+    "en": {
+      "index": {
+        "title": "Provenance Snap",
+        "desc": "Provenance Snap — reference utility",
+        "ogTitle": "Provenance Snap",
+        "ogDesc": "Provenance Snap"
+      },
+      "privacy": {
+        "title": "Privacy | Provenance Snap",
+        "desc": "",
+        "ogTitle": "Privacy | Provenance Snap",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Provenance Snap",
+        "desc": "",
+        "ogTitle": "Support | Provenance Snap",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Provenance Snap",
+        "desc": "Provenance Snap — 참고용 유틸",
+        "ogTitle": "Provenance Snap",
+        "ogDesc": "Provenance Snap"
+      },
+      "privacy": {
+        "title": "개인정보 | Provenance Snap",
+        "desc": "",
+        "ogTitle": "개인정보 | Provenance Snap",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Provenance Snap",
+        "desc": "",
+        "ogTitle": "지원 | Provenance Snap",
+        "ogDesc": ""
+      }
+    }
+  },
+  "pantry": {
+    "en": {
+      "index": {
+        "title": "Pantry Radar",
+        "desc": "Pantry Radar — reference utility",
+        "ogTitle": "Pantry Radar",
+        "ogDesc": "Pantry Radar"
+      },
+      "privacy": {
+        "title": "Privacy | Pantry Radar",
+        "desc": "",
+        "ogTitle": "Privacy | Pantry Radar",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Pantry Radar",
+        "desc": "",
+        "ogTitle": "Support | Pantry Radar",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Pantry Radar",
+        "desc": "Pantry Radar — 참고용 유틸",
+        "ogTitle": "Pantry Radar",
+        "ogDesc": "Pantry Radar"
+      },
+      "privacy": {
+        "title": "개인정보 | Pantry Radar",
+        "desc": "",
+        "ogTitle": "개인정보 | Pantry Radar",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Pantry Radar",
+        "desc": "",
+        "ogTitle": "지원 | Pantry Radar",
+        "ogDesc": ""
+      }
+    }
+  },
+  "agent-ledger": {
+    "en": {
+      "index": {
+        "title": "Agent Ledger",
+        "desc": "Agent Ledger — reference utility",
+        "ogTitle": "Agent Ledger",
+        "ogDesc": "Agent Ledger"
+      },
+      "privacy": {
+        "title": "Privacy | Agent Ledger",
+        "desc": "",
+        "ogTitle": "Privacy | Agent Ledger",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Agent Ledger",
+        "desc": "",
+        "ogTitle": "Support | Agent Ledger",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Agent Ledger",
+        "desc": "Agent Ledger — 참고용 유틸",
+        "ogTitle": "Agent Ledger",
+        "ogDesc": "Agent Ledger"
+      },
+      "privacy": {
+        "title": "개인정보 | Agent Ledger",
+        "desc": "",
+        "ogTitle": "개인정보 | Agent Ledger",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Agent Ledger",
+        "desc": "",
+        "ogTitle": "지원 | Agent Ledger",
+        "ogDesc": ""
+      }
+    }
+  },
+  "solo-meal": {
+    "en": {
+      "index": {
+        "title": "Solo Meal",
+        "desc": "Solo Meal — reference utility",
+        "ogTitle": "Solo Meal",
+        "ogDesc": "Solo Meal"
+      },
+      "privacy": {
+        "title": "Privacy | Solo Meal",
+        "desc": "",
+        "ogTitle": "Privacy | Solo Meal",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Solo Meal",
+        "desc": "",
+        "ogTitle": "Support | Solo Meal",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Solo Meal",
+        "desc": "Solo Meal — 참고용 유틸",
+        "ogTitle": "Solo Meal",
+        "ogDesc": "Solo Meal"
+      },
+      "privacy": {
+        "title": "개인정보 | Solo Meal",
+        "desc": "",
+        "ogTitle": "개인정보 | Solo Meal",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Solo Meal",
+        "desc": "",
+        "ogTitle": "지원 | Solo Meal",
+        "ogDesc": ""
+      }
+    }
+  },
+  "ping": {
+    "en": {
+      "index": {
+        "title": "Ping Ring",
+        "desc": "Ping Ring — reference utility",
+        "ogTitle": "Ping Ring",
+        "ogDesc": "Ping Ring"
+      },
+      "privacy": {
+        "title": "Privacy | Ping Ring",
+        "desc": "",
+        "ogTitle": "Privacy | Ping Ring",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Ping Ring",
+        "desc": "",
+        "ogTitle": "Support | Ping Ring",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Ping Ring",
+        "desc": "Ping Ring — 참고용 유틸",
+        "ogTitle": "Ping Ring",
+        "ogDesc": "Ping Ring"
+      },
+      "privacy": {
+        "title": "개인정보 | Ping Ring",
+        "desc": "",
+        "ogTitle": "개인정보 | Ping Ring",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Ping Ring",
+        "desc": "",
+        "ogTitle": "지원 | Ping Ring",
+        "ogDesc": ""
+      }
+    }
+  },
+  "care": {
+    "en": {
+      "index": {
+        "title": "Care Bridge",
+        "desc": "Care Bridge — reference utility",
+        "ogTitle": "Care Bridge",
+        "ogDesc": "Care Bridge"
+      },
+      "privacy": {
+        "title": "Privacy | Care Bridge",
+        "desc": "",
+        "ogTitle": "Privacy | Care Bridge",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Care Bridge",
+        "desc": "",
+        "ogTitle": "Support | Care Bridge",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Care Bridge",
+        "desc": "Care Bridge — 참고용 유틸",
+        "ogTitle": "Care Bridge",
+        "ogDesc": "Care Bridge"
+      },
+      "privacy": {
+        "title": "개인정보 | Care Bridge",
+        "desc": "",
+        "ogTitle": "개인정보 | Care Bridge",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Care Bridge",
+        "desc": "",
+        "ogTitle": "지원 | Care Bridge",
+        "ogDesc": ""
+      }
+    }
+  },
+  "table": {
+    "en": {
+      "index": {
+        "title": "IRL Table",
+        "desc": "IRL Table — reference utility",
+        "ogTitle": "IRL Table",
+        "ogDesc": "IRL Table"
+      },
+      "privacy": {
+        "title": "Privacy | IRL Table",
+        "desc": "",
+        "ogTitle": "Privacy | IRL Table",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | IRL Table",
+        "desc": "",
+        "ogTitle": "Support | IRL Table",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "IRL Table",
+        "desc": "IRL Table — 참고용 유틸",
+        "ogTitle": "IRL Table",
+        "ogDesc": "IRL Table"
+      },
+      "privacy": {
+        "title": "개인정보 | IRL Table",
+        "desc": "",
+        "ogTitle": "개인정보 | IRL Table",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | IRL Table",
+        "desc": "",
+        "ogTitle": "지원 | IRL Table",
+        "ogDesc": ""
+      }
+    }
+  },
+  "pet": {
+    "en": {
+      "index": {
+        "title": "Fur Routine",
+        "desc": "Fur Routine — reference utility",
+        "ogTitle": "Fur Routine",
+        "ogDesc": "Fur Routine"
+      },
+      "privacy": {
+        "title": "Privacy | Fur Routine",
+        "desc": "",
+        "ogTitle": "Privacy | Fur Routine",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Fur Routine",
+        "desc": "",
+        "ogTitle": "Support | Fur Routine",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Fur Routine",
+        "desc": "Fur Routine — 참고용 유틸",
+        "ogTitle": "Fur Routine",
+        "ogDesc": "Fur Routine"
+      },
+      "privacy": {
+        "title": "개인정보 | Fur Routine",
+        "desc": "",
+        "ogTitle": "개인정보 | Fur Routine",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Fur Routine",
+        "desc": "",
+        "ogTitle": "지원 | Fur Routine",
+        "ogDesc": ""
+      }
+    }
+  },
+  "solo-life": {
+    "en": {
+      "index": {
+        "title": "Solo Life",
+        "desc": "12 mini utilities for solo living in one hub",
+        "ogTitle": "Solo Life",
+        "ogDesc": "12 mini utilities for solo living in one hub"
+      },
+      "privacy": {
+        "title": "Privacy | Solo Life",
+        "desc": "",
+        "ogTitle": "Privacy | Solo Life",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Solo Life",
+        "desc": "",
+        "ogTitle": "Support | Solo Life",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Solo Life",
+        "desc": "1인 가구를 위한 12가지 미니 유틸 허브",
+        "ogTitle": "Solo Life",
+        "ogDesc": "1인 가구를 위한 12가지 미니 유틸 허브"
+      },
+      "privacy": {
+        "title": "개인정보 | Solo Life",
+        "desc": "",
+        "ogTitle": "개인정보 | Solo Life",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Solo Life",
+        "desc": "",
+        "ogTitle": "지원 | Solo Life",
+        "ogDesc": ""
+      }
+    }
+  },
+  "voice-trust": {
+    "en": {
+      "index": {
+        "title": "Voice Trust",
+        "desc": "Voice Trust — reference utility",
+        "ogTitle": "Voice Trust",
+        "ogDesc": "Voice Trust"
+      },
+      "privacy": {
+        "title": "Privacy | Voice Trust",
+        "desc": "",
+        "ogTitle": "Privacy | Voice Trust",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Voice Trust",
+        "desc": "",
+        "ogTitle": "Support | Voice Trust",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Voice Trust",
+        "desc": "Voice Trust — 참고용 유틸",
+        "ogTitle": "Voice Trust",
+        "ogDesc": "Voice Trust"
+      },
+      "privacy": {
+        "title": "개인정보 | Voice Trust",
+        "desc": "",
+        "ogTitle": "개인정보 | Voice Trust",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Voice Trust",
+        "desc": "",
+        "ogTitle": "지원 | Voice Trust",
+        "ogDesc": ""
+      }
+    }
+  },
+  "phraseflow-christianity": {
+    "en": {
+      "index": {
+        "title": "Daily Verse | Phrase Flow Religion",
+        "desc": "Christian sacred verses with context and comparison",
+        "ogTitle": "Daily Verse",
+        "ogDesc": "Christian sacred verses with context and comparison"
+      },
+      "privacy": {
+        "title": "Privacy Policy | Daily Verse",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Daily Verse",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Daily Verse",
+        "desc": "",
+        "ogTitle": "Support | Daily Verse",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "오늘의 말씀 | Phrase Flow Religion",
+        "desc": "기독교 성경 구절의 역사적 배경과 비교 성찰",
+        "ogTitle": "오늘의 말씀",
+        "ogDesc": "기독교 성경 구절의 역사적 배경과 비교 성찰"
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | 오늘의 말씀",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | 오늘의 말씀",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | 오늘의 말씀",
+        "desc": "",
+        "ogTitle": "지원 | 오늘의 말씀",
+        "ogDesc": ""
+      }
+    },
+    "ja": {
+      "index": {
+        "title": "今日のみことば | Phrase Flow Religion",
+        "desc": "キリスト教の聖句を歴史と比較とともに",
+        "ogTitle": "今日のみことば",
+        "ogDesc": "キリスト教の聖句を歴史と比較とともに"
+      },
+      "privacy": {
+        "title": "プライバシーポリシー | 今日のみことば",
+        "desc": "",
+        "ogTitle": "プライバシーポリシー | 今日のみことば",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "サポート | 今日のみことば",
+        "desc": "",
+        "ogTitle": "サポート | 今日のみことば",
+        "ogDesc": ""
+      }
+    }
+  },
+  "phraseflow-buddhism": {
+    "en": {
+      "index": {
+        "title": "Daily Sutra | Phrase Flow Religion",
+        "desc": "Buddhist sutras with context and comparison",
+        "ogTitle": "Daily Sutra",
+        "ogDesc": "Buddhist sutras with context and comparison"
+      },
+      "privacy": {
+        "title": "Privacy Policy | Daily Sutra",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Daily Sutra",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Daily Sutra",
+        "desc": "",
+        "ogTitle": "Support | Daily Sutra",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "오늘의 불경 | Phrase Flow Religion",
+        "desc": "불교 경전 구절의 배경과 비교 성찰",
+        "ogTitle": "오늘의 불경",
+        "ogDesc": "불교 경전 구절의 배경과 비교 성찰"
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | 오늘의 불경",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | 오늘의 불경",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | 오늘의 불경",
+        "desc": "",
+        "ogTitle": "지원 | 오늘의 불경",
+        "ogDesc": ""
+      }
+    },
+    "ja": {
+      "index": {
+        "title": "今日の仏経 | Phrase Flow Religion",
+        "desc": "仏教の経典を歴史と比較とともに",
+        "ogTitle": "今日の仏経",
+        "ogDesc": "仏教の経典を歴史と比較とともに"
+      },
+      "privacy": {
+        "title": "プライバシーポリシー | 今日の仏経",
+        "desc": "",
+        "ogTitle": "プライバシーポリシー | 今日の仏経",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "サポート | 今日の仏経",
+        "desc": "",
+        "ogTitle": "サポート | 今日の仏経",
+        "ogDesc": ""
+      }
+    }
+  },
+  "phraseflow-islam": {
+    "en": {
+      "index": {
+        "title": "Daily Quran | Phrase Flow Religion",
+        "desc": "Islamic verses with context and comparison",
+        "ogTitle": "Daily Quran",
+        "ogDesc": "Islamic verses with context and comparison"
+      },
+      "privacy": {
+        "title": "Privacy Policy | Daily Quran",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Daily Quran",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Daily Quran",
+        "desc": "",
+        "ogTitle": "Support | Daily Quran",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "오늘의 꾸란 | Phrase Flow Religion",
+        "desc": "이슬람 꾸란 구절의 배경과 비교 성찰",
+        "ogTitle": "오늘의 꾸란",
+        "ogDesc": "이슬람 꾸란 구절의 배경과 비교 성찰"
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | 오늘의 꾸란",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | 오늘의 꾸란",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | 오늘의 꾸란",
+        "desc": "",
+        "ogTitle": "지원 | 오늘의 꾸란",
+        "ogDesc": ""
+      }
+    },
+    "ja": {
+      "index": {
+        "title": "今日のクルアーン | Phrase Flow Religion",
+        "desc": "イスラムの聖句を歴史と比較とともに",
+        "ogTitle": "今日のクルアーン",
+        "ogDesc": "イスラムの聖句を歴史と比較とともに"
+      },
+      "privacy": {
+        "title": "プライバシーポリシー | 今日のクルアーン",
+        "desc": "",
+        "ogTitle": "プライバシーポリシー | 今日のクルアーン",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "サポート | 今日のクルアーン",
+        "desc": "",
+        "ogTitle": "サポート | 今日のクルアーン",
+        "ogDesc": ""
+      }
+    }
+  },
+  "phraseflow-religion": {
+    "en": {
+      "index": {
+        "title": "Daily Sacred Verse | Phrase Flow Religion",
+        "desc": "World religions compared daily",
+        "ogTitle": "Daily Sacred Verse",
+        "ogDesc": "World religions compared daily"
+      },
+      "privacy": {
+        "title": "Privacy Policy | Daily Sacred Verse",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Daily Sacred Verse",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Daily Sacred Verse",
+        "desc": "",
+        "ogTitle": "Support | Daily Sacred Verse",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "오늘의 종교 구절 | Phrase Flow Religion",
+        "desc": "세계 종교 구절을 비교하며 매일",
+        "ogTitle": "오늘의 종교 구절",
+        "ogDesc": "세계 종교 구절을 비교하며 매일"
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | 오늘의 종교 구절",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | 오늘의 종교 구절",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | 오늘의 종교 구절",
+        "desc": "",
+        "ogTitle": "지원 | 오늘의 종교 구절",
+        "ogDesc": ""
+      }
+    },
+    "ja": {
+      "index": {
+        "title": "今日の宗教のことば | Phrase Flow Religion",
+        "desc": "世界宗教の知恵を比較しながら毎朝",
+        "ogTitle": "今日の宗教のことば",
+        "ogDesc": "世界宗教の知恵を比較しながら毎朝"
+      },
+      "privacy": {
+        "title": "プライバシーポリシー | 今日の宗教のことば",
+        "desc": "",
+        "ogTitle": "プライバシーポリシー | 今日の宗教のことば",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "サポート | 今日の宗教のことば",
+        "desc": "",
+        "ogTitle": "サポート | 今日の宗教のことば",
         "ogDesc": ""
       }
     }

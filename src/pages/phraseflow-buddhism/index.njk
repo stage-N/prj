@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/phraseflow-buddhism/index.html{% else %}/{{ loc.code }}/phraseflow-buddhism/index.html{% endif %}"
+app: "phraseflow-buddhism"
+pageName: index
+eleventyExcludeFromCollections: true
+---
