@@ -27,6 +27,7 @@ const APPS = [
   "banjem",
   "newsprism",
   "solo-life",
+  "stillpoint",
 ];
 const PAGES = ["index", "privacy", "support"];
 

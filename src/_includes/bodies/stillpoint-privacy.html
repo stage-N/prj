@@ -1,0 +1,42 @@
+<h1>プライバシーポリシー</h1>
+  <p>株式会社 STAGEN（以下「当社」）は、Stillpoint（スティルポイント、以下「本サービス」）におけるユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+
+  <div class="highlight">
+    <strong>本サービスは内省の補助であり、医療・心理療法ではありません。危機的な状況では地域の相談窓口・緊急サービスをご利用ください。</strong>
+  </div>
+
+  <h2>1. 収集する情報</h2>
+  <ul>
+    <li><strong>アカウント登録時:</strong> メールアドレスとパスワード（ハッシュ化して保存）を Cloudflare D1 に保存します</li>
+    <li><strong>セッション・内省データ:</strong> 考えごと、AI質問、音声から変換されたテキスト内省、ターン時間などを、同期のためサーバーに保存します</li>
+    <li><strong>Premium 購読時:</strong> Stripe / App Store / Google Play および RevenueCat 経由で購読状態を同期します。当社は購読識別に必要な ID を保存します</li>
+    <li><strong>アクセスログ:</strong> Cloudflare のインフラログ（IP・リクエスト時刻等）が技術的に記録される場合があります</li>
+  </ul>
+
+  <h2>2. AI処理</h2>
+  <p>内省テキストは、より深いソクラテス式の質問を生成するため、当社バックエンド経由で Google Gemini API および（フォールバック時）Cloudflare Workers AI に送信される場合があります。生成結果はセッションの一部として保存されます。</p>
+  <p>音声認識は原則として端末上またはブラウザの Web Speech API で行い、当社が音声生データを第三者 STT に送ることはありません（実装・OS により異なります）。</p>
+
+  <h2>3. データの保持（Free）</h2>
+  <p>Free プランのアーカイブは直近7日分です。期限を過ぎたセッションは表示されないだけでなく、<strong>サーバー上から削除</strong>されます。Premium は無制限に保持します。</p>
+
+  <h2>4. 第三者サービス</h2>
+  <ul>
+    <li><strong>Stripe / RevenueCat / App Store / Google Play:</strong> 決済・購読</li>
+    <li><strong>Google Gemini API / Cloudflare Workers AI:</strong> 深掘り質問の生成</li>
+    <li><strong>Cloudflare:</strong> ホスティング・D1・KV</li>
+  </ul>
+
+  <h2>5. 第三者への提供</h2>
+  <p>法令に基づく場合を除き、ユーザーの個人情報を第三者に販売・提供しません。</p>
+
+  <h2>6. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは<a href="support.html">サポートページ</a>よりご連絡ください。</p>
+
+  <h2>7. ポリシーの変更</h2>
+  <p>本ポリシーは予告なく変更される場合があります。変更後のポリシーは本ページに掲載した時点で効力を生じます。</p>
+
+  <div class="footer">
+    <p>制定日: 2026年7月20日</p>
+    <p>株式会社 STAGEN</p>
+  </div>

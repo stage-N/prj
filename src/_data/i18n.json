@@ -71,7 +71,8 @@
           "phraseflow-christianity": "Daily Verse",
           "phraseflow-buddhism": "Daily Sutra",
           "phraseflow-islam": "Daily Quran",
-          "phraseflow-religion": "Daily Sacred Verse"
+          "phraseflow-religion": "Daily Sacred Verse",
+          "stillpoint": "Stillpoint"
         },
         "categorySlugs": [
           "product",
@@ -91,6 +92,7 @@
           "stock-pulse",
           "touten",
           "phraseflow",
+          "stillpoint",
           "phraseflow-religion",
           "phraseflow-islam",
           "phraseflow-buddhism",
@@ -171,7 +173,8 @@
           "phraseflow-christianity": "오늘의 말씀",
           "phraseflow-buddhism": "오늘의 불경",
           "phraseflow-islam": "오늘의 꾸란",
-          "phraseflow-religion": "오늘의 종교 구절"
+          "phraseflow-religion": "오늘의 종교 구절",
+          "stillpoint": "Stillpoint"
         },
         "categorySlugs": [
           "product",
@@ -191,6 +194,7 @@
           "stock-pulse",
           "touten",
           "phraseflow",
+          "stillpoint",
           "phraseflow-religion",
           "phraseflow-islam",
           "phraseflow-buddhism",
@@ -1599,6 +1603,48 @@
         "title": "サポート | 今日の宗教のことば",
         "desc": "",
         "ogTitle": "サポート | 今日の宗教のことば",
+        "ogDesc": ""
+      }
+    }
+  },
+  "stillpoint": {
+    "en": {
+      "index": {
+        "title": "Stillpoint | Guided Zen & Reflection",
+        "desc": "Sit with today’s thought. Speak your reflection; AI asks a deeper Socratic question. Session timer and turn timeline.",
+        "ogTitle": "Stillpoint — Sit with a thought. Let the questions deepen.",
+        "ogDesc": "Daily prompt, voice reflection, and Socratic AI deepen questions."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Stillpoint",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Stillpoint",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | Stillpoint",
+        "desc": "",
+        "ogTitle": "Support | Stillpoint",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Stillpoint | Guided Zen & Reflection",
+        "desc": "오늘의 생각거리에 머물고, 음성으로 성찰하면 AI가 더 깊은 질문을 건넵니다. 세션 타이머와 턴별 시간 시각화.",
+        "ogTitle": "Stillpoint — Sit with a thought. Let the questions deepen.",
+        "ogDesc": "오늘의 화두 · 음성 성찰 · 소크라테스식 AI 심화 질문."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Stillpoint",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Stillpoint",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | Stillpoint",
+        "desc": "",
+        "ogTitle": "지원 | Stillpoint",
         "ogDesc": ""
       }
     }

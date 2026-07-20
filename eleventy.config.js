@@ -18,6 +18,7 @@ const APPS = [
   "banjem",
   "newsprism",
   "solo-life",
+  "stillpoint",
 ];
 
 const LOCALES = [

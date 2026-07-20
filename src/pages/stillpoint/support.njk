@@ -1,0 +1,11 @@
+---
+layout: legal.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/stillpoint/support.html{% else %}/{{ loc.code }}/stillpoint/support.html{% endif %}"
+app: "stillpoint"
+pageName: support
+eleventyExcludeFromCollections: true
+---

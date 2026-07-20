@@ -120,6 +120,7 @@ Worker は UTM パラメータを Analytics Engine データセット `utm_click
 | [StockPulse](./stock-pulse/) | Japanese stock portfolio analysis |
 | [Touten](./touten/) | Japanese news stance comparison across five national dailies |
 | [Phrase Flow](./phraseflow/) | Daily wisdom quotes with dual perspectives |
+| [Stillpoint](./stillpoint/) | Guided zen reflection with Socratic AI questions |
 | [今日のみことば](./phraseflow-christianity/) | Christian sacred verses — Phrase Flow Religion |
 | [今日の仏経](./phraseflow-buddhism/) | Buddhist sutras — Phrase Flow Religion |
 | [今日のクルアーン](./phraseflow-islam/) | Islamic verses — Phrase Flow Religion |
