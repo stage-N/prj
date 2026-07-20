@@ -72,7 +72,8 @@
           "phraseflow-buddhism": "Daily Sutra",
           "phraseflow-islam": "Daily Quran",
           "phraseflow-religion": "Daily Sacred Verse",
-          "stillpoint": "Stillpoint"
+          "stillpoint": "Stillpoint",
+          "pagepace": "PagePace"
         },
         "categorySlugs": [
           "product",
@@ -93,6 +94,7 @@
           "touten",
           "phraseflow",
           "stillpoint",
+          "pagepace",
           "phraseflow-religion",
           "phraseflow-islam",
           "phraseflow-buddhism",
@@ -174,7 +176,8 @@
           "phraseflow-buddhism": "오늘의 불경",
           "phraseflow-islam": "오늘의 꾸란",
           "phraseflow-religion": "오늘의 종교 구절",
-          "stillpoint": "Stillpoint"
+          "stillpoint": "Stillpoint",
+          "pagepace": "PagePace"
         },
         "categorySlugs": [
           "product",
@@ -195,6 +198,7 @@
           "touten",
           "phraseflow",
           "stillpoint",
+          "pagepace",
           "phraseflow-religion",
           "phraseflow-islam",
           "phraseflow-buddhism",
@@ -1645,6 +1649,48 @@
         "title": "지원 | Stillpoint",
         "desc": "",
         "ogTitle": "지원 | Stillpoint",
+        "ogDesc": ""
+      }
+    }
+  },
+  "pagepace": {
+    "en": {
+      "index": {
+        "title": "PagePace | Reading Rhythm Tracker",
+        "desc": "Register books by ISBN, time reading sessions, and see segment pace (min/page). Streaks, monthly calendar, heatmap.",
+        "ogTitle": "PagePace — Every page has a pace. Find yours.",
+        "ogDesc": "ISBN library, session timer, segment pace, monthly calendar."
+      },
+      "privacy": {
+        "title": "Privacy Policy | PagePace",
+        "desc": "",
+        "ogTitle": "Privacy Policy | PagePace",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | PagePace",
+        "desc": "",
+        "ogTitle": "Support | PagePace",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "PagePace | Reading Rhythm Tracker",
+        "desc": "ISBN으로 책을 등록하고 세션으로 독서 페이스(분/페이지)를 측정. 스트릭·월간 달력·히트맵.",
+        "ogTitle": "PagePace — Every page has a pace. Find yours.",
+        "ogDesc": "ISBN 서재 · 세션 타이머 · 구간 페이스 · 월간 달력."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | PagePace",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | PagePace",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | PagePace",
+        "desc": "",
+        "ogTitle": "지원 | PagePace",
         "ogDesc": ""
       }
     }

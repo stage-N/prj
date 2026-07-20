@@ -28,6 +28,7 @@ const APPS = [
   "newsprism",
   "solo-life",
   "stillpoint",
+  "pagepace",
 ];
 const PAGES = ["index", "privacy", "support"];
 

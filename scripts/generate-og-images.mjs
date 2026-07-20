@@ -20,6 +20,7 @@ const APPS = [
   { slug: "touten", name: "Touten", tagline: "日本5紙の報道スタンス比較", color: "#37474F" },
   { slug: "phraseflow", name: "Phrase Flow", tagline: "Daily Wisdom & Dual Perspectives", color: "#15b788" },
   { slug: "stillpoint", name: "Stillpoint", tagline: "Sit with a thought. Let the questions deepen.", color: "#B8C0D6" },
+  { slug: "pagepace", name: "PagePace", tagline: "Every page has a pace. Find yours.", color: "#F59E0B" },
   { slug: "banjem", name: "Banjem", tagline: "Banjem — Korean news stance comparison", color: "#15b788" },
   { slug: "newsprism", name: "NewsPrism", tagline: "US news stance comparison", color: "#15b788" },
 ];
