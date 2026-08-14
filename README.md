@@ -122,6 +122,7 @@ Worker は UTM パラメータを Analytics Engine データセット `utm_click
 | [Phrase Flow](./phraseflow/) | Daily wisdom quotes with dual perspectives |
 | [Stillpoint](./stillpoint/) | Guided zen reflection with Socratic AI questions |
 | [PagePace](./pagepace/) | Reading rhythm tracker — ISBN, session pace, habit calendar |
+| [BriefForge](./briefforge/) | Product exploration — Brief → Kill/Keep → GitHub Issues |
 | [今日のみことば](./phraseflow-christianity/) | Christian sacred verses — Phrase Flow Religion |
 | [今日の仏経](./phraseflow-buddhism/) | Buddhist sutras — Phrase Flow Religion |
 | [今日のクルアーン](./phraseflow-islam/) | Islamic verses — Phrase Flow Religion |

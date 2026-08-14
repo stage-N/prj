@@ -1694,5 +1694,47 @@
         "ogDesc": ""
       }
     }
+  },
+  "briefforge": {
+    "en": {
+      "index": {
+        "title": "BriefForge | Ship Ambition. Kill the Rest.",
+        "desc": "From a one-line goal to hypothesis cards, Signals, Kill/Park/Keep — export Keep to GitHub Issues.",
+        "ogTitle": "BriefForge — Ship Ambition. Kill the Rest.",
+        "ogDesc": "Brief → hypotheses → Signals → Decide → GitHub Export"
+      },
+      "privacy": {
+        "title": "Privacy Policy | BriefForge",
+        "desc": "",
+        "ogTitle": "Privacy Policy | BriefForge",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support | BriefForge",
+        "desc": "",
+        "ogTitle": "Support | BriefForge",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "BriefForge | Ship Ambition. Kill the Rest.",
+        "desc": "한 줄 목표 → 가설 카드 → Signals → Kill/Park/Keep. Keep만 GitHub Issue로.",
+        "ogTitle": "BriefForge — Ship Ambition. Kill the Rest.",
+        "ogDesc": "Brief → 가설 → Signals → Decide → GitHub Export"
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | BriefForge",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | BriefForge",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 | BriefForge",
+        "desc": "",
+        "ogTitle": "지원 | BriefForge",
+        "ogDesc": ""
+      }
+    }
   }
 }

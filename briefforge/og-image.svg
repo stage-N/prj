@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0D12"/>
+      <stop offset="100%" stop-color="#161922"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#3B82F6"/>
+  <rect x="820" y="140" width="280" height="90" rx="12" fill="#161922" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="820" y="250" width="280" height="90" rx="12" fill="#161922" stroke="#EF4444" stroke-width="2"/>
+  <rect x="820" y="360" width="280" height="90" rx="12" fill="#161922" stroke="#10B981" stroke-width="2"/>
+  <text x="80" y="260" fill="#F8FAFC" font-family="ui-sans-serif, system-ui, sans-serif" font-size="64" font-weight="700">BriefForge</text>
+  <text x="80" y="320" fill="#3B82F6" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26">Ship Ambition. Kill the Rest.</text>
+  <text x="80" y="520" fill="#94A3B8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20">STAGEN · Product exploration canvas</text>
+</svg>

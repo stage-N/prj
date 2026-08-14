@@ -20,6 +20,7 @@ const APPS = [
   "solo-life",
   "stillpoint",
   "pagepace",
+  "briefforge",
 ];
 
 const LOCALES = [

@@ -21,6 +21,7 @@ const APPS = [
   { slug: "phraseflow", name: "Phrase Flow", tagline: "Daily Wisdom & Dual Perspectives", color: "#15b788" },
   { slug: "stillpoint", name: "Stillpoint", tagline: "Sit with a thought. Let the questions deepen.", color: "#B8C0D6" },
   { slug: "pagepace", name: "PagePace", tagline: "Every page has a pace. Find yours.", color: "#F59E0B" },
+  { slug: "briefforge", name: "BriefForge", tagline: "Ship Ambition. Kill the Rest.", color: "#3B82F6" },
   { slug: "banjem", name: "Banjem", tagline: "Banjem — Korean news stance comparison", color: "#15b788" },
   { slug: "newsprism", name: "NewsPrism", tagline: "US news stance comparison", color: "#15b788" },
 ];

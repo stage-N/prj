@@ -29,6 +29,7 @@ const APPS = [
   "solo-life",
   "stillpoint",
   "pagepace",
+  "briefforge",
 ];
 const PAGES = ["index", "privacy", "support"];
 

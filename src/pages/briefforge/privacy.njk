@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/briefforge/privacy.html{% else %}/{{ loc.code }}/briefforge/privacy.html{% endif %}"
+app: "briefforge"
+pageName: privacy
+eleventyExcludeFromCollections: true
+---
