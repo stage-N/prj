@@ -1,0 +1,11 @@
+---
+layout: app.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/zaitap/pro.html{% else %}/{{ loc.code }}/zaitap/pro.html{% endif %}"
+app: "zaitap"
+pageName: pro
+eleventyExcludeFromCollections: true
+---
