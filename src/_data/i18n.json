@@ -380,10 +380,10 @@
   "rakubill": {
     "en": {
       "index": {
-        "title": "Rakubill | Simple invoice app with qualified invoice support",
-        "desc": "Simple invoicing for sole proprietors and freelancers. Supports Japan's qualified invoice system. Up to 3 invoices per month free; Premium is a ¥500 one-time purchase for unlimited use.",
-        "ogTitle": "Rakubill - Easy invoicing",
-        "ogDesc": "Create and export invoices from your phone. Data stays on your device only."
+        "title": "Rakubill | Simple Invoicing Cloud & App with Qualified Invoice Support",
+        "desc": "Simple invoicing for sole proprietors and freelancers. Supports Japan's qualified invoice system. Web version with email delivery & 60-day download links, mobile app with ¥500 one-time purchase.",
+        "ogTitle": "Rakubill - Easy Invoicing Cloud & App",
+        "ogDesc": "Create invoices on web browser or mobile. Email delivery, 60-day secure download links, and qualified invoices."
       },
       "privacy": {
         "title": "Privacy Policy | Rakubill",
@@ -400,10 +400,10 @@
     },
     "ko": {
       "index": {
-        "title": "Rakubill | 인보이스 대응 간편 청구서 작성 앱",
-        "desc": "개인사업자·프리랜서용 간단한 청구서 작성 앱. 적격청구서(인보이스) 제도 대응. 월 3통까지 무료, 프리미엄은 ¥500 일회성 구매로 무제한.",
-        "ogTitle": "Rakubill - 간편 청구서 작성",
-        "ogDesc": "스마트폰 하나로 청구서 작성부터 PDF 출력까지. 데이터는 기기 내에만 저장."
+        "title": "Rakubill | 인보이스 대응 간편 청구서 작성 클라우드 & 앱",
+        "desc": "개인사업자·프리랜서용 간단한 청구서 작성 웹 & 모바일. 적격청구서(인보이스) 제도 대응. 이메일 직접 송신, 60일 다운로드 링크, Stripe 결제 및 모바일 일회성 구매 지원.",
+        "ogTitle": "Rakubill - 간편 청구서 작성 클라우드 & 앱",
+        "ogDesc": "PC 브라우저에서도 스마트폰에서도. 이메일 직접 송신·인보이스 대응·청구서 작성부터 PDF 출력까지."
       },
       "privacy": {
         "title": "개인정보 처리방침 | Rakubill",
@@ -1733,6 +1733,48 @@
         "title": "지원 | BriefForge",
         "desc": "",
         "ogTitle": "지원 | BriefForge",
+        "ogDesc": ""
+      }
+    }
+  },
+  "zeiro": {
+    "en": {
+      "index": {
+        "title": "Zeiro | All-in-one Accounting, Payroll & AI Auto-Journal SaaS for Micro-Corporations",
+        "desc": "1/4 the cost of Money Forward. Micro-corporation accounting, zero-touch transaction email sync, Gemini AI journal inference, director payroll & withholding tax delivery reports.",
+        "ogTitle": "Zeiro - Micro-corporation Accounting & Payroll",
+        "ogDesc": "Automate accounting for ¥9,360/year. Email sync, AI journals, payroll calculation, closing audit."
+      },
+      "privacy": {
+        "title": "Privacy Policy | Zeiro",
+        "desc": "",
+        "ogTitle": "Privacy Policy | Zeiro",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "Support & FAQ | Zeiro",
+        "desc": "",
+        "ogTitle": "Support & FAQ | Zeiro",
+        "ogDesc": ""
+      }
+    },
+    "ko": {
+      "index": {
+        "title": "Zeiro (세로/税路) | 1인 법인 특화 통합 회계·급여·AI 자동분개 SaaS",
+        "desc": "Money Forward의 1/4 비용. 1인 법인 복식부기 장부, 거래 알림 메일 무인 연동, Gemini AI 자동분개, 임원보수 급여계산 및 원천세 납기특례 집계.",
+        "ogTitle": "Zeiro - 1인 법인 통합 회계 & 급여 관리",
+        "ogDesc": "연 ¥9,360으로 경리 업무 완전 무인화. 메일 연동, AI 분개, 급여 계산, 결산 감사."
+      },
+      "privacy": {
+        "title": "개인정보 처리방침 | Zeiro (세로)",
+        "desc": "",
+        "ogTitle": "개인정보 처리방침 | Zeiro (세로)",
+        "ogDesc": ""
+      },
+      "support": {
+        "title": "지원 및 FAQ | Zeiro (세로)",
+        "desc": "",
+        "ogTitle": "지원 및 FAQ | Zeiro (세로)",
         "ogDesc": ""
       }
     }

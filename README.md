@@ -114,7 +114,8 @@ Worker は UTM パラメータを Analytics Engine データセット `utm_click
 | [ZeiCal](./zeical/) | Tax calendar |
 | [熱中症レコーダー Pro](./wbgt-recorder/) | WBGT recorder for worksites |
 | [熱中症アラート](./wbgt-alert/) | Free heat stroke alert |
-| [ラクビル](./rakubill/) | Invoicing |
+| [ラクビル](./rakubill/) | 請求書作成クラウド＆アプリ（[Web版](https://rakubill.sta3e-n.online)） |
+| [Zeiro (税路)](./zeiro/) | 1人法人の統合経理・給与・AI自動仕訳SaaS |
 | [Forest School](./forest-school/) | Educational game ages 3-5 |
 | [Fuzen](./fuzen/) | Functional thinking — Think in Fuzen |
 | [StockPulse](./stock-pulse/) | Japanese stock portfolio analysis |
