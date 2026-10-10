@@ -30,6 +30,7 @@ const APPS = [
   "stillpoint",
   "pagepace",
   "briefforge",
+  "zeiro",
 ];
 const PAGES = ["index", "privacy", "support"];
 

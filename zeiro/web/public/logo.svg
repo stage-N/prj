@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" width="280" height="64">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="lgEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="lgTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="lgDiag" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <rect width="64" height="64" rx="16" fill="url(#logoBg)"/>
+    <rect x="1" y="1" width="62" height="62" rx="15" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <g transform="translate(10, 10) scale(0.086)">
+      <path d="M 120 160 C 120 144.5 132.5 132 148 132 L 364 132 C 379.5 132 392 144.5 392 160 C 392 175.5 379.5 188 364 188 L 148 188 C 132.5 188 120 175.5 120 160 Z" fill="url(#lgEmerald)"/>
+      <path d="M 364 160 L 168 356 C 158 366 158 382 168 392 C 178 402 194 402 204 392 L 400 196 C 410 186 410 170 400 160 C 390 150 374 150 364 160 Z" fill="url(#lgDiag)"/>
+      <path d="M 148 324 C 132.5 324 120 336.5 120 352 C 120 367.5 132.5 380 148 380 L 364 380 C 379.5 380 392 367.5 392 352 C 392 336.5 379.5 324 364 324 L 148 324 Z" fill="url(#lgTeal)"/>
+      <circle cx="256" cy="256" r="30" fill="#ffffff"/>
+      <circle cx="256" cy="256" r="16" fill="#0f766e"/>
+    </g>
+  </g>
+
+  <text x="78" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" letter-spacing="-0.5">Zeiro</text>
+  <text x="156" y="38" fill="#10b981" font-family="'Hiragino Kaku Gothic ProN', sans-serif" font-size="16" font-weight="700">税路</text>
+  <text x="78" y="54" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="500">統合経理・給与管理 SaaS</text>
+</svg>

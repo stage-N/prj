@@ -21,6 +21,7 @@ const APPS = [
   "stillpoint",
   "pagepace",
   "briefforge",
+  "zeiro",
 ];
 
 const LOCALES = [
