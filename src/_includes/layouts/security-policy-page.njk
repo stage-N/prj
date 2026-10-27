@@ -1,0 +1,145 @@
+{% set locale = loc.code %}
+{% set prefix = "" if locale == "ja" else "/" ~ locale %}
+{% set pagePath = "/security-policy/" %}
+{% if locale == "ja" %}
+  {% set s = pages["security-policy"] %}
+{% else %}
+  {% set s = i18n.site[locale]["security-policy"] %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ s.title }}</title>
+  {% if s.desc %}<meta name="description" content="{{ s.desc }}">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ s.ogTitle or s.title }}">
+  {% if s.desc %}<meta property="og:description" content="{{ s.desc }}">{% endif %}
+  <meta property="og:url" content="https://sta3e-n.com{{ prefix }}/security-policy/">
+  {% set ogImg = s.ogImage or pages["security-policy"].ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% for l in site.locales %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
+  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <style>{% include "css/lang-switcher.css" %}</style>
+  <style>{% include "css/message.css" %}</style>
+  <style>
+    .sec-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #0d6e61;
+      background: #e6fffa;
+      border: 1px solid #b2f5ea;
+      border-radius: 6px;
+      padding: 4px 12px;
+      margin-bottom: 0.9rem;
+    }
+    .policy-card {
+      background: #fff;
+      border: 1px solid var(--msg-border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+      margin-bottom: 2rem;
+    }
+    .policy-card h2 {
+      font-size: 1.08rem;
+      margin: 1.6rem 0 0.45rem;
+      color: #1a202c;
+    }
+    .policy-card h2:first-of-type {
+      margin-top: 1.25rem;
+    }
+    .policy-signoff {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--msg-border);
+      text-align: right;
+    }
+    .policy-signoff p {
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+    .ipa-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin-bottom: 2rem;
+    }
+    .ipa-box h2 {
+      font-size: 1.05rem;
+      color: #14532d;
+      margin: 0 0 0.6rem;
+    }
+    .ipa-box p, .ipa-box li {
+      font-size: 0.92rem;
+      color: #166534;
+    }
+    .corp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.75rem;
+      font-size: 0.92rem;
+    }
+    .corp-table th, .corp-table td {
+      border-bottom: 1px solid var(--msg-border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .corp-table th {
+      width: 32%;
+      color: var(--msg-muted);
+      font-weight: 600;
+    }
+    @media (max-width: 640px) {
+      .policy-card { padding: 22px 18px; }
+      .corp-table th, .corp-table td { display: block; width: 100%; padding: 6px 0; }
+      .corp-table th { border-bottom: none; padding-top: 10px; }
+    }
+  </style>
+</head>
+<body class="message-shell">
+  {% include "partials/lang-switcher.njk" %}
+  <nav class="message-nav" aria-label="{% if locale == 'ja' %}サイト{% elif locale == 'ko' %}사이트{% else %}Site{% endif %}">
+    <div class="message-nav-inner">
+      <a href="{{ prefix }}/" class="message-nav-logo">
+        <img src="/assets/branding/logo-symbol.svg" alt="" width="28" height="28">
+        <img src="/assets/branding/logo-wordmark.svg" alt="STAGEN" height="24">
+      </a>
+      <ul class="message-nav-links">
+        <li><a href="{{ prefix }}/">{{ s.navHome }}</a></li>
+        <li><a href="{{ prefix }}/message/">{{ s.navMessage }}</a></li>
+        <li><a href="{{ prefix }}/blog/">{{ s.navBlog }}</a></li>
+        <li><a href="{{ prefix }}/#products">{{ s.navProducts }}</a></li>
+        <li><a href="{{ prefix }}/contact/">{{ s.navContact }}</a></li>
+        <li><a href="{{ prefix }}/security-policy/" aria-current="page">{{ s.navSecurity }}</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="message-main">
+    <article class="message-article message-container">
+      <header class="message-header">
+        <span class="sec-badge">{{ s.badge }}</span>
+        <h1>{{ s.heading }}</h1>
+        <p class="message-lead">{{ s.lead }}</p>
+      </header>
+      <div class="message-body">
+        {% bodyContent "security-policy", loc.code %}
+      </div>
+    </article>
+  </main>
+  <footer class="message-footer">
+    <p><a href="{{ prefix }}/">STAGEN</a> · <a href="{{ prefix }}/message/">{{ s.navMessage }}</a> · <a href="{{ prefix }}/security-policy/">{{ s.navSecurity }}</a> · <a href="{{ prefix }}/contact/">{{ s.navContact }}</a></p>
+    <p>&copy; 2026 STAGEN</p>
+  </footer>
+</body>
+</html>

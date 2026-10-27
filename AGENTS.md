@@ -21,7 +21,7 @@ STAGEN(1인 법인 스튜디오)의 **회사 사이트 + 앱 LP/Privacy/Support 
 
 | 이 저장소 (`sta3e-n.com`) | 제품 웹앱 (`*.sta3e-n.online`) |
 |---|---|
-| 회사 홈, `/message/`, `/blog/`, `/contact/` | 실제 서비스 UI |
+| 회사 홈, `/message/`, `/blog/`, `/contact/`, `/security-policy/` | 실제 서비스 UI |
 | `/{slug}/` LP · `privacy.html` · `support.html` | flavor별 서브도메인 |
 | Apple 3.1.2 페이월이 가리키는 Privacy URL | Stripe/RC/앱 API |
 

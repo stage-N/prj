@@ -21,6 +21,21 @@
         "navProducts": "Products",
         "navContact": "Contact"
       },
+      "security-policy": {
+        "title": "Information Security Basic Policy | STAGEN Inc. (株式会社ｓｔａｇｅ　Ｎ)",
+        "desc": "Company-wide Information Security Basic Policy and IPA SECURITY ACTION (Two-Star) declaration of STAGEN Inc. (株式会社ｓｔａｇｅ　Ｎ).",
+        "ogTitle": "Information Security Basic Policy | STAGEN Inc.",
+        "ogImage": "https://sta3e-n.com/assets/og-image.png",
+        "badge": "Information Security Policy / SECURITY ACTION ★★",
+        "heading": "Information Security Basic Policy",
+        "lead": "Company-wide basic policy on information security across all products and services operated by STAGEN Inc.",
+        "navHome": "Home",
+        "navMessage": "Message",
+        "navBlog": "Blog",
+        "navProducts": "Products",
+        "navContact": "Contact",
+        "navSecurity": "Security Policy"
+      },
       "contact": {
         "title": "Contact | STAGEN",
         "desc": "Contact STAGEN about products, business partnerships, and other inquiries.",
@@ -124,6 +139,21 @@
         "navBlog": "블로그",
         "navProducts": "제품",
         "navContact": "문의"
+      },
+      "security-policy": {
+        "title": "정보보안 기본방침 | 주식회사 stage N (STAGEN)",
+        "desc": "주식회사 stage N(株式会社ｓｔａｇｅ　Ｎ)의 전사 정보보안 기본방침 및 IPA 「SECURITY ACTION(2성)」 선언에 관한 공표 사항입니다.",
+        "ogTitle": "정보보안 기본방침 | STAGEN",
+        "ogImage": "https://sta3e-n.com/assets/og-image.png",
+        "badge": "Information Security Policy / SECURITY ACTION ★★",
+        "heading": "정보보안 기본방침",
+        "lead": "당사가 기획·개발·운영하는 모든 제품 및 사업에 관한 전사 정보보안 기본방침",
+        "navHome": "홈",
+        "navMessage": "대표 인사",
+        "navBlog": "블로그",
+        "navProducts": "제품",
+        "navContact": "문의",
+        "navSecurity": "정보보안 기본방침"
       },
       "contact": {
         "title": "문의하기 | STAGEN",

@@ -1,0 +1,9 @@
+---
+layout: security-policy-page.njk
+pagination:
+  data: site.locales
+  size: 1
+  alias: loc
+permalink: "{% if loc.code == 'ja' %}/security-policy/index.html{% else %}/{{ loc.code }}/security-policy/index.html{% endif %}"
+eleventyExcludeFromCollections: true
+---
