@@ -74,10 +74,47 @@
       padding: 24px 26px;
       margin-bottom: 2rem;
     }
-    .ipa-box h2 {
-      font-size: 1.05rem;
+    .ipa-banner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #dcfce7;
+    }
+    .ipa-badge-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .ipa-badge-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .ipa-badge-img {
+      display: block;
+      width: 88px;
+      height: 88px;
+      object-fit: contain;
+    }
+    .ipa-intro h2 {
+      font-size: 1.08rem;
       color: #14532d;
-      margin: 0 0 0.6rem;
+      margin: 0 0 0.4rem;
+    }
+    .ipa-intro p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: #166534;
+      line-height: 1.5;
     }
     .ipa-box p, .ipa-box li {
       font-size: 0.92rem;
@@ -102,6 +139,8 @@
     }
     @media (max-width: 640px) {
       .policy-card { padding: 22px 18px; }
+      .ipa-banner { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .ipa-badge-img { width: 72px; height: 72px; }
       .corp-table th, .corp-table td { display: block; width: 100%; padding: 6px 0; }
       .corp-table th { border-bottom: none; padding-top: 10px; }
     }
