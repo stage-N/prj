@@ -116,7 +116,7 @@ Privacy는 STAGEN 표준(단말 내 저장·제3자 취득을 명시). Support�
 ## 4. 도메인·제품 맵
 
 **도메인 규칙:** 회사/LP = `sta3e-n.com`. 웹앱 = `{host}.sta3e-n.online` (구 `*.sta3e-n.com` 웹앱 URL은 폐기).  
-예외: Touten 웹 CTA는 `https://sta3e-n.online` (서브도메인 없음). Phrase Flow flavor는 `{flavor}.phraseflow.sta3e-n.online`.
+예외: Phrase Flow flavor는 `{flavor}.phraseflow.sta3e-n.online`.
 
 GitHub 이슈/코드: 제품은 대개 `github.com/ubermenschjo/{repo}`. **이 사이트 저장소만** `stage-N/prj`.
 
@@ -132,7 +132,7 @@ GitHub 이슈/코드: 제품은 대개 `github.com/ubermenschjo/{repo}`. **이 �
 | cool-walk | Cool Walk | coolwalk.sta3e-n.online | cool-walk | 同上 |
 | fuzen | Fuzen | — | fuzen | AS `id6794620986` / Play `com.stagen.fuzen` |
 | stock-pulse | StockPulse | stockpulse.sta3e-n.online | stock-pulse | AS `id6794628277` / Play `com.stagen.stockpulse`. 투자 면책 필수 |
-| touten | Touten | sta3e-n.online | touten | AS `id6800949057` / Play `com.stagen.touten`. 뉴스 3형제 |
+| touten | Touten | touten.sta3e-n.online | touten | AS `id6800949057` / Play `com.stagen.touten`. 뉴스 3형제 |
 | banjem | Banjem | banjem.sta3e-n.online | touten | AS `id6800948602` / Play `com.stagen.banjem` |
 | newsprism | NewsPrism | newsprism.sta3e-n.online | touten | AS `id6800949069` / Play `com.stagen.newsprism` |
 | phraseflow | Phrase Flow | phraseflow.sta3e-n.online | gujeol | AS `id6792987031` / Play `com.stagen.gujeol` |
