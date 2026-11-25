@@ -178,6 +178,17 @@ export default {
       return new Response(res.body, { status: res.status, headers });
     }
 
+    if (res.ok && resolveMarkdownMapping(url.pathname)) {
+      const headers = new Headers(res.headers);
+      const vary = headers.get("Vary");
+      if (!vary) {
+        headers.set("Vary", "Accept");
+      } else if (!vary.toLowerCase().split(",").map((v) => v.trim()).includes("accept")) {
+        headers.set("Vary", `${vary}, Accept`);
+      }
+      return new Response(res.body, { status: res.status, headers });
+    }
+
     return res;
   },
 };

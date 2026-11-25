@@ -15,7 +15,19 @@
   ],
   "assets": {
     "directory": "_site",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/*",
+      "!/assets/*",
+      "!/*.png",
+      "!/*.jpg",
+      "!/*.jpeg",
+      "!/*.webp",
+      "!/*.svg",
+      "!/*.ico",
+      "!/*.css",
+      "!/*.js"
+    ]
   },
   "compatibility_flags": [
     "nodejs_compat"
