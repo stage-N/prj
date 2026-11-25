@@ -1,4 +1,11 @@
 ---
 layout: base.njk
 ---
-{% bodyContent app ~ "-" ~ pageName, loc.code %}
+{% set locale = loc.code %}
+{% set isDeprecated = app | isDeprecatedApp %}
+{% if not isDeprecated and pageName == "index" %}
+  {% set aiBlocks %}{% include "partials/product-ai-blocks.njk" %}{% endset %}
+{% else %}
+  {% set aiBlocks = "" %}
+{% endif %}
+{% renderAppBody app ~ "-" ~ pageName, loc.code, aiBlocks %}

@@ -35,7 +35,8 @@ STAGEN(1인 법인 스튜디오)의 **회사 사이트 + 앱 LP/Privacy/Support 
 ```bash
 npm install
 npm run dev     # Eleventy watch + local server
-npm run build   # → _site/  (커밋 금지)
+npm run build   # rm -rf _site && eleventy → _site/  (커밋 금지)
+npm run verify:seo  # scripts/verify-seo.mjs (HTML/JSON-LD/XML/MD/번역/Worker 검증)
 npm run og      # scripts/generate-og-images.mjs (1200×630 SVG+PNG)
 npx wrangler deploy   # 사용자 지시 시에만. 먼저 npm run build
 npx wrangler secret put SLACK_BOT_TOKEN
@@ -59,10 +60,14 @@ Eleventy 3 (`eleventy.config.js`)
   src/_includes/bodies/{slug}-{page}[.{en|ko}].html  → 실제 본문
   src/_data/pages/{slug}.json  → title/og/styles (ja 기본)
   src/_data/i18n.json          → en/ko 메타·카피
+  src/_data/seo.json           → 회사/클러스터/활성 19개 앱 SEO·AI(GEO) 팩트 SSOT
+  src/_lib/jsonld.js           → @id 연결 Schema.org JSON-LD 그래프 생성
+  src/pages/{robots.txt,sitemap.xml,llms.txt,llms-full.txt,site-md,app-md,blog-feed.xml}.njk
   {slug}/**.{png,svg}          → passthrough (아이콘·OG·스크린샷)
   assets/                      → 공통 브랜딩·product-*.png
 Worker (`src/worker.js` + wrangler.jsonc)
-  UTM query → Analytics Engine `utm_clicks` (binding `UTM_ANALYTICS`)
+  UTM query / AI Referrer / AI Bot → Analytics Engine `utm_clicks` (binding `UTM_ANALYTICS`)
+  Accept: text/markdown (또는 *.md) → /index.md 또는 /{slug}/index.md 응답
   POST /api/contact → src/contact.js → Slack chat.postMessage
 ```
 
@@ -105,7 +110,8 @@ slug는 kebab-case. 각 앱은 **index / privacy / support** 세트.
 8. `README.md` Apps 표.
 9. `src/contact.js`의 `PRODUCTS` Set **과** `i18n.json` contact `products` / `productSlugs` (폼 드롭다운). 빠져 있으면 해당 제품 문의가 `invalid product`.
 10. `scripts/generate-og-images.mjs`의 `APPS` (선택).
-11. `npm run build`로 `_site/{slug}/` 확인.
+11. `src/_data/seo.json`의 `activeApps`·`clusters`·`apps` 및 `src/worker.js`의 `ACTIVE_APPS`에 추가 (SEO/JSON-LD/`llms.txt`/`/{slug}/index.md` 자동 생성).
+12. `npm run build && npm run verify:seo`로 `_site/{slug}/` 및 SEO/다국어 무결성 확인.
 
 Privacy는 STAGEN 표준(단말 내 저장·제3자 취득을 명시). Support는 `https://github.com/ubermenschjo/{repo}/issues`. 투자계는 투자조언 아님 면책을 index+support에. 스토어 미공개면 CTA를 「準備中」. `_site/` 커밋 금지.
 

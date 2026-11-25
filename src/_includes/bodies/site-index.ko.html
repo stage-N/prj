@@ -19,6 +19,7 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <header class="hero">
     <canvas id="heroCanvas" aria-hidden="true"></canvas>
     <div class="hero-bg" aria-hidden="true"></div>
@@ -26,7 +27,7 @@
     <div class="hero-inner">
       <img src="assets/branding/logo-inverted.svg" alt="STAGEN" class="hero-logo">
       <div class="hero-slogan" id="heroSlogan">
-        <p>사람이 활약할 수 있는 무대는 하나가 아닙니다.</p>
+        <h1>사람이 활약할 수 있는 무대는 하나가 아닙니다.</h1>
         <p>자리 잡을 곳이 늘어날수록 세계도 넓어집니다.</p>
         <p>기세로 도전합니다. 상상조차 못 했던 풍경을, 그 무대에서.</p>
       </div>
@@ -134,6 +135,16 @@
           <p>STAGEN은 여러 무대에서 실용적인 제품을 전달하는 회사입니다. 각종 애플리케이션 소프트웨어, 컴퓨터 시스템, 웹사이트의 기획·제작·운영을 담당합니다.</p>
           <p>세금 관리, 노동안전, 비즈니스 도구, 교육 등 다양한 분야에서 사용자에게 가까운 제품을 개발·제공합니다. 기획부터 개발, 운영·유지보수까지 일관되게 지원합니다.</p>
           <p><strong>We deliver on time, on budget, and on spec.</strong> — 기한·예산·사양을 지키는 것이 모든 무대의 기반입니다.</p>
+          <table class="corp-summary-table" aria-label="회사 개요">
+            <tbody>
+              <tr><th>법인명</th><td>주식회사 stageN (株式会社stageN / STAGEN Inc.)</td></tr>
+              <tr><th>설립</th><td>2022년</td></tr>
+              <tr><th>대표자</th><td>대표이사 조정래 (趙貞來)</td></tr>
+              <tr><th>법인번호</th><td>6011001150364 (적격청구서 발행사업자: T6011001150364)</td></tr>
+              <tr><th>소재지</th><td>일본 도쿄도 시부야구 시부야 2-19-15 미야마스자카 빌딩 609</td></tr>
+              <tr><th>도메인</th><td>sta3e-n.com (기업·제품 소개·블로그) / *.sta3e-n.online (웹 앱)</td></tr>
+            </tbody>
+          </table>
           <div class="about-badges">
             <a href="/ko/security-policy/" class="about-badge-card about-security-card">
               <div class="about-badge-logo about-security-logo">
@@ -205,7 +216,13 @@
     <div class="container">
       <span class="section-label reveal">Products</span>
       <h2 class="section-title reveal">제품</h2>
-      <p class="section-lead reveal">STAGEN이 개발·운영하는 애플리케이션 목록입니다. 각 제품 상세 페이지에서 확인하실 수 있습니다.</p>
+      <p class="section-lead reveal">STAGEN이 개발·운영하는 19개 프로덕트입니다. 각 제품 상세 페이지에서 사양·요금·FAQ를 확인하실 수 있습니다.</p>
+      <div class="cluster-summary" aria-label="제품 분야">
+        <div class="cluster-chip"><strong>1인 법인 회계·세무</strong>Zeiro / Rakubill / ZeiCal</div>
+        <div class="cluster-chip"><strong>노동안전·체류 절차</strong>온열질환 레코더 Pro / 온열질환 알림 / ZaiTap</div>
+        <div class="cluster-chip"><strong>미디어·교양·성찰</strong>Touten / 반점(Banjem) / NewsPrism / Phrase Flow 5종 / Stillpoint</div>
+        <div class="cluster-chip"><strong>교육·독서·투자 분석</strong>Fuzen / Forest School / PagePace / StockPulse</div>
+      </div>
       <div class="products-grid">
 
         <article class="product-card reveal">
@@ -635,6 +652,7 @@
       </details>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-inner">
@@ -675,11 +693,13 @@
             <li><a href="/ko/security-policy/">정보보안 기본방침</a></li>
             <li><a href="#purpose">사업 목적</a></li>
             <li><a href="#services">사업 내용</a></li>
+            <li><a href="/llms.txt">llms.txt (AI 디렉터리)</a></li>
           </ul>
         </div>
         <div>
           <h4>제품</h4>
           <ul>
+            <li><a href="zaitap/">ZaiTap</a></li>
             <li><a href="zeical/">ZeiCal</a></li>
             <li><a href="wbgt-recorder/">온열질환 레코더 Pro</a></li>
             <li><a href="wbgt-alert/">온열질환 알림</a></li>
@@ -689,12 +709,15 @@
             <li><a href="fuzen/">Fuzen</a></li>
             <li><a href="stock-pulse/">StockPulse</a></li>
             <li><a href="touten/">Touten</a></li>
+            <li><a href="banjem/">반점 (Banjem)</a></li>
+            <li><a href="newsprism/">NewsPrism</a></li>
             <li><a href="phraseflow/">Phrase Flow</a></li>
+            <li><a href="phraseflow-christianity/">오늘의 말씀</a></li>
+            <li><a href="phraseflow-buddhism/">오늘의 불경</a></li>
+            <li><a href="phraseflow-islam/">오늘의 꾸란</a></li>
+            <li><a href="phraseflow-religion/">오늘의 종교 구절</a></li>
             <li><a href="stillpoint/">Stillpoint</a></li>
             <li><a href="pagepace/">PagePace</a></li>
-            <!-- <li><a href="briefforge/">BriefForge</a></li> -->
-            <li><a href="banjem/">Banjem</a></li>
-            <li><a href="newsprism/">NewsPrism</a></li>
           </ul>
         </div>
       </div>
@@ -732,7 +755,7 @@
 
     // Hero slogan stagger
     (function initHero() {
-      const lines = document.querySelectorAll('#heroSlogan p');
+      const lines = document.querySelectorAll('#heroSlogan > *');
       const principle = document.getElementById('heroPrinciple');
       const actions = document.getElementById('heroActions');
 

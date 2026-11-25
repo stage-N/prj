@@ -1,0 +1,2414 @@
+{
+  "lastUpdated": "2026-11-25",
+  "organization": {
+    "id": "https://sta3e-n.com/#organization",
+    "name": "株式会社stageN",
+    "alternateName": ["STAGEN", "STAGEN Inc.", "株式会社ｓｔａｇｅ　Ｎ"],
+    "url": "https://sta3e-n.com/",
+    "logo": "https://sta3e-n.com/assets/og-image.png",
+    "foundingDate": "2022",
+    "corporateNumber": "6011001150364",
+    "taxID": "T6011001150364",
+    "founder": "趙貞來",
+    "email": "contact@sta3e-n.com",
+    "address": {
+      "streetAddress": "渋谷2-19-15 宮益坂ビルディング609",
+      "addressLocality": "渋谷区",
+      "addressRegion": "東京都",
+      "postalCode": "150-0002",
+      "addressCountry": "JP"
+    },
+    "awards": [
+      "IPA SECURITY ACTION 二つ星 (★★)",
+      "パートナーシップ構築宣言 登録企業"
+    ],
+    "sameAs": [
+      "https://github.com/stage-N",
+      "https://github.com/ubermenschjo"
+    ],
+    "summary": {
+      "ja": "株式会社stageN（STAGEN）は、2022年設立のソフトウェア開発スタジオです。1人法人向けの経理・請求・税務（Zeiro・ラクビル・ZeiCal）、労働安全・在留手続（熱中症レコーダー Pro・熱中症アラート・ZaiTap）、メディアリテラシー・教養（Touten・Banjem・NewsPrism・Phrase Flow・Stillpoint）、教育・投資（Fuzen・Forest School・PagePace・StockPulse）の19プロダクトを自社で企画・開発・運営しています。",
+      "en": "STAGEN Inc. (株式会社stageN) is a Tokyo-based software studio founded in 2022. It plans, builds, and operates 19 practical apps and SaaS products across micro-corporation accounting and tax (Zeiro, Rakubill, ZeiCal), workplace safety and residence procedures (Heat Stroke Recorder Pro, Heat Stroke Alert, ZaiTap), media literacy and reflection (Touten, Banjem, NewsPrism, Phrase Flow, Stillpoint), and education/investing (Fuzen, Forest School, PagePace, StockPulse).",
+      "ko": "주식회사 stageN(STAGEN)은 2022년에 설립된 도쿄 소재 소프트웨어 개발 스튜디오입니다. 1인 법인 회계·청구·세무(Zeiro·Rakubill·ZeiCal), 노동안전·체류 절차(온열질환 레코더 Pro·온열질환 알림·ZaiTap), 미디어 리터러시·성찰(Touten·Banjem·NewsPrism·Phrase Flow·Stillpoint), 교육·투자(Fuzen·Forest School·PagePace·StockPulse) 분야의 19개 프로덕트를 자체 기획·개발·운영합니다."
+    }
+  },
+  "deprecatedApps": [
+    "shower-guard",
+    "cool-walk",
+    "briefforge",
+    "solo-life"
+  ],
+  "activeApps": [
+    "zeiro",
+    "rakubill",
+    "zeical",
+    "zaitap",
+    "wbgt-recorder",
+    "wbgt-alert",
+    "touten",
+    "banjem",
+    "newsprism",
+    "phraseflow",
+    "phraseflow-christianity",
+    "phraseflow-buddhism",
+    "phraseflow-islam",
+    "phraseflow-religion",
+    "stillpoint",
+    "fuzen",
+    "forest-school",
+    "pagepace",
+    "stock-pulse"
+  ],
+  "clusters": [
+    {
+      "id": "business-tax",
+      "name": {
+        "ja": "1人法人・バックオフィス・税務",
+        "en": "Micro-Corporation Accounting, Invoicing & Tax",
+        "ko": "1인 법인 회계·청구·세무"
+      },
+      "description": {
+        "ja": "1人法人・個人事業主向けの経理・請求書作成・税務スケジュール管理ツール群",
+        "en": "Accounting, invoicing, and tax deadline tools built for solo corporations and freelancers in Japan",
+        "ko": "일본 1인 법인과 프리랜서를 위한 경리·인보이스 청구·세무 일정 관리 도구"
+      },
+      "apps": ["zeiro", "rakubill", "zeical"]
+    },
+    {
+      "id": "safety",
+      "name": {
+        "ja": "労働安全・在留手続",
+        "en": "Workplace Heat Safety & Residence Procedures",
+        "ko": "노동안전 및 체류 절차"
+      },
+      "description": {
+        "ja": "現場のWBGT熱中症対策と在留手続DXを支援する実務モバイルアプリ群",
+        "en": "Practical mobile apps for WBGT heat-safety management and Japanese residence procedure DX",
+        "ko": "현장 WBGT 온열질환 대책과 일본 체류 절차 DX를 지원하는 실무 모바일 앱"
+      },
+      "apps": ["wbgt-recorder", "wbgt-alert", "zaitap"]
+    },
+    {
+      "id": "media-wisdom",
+      "name": {
+        "ja": "メディアリテラシー・教養・内省",
+        "en": "Media Literacy, Daily Wisdom & Reflection",
+        "ko": "미디어 리터러시·교양·성찰"
+      },
+      "description": {
+        "ja": "報道スタンス比較・歴史的文脈付き名言・ソクラテス式音声内省のメディア＆教養群",
+        "en": "Multi-perspective news comparison, contextual daily wisdom, and Socratic voice reflection apps",
+        "ko": "언론 논조 비교, 역사적 맥락 명언, 소크라테스식 음성 성찰을 제공하는 미디어·교양 제품군"
+      },
+      "apps": [
+        "touten",
+        "banjem",
+        "newsprism",
+        "phraseflow",
+        "phraseflow-christianity",
+        "phraseflow-buddhism",
+        "phraseflow-islam",
+        "phraseflow-religion",
+        "stillpoint"
+      ]
+    },
+    {
+      "id": "learning-invest",
+      "name": {
+        "ja": "教育・読書・投資分析",
+        "en": "Education, Reading & Market Analysis",
+        "ko": "교육·독서·투자 분석"
+      },
+      "description": {
+        "ja": "関数型プログラミング教育・幼児知育・読書リズム計測・日本株3層分析",
+        "en": "Functional thinking education, early childhood games, reading pace tracking, and Japanese equity analysis",
+        "ko": "함수형 사고 교육, 유아 교육 게임, 독서 페이스 측정, 일본 주식 3층 분석"
+      },
+      "apps": ["fuzen", "forest-school", "pagepace", "stock-pulse"]
+    }
+  ],
+  "apps": {
+    "zeiro": {
+      "slug": "zeiro",
+      "cluster": "business-tax",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "isWebApp": true,
+      "webUrl": "https://zeiro.sta3e-n.online",
+      "appStoreUrl": null,
+      "playStoreUrl": null,
+      "githubUrl": "https://github.com/ubermenschjo/zeiro",
+      "ogImage": "https://sta3e-n.com/zeiro/og-image.png",
+      "relatedApps": ["rakubill", "zeical"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-06-29-zeical/", "title": "1人法人の固定費年56万円と税カル" },
+        { "url": "/blog/2026-07-01-rakubill/", "title": "月3通の請求書と¥500買切のラクビル" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Pro (Annual)", "price": "9360", "priceCurrency": "JPY", "billing": "P1Y" },
+        { "name": "Pro (Monthly)", "price": "980", "priceCurrency": "JPY", "billing": "P1M" },
+        { "name": "Business (Annual)", "price": "23760", "priceCurrency": "JPY", "billing": "P1Y" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "Zeiro（税路）",
+          "oneLiner": "Zeiro（税路）は、1人法人・マイクロ法人向けの統合経理・給与・決算クラウドSaaSです。取引メールの無人自動連携とGemini AI自動仕訳、役員報酬・社会保険計算、源泉税「納期の特例」集計までを年額¥9,360（月換算¥780）で提供します。",
+          "targetAudience": "日本の1人法人・マイクロ法人・複数法人オーナー",
+          "pricingSummary": "Free ¥0 / Pro 年額¥9,360（月¥980） / Business 年額¥23,760",
+          "dataStorage": "Cloudflare D1/R2上の暗号化テナント分離保管（TLS 1.3）",
+          "compliance": "複式簿記・協会けんぽ（東京支部）標準報酬月額・国税庁源泉徴収税額表・電子帳簿保存法対応証憑保管（Business）",
+          "features": [
+            "取引通知メール（GMOあおぞら・住信SBI・SMBC・AMEX等）からの無人明細収集とSHA-256重複排除",
+            "Gemini Flash AIによる勘定科目・税区分の自動仕訳推論",
+            "役員報酬・従業員給与・社会保険料・源泉所得税の自動計算と明細出力",
+            "年2回（1月・7月）の源泉所得税「納期の特例」集計表の自動生成",
+            "STAGEN 9大決算健全性監査とMoney Forward仕訳帳CSV無損失インポート"
+          ],
+          "faqs": [
+            {
+              "q": "Zeiro（税路）とはどのようなサービスですか？",
+              "a": "1人法人・マイクロ法人に特化した統合経理・給与・決算SaaSです。複式簿記帳簿、取引通知メール自動連携、Gemini AI仕訳推論、役員給与・社会保険計算、源泉税「納期の特例」集計、STAGEN 9大決算健全性監査までをワンストップで提供します。"
+            },
+            {
+              "q": "Money Forward クラウドや freee との違いは何ですか？",
+              "a": "大企業向けの複雑な設定や過剰な多機能を省き、1人法人に必要な業務へ絞り込むことで、プロプラン年額¥9,360（月額換算¥780）という従来比1/3〜1/4の価格を実現しています。追加契約なしで役員給与計算や源泉税特例集計も含まれます。"
+            },
+            {
+              "q": "既存のMoney Forwardクラウドからデータを移行できますか？",
+              "a": "はい。Money Forward クラウド会計からエクスポートした「仕訳帳 CSV」をインポートすることで、過去の仕訳データを移行初日から引き継げます。"
+            },
+            {
+              "q": "取引通知メールの自動連携はどのように動作しますか？",
+              "a": "ネット銀行やクレジットカードの決済通知メールを連携すると、金額・日付・取引先を自動抽出し、SHA-256指紋による重複排除を行ったうえで仕訳候補を生成します。"
+            },
+            {
+              "q": "AI仕訳で送信したデータはAIの学習に使われますか？",
+              "a": "いいえ。Google Gemini APIの利用規約に基づき、勘定科目・税区分の推論のみに使用され、モデルの学習や再利用には使用されません。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Zeiro",
+          "oneLiner": "Zeiro is an integrated cloud accounting, payroll, and closing SaaS built specifically for Japanese micro-corporations (1-person companies). It combines zero-touch transaction email sync, Gemini AI journal entry inference, director payroll and withholding tax reporting starting at ¥9,360/year (¥780/month equivalent).",
+          "targetAudience": "Solo corporations (micro-corporations) and small entity owners in Japan",
+          "pricingSummary": "Free ¥0 / Pro ¥9,360/yr (or ¥980/mo) / Business ¥23,760/yr",
+          "dataStorage": "Tenant-isolated encrypted storage on Cloudflare D1/R2 (TLS 1.3)",
+          "compliance": "Double-entry bookkeeping, Kyokai Kenpo Tokyo grade tables, NTA withholding tax tables, e-Bookkeeping receipt archive (Business)",
+          "features": [
+            "Zero-touch transaction email ingestion (GMO Aozora, SBI Sumishin, SMBC, AMEX) with SHA-256 deduplication",
+            "Gemini Flash AI account and tax-category journal inference",
+            "Director compensation, payroll, social insurance, and withholding tax calculation",
+            "One-click semi-annual withholding tax special schedule (Jan/Jul) aggregation",
+            "9-point year-end health audit and lossless Money Forward journal CSV import"
+          ],
+          "faqs": [
+            {
+              "q": "What is Zeiro?",
+              "a": "Zeiro is an all-in-one accounting, payroll, and closing SaaS tailored for 1-person Japanese corporations, covering double-entry bookkeeping, automated email transaction ingestion, Gemini AI journal suggestions, director payroll, withholding tax reports, and closing health checks."
+            },
+            {
+              "q": "How does Zeiro compare to Money Forward Cloud or freee?",
+              "a": "By focusing strictly on what micro-corporations actually need, Zeiro offers accounting plus payroll and withholding tax reporting at ¥9,360/year—roughly 1/3 to 1/4 the combined cost of enterprise-oriented suites."
+            },
+            {
+              "q": "Can I migrate existing data from Money Forward?",
+              "a": "Yes. You can import exported Money Forward journal CSV files directly into Zeiro without losing historical entries."
+            },
+            {
+              "q": "Is my accounting data used to train AI models?",
+              "a": "No. Under Gemini API terms, transaction details are processed solely for journal inference and are not used to train or improve AI models."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Zeiro (세로)",
+          "oneLiner": "Zeiro(세로)는 일본 1인 법인·마이크로 법인에 특화된 통합 회계·급여·결산 클라우드 SaaS입니다. 거래 알림 메일 무인 연동, Gemini AI 자동 분개, 임원보수·사회보험 계산 및 원천세 납기특례 집계까지 연 ¥9,360(월 환산 ¥780)으로 제공합니다.",
+          "targetAudience": "일본 1인 법인·마이크로 법인 대표",
+          "pricingSummary": "Free ¥0 / Pro 연 ¥9,360(월 ¥980) / Business 연 ¥23,760",
+          "dataStorage": "Cloudflare D1/R2 기반 테넌트 격리 암호화 보관(TLS 1.3)",
+          "compliance": "복식부기, 협회건보(도쿄지부) 표준보수월액 등급표, 국세청 원천징수세액표 준거",
+          "features": [
+            "GMO 아오조라·스미신 SBI·SMBC·AMEX 등 거래 알림 메일 무인 수집 및 SHA-256 중복 제거",
+            "Gemini Flash AI 기반 차변·대변 계정과목 및 세구분 자동 추론",
+            "임원보수·급여·사회보험료·원천소득세 자동 계산 및 급여명세서 출력",
+            "연 2회(1월·7월) 원천소득세 납기특례 집계표 자동 생성",
+            "STAGEN 9대 결산 건전성 감사 및 Money Forward 분개장 CSV 무손실 이관"
+          ],
+          "faqs": [
+            {
+              "q": "Zeiro는 어떤 서비스인가요?",
+              "a": "일본 1인 법인에 필요한 복식부기, 거래 메일 자동 수집, Gemini AI 분개 추론, 임원 급여·사회보험 계산, 원천세 납기특례 집계, 결산 건전성 감사까지 하나로 제공하는 통합 SaaS입니다."
+            },
+            {
+              "q": "Money Forward나 freee와 어떤 차이가 있나요?",
+              "a": "대기업용 복잡한 설정을 빼고 1인 법인 실무에 집중해, 급여 계산과 원천세 특례 집계를 포함하고도 연 ¥9,360(기존 대비 1/3~1/4 수준)의 요금으로 이용할 수 있습니다."
+            },
+            {
+              "q": "기존 Money Forward 분개 데이터를 옮길 수 있나요?",
+              "a": "네. Money Forward 클라우드 회계에서 내보낸 분개장 CSV 파일을 그대로 임포트하여 과거 장부를 이어서 관리할 수 있습니다."
+            },
+            {
+              "q": "AI 분개 추론에 사용된 거래 데이터가 모델 학습에 쓰이나요?",
+              "a": "아니요. Gemini API 이용 약관에 따라 계정과목 추론 목적에만 사용되며 AI 모델 학습에 재사용되지 않습니다."
+            }
+          ]
+        }
+      }
+    },
+    "rakubill": {
+      "slug": "rakubill",
+      "cluster": "business-tax",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android, Web",
+      "isWebApp": true,
+      "webUrl": "https://rakubill.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6780785397",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.rakubill",
+      "githubUrl": "https://github.com/ubermenschjo/rakubill",
+      "ogImage": "https://sta3e-n.com/rakubill/og-image.png",
+      "relatedApps": ["zeiro", "zeical"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-01-rakubill/", "title": "月3通の請求書と¥500買切のラクビル" },
+        { "url": "/blog/2026-06-29-zeical/", "title": "1人法人の固定費年56万円と税カル" }
+      ],
+      "offers": [
+        { "name": "Free (Mobile & Web)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Mobile Premium (One-time)", "price": "500", "priceCurrency": "JPY", "billing": "one-time" },
+        { "name": "Web Pro / Business", "price": "980", "priceCurrency": "JPY", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "ラクビル (Rakubill)",
+          "oneLiner": "ラクビルは、日本の適格請求書（インボイス制度）と軽減税率（8%・10%・非課税）に対応した個人事業主・フリーランス・1人法人向けの請求書・見積書・納品書・領収書作成アプリ＆Webクラウドです。モバイル版は¥500買い切りで無制限発行できます。",
+          "targetAudience": "個人事業主・フリーランス・1人法人",
+          "pricingSummary": "無料（請求書月3通・見積無制限） / モバイルPremium ¥500買い切り / Web Pro ¥980〜/月",
+          "dataStorage": "モバイル版は端末内ローカル保存（オフライン動作）／Web版はクラウド保存",
+          "compliance": "適格請求書等保存方式（インボイス登録番号記載）・8%/10%/非課税区分・マイナス単価対応",
+          "features": [
+            "見積書・納品書・請求書・領収書PDFの発行とワンタップ変換",
+            "適格請求書発行事業者登録番号と軽減税率（8%/10%/非課税）の自動計算",
+            "一部入金記録・残高管理・支払期限3日前/当日/翌日リマインダー通知",
+            "Web版でのMF形式メール直接送信・60日間有効PDFダウンロードリンク・マイナス単価対応",
+            "freee・マネーフォワード・弥生等への手動取込用売上CSV出力"
+          ],
+          "faqs": [
+            {
+              "q": "インボイス制度（適格請求書）に対応していますか？",
+              "a": "はい。適格請求書発行事業者の登録番号を設定でき、軽減税率8%・標準税率10%・非課税を明細ごとに設定して自動計算した請求書PDFを発行できます。"
+            },
+            {
+              "q": "モバイル版の料金と買い切りプランの内容は？",
+              "a": "無料版でも請求書・納品書を月3通まで、見積書は無制限で作成できます。モバイルプレミアム（¥500買い切り）を購入すると、請求書・納品書の発行と売上CSV出力が無制限になります。"
+            },
+            {
+              "q": "PCブラウザで使えるWeb版との違いは何ですか？",
+              "a": "Web版（rakubill.sta3e-n.online）ではPCの大画面操作に加え、ビジネス文面でのメール直接送信、60日間有効なPDFダウンロードリンク発行、マイナス単価・精算幅入力に対応し、Web Proプラン（¥980〜/月）を提供しています。"
+            },
+            {
+              "q": "データはどこに保存されますか？",
+              "a": "モバイルアプリ版は取引先情報や請求書データをすべてお使いの端末内に保存するためオフラインでも利用できます。Web版はクラウド上で安全に管理されます。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Rakubill",
+          "oneLiner": "Rakubill is an invoicing app and web cloud built for freelancers, sole proprietors, and micro-corporations in Japan. It supports Japan's Qualified Invoice System (8%/10%/tax-exempt), PDF quotes/invoices/receipts, with a ¥500 one-time mobile upgrade or Web Pro plans from ¥980/month.",
+          "targetAudience": "Freelancers, sole proprietors, and solo corporations in Japan",
+          "pricingSummary": "Free (3 invoices/mo, unlimited quotes) / Mobile Premium ¥500 one-time / Web Pro from ¥980/mo",
+          "dataStorage": "On-device local storage on mobile (works offline); encrypted cloud on Web",
+          "compliance": "Japan Qualified Invoice System (T-number), 8%/10%/exempt tax calculation, negative unit amounts",
+          "features": [
+            "Quotes, delivery notes, invoices, and receipt PDFs with one-tap quote-to-invoice conversion",
+            "Qualified Invoice registration number and 8%/10%/tax-exempt calculation",
+            "Partial payment tracking and free due-date reminders (3 days before, due date, 1 day after)",
+            "Web version: direct business email delivery, 60-day secure PDF links, negative unit/adjustment rows",
+            "Sales CSV export for manual import into freee, Money Forward, or Yayoi"
+          ],
+          "faqs": [
+            {
+              "q": "Does Rakubill support Japan's Qualified Invoice System?",
+              "a": "Yes. You can configure your Qualified Invoice Issuer Registration Number and assign 8% reduced, 10% standard, or tax-exempt rates per line item."
+            },
+            {
+              "q": "What is the difference between the free tier and Mobile Premium?",
+              "a": "The free tier includes unlimited quotes and up to 3 invoices/delivery notes per month. Mobile Premium is a ¥500 one-time purchase unlocking unlimited invoices and CSV exports."
+            },
+            {
+              "q": "What extra features does the Web version offer?",
+              "a": "The Web app (rakubill.sta3e-n.online) supports PC browser workflows, direct email delivery with 60-day secure PDF download links, and negative line items starting at ¥980/month."
+            },
+            {
+              "q": "Where is my invoice data stored?",
+              "a": "On mobile, all client and invoice data stays strictly on your device and works offline. On the Web app, data is stored in your cloud account."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Rakubill (라쿠빌)",
+          "oneLiner": "Rakubill은 일본 적격청구서(인보이스 제도)와 경감세율(8%·10%·비과세)에 대응하는 개인사업자·프리랜서·1인 법인용 청구서·견적서·영수증 작성 앱 및 웹 클라우드입니다. 모바일 Premium은 ¥500 일회성 구매로 무제한 발행이 가능합니다.",
+          "targetAudience": "일본 개인사업자·프리랜서·1인 법인",
+          "pricingSummary": "무료(청구서 월 3건·견적서 무제한) / 모바일 Premium ¥500 일회성 / Web Pro 월 ¥980~",
+          "dataStorage": "모바일은 단말기 내 로컬 저장(오프라인 동작) / Web은 클라우드 저장",
+          "compliance": "일본 적격청구서 등록번호(T번호) 기재, 8%/10%/비과세 자동 계산, 마이너스 단가 지원",
+          "features": [
+            "견적서·납품서·청구서·영수증 PDF 발행 및 원탭 청구서 변환",
+            "적격청구서 등록번호 및 소비세율(8%·10%·비과세) 자동 계산",
+            "부분 입금 기록·잔액 관리 및 지급기한 알림(3일 전·당일·다음날)",
+            "Web판 이메일 직접 발송·60일 유효 PDF 다운로드 링크·마이너스 단가 지원",
+            "freee·Money Forward·Yayoi 수동 업로드용 매출 CSV 내보내기"
+          ],
+          "faqs": [
+            {
+              "q": "일본 인보이스 제도(적격청구서)를 지원하나요?",
+              "a": "네. 적격청구서 발행사업자 등록번호를 설정하고 품목별로 8%·10%·비과세를 지정해 PDF를 발행할 수 있습니다."
+            },
+            {
+              "q": "무료 버전과 모바일 Premium(¥500)의 차이는 무엇인가요?",
+              "a": "무료 버전은 견적서 무제한, 청구서·납품서 월 3건까지 이용할 수 있으며, 모바일 Premium(¥500 일회성 구매)은 구독 없이 청구서 발행과 CSV 내보내기를 무제한 해제합니다."
+            },
+            {
+              "q": "PC 브라우저용 Web판의 특징은 무엇인가요?",
+              "a": "Web판(rakubill.sta3e-n.online)은 대시보드 UI와 함께 이메일 직접 발송, 60일 유효 PDF 다운로드 링크, 마이너스 단가 입력을 지원합니다."
+            },
+            {
+              "q": "데이터는 어디에 저장되나요?",
+              "a": "모바일 앱은 거래처·청구서 데이터를 모두 기기 내부에만 저장해 오프라인에서도 동작하며, Web판은 클라우드에 보관됩니다."
+            }
+          ]
+        }
+      }
+    },
+    "zeical": {
+      "slug": "zeical",
+      "cluster": "business-tax",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS, Android",
+      "isWebApp": false,
+      "webUrl": null,
+      "appStoreUrl": "https://apps.apple.com/app/id6780321349",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.zeical",
+      "githubUrl": "https://github.com/ubermenschjo/zeical",
+      "ogImage": "https://sta3e-n.com/zeical/og-image.png",
+      "relatedApps": ["zeiro", "rakubill"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-06-29-zeical/", "title": "1人法人の固定費年56万円と税カル" },
+        { "url": "/blog/2026-07-03-gsign/", "title": "2026年7月から変わる法人の電子署名——商業登記リモート署名を1人法人の視点で整理した" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Pro (Annual)", "price": "980", "priceCurrency": "JPY", "billing": "P1Y" },
+        { "name": "Pro (Lifetime)", "price": "2480", "priceCurrency": "JPY", "billing": "one-time" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "ZeiCal（税カル）",
+          "oneLiner": "ZeiCal（税カル）は、1人法人・個人事業主向けの税務カレンダー＆スケジュール管理アプリです。決算月を入力するだけで法人税・消費税・源泉所得税・社会保険の全期限を自動計算し、令和8年度税制改正にも対応。無料版から使え、Pro（年¥980 / 買い切り¥2,480）で通知・ウィジェット・税金概算シミュレータが解放されます。",
+          "targetAudience": "日本の1人法人・個人事業主",
+          "pricingSummary": "無料 ¥0 / Pro 年間¥980 / Pro 買い切り¥2,480",
+          "dataStorage": "端末内ローカル保存のみ（アカウント登録不要・オフライン完全動作）",
+          "compliance": "令和8年度税制改正・中間申告・源泉所得税納期の特例スケジュール対応",
+          "features": [
+            "決算月から法人税・消費税・源泉所得税・社会保険の全納付期限を自動生成",
+            "30日前・14日前・7日前・3日前・前日の段階的リマインダー通知（Pro）",
+            "直近タスクと残り日数（D-day）を表示するホームウィジェット（Pro）",
+            "売上・経費から概算税額（±20%目安）を試算する税金シミュレータ（無料年1回/Pro無制限）",
+            "アカウント登録不要・端末内保存・PDF/CSV出力および複数法人最大5社管理（Pro）"
+          ],
+          "faqs": [
+            {
+              "q": "ZeiCalの無料版とProの違いは何ですか？",
+              "a": "無料版でも決算月からの税務スケジュール閲覧（2年分・1社）と基本タスク管理が使えます。Pro（年¥980または¥2,480買い切り）では段階リマインダー通知、ウィジェット、税金シミュレータ無制限、PDF/CSV出力、最大5社管理が利用できます。"
+            },
+            {
+              "q": "税金シミュレータは確定申告書の作成に使えますか？",
+              "a": "いいえ。シミュレータの結果は±20%程度の概算把握用であり、実際の確定申告書作成や税額確定は税理士等の専門家または申告制度に従って行う必要があります。"
+            },
+            {
+              "q": "税務データはサーバーに送信されますか？",
+              "a": "いいえ。アカウント登録は不要で、入力した法人設定やスケジュールデータはすべて端末内にのみ保存され、オフラインで動作します。"
+            },
+            {
+              "q": "請求書作成や会計記帳もできますか？",
+              "a": "ZeiCalは税務期限管理に特化しています。請求書作成には姉妹アプリ「ラクビル」、複式簿記と給与計算には「Zeiro（税路）」を提供しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "ZeiCal - Tax Calendar",
+          "oneLiner": "ZeiCal is a tax calendar and deadline tracker for 1-person corporations and sole proprietors in Japan. Enter your fiscal year-end month to auto-generate corporate tax, consumption tax, withholding tax, and social insurance deadlines (FY2026 reform ready), with Pro at ¥980/year or ¥2,480 lifetime.",
+          "targetAudience": "1-person corporations and sole proprietors in Japan",
+          "pricingSummary": "Free ¥0 / Pro Annual ¥980 / Pro Lifetime ¥2,480",
+          "dataStorage": "100% on-device local storage (no account required, fully offline)",
+          "compliance": "FY2026 (Reiwa 8) Japanese tax schedule, interim filings, and semi-annual withholding tax dates",
+          "features": [
+            "Automatic tax deadline calculation from fiscal year-end month",
+            "Staged reminder notifications at 30, 14, 7, 3, and 1 day before deadlines (Pro)",
+            "Native home screen D-day countdown widget (Pro)",
+            "Approximate tax estimator (±20% guide; 1 free run/year, unlimited in Pro)",
+            "PDF/CSV export, calendar sync, and up to 5 corporate profiles (Pro)"
+          ],
+          "faqs": [
+            {
+              "q": "What is included in ZeiCal Free vs. Pro?",
+              "a": "Free provides 2 fiscal years of tax schedules and task checklists for 1 company. Pro (¥980/year or ¥2,480 lifetime) unlocks staged reminders, home widgets, unlimited tax simulations, PDF/CSV export, and up to 5 entities."
+            },
+            {
+              "q": "Can the tax simulator replace tax filing or a CPA?",
+              "a": "No. The simulator provides a ±20% rough estimate for planning only and does not replace official tax filings or advice from a licensed tax accountant."
+            },
+            {
+              "q": "Where is my company data stored?",
+              "a": "All company settings and tax checklists stay strictly on your device with no server sync or account signup required."
+            },
+            {
+              "q": "Does ZeiCal handle invoicing or bookkeeping?",
+              "a": "ZeiCal focuses on tax deadlines. For invoicing use sister app Rakubill, and for bookkeeping and payroll use Zeiro."
+            }
+          ]
+        },
+        "ko": {
+          "name": "ZeiCal (세무 캘린더)",
+          "oneLiner": "ZeiCal은 일본 1인 법인과 개인사업자를 위한 세무 일정 관리 앱입니다. 결산월만 입력하면 법인세·소비세·원천징수세·사회보험 기한을 자동 계산하며(레이와 8년도 세제 개정 대응), Pro(연 ¥980 / 일회성 ¥2,480)로 알림·위젯·개략 세금 시뮬레이터를 제공합니다.",
+          "targetAudience": "일본 1인 법인·개인사업자",
+          "pricingSummary": "무료 ¥0 / Pro 연간 ¥980 / Pro 일회성 ¥2,480",
+          "dataStorage": "기기 내 로컬 저장 전용(계정 가입 불필요, 오프라인 완전 동작)",
+          "compliance": "일본 레이와 8년도(2026) 세제 일정·중간신고·원천세 납기특례 대응",
+          "features": [
+            "결산월 입력만으로 법인세·소비세·원천세·사회보험 전 기한 자동 생성",
+            "기한 30일·14일·7일·3일·1일 전 단계별 리마인더 알림(Pro)",
+            "다음 세무 일정과 D-day를 표시하는 홈 화면 위젯(Pro)",
+            "매출·경비 기준 개략 세액 시뮬레이터(무료 연 1회 / Pro 무제한)",
+            "PDF/CSV 내보내기 및 최대 5개 법인 프로필 관리(Pro)"
+          ],
+          "faqs": [
+            {
+              "q": "무료 버전과 Pro의 차이는 무엇인가요?",
+              "a": "무료 버전에서도 결산월 기반 세무 일정 조회(2년치·1개 법인)를 사용할 수 있으며, Pro(연 ¥980 또는 일회성 ¥2,480)는 알림, 위젯, 무제한 시뮬레이터, PDF/CSV 내보내기, 최대 5개 법인을 지원합니다."
+            },
+            {
+              "q": "세금 시뮬레이터 결과를 그대로 신고에 사용할 수 있나요?",
+              "a": "아니요. ±20% 수준의 개략 추산 참고용이며, 실제 세무 신고를 대체하지 않습니다."
+            },
+            {
+              "q": "입력한 세무 데이터는 어디에 저장되나요?",
+              "a": "계정 등록이 필요 없으며 모든 데이터는 기기 내부에만 저장되어 오프라인에서 동작합니다."
+            },
+            {
+              "q": "청구서 발행이나 복식부기 기장도 가능한가요?",
+              "a": "ZeiCal은 세무 기한 관리 전용입니다. 청구서 작성은 자매 앱 Rakubill, 경리·급여 자동화는 Zeiro를 이용해 주세요."
+            }
+          ]
+        }
+      }
+    },
+    "zaitap": {
+      "slug": "zaitap",
+      "cluster": "safety",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS, Android",
+      "isWebApp": false,
+      "webUrl": null,
+      "appStoreUrl": null,
+      "playStoreUrl": null,
+      "githubUrl": "https://github.com/ubermenschjo/zaitap",
+      "ogImage": "https://sta3e-n.com/zaitap/og-image.png",
+      "relatedApps": ["zeical", "zeiro"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-03-zaitap/", "title": "在留期限の3ヶ月前から動く——外国人代表が整理した手続きリスト" }
+      ],
+      "offers": [
+        { "name": "Applicant App (Self-filing)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Scrivener App (Starter)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Scrivener App (Professional)", "price": "14800", "priceCurrency": "JPY", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "ZaiTap",
+          "oneLiner": "ZaiTapは、在留外国人向けの無料本人申請（スマホNFCによるマイナンバーカード署名・出入国在留管理庁API提出）と、複雑案件における費用目安付き行政書士相談をひとつにしたモバイルアプリ（現在準備中）です。",
+          "targetAudience": "日本の在留外国人（申請者）および国際業務を行う行政書士",
+          "pricingSummary": "申請者アプリ 無料（本人申請） / 行政書士アプリ Starter ¥0・Pro ¥14,800/月（先行創立優待あり）",
+          "dataStorage": "特定個人情報（PII）ゼロサーバー設計・相談書類はE2EE暗号化共有",
+          "compliance": "行政書士法準拠（本人申請ツールの無料提供・非行政書士行為の排除）・出入国在留申請手続API対応予定",
+          "features": [
+            "スマホ内蔵NFCでのマイナンバーカード署名と在留申請APIへの本人提出（申請者無料）",
+            "カメラ撮影による書類PDF変換・圧縮と申請ステータス進捗追跡",
+            "手続別の費用目安を事前確認して納得したうえで相談できる行政書士連携",
+            "行政書士向けE2EE暗号化書類共有・法定業務帳簿CSV自動生成（Proページ参照）"
+          ],
+          "faqs": [
+            {
+              "q": "申請者アプリは本当に無料ですか？",
+              "a": "はい。行政書士法に基づき、ダウンロードおよび本人申請（XML生成・NFC署名・API提出）は無料です。申請者から手数料を徴収しません。"
+            },
+            {
+              "q": "本人申請と行政書士相談はどちらを選べばよいですか？",
+              "a": "単純な更新などご自身で対応できる場合は無料の本人申請を、転職歴や変更など複雑なケースは手続別の費用目安を確認したうえで行政書士へ相談できます。"
+            },
+            {
+              "q": "現在リリースされていますか？",
+              "a": "現在、正式リリースに向けて準備中です。行政書士向けの創立公認パートナー先行登録は専用ページ（/zaitap/pro.html）より受け付けています。"
+            },
+            {
+              "q": "マイナンバーカードは必要ですか？",
+              "a": "本人申請で在留申請手続APIへオンライン提出する場合、スマホNFCでマイナンバーカード等のICカードによる電子署名が必要です。"
+            }
+          ]
+        },
+        "en": {
+          "name": "ZaiTap",
+          "oneLiner": "ZaiTap is an upcoming dual-app mobile platform for Japanese residence procedures: free self-filing via smartphone NFC and Immigration API for foreign residents, plus transparent fee estimates for consulting licensed administrative scriveners (Gyoseishoshi).",
+          "targetAudience": "Foreign residents in Japan and immigration-focused administrative scriveners",
+          "pricingSummary": "Applicant App: Free (self-filing) / Scrivener App: Starter ¥0, Pro ¥14,800/mo (Founding Partner pre-registration open)",
+          "dataStorage": "Zero-server PII architecture; E2EE encrypted document sharing",
+          "compliance": "Compliant with Japan's Administrative Scrivener Act (free neutral self-filing tool; direct engagement with scriveners)",
+          "features": [
+            "Smartphone NFC My Number Card signing and direct Immigration API self-submission (100% free)",
+            "Document camera capture to compressed PDF and application status tracking",
+            "Upfront procedural fee estimates before requesting a scrivener consultation",
+            "Scrivener portal/app with E2EE documents and statutory ledger CSV export"
+          ],
+          "faqs": [
+            {
+              "q": "Is the Applicant App really free?",
+              "a": "Yes. Under Japan's Administrative Scrivener Act, downloads and self-filing (XML generation, NFC signing, and API submission) are completely free for residents."
+            },
+            {
+              "q": "When should I self-file vs. consult an administrative scrivener?",
+              "a": "Simple renewals can be handled via free self-filing. Complex cases (job changes, status changes, prior rejections) can be referred after reviewing transparent fee estimates."
+            },
+            {
+              "q": "Is ZaiTap available on app stores now?",
+              "a": "Both apps are currently in preparation for launch. Founding Partner pre-registration for administrative scriveners is open at /en/zaitap/pro.html."
+            },
+            {
+              "q": "Do I need a My Number Card for self-filing?",
+              "a": "Yes. Online self-submission through Japan's Immigration API requires NFC electronic signing using a compatible IC card such as a My Number Card."
+            }
+          ]
+        },
+        "ko": {
+          "name": "ZaiTap",
+          "oneLiner": "ZaiTap은 일본 체류 외국인을 위한 무료 본인 신청(스마트폰 NFC 마이넘버카드 전자서명·출입국재류관리청 API 제출)과 복잡 사안에 대한 투명한 비용 견적 기반 행정서사 상담을 연결하는 모바일 플랫폼(출시 준비 중)입니다.",
+          "targetAudience": "일본 체류 외국인(신청자) 및 국제업무 행정서사",
+          "pricingSummary": "신청자 앱 무료(본인 신청) / 행정서사 앱 Starter ¥0·Pro 월 ¥14,800(창립 파트너 사전모집 중)",
+          "dataStorage": "PII 제로 서버 원칙 및 E2EE 암호화 서류 공유",
+          "compliance": "일본 행정서사법 준거(본인 신청 무료·직접 수임 구조) 및 재류신청 절차 API 대응 예정",
+          "features": [
+            "스마트폰 NFC 마이넘버카드 전자서명 및 재류신청 API 직접 제출(본인 신청 무료)",
+            "카메라 서류 촬영 → 압축 PDF 변환 및 심사 진행 상태 추적",
+            "복잡 케이스 상담 전 절차별 비용 기준 사전 확인",
+            "행정서사용 E2EE 서류 열람 및 법정 업무장부 CSV 자동 생성"
+          ],
+          "faqs": [
+            {
+              "q": "신청자 앱은 정말 무료인가요?",
+              "a": "네. 일본 행정서사법에 따라 다운로드와 본인 신청(XML 생성·NFC 서명·API 제출) 기능은 신청자에게 수수료를 받지 않는 완전 무료입니다."
+            },
+            {
+              "q": "본인 신청과 행정서사 상담 중 무엇을 선택해야 하나요?",
+              "a": "단순 갱신 등은 무료 본인 신청을 이용하고, 이직·자격 변경·보정 이력 등 복잡한 경우에는 비용 기준을 확인한 뒤 행정서사와 상담할 수 있습니다."
+            },
+            {
+              "q": "현재 스토어에서 다운로드할 수 있나요?",
+              "a": "현재 정식 출시 준비 중이며, 행정서사 대상 창립 파트너 사전 등록은 /ko/zaitap/pro.html에서 접수하고 있습니다."
+            },
+            {
+              "q": "본인 신청 시 마이넘버카드가 필요한가요?",
+              "a": "온라인 재류신청 API 제출 시 스마트폰 NFC를 이용한 마이넘버카드 전자서명이 필요합니다."
+            }
+          ]
+        }
+      }
+    },
+    "wbgt-recorder": {
+      "slug": "wbgt-recorder",
+      "cluster": "safety",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android",
+      "isWebApp": false,
+      "webUrl": null,
+      "appStoreUrl": "https://apps.apple.com/app/id6780710276",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.wbgt.biz",
+      "githubUrl": "https://github.com/ubermenschjo/wbgt-monitor",
+      "ogImage": "https://sta3e-n.com/wbgt-recorder/og-image.png",
+      "relatedApps": ["wbgt-alert", "rakubill"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-06-wbgt/", "title": "職場のWBGT記録と出発前点検——7月に分けて考える" }
+      ],
+      "offers": [
+        { "name": "Light Plan", "price": "3000", "priceCurrency": "JPY", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "熱中症レコーダー Pro",
+          "oneLiner": "熱中症レコーダー Proは、建設・屋外作業現場向けに環境省・Open-Meteoの暑さ指数（WBGT）をリアルタイム計測・記録し、労働安全衛生法に対応した3年間の作業記録保管とCSV/PDF日報・月報出力を行える業務用アプリ（月額¥3,000）です。",
+          "targetAudience": "建設現場・屋外作業・工場・施設管理の安全衛生担当者・現場監督",
+          "pricingSummary": "ライトプラン ¥3,000/月（自動更新サブスクリプション）",
+          "dataStorage": "端末内SQLite保存（アカウント登録不要）",
+          "compliance": "労働安全衛生法対応の暑熱作業記録（3年間保管・環境省暑さ指数データ優先表示）",
+          "features": [
+            "環境省暑さ指数データ優先＋Open-Meteo統合によるWBGTリアルタイムゲージ表示",
+            "作業開始・一時停止・再開・終了のワンタップ記録（7種類の作業プリセット・作業者数管理）",
+            "3年間の記録保持とCSV / PDF形式での日報・月報書き出し",
+            "設定閾値超過時のバックグラウンドローカル通知と24時間WBGT予報グラフ"
+          ],
+          "faqs": [
+            {
+              "q": "熱中症レコーダー Proの料金はいくらですか？",
+              "a": "ライトプラン月額¥3,000（自動更新サブスクリプション、いつでもキャンセル可能）で、WBGTリアルタイム監視、アラート通知、3年間の記録保存、CSV/PDF書き出しが利用できます。"
+            },
+            {
+              "q": "WBGTデータの取得元はどこですか？",
+              "a": "環境省の暑さ指数データとOpen-Meteo APIを併用しており、環境省データが利用可能な地点では環境省データを優先表示します。"
+            },
+            {
+              "q": "記録した現場データはどこに保存されますか？",
+              "a": "アカウント登録は不要で、すべての作業記録は端末内のSQLiteデータベースに保存されます。"
+            },
+            {
+              "q": "個人向けの無料版との違いは何ですか？",
+              "a": "個人・日常の熱中症予防には無料の姉妹アプリ「熱中症アラート」を、現場の作業時間・人数紐づけ記録・3年管理・CSV/PDF出力には「熱中症レコーダー Pro」を提供しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Heat Stroke Recorder Pro",
+          "oneLiner": "Heat Stroke Recorder Pro is a workplace heat-safety app (¥3,000/month) for construction and outdoor crews. It tracks real-time WBGT (Japan Ministry of the Environment + Open-Meteo), logs crew work sessions, keeps 3-year records, and exports CSV/PDF safety reports.",
+          "targetAudience": "Site supervisors, construction teams, and occupational safety managers",
+          "pricingSummary": "Light Plan ¥3,000/month (cancel anytime)",
+          "dataStorage": "On-device SQLite storage (no account required)",
+          "compliance": "Supports 3-year heat-work logging aligned with Japanese occupational safety practices",
+          "features": [
+            "Real-time WBGT gauge prioritizing Japan Ministry of the Environment data with Open-Meteo fallback",
+            "One-tap work session logging with worker count, site name, and 7 work presets",
+            "3-year local record retention and CSV/PDF daily/monthly report export",
+            "Threshold push alerts and 24-hour WBGT forecast chart"
+          ],
+          "faqs": [
+            {
+              "q": "How much does Heat Stroke Recorder Pro cost?",
+              "a": "The Light Plan is ¥3,000/month (auto-renewing subscription, cancelable anytime) and includes real-time WBGT monitoring, alerts, 3-year record storage, and CSV/PDF export."
+            },
+            {
+              "q": "Where does WBGT data come from?",
+              "a": "It combines Japan's Ministry of the Environment heat index data (prioritized when available) with the Open-Meteo API."
+            },
+            {
+              "q": "Where are worksite logs stored?",
+              "a": "No account is needed; all logs are stored locally in on-device SQLite."
+            },
+            {
+              "q": "How does it differ from Heat Stroke Alert?",
+              "a": "Heat Stroke Alert is free for personal daily prevention, while Heat Stroke Recorder Pro adds crew/site tracking, 3-year retention, and CSV/PDF exports."
+            }
+          ]
+        },
+        "ko": {
+          "name": "온열질환 레코더 Pro",
+          "oneLiner": "온열질환 레코더 Pro는 건설·야외 작업 현장을 위한 업무용 WBGT(더위지수) 계측·기록 앱(월 ¥3,000)입니다. 일본 환경성 우선 WBGT 실시간 표시, 작업 시간·인원 기록, 3년간 보관 및 CSV/PDF 일보·월보 출력을 지원합니다.",
+          "targetAudience": "건설·야외 작업 현장 감독자 및 노동안전보건 담당자",
+          "pricingSummary": "라이트 플랜 월 ¥3,000(자동 갱신 구독)",
+          "dataStorage": "기기 내 SQLite 로컬 저장(계정 등록 불필요)",
+          "compliance": "일본 노동안전위생법 대응 3년 작업 기록 보관 및 환경성 WBGT 기준 준거",
+          "features": [
+            "일본 환경성 데이터 우선 + Open-Meteo 통합 실시간 WBGT 계측 게이지",
+            "작업 시작·일시정지·재개·종료 원탭 기록 및 7종 작업 프리셋",
+            "3년 기록 보관 및 CSV/PDF 일보·월보 내보내기",
+            "임계치 초과 시 로컬 알림 및 24시간 WBGT 예보 그래프"
+          ],
+          "faqs": [
+            {
+              "q": "요금제는 어떻게 되나요?",
+              "a": "라이트 플랜 월 ¥3,000 구독으로 실시간 WBGT 감시, 경고 알림, 3년 기록 보존, CSV/PDF 내보내기를 모두 이용할 수 있습니다."
+            },
+            {
+              "q": "WBGT 데이터 출처는 어디인가요?",
+              "a": "일본 환경성 더위지수 데이터와 Open-Meteo API를 병행하며, 환경성 데이터를 우선 표시합니다."
+            },
+            {
+              "q": "기록 데이터는 서버에 저장되나요?",
+              "a": "아니요. 별도 회원가입 없이 기기 내부 SQLite에만 저장됩니다."
+            },
+            {
+              "q": "무료 앱인 온열질환 알림과의 차이는 무엇인가요?",
+              "a": "온열질환 알림은 개인 예방용 무료 앱이며, 온열질환 레코더 Pro는 현장명·작업자 수 기록과 3년 보관, CSV/PDF 보고서 출력에 특화된 업무용 앱입니다."
+            }
+          ]
+        }
+      }
+    },
+    "wbgt-alert": {
+      "slug": "wbgt-alert",
+      "cluster": "safety",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS, Android",
+      "isWebApp": false,
+      "webUrl": null,
+      "appStoreUrl": "https://apps.apple.com/app/id6780366425",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.wbgt.consumer",
+      "githubUrl": "https://github.com/ubermenschjo/wbgt-monitor",
+      "ogImage": "https://sta3e-n.com/wbgt-alert/og-image.png",
+      "relatedApps": ["wbgt-recorder"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-06-wbgt/", "title": "職場のWBGT記録と出発前点検——7月に分けて考える" }
+      ],
+      "offers": [
+        { "name": "Free (Ad-supported, hidden during warnings)", "price": "0", "priceCurrency": "JPY", "billing": "free" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "熱中症アラート",
+          "oneLiner": "熱中症アラートは、日常の外出やスポーツ向けの無料WBGT（暑さ指数）予防アプリです。環境省データ優先の現在地WBGT表示、24時間予報、活動別おすすめ、年齢層等に応じた個人プロフィール閾値補正、iOSウィジェット・Live Activity・梅雨モードを備えています。",
+          "targetAudience": "通勤・散歩・ランニング・スポーツ・子育て世代の一般ユーザー",
+          "pricingSummary": "無料（熱中症警告表示中は広告非表示）",
+          "dataStorage": "端末内SQLite保存（アカウント登録不要）",
+          "compliance": "環境省WBGT 5段階基準準拠（個人プロフィールは参考情報であり医療アドバイスではありません）",
+          "features": [
+            "環境省暑さ指数データ優先のリアルタイムWBGTゲージと24時間予報グラフ",
+            "散歩・ランニング・スポーツなど活動別おすすめ基準と活動ログ写真共有",
+            "年齢層（こども・一般・高齢）や任意設定に応じた個人閾値補正",
+            "ホーム画面ウィジェット、iOS Live Activity、6〜7月の梅雨カビリスク通知"
+          ],
+          "faqs": [
+            {
+              "q": "熱中症アラートは無料で使えますか？",
+              "a": "はい、基本機能はすべて無料です。起動時などにApp Open広告が表示される場合がありますが、熱中症警告表示中は安全のため広告を表示しません。"
+            },
+            {
+              "q": "個人プロフィール設定は医療アドバイスですか？",
+              "a": "いいえ。環境省基準をベースに年齢層や任意設定に応じて警告目安を調整する参考機能であり、医療アドバイスではありません。"
+            },
+            {
+              "q": "データはどこに保存されますか？",
+              "a": "活動ログや設定はすべてお使いの端末内（SQLite）に保存され、アカウント登録も不要です。"
+            },
+            {
+              "q": "現場の業務記録やCSV出力にも対応していますか？",
+              "a": "業務用の現場記録・3年管理・CSV/PDF出力が必要な場合は、姉妹アプリ「熱中症レコーダー Pro」をご利用ください。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Heat Stroke Alert",
+          "oneLiner": "Heat Stroke Alert is a free personal heat-safety app displaying real-time WBGT (prioritizing Japan Ministry of the Environment data), 24-hour forecasts, activity-based guidelines, personalized warning thresholds, home widgets, iOS Live Activity, and rainy-season humidity alerts.",
+          "targetAudience": "General consumers, walkers, runners, families, and outdoor commuters",
+          "pricingSummary": "Free (ad-supported; ads suppressed during heat warnings)",
+          "dataStorage": "On-device SQLite storage (no account required)",
+          "compliance": "5-level WBGT standard; personal threshold adjustments are informational, not medical advice",
+          "features": [
+            "Real-time WBGT semi-circle gauge and 24-hour forecast graph",
+            "Activity-specific guidance (walking, running, sports) and shareable activity logs",
+            "Optional personal profile (age group) threshold adjustment",
+            "Home screen widgets, iOS Live Activity, and June–July rainy-season mold risk mode"
+          ],
+          "faqs": [
+            {
+              "q": "Is Heat Stroke Alert free?",
+              "a": "Yes, all core features are free. App Open ads may appear on launch, but ads are never shown while an active heat warning is displayed."
+            },
+            {
+              "q": "Is the personal profile medical advice?",
+              "a": "No. It adjusts reference thresholds around Ministry of the Environment guidelines for informational purposes only."
+            },
+            {
+              "q": "Where is my activity history saved?",
+              "a": "All activity logs and settings are saved locally in on-device SQLite with no account required."
+            },
+            {
+              "q": "Which app should I use for workplace CSV/PDF logging?",
+              "a": "Use sister app Heat Stroke Recorder Pro for construction/worksite crew logging, 3-year retention, and CSV/PDF export."
+            }
+          ]
+        },
+        "ko": {
+          "name": "온열질환 알림",
+          "oneLiner": "온열질환 알림은 일상 외출·운동 시 활용할 수 있는 무료 WBGT(더위지수) 예방 앱입니다. 일본 환경성 우선 실시간 WBGT 게이지, 24시간 예보, 활동별 가이드, 연령대 기반 개인 임계치 보정, 위젯·iOS Live Activity·장마 모드를 제공합니다.",
+          "targetAudience": "산책·러닝·스포츠·등하교 등 일반 사용자",
+          "pricingSummary": "무료(온열질환 경고 표시 중에는 광고 미표시)",
+          "dataStorage": "기기 내 SQLite 로컬 저장(계정 등록 불필요)",
+          "compliance": "환경성 WBGT 5단계 기준 준거(개인 프로필은 참고 정보이며 의료 조언이 아님)",
+          "features": [
+            "실시간 WBGT 반원 게이지 및 24시간 예보 그래프",
+            "산책·러닝·스포츠 등 활동별 추천 기준과 사진 포함 활동 로그 공유",
+            "연령대(어린이·일반·고령) 선택에 따른 개인 경고 임계치 보정",
+            "홈 위젯, iOS Live Activity, 6~7월 장마철 실내 습도·곰팡이 알림"
+          ],
+          "faqs": [
+            {
+              "q": "온열질환 알림은 무료인가요?",
+              "a": "네, 기본 기능은 모두 무료입니다. 앱 실행 시 광고가 표시될 수 있으나, 온열질환 경고 표시 중에는 광고를 띄우지 않습니다."
+            },
+            {
+              "q": "개인 프로필 보정은 의료 조언인가요?",
+              "a": "아니요. 환경성 기준을 연령대 등에 맞춰 참고용으로 조정하는 기능이며 의료 조언이 아닙니다."
+            },
+            {
+              "q": "활동 기록은 어디에 저장되나요?",
+              "a": "모든 기록과 설정은 계정 등록 없이 기기 내부(SQLite)에만 저장됩니다."
+            },
+            {
+              "q": "작업 현장용 CSV/PDF 기록 앱은 따로 있나요?",
+              "a": "현장 작업 기록, 3년 보관, CSV/PDF 출력에는 자매 앱인 온열질환 레코더 Pro를 이용해 주세요."
+            }
+          ]
+        }
+      }
+    },
+    "touten": {
+      "slug": "touten",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "NewsApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://touten.sta3e-n.online/",
+      "appStoreUrl": "https://apps.apple.com/app/id6800949057",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.touten",
+      "githubUrl": "https://github.com/ubermenschjo/touten",
+      "ogImage": "https://sta3e-n.com/touten/og-image.png",
+      "relatedApps": ["banjem", "newsprism", "phraseflow"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Premium (Monthly)", "price": "980", "priceCurrency": "JPY", "billing": "P1M" },
+        { "name": "Premium (Annual)", "price": "9800", "priceCurrency": "JPY", "billing": "P1Y" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "Touten（読点）",
+          "oneLiner": "Touten（読点）は、読売・朝日・毎日・産経・日経の日本5大紙のトップ記事をAIで分析し、政治・経済スタンスを2次元マップ、Side-by-Side見出し比較、3行要約で可視化するメディアリテラシーサービス（Web/iOS/Android）です。",
+          "targetAudience": "複数紙の論調を効率よく比較し、確証バイアスを避けたいビジネスパーソン・学生・読者",
+          "pricingSummary": "無料 ¥0（今日の争点・マップ・見出し比較・3行要約） / Premium ¥980/月・¥9,800/年",
+          "dataStorage": "公開見出しのAI分析結果配信（アカウント不要で無料体験可）",
+          "compliance": "特定の政治・経済的主張を推奨しない中立可視化設計（分析は参考情報）",
+          "features": [
+            "読売・朝日・毎日・産経・日経5大紙の政治・経済2軸スタンスマップ",
+            "リベラル紙・保守紙の代表見出しとキーワードのSide-by-Side比較",
+            "各紙3行要約と中立的な総合要約（原則1日2回・朝夕更新）",
+            "Premium：政治・歴史の文脈深掘り解説と直近90日間の論調トレンド・アーカイブ"
+          ],
+          "faqs": [
+            {
+              "q": "Touten（読点）は特定の政党や思想を推奨しますか？",
+              "a": "いいえ。各紙の報道傾向を中立的に可視化することが目的であり、特定の政治・経済的主張を推奨するものではありません。"
+            },
+            {
+              "q": "無料版とPremium（¥980/月・¥9,800/年）の違いは何ですか？",
+              "a": "今日の争点・2次元スタンスマップ・Side-by-Side見出し比較・3行要約は無料で利用できます。Premiumでは政治・歴史の文脈解説と直近90日間の論調トレンド・アーカイブが開放されます。"
+            },
+            {
+              "q": "記事データはいつ更新されますか？",
+              "a": "原則として1日2回（朝・夕）のバッチで日本5大紙のトップ記事を取得・分析して反映しています。"
+            },
+            {
+              "q": "韓国版や米国版はありますか？",
+              "a": "はい。韓国主要5媒体を比較する姉妹サービス「Banjem（반점）」と、米国主要5媒体を比較する「NewsPrism」を提供しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Touten",
+          "oneLiner": "Touten is a Japanese media literacy app (Web, iOS, Android) that analyzes front-page stories across Japan's five major dailies (Yomiuri, Asahi, Mainichi, Sankei, Nikkei) into a 2D political/economic stance map, side-by-side headlines, and 3-line summaries.",
+          "targetAudience": "Readers seeking balanced multi-outlet Japanese news without filter bubbles",
+          "pricingSummary": "Free ¥0 / Premium ¥980/mo or ¥9,800/yr",
+          "dataStorage": "No account needed for free features; Stripe billing for Web Premium",
+          "compliance": "Neutral visualization—does not endorse any political or economic position",
+          "features": [
+            "2D political/economic stance map across Yomiuri, Asahi, Mainichi, Sankei, and Nikkei",
+            "Side-by-side headline and keyword framing comparison",
+            "Per-paper 3-line summaries plus neutral synthesis updated twice daily",
+            "Premium: historical/political deep dives and rolling 90-day tone archive"
+          ],
+          "faqs": [
+            {
+              "q": "Does Touten endorse any political party or ideology?",
+              "a": "No. Touten neutrally visualizes framing differences across five newspapers as reference information without endorsing any political stance."
+            },
+            {
+              "q": "What is included in Free vs. Premium?",
+              "a": "Daily issues, the 2D stance map, side-by-side headlines, and 3-line summaries are free. Premium (¥980/mo or ¥9,800/yr) adds historical context essays and a 90-day tone trend archive."
+            },
+            {
+              "q": "How often is news analysis updated?",
+              "a": "Twice daily (morning and evening JST batches)."
+            },
+            {
+              "q": "Are there Korean or US editions?",
+              "a": "Yes—sister apps Banjem covers five South Korean outlets and NewsPrism covers five US outlets."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Touten (도텐)",
+          "oneLiner": "Touten(도텐)은 요미우리·아사히·마이니치·산케이·니케이 일본 5대 일간지의 톱 기사를 AI로 분석해 정치·경제 스탠스 2차원 맵, 헤드라인 나란히 비교, 3줄 요약을 제공하는 미디어 리터러시 서비스(Web/iOS/Android)입니다.",
+          "targetAudience": "일본 주요 언론의 논조 차이를 편향 없이 파악하고자 하는 독자",
+          "pricingSummary": "무료 ¥0 / Premium 월 ¥980 · 연 ¥9,800",
+          "dataStorage": "무료 기능은 계정 없이 체험 가능, Premium Stripe 결제",
+          "compliance": "특정 정당·사상을 권장하지 않는 중립적 시각화 설계(참고 정보)",
+          "features": [
+            "요미우리·아사히·마이니치·산케이·니케이 5대지 정치·경제 2축 스탠스 맵",
+            "진보·보수 매체 대표 헤드라인과 키워드 Side-by-Side 비교",
+            "매체별 3줄 요약 및 중립 종합 요약(원칙 하루 2회 오전·오후 갱신)",
+            "Premium: 정치·역사 배경 심층 해설 및 최근 90일 논조 트렌드 아카이브"
+          ],
+          "faqs": [
+            {
+              "q": "특정 정당이나 사상을 지지·권장하나요?",
+              "a": "아니요. 일본 5대 일간지의 보도 성향 차이를 중립적으로 시각화하는 참고 정보 서비스입니다."
+            },
+            {
+              "q": "무료 버전과 Premium의 차이는 무엇인가요?",
+              "a": "오늘의 쟁점, 2차원 스탠스 맵, 헤드라인 비교, 3줄 요약은 무료이며, Premium(월 ¥980 / 연 ¥9,800)에서는 심층 해설과 최근 90일 아카이브를 이용할 수 있습니다."
+            },
+            {
+              "q": "데이터는 하루에 몇 번 갱신되나요?",
+              "a": "원칙적으로 하루 2회(오전·오후) 배치로 5개 매체의 주요 기사를 분석해 반영합니다."
+            },
+            {
+              "q": "한국판이나 미국판 서비스도 있나요?",
+              "a": "네. 한국 5개 언론을 비교하는 반점(Banjem)과 미국 5개 매체를 비교하는 NewsPrism을 자매 서비스로 제공합니다."
+            }
+          ]
+        }
+      }
+    },
+    "banjem": {
+      "slug": "banjem",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "NewsApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://banjem.sta3e-n.online/",
+      "appStoreUrl": "https://apps.apple.com/app/id6800948602",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.banjem",
+      "githubUrl": "https://github.com/ubermenschjo/touten",
+      "ogImage": "https://sta3e-n.com/banjem/og-image.png",
+      "relatedApps": ["touten", "newsprism", "phraseflow"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "KRW", "billing": "free" },
+        { "name": "Premium (Monthly)", "price": "9900", "priceCurrency": "KRW", "billing": "P1M" },
+        { "name": "Premium (Annual)", "price": "99000", "priceCurrency": "KRW", "billing": "P1Y" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "Banjem（반점 / バンジョム）",
+          "oneLiner": "Banjem（반점）は、東亜日報・韓国経済・京郷新聞・ハンギョレ・聯合ニュースの韓国主要5媒体をAI分析し、政治・経済スタンスを2次元マップ、Side-by-Side見出し、急上昇トレンド比較で可視化する韓国語ニュース比較サービスです。",
+          "targetAudience": "ポータルのアルゴリズム偏りを避けて韓国主要メディアを比較したい読者",
+          "pricingSummary": "無料 ₩0 / Premium ₩9,900/月・₩99,000/年",
+          "dataStorage": "アカウント不要で無料体験可、Stripe決済",
+          "compliance": "特定の政治・経済的主張を推奨しない中立可視化設計（分析は参考情報）",
+          "features": [
+            "東亜・韓国経済・京郷・ハンギョレ・聯合5社の政治・経済2次元スタンスマップ",
+            "進歩派・保守派媒体のSide-by-Side見出し比較と3行要約",
+            "Google Trends KRと5社見出しを照合する急上昇ビュー",
+            "Premium：深掘り解説・論調トレンド・直近90日アーカイブ"
+          ],
+          "faqs": [
+            {
+              "q": "Banjemは特定の政党や思想を推奨しますか？",
+              "a": "いいえ。韓国主要5媒体の報道傾向を中立的に可視化する参考情報であり、特定の政治・経済的主張を推奨するものではありません。"
+            },
+            {
+              "q": "料金プランはどうなっていますか？",
+              "a": "今日の争点・スタンスマップ・見出し比較・3行要約は無料（₩0）です。Premium（₩9,900/月または₩99,000/年）で深掘り解説と直近90日の論調アーカイブが利用できます。"
+            },
+            {
+              "q": "更新頻度はどのくらいですか？",
+              "a": "原則として1日2回（KST 朝・夕）のバッチで5媒体のトップ記事を取得・分析します。"
+            },
+            {
+              "q": "Touten（読点）との関係は？",
+              "a": "Toutenは日本5大紙向け、Banjemは韓国5媒体向けの姉妹サービスであり、同じメディアリテラシー基盤を採用しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Banjem",
+          "oneLiner": "Banjem is a Korean media-literacy app (Web, iOS, Android) that compares front-page coverage across five major South Korean outlets (Dong-A Ilbo, Hankyung, Kyunghyang, Hankyoreh, Yonhap) with a 2D stance map, side-by-side headlines, and 3-line summaries.",
+          "targetAudience": "Readers seeking balanced Korean news beyond portal recommendation feeds",
+          "pricingSummary": "Free ₩0 / Premium ₩9,900/mo or ₩99,000/yr",
+          "dataStorage": "Free tier requires no signup; Stripe billing for Premium",
+          "compliance": "Neutral visualization—does not endorse any political party or viewpoint",
+          "features": [
+            "2D political & economic stance map across Dong-A, Hankyung, Kyunghyang, Hankyoreh, and Yonhap",
+            "Side-by-side headline comparison and 3-line summaries",
+            "Trending view matching Google Trends KR with the five outlets' headlines",
+            "Premium: context essays and rolling 90-day tone archive"
+          ],
+          "faqs": [
+            {
+              "q": "Does Banjem endorse any Korean political party?",
+              "a": "No. It neutrally maps reporting stances across five outlets purely for media literacy."
+            },
+            {
+              "q": "What is included in Free vs. Premium?",
+              "a": "Stance maps, side-by-side headlines, and 3-line summaries are free. Premium (₩9,900/mo or ₩99,000/yr) unlocks deep-dive context and a 90-day archive."
+            },
+            {
+              "q": "How often is coverage updated?",
+              "a": "Twice daily in morning and evening KST batches."
+            },
+            {
+              "q": "How does Banjem relate to Touten and NewsPrism?",
+              "a": "Touten covers Japan, Banjem covers South Korea, and NewsPrism covers the United States using the same multi-perspective framework."
+            }
+          ]
+        },
+        "ko": {
+          "name": "반점 (Banjem)",
+          "oneLiner": "반점(Banjem)은 동아일보·한국경제·경향신문·한겨레·연합뉴스 5개 주요 언론의 톱 기사를 AI로 분석해 정치·경제 스탠스 2차원 맵, 헤드라인 비교, 3줄 요약, 급상승 키워드 뷰로 보여주는 미디어 리터러시 서비스(Web/iOS/Android)입니다.",
+          "targetAudience": "포털 추천 알고리즘과 확증 편향을 넘어 균형 있게 한국 뉴스를 읽고 싶은 독자",
+          "pricingSummary": "무료 ₩0 / Premium 월 ₩9,900 · 연 ₩99,000",
+          "dataStorage": "무료 기능은 가입 없이 이용 가능, Premium Stripe 결제",
+          "compliance": "특정 정당·진영을 권장하지 않는 중립적 시각화 설계(참고 정보)",
+          "features": [
+            "동아·한경·경향·한겨레·연합 5사 정치·경제 2차원 스탠스 맵",
+            "진보·보수 매체 대표 헤드라인과 키워드 Side-by-Side 비교 및 3줄 요약",
+            "Google Trends KR 급상승 키워드와 5사 헤드라인 매칭 뷰",
+            "Premium: 정치·역사 심층 해설과 최근 90일 논조 트렌드 아카이브"
+          ],
+          "faqs": [
+            {
+              "q": "반점은 특정 정당이나 진영의 입장을 권장하나요?",
+              "a": "아니요. 각 언론의 보도 성향과 프레임 차이를 중립적으로 시각화하는 참고 정보 서비스이며 특정 정치적 입장을 권장하지 않습니다."
+            },
+            {
+              "q": "무료와 Premium(월 ₩9,900 / 연 ₩99,000)의 차이는 무엇인가요?",
+              "a": "오늘의 쟁점, 2차원 스탠스 맵, 헤드라인 비교, 3줄 요약은 무료입니다. Premium에서는 심층 해설과 최근 90일 논조 아카이브가 제공됩니다."
+            },
+            {
+              "q": "기사는 언제 업데이트되나요?",
+              "a": "원칙적으로 하루 2회(한국시간 오전·오후) 배치로 5개 매체의 주요 기사를 수집·분석합니다."
+            },
+            {
+              "q": "Touten·NewsPrism과는 어떤 관계인가요?",
+              "a": "Touten은 일본 5대지, 반점(Banjem)은 한국 5사, NewsPrism은 미국 5개 매체를 비교하는 STAGEN의 자매 서비스입니다."
+            }
+          ]
+        }
+      }
+    },
+    "newsprism": {
+      "slug": "newsprism",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "NewsApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://newsprism.sta3e-n.online/",
+      "appStoreUrl": "https://apps.apple.com/app/id6800949069",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.newsprism",
+      "githubUrl": "https://github.com/ubermenschjo/touten",
+      "ogImage": "https://sta3e-n.com/newsprism/og-image.png",
+      "relatedApps": ["touten", "banjem", "phraseflow"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "USD", "billing": "free" },
+        { "name": "Premium (Monthly)", "price": "9.99", "priceCurrency": "USD", "billing": "P1M" },
+        { "name": "Premium (Annual)", "price": "99", "priceCurrency": "USD", "billing": "P1Y" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "NewsPrism",
+          "oneLiner": "NewsPrismは、The Hill・RealClearPolitics・ProPublica・Daily Kos・Breitbartの米国主要5媒体をAI分析し、政治・経済スタンスを2次元マップ、Side-by-Side見出し、3行要約で比較できるメディアリテラシーサービス（Web/iOS/Android）です。",
+          "targetAudience": "米国の報道を左右のフィルターバブルを越えて比較したい読者",
+          "pricingSummary": "無料 $0 / Premium $9.99/月・$99/年",
+          "dataStorage": "アカウント不要で無料体験可、Stripe決済",
+          "compliance": "特定の政治・経済的主張を推奨しない中立可視化設計（分析は参考情報）",
+          "features": [
+            "米国5媒体（The Hill・RCP・ProPublica・Daily Kos・Breitbart）の2次元スタンスマップ",
+            "リベラル・保守見出しのSide-by-Side比較と3行要約",
+            "Google Trends USと5社ヘッドラインのTrendingビュー",
+            "Premium：深掘り解説・論調トレンド・直近90日アーカイブ"
+          ],
+          "faqs": [
+            {
+              "q": "NewsPrismは特定の政党・思想を推奨しますか？",
+              "a": "いいえ。米国5媒体の報道傾向を中立的に可視化する参考情報であり、特定の政治的主張を推奨しません。"
+            },
+            {
+              "q": "料金はいくらですか？",
+              "a": "今日の争点・スタンスマップ・見出し比較・3行要約は無料（$0）、Premium（$9.99/月・$99/年）で深掘り解説と直近90日の論調アーカイブが利用できます。"
+            },
+            {
+              "q": "更新頻度は？",
+              "a": "原則として1日2回（米国東部時間 朝・夕）のバッチで更新されます。"
+            },
+            {
+              "q": "Touten・Banjemとの違いは？",
+              "a": "Toutenは日本5大紙、Banjemは韓国5媒体、NewsPrismは米国5媒体を対象とした姉妹サービスです。"
+            }
+          ]
+        },
+        "en": {
+          "name": "NewsPrism",
+          "oneLiner": "NewsPrism is a US media literacy app (Web, iOS, Android) that analyzes front-page stories from five US outlets—The Hill, RealClearPolitics, ProPublica, Daily Kos, and Breitbart—into a 2D political/economic stance map, side-by-side headlines, and 3-line summaries.",
+          "targetAudience": "Readers seeking balanced cross-spectrum US news coverage outside echo chambers",
+          "pricingSummary": "Free $0 / Premium $9.99/mo or $99/yr",
+          "dataStorage": "No signup needed for free tier; Stripe billing for Premium",
+          "compliance": "Neutral visualization—does not endorse any political party or ideology",
+          "features": [
+            "2D political & economic stance map across 5 US outlets across the spectrum",
+            "Side-by-side headline & keyword comparison plus neutral 3-line summaries",
+            "Trending view matching Google Trends US with outlet headlines",
+            "Premium: historical/political deep dives and rolling 90-day tone archive"
+          ],
+          "faqs": [
+            {
+              "q": "Does NewsPrism endorse any political party or ideology?",
+              "a": "No. NewsPrism neutrally maps media framing differences as reference information without recommending any political stance."
+            },
+            {
+              "q": "What is included in Free vs. Premium?",
+              "a": "Daily stance maps, side-by-side headlines, and 3-line summaries are free. Premium ($9.99/mo or $99/yr) unlocks deep-dive context essays and a 90-day tone archive."
+            },
+            {
+              "q": "How often is coverage updated?",
+              "a": "Twice daily in morning and evening US Eastern Time batches."
+            },
+            {
+              "q": "Are there Japanese or Korean editions?",
+              "a": "Yes—sister services Touten (Japan's five major dailies) and Banjem (five South Korean outlets)."
+            }
+          ]
+        },
+        "ko": {
+          "name": "NewsPrism",
+          "oneLiner": "NewsPrism은 The Hill·RealClearPolitics·ProPublica·Daily Kos·Breitbart 미국 5개 매체의 톱 기사를 AI로 분석해 정치·경제 2차원 스탠스 맵, 헤드라인 비교, 3줄 요약으로 제공하는 미디어 리터러시 서비스(Web/iOS/Android)입니다.",
+          "targetAudience": "미국 주요 언론의 진영별 시각 차이를 균형 있게 비교하고 싶은 독자",
+          "pricingSummary": "무료 $0 / Premium 월 $9.99 · 연 $99",
+          "dataStorage": "무료 기능은 가입 없이 이용 가능, Premium Stripe 결제",
+          "compliance": "특정 정당·이념을 권장하지 않는 중립적 시각화 설계",
+          "features": [
+            "미국 5개 매체(The Hill·RCP·ProPublica·Daily Kos·Breitbart) 2차원 스탠스 맵",
+            "진보·보수 헤드라인 Side-by-Side 비교 및 3줄 요약",
+            "Google Trends US와 5개 매체 헤드라인 연동 Trending 뷰",
+            "Premium: 심층 해설 및 최근 90일 논조 트렌드 아카이브"
+          ],
+          "faqs": [
+            {
+              "q": "특정 정당이나 정치적 입장을 권장하나요?",
+              "a": "아니요. 미국 주요 5개 매체의 보도 프레임 차이를 중립적으로 시각화하는 참고 정보 서비스입니다."
+            },
+            {
+              "q": "무료와 Premium의 차이는 무엇인가요?",
+              "a": "스탠스 맵, 헤드라인 비교, 3줄 요약은 무료이며, Premium(월 $9.99 / 연 $99)은 심층 해설과 최근 90일 아카이브를 제공합니다."
+            },
+            {
+              "q": "기사 업데이트 주기는 어떻게 되나요?",
+              "a": "원칙적으로 하루 2회(미국 동부시간 오전·오후) 배치로 갱신됩니다."
+            },
+            {
+              "q": "Touten·Banjem과의 차이는 무엇인가요?",
+              "a": "Touten은 일본 5대 일간지, 반점(Banjem)은 한국 5사, NewsPrism은 미국 5개 매체를 비교하는 자매 서비스입니다."
+            }
+          ]
+        }
+      }
+    },
+    "phraseflow": {
+      "slug": "phraseflow",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://phraseflow.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6792987031",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.gujeol",
+      "githubUrl": "https://github.com/ubermenschjo/gujeol",
+      "ogImage": "https://sta3e-n.com/phraseflow/og-image.png",
+      "relatedApps": ["stillpoint", "touten", "phraseflow-religion"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Premium (Web)", "price": "490", "priceCurrency": "JPY", "billing": "P1M" },
+        { "name": "Premium (App IAP)", "price": "600", "priceCurrency": "JPY", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "Phrase Flow",
+          "oneLiner": "Phrase Flowは、世界の偉人・思想家の名言を歴史的背景・現代的解説、さらに同時代の対照的視点（反対・類似意見）とともにEN/KO/JAの3言語で毎朝届ける教養リテラシーサービス（Web/iOS/Android）です。",
+          "targetAudience": "断片的な引用ではなく歴史的背景と多角的な視点を身につけたい読者",
+          "pricingSummary": "無料 ¥0（毎日3分野ローテーション・直近7日） / Premium Web ¥490/月（$4.99/月）・アプリ ¥600/月",
+          "dataStorage": "Web/アプリアカウント連携、Stripe（Web）およびストアIAP",
+          "compliance": "特定の思想・政治的主張を推奨しない多角的リテラシー設計",
+          "features": [
+            "哲学・科学・経済・歴史・心理・社会・文化・文学・メディアの9分野",
+            "出典検証済みの名言と時代背景・現代的エッセイ解説",
+            "確証バイアスを防ぐ対照ビュー（同時代の反対・類似視点：Premium）",
+            "英語・韓国語・日本語の3言語対応と最大3回/日の配信スケジュール（Premium）"
+          ],
+          "faqs": [
+            {
+              "q": "Phrase Flowは特定の思想や政治的主張を推奨しますか？",
+              "a": "いいえ。名言の歴史的文脈と対照的な視点を並べて提供し、確証バイアスから離れて多角的に考えることを支援します。"
+            },
+            {
+              "q": "無料プランとPremiumの違いは何ですか？",
+              "a": "無料では毎日ローテーションで3分野の名言・基本解説・直近7日アーカイブが利用できます。Premium（Web ¥490/月・アプリ ¥600/月）では9分野すべて、対照ビュー完全開放、全期間アーカイブが利用できます。"
+            },
+            {
+              "q": "対応言語は何ですか？",
+              "a": "英語・韓国語・日本語の3言語で名言の解説・背景を表示できます。"
+            },
+            {
+              "q": "宗教・聖典版のシリーズもありますか？",
+              "a": "はい。Phrase Flow Religionとして、今日のみことば（キリスト教）、今日の仏経（仏教）、今日のクルアーン（イスラム教）、今日の宗教のことば（世界宗教比較）を展開しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Phrase Flow",
+          "oneLiner": "Phrase Flow delivers curated quotes from world thinkers each morning with historical context, modern commentary, and contrasting perspectives in English, Korean, and Japanese across Web, iOS, and Android.",
+          "targetAudience": "Readers who want context-rich quotes and dual perspectives beyond shallow social snippets",
+          "pricingSummary": "Free $0 (3 rotating categories, 7-day archive) / Premium Web $4.99/mo (¥490/mo) · App ¥600/mo",
+          "dataStorage": "Cloud-synced preferences with Stripe (Web) and App Store / Google Play billing",
+          "compliance": "Neutral multi-perspective curation; AI commentary is informational",
+          "features": [
+            "9 curated disciplines: Philosophy, Science & Tech, Economy, History, Psychology, Society, Culture, Literature, Media",
+            "Historical background and modern contextual essay for every quote",
+            "Dual-perspective contrast view to counter confirmation bias (Premium)",
+            "Trilingual support (EN / KO / JA) and full archive search (Premium)"
+          ],
+          "faqs": [
+            {
+              "q": "Does Phrase Flow promote any specific ideology?",
+              "a": "No. It pairs historical context with contrasting viewpoints so readers can think critically across perspectives."
+            },
+            {
+              "q": "What is included in Free vs. Premium?",
+              "a": "Free offers 3 rotating categories daily and a 7-day archive. Premium ($4.99/mo on Web) unlocks all 9 categories, full contrast views, custom schedules, and unlimited archive."
+            },
+            {
+              "q": "Which languages are supported?",
+              "a": "English, Korean, and Japanese."
+            },
+            {
+              "q": "Are there sacred-text editions as well?",
+              "a": "Yes—Phrase Flow Religion includes Daily Verse (Christianity), Daily Sutra (Buddhism), Daily Quran (Islam), and Daily Sacred Verse (comparative)."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Phrase Flow",
+          "oneLiner": "Phrase Flow는 세계 위인·사상가의 명언을 역사적 배경과 현대적 해설, 그리고 대조적인 시선(반대·유사 관점)과 함께 영어·한국어·일본어 3개 언어로 매일 아침 전달하는 교양 리터러시 서비스(Web/iOS/Android)입니다.",
+          "targetAudience": "단편 인용을 넘어 역사적 맥락과 다각적 사고를 기르고 싶은 독자",
+          "pricingSummary": "무료 ¥0(매일 3개 분야·최근 7일) / Premium Web ¥490·$4.99/월 · 앱 ¥600/월",
+          "dataStorage": "클라우드 계정 연동, Web Stripe 및 스토어 인앱 결제",
+          "compliance": "특정 사상·정치적 입장을 권장하지 않는 다각적 리터러시 설계",
+          "features": [
+            "철학·과학·경제·역사·심리·사회·문화·문학·미디어 9개 분야 큐레이션",
+            "출전 검증된 명언과 시대 배경·현대적 의미 에세이 해설",
+            "확증 편향을 줄이는 대조 뷰(반대·유사 관점 비교: Premium)",
+            "영어·한국어·일본어 3개국어 지원 및 전체 아카이브(Premium)"
+          ],
+          "faqs": [
+            {
+              "q": "특정 사상이나 정치적 견해를 권장하나요?",
+              "a": "아니요. 명언의 역사적 맥락과 대조되는 관점을 함께 제시해 균형 잡힌 사고를 돕는 것이 목적입니다."
+            },
+            {
+              "q": "무료와 Premium의 차이는 무엇인가요?",
+              "a": "무료는 매일 3개 분야 로테이션과 최근 7일 아카이브를 제공하며, Premium은 9개 분야 전체, 대조 뷰, 무제한 아카이브, 맞춤 알림을 제공합니다."
+            },
+            {
+              "q": "어떤 언어를 지원하나요?",
+              "a": "한국어·영어·일본어 3개 언어로 배경과 해설을 읽을 수 있습니다."
+            },
+            {
+              "q": "종교 경전 시리즈도 있나요?",
+              "a": "네. Phrase Flow Religion 시리즈로 오늘의 말씀(기독교), 오늘의 불경(불교), 오늘의 꾸란(이슬람), 오늘의 종교 구절(비교판)을 제공합니다."
+            }
+          ]
+        }
+      }
+    },
+    "phraseflow-christianity": {
+      "slug": "phraseflow-christianity",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://christianity.phraseflow.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6792987918",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.gujeol.christianity",
+      "githubUrl": "https://github.com/ubermenschjo/gujeol",
+      "ogImage": "https://sta3e-n.com/phraseflow-christianity/og-image.png",
+      "relatedApps": ["phraseflow-religion", "phraseflow-buddhism", "phraseflow"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free (with Comparison View)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Premium", "price": "4.99", "priceCurrency": "USD", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "今日のみことば（Daily Verse）",
+          "oneLiner": "今日のみことば（Daily Verse）は、キリスト教の聖句を歴史的背景・現代的解説および仏教・イスラム教など他宗教との比較視点とともにKO/EN/JAの3言語で毎朝届けるPhrase Flow Religionシリーズの教養アプリ（Web/iOS/Android）です。",
+          "targetAudience": "キリスト教の聖句を歴史的文脈や他宗教との比較から学びたい読者",
+          "pricingSummary": "無料 ¥0（比較ビューも無料開放） / Premium $4.99/月",
+          "dataStorage": "アカウント不要で閲覧可能、Stripe/ストア決済",
+          "compliance": "特定宗教・宗派の布教や推奨を行わない宗教リテラシー支援設計",
+          "features": [
+            "キリスト教の経典から厳選した毎日の聖句配信",
+            "出典・時代背景・現代への示唆をまとめた解説エッセイ",
+            "他宗教伝統（仏教・イスラム教）の類似・対照一節を並べる比較ビュー（無料開放）",
+            "韓国語・英語・日本語の3言語対応"
+          ],
+          "faqs": [
+            {
+              "q": "特定の宗教や宗派を推奨・布教するサービスですか？",
+              "a": "いいえ。歴史的文脈の理解と他宗教との比較読書によるリテラシー支援を目的としており、特定の宗教・宗派を推奨するものではありません。"
+            },
+            {
+              "q": "比較ビューは無料で使えますか？",
+              "a": "はい。宗教版（Phrase Flow Religion）では他宗教との比較ビューを無料で開放しており、アカウント登録不要で閲覧できます。"
+            },
+            {
+              "q": "本家 Phrase Flow との違いは何ですか？",
+              "a": "Phrase Flow は哲学・科学など世俗の名言9分野を扱い、今日のみことばはキリスト教の聖句に特化したシリーズです。"
+            },
+            {
+              "q": "対応言語は何ですか？",
+              "a": "韓国語・英語・日本語の3言語に対応しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Daily Verse",
+          "oneLiner": "Daily Verse (Phrase Flow Religion) delivers a daily Christian sacred verse with historical context, modern commentary, and interfaith comparison views (Buddhism & Islam) in English, Korean, and Japanese on Web, iOS, and Android.",
+          "targetAudience": "Readers exploring Christian scriptures through historical context and interfaith literacy",
+          "pricingSummary": "Free $0 (including interfaith comparison) / Premium $4.99/mo",
+          "dataStorage": "No account needed for daily reading",
+          "compliance": "Non-proselytizing educational/literacy design; AI commentary is informational",
+          "features": [
+            "Daily curated Christian scripture verse",
+            "Historical era and contextual essay",
+            "Free interfaith comparison view alongside Buddhist and Islamic texts",
+            "Available in English, Korean, and Japanese"
+          ],
+          "faqs": [
+            {
+              "q": "Does Daily Verse promote a specific denomination?",
+              "a": "No. It is a neutral literacy tool offering historical context and interfaith comparison rather than proselytizing."
+            },
+            {
+              "q": "Is the interfaith comparison view free?",
+              "a": "Yes. In the Phrase Flow Religion editions, comparison views are open for free without signup."
+            },
+            {
+              "q": "How does it differ from Phrase Flow?",
+              "a": "Phrase Flow covers 9 secular disciplines, while Daily Verse focuses specifically on Christian scriptures."
+            },
+            {
+              "q": "Which platforms and languages are supported?",
+              "a": "Web, iOS, and Android in English, Korean, and Japanese."
+            }
+          ]
+        },
+        "ko": {
+          "name": "오늘의 말씀 (Daily Verse)",
+          "oneLiner": "오늘의 말씀(Daily Verse)은 기독교 성경 구절을 역사적 배경·현대적 해설, 그리고 불교·이슬람 등 타 종교 구절과의 비교 뷰와 함께 한국어·영어·일본어 3개 언어로 매일 아침 전달하는 Phrase Flow Religion 시리즈 앱(Web/iOS/Android)입니다.",
+          "targetAudience": "기독교 성구를 역사적 맥락과 타 종교와의 비교 속에서 읽고 싶은 독자",
+          "pricingSummary": "무료 ₩0(비교 뷰 무료 개방) / Premium $4.99/월",
+          "dataStorage": "계정 없이 무료 열람 가능",
+          "compliance": "특정 종교·종파 포교가 아닌 역사·비교 리터러시 지원 목적",
+          "features": [
+            "매일 아침 엄선된 기독교 성경 구절 전달",
+            "출전과 시대 배경을 짚는 에세이 형식 해설",
+            "불교·이슬람 경전과의 유사·대조 구절 비교 뷰 무료 개방",
+            "한국어·영어·일본어 3개 언어 지원"
+          ],
+          "faqs": [
+            {
+              "q": "특정 종교나 교파를 권장·포교하는 서비스인가요?",
+              "a": "아니요. 역사적 맥락과 타 종교 비교 읽기를 통한 교양 리터러시 지원이 목적입니다."
+            },
+            {
+              "q": "타 종교 비교 뷰는 무료인가요?",
+              "a": "네. Phrase Flow Religion 시리즈에서는 비교 뷰를 회원가입 없이 무료로 이용할 수 있습니다."
+            },
+            {
+              "q": "일반 Phrase Flow와 어떤 차이가 있나요?",
+              "a": "Phrase Flow는 철학·과학 등 9개 세속 분야를 다루며, 오늘의 말씀은 기독교 성구에 특화되어 있습니다."
+            },
+            {
+              "q": "어떤 기기와 언어를 지원하나요?",
+              "a": "Web, iOS, Android에서 한국어·영어·일본어를 지원합니다."
+            }
+          ]
+        }
+      }
+    },
+    "phraseflow-buddhism": {
+      "slug": "phraseflow-buddhism",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://buddhism.phraseflow.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6792987802",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.gujeol.buddhism",
+      "githubUrl": "https://github.com/ubermenschjo/gujeol",
+      "ogImage": "https://sta3e-n.com/phraseflow-buddhism/og-image.png",
+      "relatedApps": ["phraseflow-religion", "phraseflow-christianity", "phraseflow"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free (with Comparison View)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Premium", "price": "4.99", "priceCurrency": "USD", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "今日の仏経（Daily Sutra）",
+          "oneLiner": "今日の仏経（Daily Sutra）は、仏教経典の一節を歴史的背景・現代的解説およびキリスト教・イスラム教など他宗教との比較視点とともにKO/EN/JAの3言語で毎朝届けるPhrase Flow Religionシリーズの教養アプリ（Web/iOS/Android）です。",
+          "targetAudience": "仏教経典を歴史的背景や他宗教との対話から学びたい読者",
+          "pricingSummary": "無料 ¥0（比較ビューも無料開放） / Premium $4.99/月",
+          "dataStorage": "アカウント不要で閲覧可能、Stripe/ストア決済",
+          "compliance": "特定宗教・宗派の推奨を行わない宗教リテラシー支援設計",
+          "features": [
+            "仏教経典から厳選した毎日の聖句配信",
+            "時代背景と現代的意義を解説するエッセイ",
+            "キリスト教・イスラム教などの類似・対照一節を並べる比較ビュー（無料開放）",
+            "韓国語・英語・日本語の3言語対応"
+          ],
+          "faqs": [
+            {
+              "q": "特定の宗派を推奨するアプリですか？",
+              "a": "いいえ。経典の歴史的文脈と多宗教比較によるリテラシー支援を目的としており、特定の宗派を推奨しません。"
+            },
+            {
+              "q": "比較ビューは無料で閲覧できますか？",
+              "a": "はい。比較ビューを含め毎日の経典・基本解説はアカウント登録不要で無料閲覧できます。"
+            },
+            {
+              "q": "Phrase Flow との違いは何ですか？",
+              "a": "Phrase Flow は世俗の名言9分野、今日の仏経は仏教経典に特化した姉妹サービスです。"
+            },
+            {
+              "q": "どの端末・言語で利用できますか？",
+              "a": "Webブラウザ、iOS、Androidで韓国語・英語・日本語に対応しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Daily Sutra",
+          "oneLiner": "Daily Sutra (Phrase Flow Religion) delivers a daily Buddhist scripture passage with historical context, modern commentary, and interfaith comparison views (Christianity & Islam) in English, Korean, and Japanese on Web, iOS, and Android.",
+          "targetAudience": "Readers exploring Buddhist texts with historical context and interfaith comparison",
+          "pricingSummary": "Free $0 (including interfaith comparison) / Premium $4.99/mo",
+          "dataStorage": "No account needed for daily reading",
+          "compliance": "Non-sectarian literacy and historical-context design",
+          "features": [
+            "Daily curated Buddhist sutra passage",
+            "Historical background and modern reflection essay",
+            "Free interfaith comparison view with Christian and Islamic passages",
+            "Trilingual support (EN / KO / JA)"
+          ],
+          "faqs": [
+            {
+              "q": "Does Daily Sutra endorse a specific Buddhist sect?",
+              "a": "No. It is an educational literacy app presenting historical context and comparative readings."
+            },
+            {
+              "q": "Is the comparison view free?",
+              "a": "Yes. Interfaith comparison and daily sutras are free with no signup required."
+            },
+            {
+              "q": "How does it differ from Phrase Flow?",
+              "a": "Phrase Flow focuses on 9 secular topics; Daily Sutra focuses specifically on Buddhist scriptures."
+            },
+            {
+              "q": "Which platforms and languages are supported?",
+              "a": "Web, iOS, and Android in English, Korean, and Japanese."
+            }
+          ]
+        },
+        "ko": {
+          "name": "오늘의 불경 (Daily Sutra)",
+          "oneLiner": "오늘의 불경(Daily Sutra)은 불교 경전의 한 구절을 역사적 배경·현대적 해설, 그리고 기독교·이슬람 경전과의 비교 뷰와 함께 한국어·영어·일본어 3개 언어로 매일 아침 전달하는 Phrase Flow Religion 시리즈 앱(Web/iOS/Android)입니다.",
+          "targetAudience": "불교 경전을 역사적 맥락과 비교 시선으로 읽고 싶은 독자",
+          "pricingSummary": "무료 ₩0(비교 뷰 무료 개방) / Premium $4.99/월",
+          "dataStorage": "계정 없이 무료 열람 가능",
+          "compliance": "특정 종파 권장 목적이 아닌 역사·비교 리터러시 지원",
+          "features": [
+            "매일 엄선된 불교 경전 구절 전달",
+            "출전과 시대적 맥락을 담은 에세이 해설",
+            "기독교·이슬람 경전과의 유사·대조 비교 뷰 무료 제공",
+            "한국어·영어·일본어 3개 언어 지원"
+          ],
+          "faqs": [
+            {
+              "q": "특정 종파를 권장하는 서비스인가요?",
+              "a": "아니요. 불교 경전의 역사적 맥락과 다종교 비교 읽기를 돕는 교양 리터러시 서비스입니다."
+            },
+            {
+              "q": "비교 뷰는 무료로 볼 수 있나요?",
+              "a": "네. 비교 뷰와 오늘의 불경 기본 해설은 별도 가입 없이 무료로 열람할 수 있습니다."
+            },
+            {
+              "q": "Phrase Flow와는 어떻게 다른가요?",
+              "a": "Phrase Flow는 세속 명언 9개 분야를 다루고, 오늘의 불경은 불교 경전에 특화되어 있습니다."
+            },
+            {
+              "q": "지원 기기와 언어는 무엇인가요?",
+              "a": "Web, iOS, Android에서 한국어·영어·일본어를 지원합니다."
+            }
+          ]
+        }
+      }
+    },
+    "phraseflow-islam": {
+      "slug": "phraseflow-islam",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://islam.phraseflow.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6792987807",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.gujeol.islam",
+      "githubUrl": "https://github.com/ubermenschjo/gujeol",
+      "ogImage": "https://sta3e-n.com/phraseflow-islam/og-image.png",
+      "relatedApps": ["phraseflow-religion", "phraseflow-christianity", "phraseflow"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free (with Comparison View)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Premium", "price": "4.99", "priceCurrency": "USD", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "今日のクルアーン（Daily Quran）",
+          "oneLiner": "今日のクルアーン（Daily Quran）は、イスラムの聖句を歴史的背景・現代的解説およびキリスト教・仏教など他宗教との比較視点とともにKO/EN/JAの3言語で毎朝届けるPhrase Flow Religionシリーズの教養アプリ（Web/iOS/Android）です。",
+          "targetAudience": "クルアーンの聖句を歴史的文脈と多宗教比較から学びたい読者",
+          "pricingSummary": "無料 ¥0（比較ビューも無料開放） / Premium $4.99/月",
+          "dataStorage": "アカウント不要で閲覧可能、Stripe/ストア決済",
+          "compliance": "特定宗教・宗派の推奨を行わない宗教リテラシー支援設計",
+          "features": [
+            "イスラム教の経典から厳選した毎日の聖句配信",
+            "時代背景・文脈を踏まえた解説エッセイ",
+            "キリスト教・仏教などの類似・対照一節を並べる比較ビュー（無料開放）",
+            "韓国語・英語・日本語の3言語対応"
+          ],
+          "faqs": [
+            {
+              "q": "特定の宗教や宗派を推奨しますか？",
+              "a": "いいえ。歴史的文脈と多宗教比較のリテラシー支援が目的であり、特定の宗教・宗派を推奨するものではありません。"
+            },
+            {
+              "q": "比較ビューは無料で使えますか？",
+              "a": "はい。宗教版では他宗教との比較ビューを無料で開放しており、アカウント登録なしで閲覧できます。"
+            },
+            {
+              "q": "Phrase Flow との違いは？",
+              "a": "Phrase Flow は世俗の名言9分野を扱い、今日のクルアーンはイスラムの聖句に特化しています。"
+            },
+            {
+              "q": "どの端末・言語に対応していますか？",
+              "a": "Web、iOS、Androidで韓国語・英語・日本語に対応しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Daily Quran",
+          "oneLiner": "Daily Quran (Phrase Flow Religion) delivers a daily Islamic sacred verse with historical context, modern commentary, and interfaith comparison views (Christianity & Buddhism) in English, Korean, and Japanese on Web, iOS, and Android.",
+          "targetAudience": "Readers seeking historical context and comparative literacy on Islamic scripture",
+          "pricingSummary": "Free $0 (including interfaith comparison) / Premium $4.99/mo",
+          "dataStorage": "No account needed for daily reading",
+          "compliance": "Educational interfaith literacy design without sectarian endorsement",
+          "features": [
+            "Daily curated Quranic passage",
+            "Historical and contextual commentary essay",
+            "Free interfaith comparison view with Christian and Buddhist scriptures",
+            "English, Korean, and Japanese UI and commentary"
+          ],
+          "faqs": [
+            {
+              "q": "Does Daily Quran promote any specific sect?",
+              "a": "No. It is designed for historical context and interfaith literacy, not sectarian endorsement."
+            },
+            {
+              "q": "Is the interfaith comparison view free?",
+              "a": "Yes. Daily passages and comparison views are open for free without signup."
+            },
+            {
+              "q": "How is it different from Phrase Flow?",
+              "a": "Phrase Flow covers 9 secular disciplines; Daily Quran focuses specifically on Islamic scripture."
+            },
+            {
+              "q": "Which platforms and languages are supported?",
+              "a": "Web, iOS, and Android in English, Korean, and Japanese."
+            }
+          ]
+        },
+        "ko": {
+          "name": "오늘의 꾸란 (Daily Quran)",
+          "oneLiner": "오늘의 꾸란(Daily Quran)은 이슬람 꾸란의 성구를 역사적 배경·현대적 해설, 그리고 기독교·불교 경전과의 비교 뷰와 함께 한국어·영어·일본어 3개 언어로 매일 아침 전달하는 Phrase Flow Religion 시리즈 앱(Web/iOS/Android)입니다.",
+          "targetAudience": "이슬람 성구를 역사적 맥락과 다종교 비교 시선으로 읽고 싶은 독자",
+          "pricingSummary": "무료 ₩0(비교 뷰 무료 개방) / Premium $4.99/월",
+          "dataStorage": "계정 없이 무료 열람 가능",
+          "compliance": "특정 종교·종파 권장 목적이 아닌 역사·비교 리터러시 지원",
+          "features": [
+            "매일 엄선된 꾸란 성구 전달",
+            "시대 배경과 맥락을 설명하는 에세이 해설",
+            "기독교·불교 성구와의 유사·대조 비교 뷰 무료 개방",
+            "한국어·영어·일본어 3개 언어 지원"
+          ],
+          "faqs": [
+            {
+              "q": "특정 종교나 종파를 권장하는 서비스인가요?",
+              "a": "아니요. 역사적 맥락과 다종교 비교 읽기를 지원하는 교양 리터러시 서비스입니다."
+            },
+            {
+              "q": "비교 뷰는 무료로 이용할 수 있나요?",
+              "a": "네. 회원가입 없이 비교 뷰와 오늘의 성구 해설을 무료로 볼 수 있습니다."
+            },
+            {
+              "q": "Phrase Flow와는 무엇이 다른가요?",
+              "a": "Phrase Flow는 세속 명언 9개 분야, 오늘의 꾸란은 이슬람 성구에 특화된 시리즈입니다."
+            },
+            {
+              "q": "지원 플랫폼과 언어는 어떻게 되나요?",
+              "a": "Web, iOS, Android에서 한국어·영어·일본어를 지원합니다."
+            }
+          ]
+        }
+      }
+    },
+    "phraseflow-religion": {
+      "slug": "phraseflow-religion",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://religion.phraseflow.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6792988036",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.gujeol.religion",
+      "githubUrl": "https://github.com/ubermenschjo/gujeol",
+      "ogImage": "https://sta3e-n.com/phraseflow-religion/og-image.png",
+      "relatedApps": ["phraseflow", "phraseflow-christianity", "phraseflow-buddhism"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-09-media-literacy-vision/", "title": "メディアと教養のステージ——偏りを知ってから読む、STAGENの4つの道具" }
+      ],
+      "offers": [
+        { "name": "Free (with Comparison View)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Premium", "price": "4.99", "priceCurrency": "USD", "billing": "P1M" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "今日の宗教のことば（Daily Sacred Verse）",
+          "oneLiner": "今日の宗教のことば（Daily Sacred Verse）は、キリスト教・仏教・イスラム教など世界宗教の知恵を歴史的背景と横並びの比較視点で毎朝読み解く、Phrase Flow Religionシリーズの統合比較アプリ（Web/iOS/Android）です。",
+          "targetAudience": "世界の宗教思想を横断的・中立的に比較して教養を深めたい読者",
+          "pricingSummary": "無料 ¥0（比較ビューも無料開放） / Premium $4.99/月",
+          "dataStorage": "アカウント不要で閲覧可能、Stripe/ストア決済",
+          "compliance": "特定宗教・宗派を推奨しない比較宗教学的リテラシー設計",
+          "features": [
+            "世界宗教の経典から厳選した毎日の聖句配信",
+            "出典・時代背景・現代への示唆をまとめた解説エッセイ",
+            "キリスト教・仏教・イスラム教など複数伝統の比較ビュー（無料開放）",
+            "韓国語・英語・日本語の3言語対応"
+          ],
+          "faqs": [
+            {
+              "q": "特定の宗教を推奨するサービスですか？",
+              "a": "いいえ。複数の宗教伝統を並べて歴史的文脈とともに読み解くリテラシー支援が目的です。"
+            },
+            {
+              "q": "単一宗教版（今日のみことば・仏経・クルアーン）との違いは？",
+              "a": "単一宗教版はそれぞれの経典を中心に届ける一方、今日の宗教のことばは世界の宗教全体を比較しながら読む統合版です。"
+            },
+            {
+              "q": "比較ビューは無料で使えますか？",
+              "a": "はい。比較ビューと毎日の聖句解説はアカウント不要で無料で閲覧できます。"
+            },
+            {
+              "q": "どの端末・言語に対応していますか？",
+              "a": "Web、iOS、Androidで韓国語・英語・日本語に対応しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Daily Sacred Verse",
+          "oneLiner": "Daily Sacred Verse (Phrase Flow Religion) compares daily passages across Christianity, Buddhism, Islam, and world religious traditions with historical context and side-by-side reflection in English, Korean, and Japanese on Web, iOS, and Android.",
+          "targetAudience": "Readers interested in comparative world religions and historical context",
+          "pricingSummary": "Free $0 (including interfaith comparison) / Premium $4.99/mo",
+          "dataStorage": "No account needed for daily reading",
+          "compliance": "Neutral comparative religious literacy; does not endorse any religion",
+          "features": [
+            "Daily curated sacred texts across world traditions",
+            "Historical and contextual commentary essay",
+            "Free side-by-side interfaith comparison view",
+            "Trilingual support (EN / KO / JA)"
+          ],
+          "faqs": [
+            {
+              "q": "Does Daily Sacred Verse endorse a particular religion?",
+              "a": "No. It compares traditions neutrally with historical context for cultural and religious literacy."
+            },
+            {
+              "q": "How does it differ from Daily Verse, Daily Sutra, or Daily Quran?",
+              "a": "Those editions focus on one tradition as the primary daily text, while Daily Sacred Verse rotates across world religions."
+            },
+            {
+              "q": "Is the comparison view free?",
+              "a": "Yes. Daily texts and comparison views are open for free without an account."
+            },
+            {
+              "q": "Which platforms and languages are supported?",
+              "a": "Web, iOS, and Android in English, Korean, and Japanese."
+            }
+          ]
+        },
+        "ko": {
+          "name": "오늘의 종교 구절 (Daily Sacred Verse)",
+          "oneLiner": "오늘의 종교 구절(Daily Sacred Verse)은 기독교·불교·이슬람 등 세계 여러 종교의 경전 구절을 역사적 배경과 나란히 비교 시점으로 매일 아침 전하는 Phrase Flow Religion 통합 비교 앱(Web/iOS/Android)입니다.",
+          "targetAudience": "세계 주요 종교의 경전을 횡단적·중립적으로 비교하며 교양을 넓히고 싶은 독자",
+          "pricingSummary": "무료 ₩0(비교 뷰 무료 개방) / Premium $4.99/월",
+          "dataStorage": "계정 없이 무료 열람 가능",
+          "compliance": "특정 종교를 권장하지 않는 비교 종교 리터러시 설계",
+          "features": [
+            "세계 종교 경전에서 엄선한 매일의 성구 전달",
+            "출전과 시대적 맥락을 설명하는 에세이 해설",
+            "기독교·불교·이슬람 등 다종교 비교 뷰 무료 개방",
+            "한국어·영어·일본어 3개 언어 지원"
+          ],
+          "faqs": [
+            {
+              "q": "특정 종교를 권장하는 서비스인가요?",
+              "a": "아니요. 여러 종교의 지혜를 역사적 맥락과 함께 비교해 읽는 리터러시 지원 서비스입니다."
+            },
+            {
+              "q": "단일 종교판(오늘의 말씀·불경·꾸란)과 차이는 무엇인가요?",
+              "a": "각 단일 종교판은 해당 경전 중심으로, 오늘의 종교 구절은 세계 종교 전반을 아울러 비교하는 통합판입니다."
+            },
+            {
+              "q": "비교 뷰는 무료로 볼 수 있나요?",
+              "a": "네. 회원가입 없이 무료로 이용할 수 있습니다."
+            },
+            {
+              "q": "지원 기기와 언어는 무엇인가요?",
+              "a": "Web, iOS, Android에서 한국어·영어·일본어를 지원합니다."
+            }
+          ]
+        }
+      }
+    },
+    "stillpoint": {
+      "slug": "stillpoint",
+      "cluster": "media-wisdom",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://stillpoint.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6794211386",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.stillpoint",
+      "githubUrl": "https://github.com/ubermenschjo/stillpoint",
+      "ogImage": "https://sta3e-n.com/stillpoint/og-image.png",
+      "relatedApps": ["phraseflow", "pagepace"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-08-04-stillpoint/", "title": "考えごとに座り、問いを重ねて深くなる内省" }
+      ],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "USD", "billing": "free" },
+        { "name": "Premium (Web Monthly)", "price": "4.99", "priceCurrency": "USD", "billing": "P1M" },
+        { "name": "Premium (App Monthly)", "price": "5.99", "priceCurrency": "USD", "billing": "P1M" },
+        { "name": "Premium (App Annual)", "price": "39.99", "priceCurrency": "USD", "billing": "P1Y" },
+        { "name": "Premium (App Lifetime)", "price": "89.99", "priceCurrency": "USD", "billing": "one-time" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "Stillpoint",
+          "oneLiner": "Stillpoint（スティルポイント）は、毎日ひとつの「考えごと」に座り、タイマーと音声で内省すると、AIがソクラテス式の深い問いを返す対話型瞑想・内省アプリ（Web/iOS/Android、EN/KO/JA対応）です。医療・心理療法の代替ではありません。",
+          "targetAudience": "聴くだけの瞑想や白紙の日記が続かず、問いを通じて思考を深めたい人",
+          "pricingSummary": "Free $0（1セッション2ターン・直近7日） / Premium Web $4.99/月〜・App $5.99/月・$39.99/年・Lifetime $89.99",
+          "dataStorage": "音声認識は原則オンデバイス / Web Speech API（テキスト化された内省のみAI問い生成に送信）",
+          "compliance": "内省の補助ツールであり、医療・心理療法・危機介入の代替ではありません",
+          "features": [
+            "Phrase Flow由来の名言資産を問いに再加工した「今日の考えごと」",
+            "波紋アニメーション付きセッションタイマーとターン滞在時間の可視化",
+            "音声内省に対するGemini / Workers AIのソクラテス式深掘り質問",
+            "英語・韓国語・日本語対応、アーカイブ検索（Premium）"
+          ],
+          "faqs": [
+            {
+              "q": "Stillpointは医療やカウンセリングの代替になりますか？",
+              "a": "いいえ。Stillpointは内省の補助ツールであり、医療・心理療法・危機介入の代替ではありません。深刻な心の不調がある場合は専門機関をご利用ください。"
+            },
+            {
+              "q": "FreeとPremiumの違いは何ですか？",
+              "a": "Freeは1セッションあたりAI深掘り2ターン、アーカイブ直近7日です。Premium（Web $4.99/月〜、App $5.99/月・$39.99/年・買い切り$89.99）ではターン数・アーカイブ無制限、検索、分野選択が使えます。"
+            },
+            {
+              "q": "音声データはどこで処理されますか？",
+              "a": "原則として端末のオンデバイス音声認識またはブラウザのWeb Speech APIで文字起こしされ、テキスト化された内省のみがAIの問い生成のために送信されます。"
+            },
+            {
+              "q": "Web版とモバイル版は両方ありますか？",
+              "a": "はい。stillpoint.sta3e-n.onlineのWeb版と、App Store / Google Playのモバイルアプリを提供しています。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Stillpoint",
+          "oneLiner": "Stillpoint is a guided reflection and Zen meditation app (Web, iOS, Android; EN/KO/JA) where you sit with a daily prompt, speak your thoughts with a session timer, and receive deeper Socratic follow-up questions from AI. It is not a medical or psychotherapy substitute.",
+          "targetAudience": "People looking for active, dialog-driven reflection between passive meditation and blank journaling",
+          "pricingSummary": "Free $0 (2 AI turns/session, 7-day archive) / Premium Web from $4.99/mo · App $5.99/mo, $39.99/yr, Lifetime $89.99",
+          "dataStorage": "Speech-to-text runs via on-device / Web Speech API; only transcribed text is sent for AI follow-up questions",
+          "compliance": "Self-reflection aid only; not a substitute for medical care, psychotherapy, or crisis intervention",
+          "features": [
+            "Daily prompts adapted from Phrase Flow's curated wisdom corpus",
+            "Ripple-animated session timer and per-turn dwell timeline",
+            "Voice reflection paired with Socratic AI follow-up questions",
+            "Trilingual (EN / KO / JA) with unlimited archive search in Premium"
+          ],
+          "faqs": [
+            {
+              "q": "Is Stillpoint a substitute for therapy or medical care?",
+              "a": "No. Stillpoint is a personal reflection aid, not medical care, psychotherapy, or crisis intervention. Please seek professional help for acute mental health needs."
+            },
+            {
+              "q": "What is the difference between Free and Premium?",
+              "a": "Free includes 2 AI deepening turns per session and a 7-day archive. Premium (Web from $4.99/mo; App $5.99/mo, $39.99/yr, or $89.99 Lifetime) unlocks unlimited turns, unlimited searchable archive, and topic selection."
+            },
+            {
+              "q": "How is my voice processed?",
+              "a": "Speech recognition runs on-device or via browser Web Speech API by default; only transcribed reflection text is sent to generate follow-up questions."
+            },
+            {
+              "q": "Where can I use Stillpoint?",
+              "a": "On the web at stillpoint.sta3e-n.online and on iOS and Android."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Stillpoint",
+          "oneLiner": "Stillpoint는 매일 하나의 '생각거리'에 머물며 세션 타이머와 음성으로 성찰하면 AI가 소크라테스식 심화 질문을 건네는 대화형 명상·성찰 앱(Web/iOS/Android, EN/KO/JA)입니다. 의료·심리치료를 대체하지 않습니다.",
+          "targetAudience": "듣기만 하는 명상이나 백지 일기가 어려워 대화를 통해 생각을 깊게 하고 싶은 사용자",
+          "pricingSummary": "Free $0(세션당 AI 2턴·7일 보관) / Premium Web 월 $4.99~ · App 월 $5.99·연 $39.99·평생 $89.99",
+          "dataStorage": "음성 인식은 온디바이스 또는 브라우저 Web Speech API 기반(텍스트화된 내용만 AI 질문 생성에 전송)",
+          "compliance": "자기 성찰 보조 도구이며 의료·심리치료·위기 개입을 대체하지 않음",
+          "features": [
+            "Phrase Flow 명언 자산을 질문으로 재구성한 '오늘의 생각거리'",
+            "물결 애니메이션 세션 타이머 및 턴별 머문 시간 타임라인 시각화",
+            "음성 성찰에 소크라테스식 심화 질문을 반환하는 AI 파트너",
+            "영어·한국어·일본어 지원 및 무제한 아카이브 검색(Premium)"
+          ],
+          "faqs": [
+            {
+              "q": "의료나 심리 상담을 대체할 수 있나요?",
+              "a": "아니요. Stillpoint는 자기 성찰 보조 도구이며 의료·심리치료·위기 개입을 대체하지 않습니다."
+            },
+            {
+              "q": "Free와 Premium의 차이는 무엇인가요?",
+              "a": "Free는 세션당 AI 심화 2턴과 최근 7일 아카이브를 제공합니다. Premium은 무제한 턴, 무제한 아카이브 및 검색, 분야 선택을 지원합니다."
+            },
+            {
+              "q": "음성은 어디서 처리되나요?",
+              "a": "원칙적으로 기기 내 음성인식이나 Web Speech API로 텍스트 변환 후, 텍스트화된 성찰만 질문 생성에 전달됩니다."
+            },
+            {
+              "q": "Web과 모바일 앱 모두 있나요?",
+              "a": "네. stillpoint.sta3e-n.online 웹 버전과 iOS·Android 앱을 모두 제공합니다."
+            }
+          ]
+        }
+      }
+    },
+    "fuzen": {
+      "slug": "fuzen",
+      "cluster": "learning-invest",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "iOS, Android",
+      "isWebApp": false,
+      "webUrl": null,
+      "appStoreUrl": "https://apps.apple.com/app/id6794620986",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.fuzen",
+      "githubUrl": "https://github.com/ubermenschjo/fuzen",
+      "ogImage": "https://sta3e-n.com/fuzen/og-image.png",
+      "relatedApps": ["forest-school", "pagepace"],
+      "relatedBlogs": [],
+      "offers": [
+        { "name": "Free (Playground + Phase 1-2)", "price": "0", "priceCurrency": "JPY", "billing": "free" },
+        { "name": "Full Unlock (One-time)", "price": "600", "priceCurrency": "JPY", "billing": "one-time" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "Fuzen",
+          "oneLiner": "Fuzen（フーゼン）は、環境構築ゼロ・内蔵Lispライクインタプリタ（REPL）で関数型思考（分解・抽象化・再帰・合成）をスマホだけで体得できるプログラミング教育アプリ（iOS/Android、オフライン対応、Phase 1-2無料 / Full unlock ¥600〜980買い切り）です。",
+          "targetAudience": "AI時代にコードを読む力・考える力を基礎から身につけたいプログラミング初学者",
+          "pricingSummary": "無料 ¥0（REPL + Phase 1〜2・10レッスン） / Full unlock ¥600〜980（買い切り・サブスクなし）",
+          "dataStorage": "端末内ローカル保存のみ（学習進捗・REPL履歴・フルオフライン動作）",
+          "compliance": "Unicode完全対応（日本語・韓国語・英語・中国語・タイ語識別子）",
+          "features": [
+            "開いた瞬間コードを実行できるモバイルPlayground（内蔵REPL）",
+            "評価の順番を深さつきで可視化するStep traceと末尾再帰最適化（TCO）",
+            "全5フェーズ・25レッスンの段階的関数型カリキュラム（確認テスト付き）",
+            "日本語・韓国語・英語などの関数名/変数名対応＆フルオフライン動作"
+          ],
+          "faqs": [
+            {
+              "q": "AIがコードを書く時代に、なぜFuzenで学ぶのですか？",
+              "a": "AIが生成したコードを正しく検証・修正するには、分解・抽象化・関数合成の思考の型が必要です。Fuzenはコピペではなく内蔵REPLで手を動かして評価をトレースすることで考える力を養います。"
+            },
+            {
+              "q": "無料でどこまで使えますか？",
+              "a": "Playground（REPL）、Step trace、カリキュラム Phase 1〜2（10レッスン）が無料です。Phase 3〜5（全25レッスン）とマイライブラリは買い切りのFull unlock（¥600〜980）で解放されます。"
+            },
+            {
+              "q": "インターネット接続は必要ですか？",
+              "a": "いいえ。ダウンロード後は完全にオフラインでREPL実行と学習を進められます。"
+            },
+            {
+              "q": "日本語の変数名や関数名は使えますか？",
+              "a": "はい。Unicode完全対応のため、日本語・韓国語・英語・中国語・タイ語をそのまま識別子に使えます。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Fuzen",
+          "oneLiner": "Fuzen is an offline mobile programming education app (iOS/Android) with a built-in Lisp-like REPL, step-by-step evaluation trace, tail-call optimization, and Unicode CJK identifier support to teach functional thinking without setup. Free for Phase 1–2; ¥600–980 one-time Full unlock.",
+          "targetAudience": "Beginners building foundational computational and functional thinking in the AI coding era",
+          "pricingSummary": "Free (REPL + 10 lessons) / Full Unlock ¥600–980 one-time (no subscription)",
+          "dataStorage": "100% on-device local storage; works fully offline",
+          "compliance": "Full Unicode identifiers (EN / JA / KO / ZH / TH)",
+          "features": [
+            "Zero-setup built-in mobile REPL interpreter (Playground)",
+            "Visual Step trace showing evaluation depth and Tail-Call Optimization (TCO)",
+            "5-phase, 25-lesson functional curriculum with mastery checks",
+            "Full Unicode support and offline learning anywhere"
+          ],
+          "faqs": [
+            {
+              "q": "Why learn functional thinking with Fuzen when AI can write code?",
+              "a": "AI accelerates code generation, but reading, verifying, and directing AI output requires decomposition, abstraction, and composition skills built through hands-on REPL practice."
+            },
+            {
+              "q": "What is included for free?",
+              "a": "The Playground REPL, Step trace, and Curriculum Phase 1–2 (10 lessons) are free. Phase 3–5 (all 25 lessons) and My Library unlock via a one-time purchase."
+            },
+            {
+              "q": "Does Fuzen work offline?",
+              "a": "Yes. Both the interpreter and all lessons run completely offline."
+            },
+            {
+              "q": "Can I use non-English function or variable names?",
+              "a": "Yes. Fuzen supports full Unicode identifiers including Japanese, Korean, Chinese, Thai, and English."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Fuzen",
+          "oneLiner": "Fuzen은 환경 구축 없이 내장 Lisp 스타일 REPL, 단계별 평가 추적(Step trace), 꼬리재귀 최적화(TCO), 한글·일본어 등 Unicode 식별자를 지원하는 모바일 함수형 사고 프로그래밍 교육 앱(iOS/Android, 오프라인 지원, Phase 1~2 무료 / 일회성 Full unlock)입니다.",
+          "targetAudience": "AI 코딩 시대에 코드를 읽고 사고하는 기본기를 기르고 싶은 프로그래밍 입문자",
+          "pricingSummary": "무료(REPL + Phase 1~2 · 10레슨) / Full unlock ¥600~980(일회성 구매, 구독 없음)",
+          "dataStorage": "기기 내 로컬 저장 전용(완전 오프라인 동작)",
+          "compliance": "한국어·일본어·영어·중국어·태국어 Unicode 식별자 완전 지원",
+          "features": [
+            "설치·환경 설정 없이 앱 실행 즉시 사용할 수 있는 내장 REPL(Playground)",
+            "수식 평가 순서를 깊이별로 시각화하는 Step trace 및 TCO(꼬리재귀 최적화)",
+            "확인 테스트가 포함된 5단계 25레슨 함수형 사고 커리큘럼",
+            "한글·일본어 등 Unicode 함수/변수명 지원 및 완전 오프라인 학습"
+          ],
+          "faqs": [
+            {
+              "q": "AI가 코드를 작성해 주는 시대에 왜 Fuzen으로 배우나요?",
+              "a": "AI가 생성한 코드를 검증·수정하고 올바르게 지시하려면 분해·추상화·함수 합성의 사고 틀이 필요합니다. Fuzen은 내장 REPL로 직접 실행하고 추적하며 사고력을 기릅니다."
+            },
+            {
+              "q": "무료로 어디까지 이용할 수 있나요?",
+              "a": "Playground(REPL), Step trace, 커리큘럼 Phase 1~2(10레슨)가 무료이며, Phase 3~5(총 25레슨)와 내 라이브러리는 일회성 구매(Full unlock)로 해제됩니다."
+            },
+            {
+              "q": "인터넷 연결이 필요한가요?",
+              "a": "아니요. 다운로드 후 오프라인 환경에서도 REPL과 학습을 모두 이용할 수 있습니다."
+            },
+            {
+              "q": "한글 변수명과 함수명을 쓸 수 있나요?",
+              "a": "네. Unicode를 완전 지원해 한국어·일본어·영어 등의 식별자를 그대로 사용할 수 있습니다."
+            }
+          ]
+        }
+      }
+    },
+    "forest-school": {
+      "slug": "forest-school",
+      "cluster": "learning-invest",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "iOS, Android",
+      "isWebApp": false,
+      "webUrl": null,
+      "appStoreUrl": "https://apps.apple.com/app/id6783620641",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=jp.stagen.forestschool",
+      "githubUrl": "https://github.com/ubermenschjo/forest-school",
+      "ogImage": "https://sta3e-n.com/forest-school/og-image.png",
+      "relatedApps": ["fuzen", "pagepace"],
+      "relatedBlogs": [
+        { "url": "/blog/2026-07-04-forest_school/", "title": "猛暑の外遊びと5分知育、もりのがっこう" }
+      ],
+      "offers": [
+        { "name": "Full App (One-time Purchase)", "price": "350", "priceCurrency": "JPY", "billing": "one-time" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "もりのがっこう（Forest School）",
+          "oneLiner": "もりのがっこう（Forest School）は、3〜5歳の幼児向けに「かぞえる・じゅんばん・おえかき・どうぶつ・おかたづけ」の5つの知育ミニゲームを収録した、¥350買い切り・広告なし・追加課金なし・データ収集なし・オフライン対応の知育アプリ（iPhone/iPad/Android）です。",
+          "targetAudience": "3〜5歳の未就学児とその保護者",
+          "pricingSummary": "¥350 買い切り（広告なし・追加課金なし）",
+          "dataStorage": "端末内ローカル保存のみ（外部サーバーへのデータ送信・収集なし）",
+          "compliance": "長押し保護者ゲート・プレイ時間制限（0〜60分）・子供向け広告/追跡ゼロ",
+          "features": [
+            "かぞえよう・じゅんばん・おえかき・どうぶつ・おかたづけの5つの知育ゲーム",
+            "広告ゼロ・追加アプリ内課金ゼロ・個人データ収集ゼロの安心設計",
+            "長押しで開く保護者設定（0〜60分のプレイ時間設定・日本語/English切替）",
+            "iPhone・iPad・Android対応、オフラインで動作"
+          ],
+          "faqs": [
+            {
+              "q": "広告や追加のアプリ内課金はありますか？",
+              "a": "いいえ。¥350（税込）の買い切りで、広告や追加のアプリ内課金は一切ありません。"
+            },
+            {
+              "q": "対象年齢と収録ゲームは？",
+              "a": "3〜5歳向けで、「かぞえよう」「じゅんばん」「おえかき」「どうぶつ」「おかたづけ」の5種類のミニゲームを収録しています。"
+            },
+            {
+              "q": "保護者設定はどのように開きますか？",
+              "a": "マップ画面の歯車ボタンを長押しすると保護者設定が開き、プレイ時間目安（0〜60分）や言語（日本語/English）、進捗確認ができます。"
+            },
+            {
+              "q": "オフラインやiPadでも遊べますか？",
+              "a": "はい。iPhone・iPad・Androidに対応し、オフラインでプレイできます。"
+            }
+          ]
+        },
+        "en": {
+          "name": "Forest School",
+          "oneLiner": "Forest School is an ad-free, one-time purchase (¥350) educational game app for ages 3–5 featuring 5 mini-games (counting, patterns, drawing, animals, tidying up), parental gate with 0–60 minute timers, zero data collection, and offline play on iOS and Android.",
+          "targetAudience": "Preschool children aged 3–5 and their parents",
+          "pricingSummary": "¥350 one-time purchase (no ads, no in-app purchases)",
+          "dataStorage": "100% on-device local storage; zero data collection",
+          "compliance": "Long-press parental gate, configurable 0–60 min playtime limit, ad-free & tracking-free",
+          "features": [
+            "5 educational mini-games: Counting, Ordering, Drawing, Animals, and Tidying Up",
+            "Zero ads, zero in-app purchases, zero external data collection",
+            "Long-press parental settings with 0–60 min playtime timer and EN/JA toggle",
+            "Offline play across iPhone, iPad, and Android"
+          ],
+          "faqs": [
+            {
+              "q": "Are there ads or in-app purchases?",
+              "a": "No. Forest School is a ¥350 one-time purchase with zero ads and zero additional in-app purchases."
+            },
+            {
+              "q": "What ages and games are included?",
+              "a": "Designed for ages 3–5 with 5 mini-games: counting, pattern ordering, drawing, animal matching, and tidying up."
+            },
+            {
+              "q": "How do parents open settings?",
+              "a": "Long-press the gear icon on the map screen to access playtime timers (0–60 min), progress stats, and English/Japanese language settings."
+            },
+            {
+              "q": "Does it work offline and on iPad?",
+              "a": "Yes. It supports iPhone, iPad, and Android and runs offline."
+            }
+          ]
+        },
+        "ko": {
+          "name": "Forest School (숲속 학교)",
+          "oneLiner": "Forest School은 3~5세 유아를 위해 숫자 세기·순서 맞추기·그리기·동물·정리하기 5가지 미니 게임을 담은 ¥350 일회성 구매 유아 교육 앱(iOS/Android)입니다. 광고·인앱결제·데이터 수집 없이 오프라인에서 안심하고 즐길 수 있습니다.",
+          "targetAudience": "3~5세 유아와 부모",
+          "pricingSummary": "¥350 일회성 구매(광고·추가 결제 없음)",
+          "dataStorage": "기기 내 로컬 저장 전용(외부 서버 전송·수집 없음)",
+          "compliance": "길게 누르기 보호자 게이트, 플레이 시간 제한(0~60분), 아동 추적·광고 제로",
+          "features": [
+            "세기·순서·그리기·동물·정리하기 5종 교육 미니 게임",
+            "광고 없음, 추가 인앱 결제 없음, 데이터 수집 없음",
+            "길게 눌러 여는 보호자 설정(0~60분 시간 설정, 일본어/영어 전환)",
+            "iPhone·iPad·Android 지원 및 오프라인 동작"
+          ],
+          "faqs": [
+            {
+              "q": "광고나 추가 인앱 결제가 있나요?",
+              "a": "아니요. ¥350 일회성 구매 앱이며 광고나 추가 결제가 전혀 없습니다."
+            },
+            {
+              "q": "대상 연령과 게임 구성은 어떻게 되나요?",
+              "a": "3~5세 유아 대상이며 세기, 순서, 그리기, 동물, 정리하기 5가지 게임을 제공합니다."
+            },
+            {
+              "q": "보호자 설정은 어떻게 여나요?",
+              "a": "지도 화면의 톱니바퀴 버튼을 길게 누르면 플레이 시간(0~60분)과 언어·진행도를 관리할 수 있습니다."
+            },
+            {
+              "q": "오프라인이나 iPad에서도 이용할 수 있나요?",
+              "a": "네. iPhone, iPad, Android를 지원하며 오프라인으로 플레이할 수 있습니다."
+            }
+          ]
+        }
+      }
+    },
+    "pagepace": {
+      "slug": "pagepace",
+      "cluster": "learning-invest",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://pagepace.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6794424608",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.pagepace",
+      "githubUrl": "https://github.com/ubermenschjo/pagepace",
+      "ogImage": "https://sta3e-n.com/pagepace/og-image.png",
+      "relatedApps": ["stillpoint", "fuzen"],
+      "relatedBlogs": [],
+      "offers": [
+        { "name": "Free", "price": "0", "priceCurrency": "USD", "billing": "free" },
+        { "name": "Premium (Web Monthly)", "price": "2.99", "priceCurrency": "USD", "billing": "P1M" },
+        { "name": "Premium (App Monthly)", "price": "3.99", "priceCurrency": "USD", "billing": "P1M" },
+        { "name": "Premium (App Annual)", "price": "24.99", "priceCurrency": "USD", "billing": "P1Y" },
+        { "name": "Premium (App Lifetime)", "price": "59.99", "priceCurrency": "USD", "billing": "one-time" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "PagePace",
+          "oneLiner": "PagePace（ページペース）は、ISBNで書籍を登録し、読書セッションタイマーで「分/ページ」の区間ペースを計測し、ストリーク・月間カレンダー・ヒートマップで読書リズムを可視化する読書トラッカー（Web/iOS/Android、EN/KO/JA対応）です。",
+          "targetAudience": "読了冊数だけでなく読書スピードや集中リズムを把握・習慣化したい読書家",
+          "pricingSummary": "Free $0（進行中3冊・直近30日） / Premium Web $2.99/月〜・App $3.99/月・$24.99/年・Lifetime $59.99",
+          "dataStorage": "基本記録は端末・アカウント管理（Premiumでマルチデバイス同期・CSVエクスポート対応）",
+          "compliance": "リマインダーは端末ローカル通知のみ（サーバープッシュなし）",
+          "features": [
+            "ISBN検索・表紙取得および手動登録に対応した書庫管理",
+            "クラッシュ復帰対応の集中読書セッションタイマー",
+            "ページ区間ごとの読書ペース（分/ページ）グラフ可視化",
+            "複数冊同時読書を見渡せる月間カレンダー・読書量ヒートマップ・読了予測（Premium）"
+          ],
+          "faqs": [
+            {
+              "q": "FreeとPremiumの違いは何ですか？",
+              "a": "Freeでは進行中の本最大3冊、直近30日の記録、基本の書庫とタイマーが利用できます。Premium（Web $2.99/月〜、App $3.99/月・$24.99/年・買い切り$59.99）では書庫・履歴無制限、読了予測、CSVエクスポート、マルチデバイス同期が使えます。"
+            },
+            {
+              "q": "ISBNで見つからない本も登録できますか？",
+              "a": "はい。タイトルと総ページ数を手動で入力してそのまま計測・管理できます。"
+            },
+            {
+              "q": "リマインダー通知はどのように届きますか？",
+              "a": "アプリ側のローカル通知機能を使用しており、当社サーバーからのプッシュ配信ではありません。"
+            },
+            {
+              "q": "Webブラウザとスマホの両方で使えますか？",
+              "a": "はい。pagepace.sta3e-n.onlineのWeb版とiOS/Androidアプリを提供しており、Premiumではマルチデバイス同期にも対応します。"
+            }
+          ]
+        },
+        "en": {
+          "name": "PagePace",
+          "oneLiner": "PagePace is a reading rhythm tracker (Web, iOS, Android; EN/KO/JA) that registers books by ISBN, times reading sessions to compute segment pace (min/page), and visualizes streaks, multi-book monthly calendars, and heatmaps.",
+          "targetAudience": "Readers who want to measure reading pace (min/page) and maintain steady reading habits",
+          "pricingSummary": "Free $0 (up to 3 active books, 30-day log) / Premium Web from $2.99/mo · App $3.99/mo, $24.99/yr, Lifetime $59.99",
+          "dataStorage": "Local/account library with multi-device sync and CSV export in Premium",
+          "compliance": "Local-only reminder notifications (no server push)",
+          "features": [
+            "ISBN lookup with cover art plus manual title and page-count entry",
+            "Crash-resilient reading session timer",
+            "Per-segment reading pace chart (minutes per page)",
+            "Multi-book monthly calendar, daily heatmap, and completion ETA (Premium)"
+          ],
+          "faqs": [
+            {
+              "q": "What is the difference between Free and Premium?",
+              "a": "Free supports up to 3 active books and 30 days of logs. Premium (Web from $2.99/mo; App $3.99/mo, $24.99/yr, or $59.99 Lifetime) unlocks unlimited books/history, completion predictions, CSV export, and multi-device sync."
+            },
+            {
+              "q": "What if a book is not found by ISBN?",
+              "a": "You can add any book manually with its title and total page count."
+            },
+            {
+              "q": "Are reminders sent from your server?",
+              "a": "No. Reminders use on-device local notifications only."
+            },
+            {
+              "q": "Can I use PagePace on both Web and mobile?",
+              "a": "Yes. Use pagepace.sta3e-n.online on the web or the iOS/Android apps, with cross-device sync in Premium."
+            }
+          ]
+        },
+        "ko": {
+          "name": "PagePace",
+          "oneLiner": "PagePace는 ISBN으로 책을 등록하고 집중 타이머로 독서 속도(분/페이지)를 측정해 스트릭·월간 달력·히트맵으로 독서 리듬을 시각화하는 독서 트래커(Web/iOS/Android, EN/KO/JA)입니다.",
+          "targetAudience": "완독 권수뿐 아니라 자신의 독서 페이스와 습관을 수치로 파악하고 싶은 독자",
+          "pricingSummary": "Free $0(진행 중 최대 3권·최근 30일) / Premium Web 월 $2.99~ · App 월 $3.99·연 $24.99·평생 $59.99",
+          "dataStorage": "기본 로컬/계정 저장(Premium 멀티디바이스 동기화 및 CSV 내보내기 지원)",
+          "compliance": "단말기 로컬 알림만 사용(서버 푸시 없음)",
+          "features": [
+            "ISBN 검색·표지 자동 취득 및 도서명·페이지 수 수동 등록",
+            "강제 종료 복구까지 지원하는 집중 독서 세션 타이머",
+            "페이지 구간별 분/페이지 속도 그래프 시각화",
+            "다중 도서 월간 달력, 일별 독서량 히트맵, 완독 예측(Premium)"
+          ],
+          "faqs": [
+            {
+              "q": "Free와 Premium의 차이는 무엇인가요?",
+              "a": "Free는 진행 중인 책 최대 3권과 최근 30일 기록을 지원하며, Premium은 서재·기록 무제한, 완독 예측, CSV 내보내기, 기기 간 동기화를 제공합니다."
+            },
+            {
+              "q": "ISBN으로 검색되지 않는 책도 등록할 수 있나요?",
+              "a": "네. 제목과 전체 페이지 수를 직접 입력해 등록하고 측정할 수 있습니다."
+            },
+            {
+              "q": "리마인더 알림은 서버에서 발송되나요?",
+              "a": "아니요. 앱 내부 로컬 알림만 사용합니다."
+            },
+            {
+              "q": "Web과 모바일 앱에서 함께 쓸 수 있나요?",
+              "a": "네. pagepace.sta3e-n.online 웹 버전과 iOS·Android 앱을 제공하며 Premium에서 동기화를 지원합니다."
+            }
+          ]
+        }
+      }
+    },
+    "stock-pulse": {
+      "slug": "stock-pulse",
+      "cluster": "learning-invest",
+      "dateModified": "2026-11-25",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "isWebApp": true,
+      "webUrl": "https://stockpulse.sta3e-n.online",
+      "appStoreUrl": "https://apps.apple.com/app/id6794628277",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.stagen.stockpulse",
+      "githubUrl": "https://github.com/ubermenschjo/stock-pulse",
+      "ogImage": "https://sta3e-n.com/stock-pulse/og-image.png",
+      "relatedApps": ["zeiro", "zeical"],
+      "relatedBlogs": [],
+      "offers": [
+        { "name": "Free Tier (Up to 30 stocks)", "price": "0", "priceCurrency": "JPY", "billing": "free" }
+      ],
+      "locales": {
+        "ja": {
+          "name": "StockPulse",
+          "oneLiner": "StockPulseは、日本株ポートフォリオをファンダメンタル・テクニカル・需給（機関空売り・信用残）の3層ルールベースエンジンでA〜Dグレード評価する分析アプリ（Web/iOS/Android、無料枠あり・Premium対応）です。投資助言・勧誘ではありません。",
+          "targetAudience": "日本株の個人投資家（現物・信用・NISA保有銘柄の日次チェック）",
+          "pricingSummary": "無料枠あり（Web/アプリ共通アカウントでPremium対応）",
+          "dataStorage": "端末内SQLite保存（モバイル）／アカウント連携（Web）",
+          "compliance": "公開データに基づく情報提供専用（投資助言・勧誘ではありません）",
+          "features": [
+            "PER/PBR/時価総額・20日ドローダウン/出来高・機関空売り/信用残の3層分析",
+            "LLMに依存しない透明なルールベースA〜D総合グレード評価",
+            "4桁銘柄コード入力による即時銘柄分析と直近1ヶ月チャート",
+            "直近3営業日の変動率・出来高・売買代金による話題銘柄トップ5スキャン"
+          ],
+          "faqs": [
+            {
+              "q": "StockPulseは投資助言アプリですか？",
+              "a": "いいえ。公開データに基づく情報提供のみを目的としており、投資助言・勧誘ではありません。表示されるグレードや水準は参考情報であり、投資判断はご自身の責任で行ってください。"
+            },
+            {
+              "q": "データの更新頻度はどのくらいですか？",
+              "a": "株価は分析実行時に取得し、機関空売りデータは2〜3営業日、信用残データは週次更新の遅延がある場合があります。"
+            },
+            {
+              "q": "Webブラウザでも利用できますか？",
+              "a": "はい。stockpulse.sta3e-n.onlineからブラウザで利用でき、モバイルアプリと共通アカウントでPremium機能も利用できます。"
+            },
+            {
+              "q": "データはどこに保存されますか？",
+              "a": "モバイルアプリではすべて端末内（SQLite）に保存されます。詳細はプライバシーポリシーをご確認ください。"
+            }
+          ]
+        },
+        "en": {
+          "name": "StockPulse",
+          "oneLiner": "StockPulse is a Japanese equity portfolio tracker and analyzer (Web, iOS, Android) using a transparent rule-based 3-layer engine (fundamentals, technicals, institutional shorts & margin balance) to grade holdings A–D. Informational only; not investment advice.",
+          "targetAudience": "Individual Japanese equity investors tracking spot, margin, and NISA holdings",
+          "pricingSummary": "Free tier available (with optional Premium across Web & Mobile)",
+          "dataStorage": "On-device SQLite on mobile; account sync on Web",
+          "compliance": "Public market data information tool only—not investment advice or solicitation",
+          "features": [
+            "3-layer scoring: Fundamentals (PER/PBR), Technicals (20-day drawdown/volume), Supply/Demand (short interest & margin)",
+            "Rule-based A–D grading without opaque LLM guesswork",
+            "Instant 4-digit TSE ticker lookup with 1-month price chart",
+            "Top-5 trending Japanese stocks scan and up to 30 portfolio holdings"
+          ],
+          "faqs": [
+            {
+              "q": "Is StockPulse an investment advisory service?",
+              "a": "No. StockPulse provides informational analysis based on public market data only and is not investment advice or solicitation. All investment decisions are your own responsibility."
+            },
+            {
+              "q": "How often is market data updated?",
+              "a": "Stock prices are fetched on analysis; institutional short positions may lag by 2–3 business days and margin balances update weekly."
+            },
+            {
+              "q": "Is there a Web version?",
+              "a": "Yes, at stockpulse.sta3e-n.online, sharing the same account and Premium status as the iOS and Android apps."
+            },
+            {
+              "q": "Where is portfolio data stored?",
+              "a": "On mobile, portfolio data is stored locally in on-device SQLite."
+            }
+          ]
+        },
+        "ko": {
+          "name": "StockPulse",
+          "oneLiner": "StockPulse는 일본 주식 보유 종목을 펀더멘털·테크니컬·수급(기관 공매도·신용잔고) 3층 규칙 기반 엔진으로 A~D 등급 평가하는 분석 앱(Web/iOS/Android)입니다. 투자 조언·권유가 아닌 참고 정보 제공 도구입니다.",
+          "targetAudience": "일본 주식(현물·신용·NISA)을 매일 점검하는 개인 투자자",
+          "pricingSummary": "무료 티어 제공(Web·모바일 통합 계정 Premium 지원)",
+          "dataStorage": "모바일은 단말기 내 SQLite 저장, Web은 계정 연동",
+          "compliance": "공개 데이터 기반 정보 제공 전용(투자 조언·권유가 아님)",
+          "features": [
+            "PER/PBR(펀더멘털)·20일 낙폭/거래량(테크니컬)·기관 공매도/신용잔고(수급) 3층 분석",
+            "LLM에 의존하지 않는 투명한 규칙 기반 A~D 종합 등급 산출",
+            "4자리 종목코드 입력 즉시 분석 및 최근 1개월 차트",
+            "최근 3영업일 변동률·거래대금 기반 화제 종목 TOP 5 스캔"
+          ],
+          "faqs": [
+            {
+              "q": "StockPulse는 투자 조언 앱인가요?",
+              "a": "아니요. 공개 시장 데이터를 정리하는 정보 제공 목적이며 투자 조언이나 매매 권유가 아닙니다. 모든 투자 판단은 본인 책임하에 이루어져야 합니다."
+            },
+            {
+              "q": "데이터 갱신 주기는 어떻게 되나요?",
+              "a": "주가는 분석 시점에 조회하며, 기관 공매도는 2~3영업일, 신용잔고는 주간 단위 지연이 있을 수 있습니다."
+            },
+            {
+              "q": "Web 브라우저에서도 사용할 수 있나요?",
+              "a": "네. stockpulse.sta3e-n.online에서 모바일 앱과 동일한 계정으로 이용할 수 있습니다."
+            },
+            {
+              "q": "포트폴리오 데이터는 어디에 저장되나요?",
+              "a": "모바일 앱에서는 기기 내 SQLite에만 저장됩니다."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

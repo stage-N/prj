@@ -1,0 +1,53 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- set staticPaths = ["/", "/message/", "/contact/", "/security-policy/"] -%}
+{%- for basePath in staticPaths -%}
+  {%- for l in site.locales %}
+  <url>
+    <loc>{{ basePath | localePath(l.code) | absoluteUrl | xmlEscape }}</loc>
+    <lastmod>{{ seo.lastUpdated }}</lastmod>
+    {%- for alt in site.locales %}
+    <xhtml:link rel="alternate" hreflang="{{ alt.code }}" href="{{ basePath | localePath(alt.code) | absoluteUrl | xmlEscape }}" />
+    {%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ basePath | absoluteUrl | xmlEscape }}" />
+  </url>
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- for appSlug in site.activeApps -%}
+  {%- set appData = seo.apps[appSlug] -%}
+  {%- set modDate = appData.dateModified or seo.lastUpdated -%}
+  {%- set appPaths = ["/" ~ appSlug ~ "/", "/" ~ appSlug ~ "/privacy.html", "/" ~ appSlug ~ "/support.html"] -%}
+  {%- if appSlug == "zaitap" -%}
+    {%- set appPaths = ["/" ~ appSlug ~ "/", "/" ~ appSlug ~ "/pro.html", "/" ~ appSlug ~ "/privacy.html", "/" ~ appSlug ~ "/support.html"] -%}
+  {%- endif -%}
+  {%- for basePath in appPaths -%}
+    {%- for l in site.locales %}
+  <url>
+    <loc>{{ basePath | localePath(l.code) | absoluteUrl | xmlEscape }}</loc>
+    <lastmod>{{ modDate }}</lastmod>
+      {%- for alt in site.locales %}
+    <xhtml:link rel="alternate" hreflang="{{ alt.code }}" href="{{ basePath | localePath(alt.code) | absoluteUrl | xmlEscape }}" />
+      {%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ basePath | absoluteUrl | xmlEscape }}" />
+  </url>
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor %}
+
+  <url>
+    <loc>https://sta3e-n.com/blog/</loc>
+    <lastmod>{{ seo.lastUpdated }}</lastmod>
+  </url>
+{%- for post in collections.blogPosts %}
+  <url>
+    <loc>{{ ("https://sta3e-n.com" ~ post.url) | xmlEscape }}</loc>
+    <lastmod>{{ post.date | isoDate }}</lastmod>
+  </url>
+{%- endfor %}
+</urlset>

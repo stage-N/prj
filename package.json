@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "eleventy",
+    "build": "rm -rf _site && eleventy",
     "dev": "eleventy --serve",
-    "og": "node scripts/generate-og-images.mjs"
+    "og": "node scripts/generate-og-images.mjs",
+    "verify:seo": "node scripts/verify-seo.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",

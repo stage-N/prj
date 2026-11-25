@@ -18,4 +18,21 @@ layout: blog-base.njk
   <div class="blog-body">
     {{ content | safe }}
   </div>
+  {% set matchedApps = tags | matchingAppsForPost(seo) %}
+  {% if matchedApps and matchedApps.length %}
+  <aside class="blog-related" style="margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid #e5e7eb;">
+    <h2 style="font-size:1.05rem;margin-bottom:0.75rem;">関連プロダクト（STAGEN）</h2>
+    <ul style="list-style:none;padding:0;display:grid;gap:10px;">
+      {% for relSlug in matchedApps %}
+      {% set relData = seo.apps[relSlug] %}
+      {% if relData %}
+      <li>
+        <a href="/{{ relSlug }}/" style="font-weight:700;color:#1395ba;text-decoration:none;">{{ relData.locales.ja.name }}</a>
+        <span style="display:block;font-size:0.88rem;color:#555;">{{ relData.locales.ja.oneLiner }}</span>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
 </article>

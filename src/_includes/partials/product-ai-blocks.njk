@@ -1,0 +1,108 @@
+{% set seoApp = seo.apps[app] %}
+{% if seoApp %}
+{% set appLoc = seoApp.locales[locale] or seoApp.locales.ja %}
+{% set locPrefix = "" if locale == "ja" else "/" ~ locale %}
+<section class="ai-seo-section" id="product-overview" aria-labelledby="ai-overview-heading">
+  <div class="ai-seo-container">
+    <span class="ai-seo-eyebrow">{% if locale == "en" %}Overview &amp; Specifications{% elif locale == "ko" %}제품 개요 및 사양{% else %}製品概要・スペック{% endif %}</span>
+    <h2 class="ai-seo-title" id="ai-overview-heading">{{ appLoc.name }} {% if locale == "en" %}Quick Reference{% elif locale == "ko" %}핵심 사양{% else %}基本仕様{% endif %}</h2>
+    <p class="ai-seo-capsule">{{ appLoc.oneLiner }}</p>
+    <div class="ai-seo-table-wrap">
+      <table class="ai-seo-table">
+        <tbody>
+          <tr>
+            <th>{% if locale == "en" %}Developer / Operator{% elif locale == "ko" %}개발·운영사{% else %}開発・運営{% endif %}</th>
+            <td><a href="{{ locPrefix }}/">株式会社stageN（STAGEN）</a></td>
+          </tr>
+          <tr>
+            <th>{% if locale == "en" %}Target Audience{% elif locale == "ko" %}주요 대상{% else %}対象ユーザー{% endif %}</th>
+            <td>{{ appLoc.targetAudience }}</td>
+          </tr>
+          <tr>
+            <th>{% if locale == "en" %}Platforms{% elif locale == "ko" %}지원 플랫폼{% else %}対応環境{% endif %}</th>
+            <td>{{ seoApp.operatingSystem }}</td>
+          </tr>
+          <tr>
+            <th>{% if locale == "en" %}Pricing{% elif locale == "ko" %}요금 체계{% else %}料金体系{% endif %}</th>
+            <td>{{ appLoc.pricingSummary }}</td>
+          </tr>
+          <tr>
+            <th>{% if locale == "en" %}Data &amp; Privacy{% elif locale == "ko" %}데이터 보관{% else %}データ保存・プライバシー{% endif %}</th>
+            <td>{{ appLoc.dataStorage }}（<a href="privacy.html">{% if locale == "en" %}Privacy Policy{% elif locale == "ko" %}개인정보 처리방침{% else %}プライバシーポリシー{% endif %}</a>）</td>
+          </tr>
+          {% if appLoc.compliance %}
+          <tr>
+            <th>{% if locale == "en" %}Standards &amp; Notes{% elif locale == "ko" %}준거 기준·비고{% else %}準拠基準・注記{% endif %}</th>
+            <td>{{ appLoc.compliance }}</td>
+          </tr>
+          {% endif %}
+          <tr>
+            <th>{% if locale == "en" %}Official Links{% elif locale == "ko" %}공식 링크{% else %}公式リンク{% endif %}</th>
+            <td>
+              {% if seoApp.webUrl %}<a href="{{ seoApp.webUrl }}" target="_blank" rel="noopener">Web App</a> · {% endif %}
+              {% if seoApp.appStoreUrl %}<a href="{{ seoApp.appStoreUrl }}" target="_blank" rel="noopener">App Store</a> · {% endif %}
+              {% if seoApp.playStoreUrl %}<a href="{{ seoApp.playStoreUrl }}" target="_blank" rel="noopener">Google Play</a> · {% endif %}
+              <a href="{{ seoApp.githubUrl }}" target="_blank" rel="noopener">GitHub</a> ·
+              <a href="/{{ seoApp.slug }}/index.md">Markdown</a>
+            </td>
+          </tr>
+          <tr>
+            <th>{% if locale == "en" %}Last Updated{% elif locale == "ko" %}최종 갱신일{% else %}最終更新日{% endif %}</th>
+            <td><time datetime="{{ seoApp.dateModified }}">{{ seoApp.dateModified }}</time></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% if appLoc.faqs and appLoc.faqs.length %}
+<section class="ai-seo-section ai-seo-faq-wrap" id="faq" aria-labelledby="ai-faq-heading">
+  <div class="ai-seo-container">
+    <span class="ai-seo-eyebrow">FAQ</span>
+    <h2 class="ai-seo-title" id="ai-faq-heading">{% if locale == "en" %}Frequently Asked Questions{% elif locale == "ko" %}자주 묻는 질문 (FAQ){% else %}よくある質問（FAQ）{% endif %}</h2>
+    <dl class="ai-seo-faq">
+      {% for item in appLoc.faqs %}
+      <div class="ai-seo-faq-item">
+        <dt>Q. {{ item.q }}</dt>
+        <dd>{{ item.a }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+    <p class="ai-seo-support-link">
+      <a href="support.html">{% if locale == "en" %}View all support details &amp; FAQ →{% elif locale == "ko" %}전체 지원 안내 및 FAQ 보기 →{% else %}サポート・詳細なFAQを見る →{% endif %}</a>
+    </p>
+  </div>
+</section>
+{% endif %}
+
+{% if (seoApp.relatedApps and seoApp.relatedApps.length) or (seoApp.relatedBlogs and seoApp.relatedBlogs.length) %}
+<section class="ai-seo-section" id="related" aria-labelledby="ai-related-heading">
+  <div class="ai-seo-container">
+    <span class="ai-seo-eyebrow">{% if locale == "en" %}Ecosystem{% elif locale == "ko" %}관련 프로덕트{% else %}関連プロダクト・解説{% endif %}</span>
+    <h2 class="ai-seo-title" id="ai-related-heading">{% if locale == "en" %}Related STAGEN Products &amp; Guides{% elif locale == "ko" %}연관 STAGEN 프로덕트 및 가이드{% else %}関連するSTAGENプロダクト・記事{% endif %}</h2>
+    {% if seoApp.relatedApps and seoApp.relatedApps.length %}
+    <div class="ai-seo-related-grid">
+      {% for relSlug in seoApp.relatedApps %}
+      {% set relData = seo.apps[relSlug] %}
+      {% if relData %}
+      {% set relLoc = relData.locales[locale] or relData.locales.ja %}
+      <a class="ai-seo-related-card" href="{{ locPrefix }}/{{ relSlug }}/">
+        <strong>{{ relLoc.name }}</strong>
+        <span>{{ relLoc.oneLiner }}</span>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if seoApp.relatedBlogs and seoApp.relatedBlogs.length %}
+    <ul class="ai-seo-blog-list">
+      {% for post in seoApp.relatedBlogs %}
+      <li>📝 <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+{% endif %}

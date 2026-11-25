@@ -1,0 +1,29 @@
+---
+permalink: /index.md
+eleventyExcludeFromCollections: true
+---
+# STAGEN (株式会社stageN / STAGEN Inc.)
+
+> {{ seo.organization.summary.ja | safe }}
+
+> {{ seo.organization.summary.en | safe }}
+
+- **Canonical URL:** https://sta3e-n.com/ (EN: https://sta3e-n.com/en/ · KO: https://sta3e-n.com/ko/)
+- **Founded:** {{ seo.organization.foundingDate }}
+- **Corporate Number:** {{ seo.organization.corporateNumber }} (`{{ seo.organization.taxID }}`)
+- **Certifications:** {{ seo.organization.awards | join(" / ") | safe }}
+- **Security Policy:** https://sta3e-n.com/security-policy/
+- **Blog:** https://sta3e-n.com/blog/
+- **Contact:** https://sta3e-n.com/contact/
+- **AI Catalog:** https://sta3e-n.com/llms.txt · https://sta3e-n.com/llms-full.txt
+
+## Product Portfolio
+{% for cluster in seo.clusters %}
+### {{ cluster.name.ja | safe }} ({{ cluster.name.en | safe }})
+{{ cluster.description.ja | safe }}
+{% for slug in cluster.apps -%}
+{% set appData = seo.apps[slug] -%}
+- **{{ appData.locales.ja.name | safe }}** — {{ appData.locales.ja.oneLiner | safe }}
+  - LP: https://sta3e-n.com/{{ slug }}/ · Markdown: https://sta3e-n.com/{{ slug }}/index.md{% if appData.webUrl %} · Web App: {{ appData.webUrl }}{% endif %}
+{% endfor -%}
+{% endfor %}

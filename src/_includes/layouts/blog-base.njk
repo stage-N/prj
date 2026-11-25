@@ -1,19 +1,42 @@
+{% set pageUrl = "https://sta3e-n.com" ~ page.url %}
+{% set isPost = page.url != "/blog/" %}
+{% set pageTitle = title or "ブログ | STAGEN" %}
+{% set pageDesc = description or "1人法人・プロダクト開発のメモ。STAGEN の開発・運用・制度整理ブログ。" %}
+{% set ogImg = ogImage or "https://sta3e-n.com/assets/og-image.png" %}
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }}{% else %}ブログ | STAGEN{% endif %}</title>
-  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
-  <meta property="og:type" content="{% if layout == 'blog-post.njk' %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{{ ogTitle or title or 'ブログ | STAGEN' }}">
-  {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
-  <meta property="og:url" content="https://sta3e-n.com{{ page.url }}">
-  {% set ogImg = ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDesc }}">
+  <link rel="canonical" href="{{ pageUrl }}">
+  <link rel="alternate" type="application/atom+xml" title="STAGEN ブログ" href="/blog/feed.xml">
+  <meta property="og:site_name" content="STAGEN">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ ogTitle or pageTitle }}">
+  <meta property="og:description" content="{{ pageDesc }}">
+  <meta property="og:url" content="{{ pageUrl }}">
   <meta property="og:image" content="{{ ogImg }}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <meta name="twitter:title" content="{{ ogTitle or pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDesc }}">
+  <meta name="twitter:image" content="{{ ogImg }}">
+  <link rel="icon" href="/assets/branding/logo-symbol.svg" type="image/svg+xml">
   <style>{% include "css/blog.css" %}</style>
+  {% set ldJson = {
+    pageType: "blog-post" if isPost else "blog-list",
+    locale: "ja",
+    pageUrl: pageUrl,
+    title: pageTitle,
+    description: pageDesc,
+    ogImage: ogImg,
+    date: date,
+    tags: tags,
+    seo: seo
+  } | jsonLd %}
+  {% if ldJson %}<script type="application/ld+json">{{ ldJson | safe }}</script>{% endif %}
 </head>
 <body class="blog-shell">
   {% include "partials/blog-nav.njk" %}
@@ -21,7 +44,7 @@
     {{ content | safe }}
   </main>
   <footer class="blog-footer">
-    <p><a href="/">STAGEN</a> · <a href="/blog/">ブログ</a></p>
+    <p><a href="/">STAGEN</a> · <a href="/blog/">ブログ</a> · <a href="/blog/feed.xml">Atom Feed</a> · <a href="/llms.txt">llms.txt</a></p>
     <p>&copy; 2026 STAGEN</p>
   </footer>
 </body>

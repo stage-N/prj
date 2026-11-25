@@ -5,6 +5,9 @@
   {% set c = i18n.site[locale].contact %}
 {% endif %}
 {% set prefix = "" if locale == "ja" else "/" ~ locale %}
+{% set pagePath = "/contact/" %}
+{% set pageUrl = "https://sta3e-n.com" ~ prefix ~ "/contact/" %}
+{% set ogImg = c.ogImage or pages.contact.ogImage or "https://sta3e-n.com/assets/og-image.png" %}
 <!DOCTYPE html>
 <html lang="{{ locale }}">
 <head>
@@ -12,15 +15,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ c.title }}</title>
   {% if c.desc %}<meta name="description" content="{{ c.desc }}">{% endif %}
+  <link rel="canonical" href="{{ pageUrl }}">
+  <meta property="og:site_name" content="STAGEN">
+  <meta property="og:locale" content="{{ locale | ogLocale }}">
+  {% for l in site.locales %}
+    {% if l.code != locale %}
+  <meta property="og:locale:alternate" content="{{ l.code | ogLocale }}">
+    {% endif %}
+  {% endfor %}
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ c.ogTitle or c.title }}">
   {% if c.desc %}<meta property="og:description" content="{{ c.desc }}">{% endif %}
-  <meta property="og:url" content="https://sta3e-n.com{{ prefix }}/contact/">
-  {% set ogImg = c.ogImage or pages.contact.ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <meta property="og:url" content="{{ pageUrl }}">
   <meta property="og:image" content="{{ ogImg }}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <meta name="twitter:title" content="{{ c.ogTitle or c.title }}">
+  {% if c.desc %}<meta name="twitter:description" content="{{ c.desc }}">{% endif %}
+  <meta name="twitter:image" content="{{ ogImg }}">
+  {% for l in site.locales %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
+  <link rel="icon" href="/assets/branding/logo-symbol.svg" type="image/svg+xml">
   <style>{% include "css/contact.css" %}</style>
+  {% set ldJson = {
+    pageType: "contact",
+    locale: locale,
+    pageUrl: pageUrl,
+    title: c.title,
+    description: c.desc,
+    ogImage: ogImg,
+    seo: seo
+  } | jsonLd %}
+  {% if ldJson %}<script type="application/ld+json">{{ ldJson | safe }}</script>{% endif %}
 </head>
 <body class="contact-shell">
   {% include "partials/contact-nav.njk" %}

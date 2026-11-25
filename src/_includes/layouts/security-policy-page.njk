@@ -6,6 +6,8 @@
 {% else %}
   {% set s = i18n.site[locale]["security-policy"] %}
 {% endif %}
+{% set pageUrl = "https://sta3e-n.com" ~ prefix ~ "/security-policy/" %}
+{% set ogImg = s.ogImage or pages["security-policy"].ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
 <!DOCTYPE html>
 <html lang="{{ locale }}">
 <head>
@@ -13,20 +15,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ s.title }}</title>
   {% if s.desc %}<meta name="description" content="{{ s.desc }}">{% endif %}
+  <link rel="canonical" href="{{ pageUrl }}">
+  <meta property="og:site_name" content="STAGEN">
+  <meta property="og:locale" content="{{ locale | ogLocale }}">
+  {% for l in site.locales %}
+    {% if l.code != locale %}
+  <meta property="og:locale:alternate" content="{{ l.code | ogLocale }}">
+    {% endif %}
+  {% endfor %}
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ s.ogTitle or s.title }}">
   {% if s.desc %}<meta property="og:description" content="{{ s.desc }}">{% endif %}
-  <meta property="og:url" content="https://sta3e-n.com{{ prefix }}/security-policy/">
-  {% set ogImg = s.ogImage or pages["security-policy"].ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+  <meta property="og:url" content="{{ pageUrl }}">
   <meta property="og:image" content="{{ ogImg }}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ s.ogTitle or s.title }}">
+  {% if s.desc %}<meta name="twitter:description" content="{{ s.desc }}">{% endif %}
+  <meta name="twitter:image" content="{{ ogImg }}">
   {% for l in site.locales %}
   <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
   {% endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
-  <link rel="icon" href="/assets/branding/favicon.png" type="image/png">
+  <link rel="icon" href="/assets/branding/logo-symbol.svg" type="image/svg+xml">
   <style>{% include "css/lang-switcher.css" %}</style>
   <style>{% include "css/message.css" %}</style>
+  {% set ldJson = {
+    pageType: "security-policy",
+    locale: locale,
+    pageUrl: pageUrl,
+    title: s.title,
+    description: s.desc,
+    ogImage: ogImg,
+    seo: seo
+  } | jsonLd %}
+  {% if ldJson %}<script type="application/ld+json">{{ ldJson | safe }}</script>{% endif %}
   <style>
     .sec-badge {
       display: inline-block;

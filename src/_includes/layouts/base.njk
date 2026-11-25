@@ -1,7 +1,11 @@
 {% set locale = loc.code %}
 {% set meta = pages["site-index"] %}
 {% set locMeta = {} %}
+{% set isDeprecated = false %}
+{% set bodyLocalized = true %}
 {% if app %}
+  {% set isDeprecated = app | isDeprecatedApp %}
+  {% set bodyLocalized = (app ~ "-" ~ pageName) | hasLocalizedBody(locale) %}
   {% set meta = pages[app][pageName] %}
   {% if i18n[app] and i18n[app][locale] and i18n[app][locale][pageName] %}
     {% set locMeta = i18n[app][locale][pageName] %}
@@ -12,42 +16,83 @@
     {% set pagePath = "/" ~ app ~ "/" ~ pageName ~ ".html" %}
   {% endif %}
 {% else %}
+  {% set bodyLocalized = "site-index" | hasLocalizedBody(locale) %}
   {% if i18n.site and i18n.site[locale] and i18n.site[locale].index %}
     {% set locMeta = i18n.site[locale].index %}
   {% endif %}
   {% set pagePath = "/" %}
+{% endif %}
+{% set pageTitle = locMeta.title or meta.title %}
+{% set desc = locMeta.desc or meta.desc %}
+{% if not desc and app %}
+  {% set desc = app | fallbackDesc(pageName, locale, seo) %}
+{% endif %}
+{% set ogTitle = locMeta.ogTitle or meta.ogTitle or pageTitle %}
+{% set ogDesc = locMeta.ogDesc or meta.ogDesc or desc %}
+{% set currentUrl = pagePath | localePath(locale) | absoluteUrl %}
+{% set canonicalUrl = (pagePath | absoluteUrl) if (app and not bodyLocalized) else currentUrl %}
+{% set ogImg = meta.ogImage or 'https://sta3e-n.com/assets/og-image.png' %}
+{% set iconHref = '/assets/branding/logo-symbol.svg' %}
+{% if app and meta.icon %}
+  {% set cleanIcon = meta.icon | replace('../', '') %}
+  {% if cleanIcon.startsWith('/') or cleanIcon.startsWith('http') %}
+    {% set iconHref = cleanIcon %}
+  {% elseif cleanIcon.startsWith('assets/') %}
+    {% set iconHref = '/' ~ cleanIcon %}
+  {% else %}
+    {% set iconHref = '/' ~ app ~ '/' ~ cleanIcon %}
+  {% endif %}
 {% endif %}
 <!DOCTYPE html>
 <html lang="{{ locale }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ locMeta.title or meta.title }}</title>
-  {% set desc = locMeta.desc or meta.desc %}
+  <title>{{ pageTitle }}</title>
+  {% if isDeprecated or not bodyLocalized %}<meta name="robots" content="noindex, follow">{% endif %}
   {% if desc %}<meta name="description" content="{{ desc }}">{% endif %}
-  {% set ogTitle = locMeta.ogTitle or meta.ogTitle or locMeta.title or meta.title %}
+  <link rel="canonical" href="{{ canonicalUrl }}">
+  <meta property="og:site_name" content="STAGEN">
+  <meta property="og:locale" content="{{ locale | ogLocale }}">
+  {% for l in site.locales %}
+    {% if l.code != locale %}
+  <meta property="og:locale:alternate" content="{{ l.code | ogLocale }}">
+    {% endif %}
+  {% endfor %}
   {% if ogTitle %}<meta property="og:title" content="{{ ogTitle }}">{% endif %}
-  {% set ogDesc = locMeta.ogDesc or meta.ogDesc or desc %}
   {% if ogDesc %}<meta property="og:description" content="{{ ogDesc }}">{% endif %}
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ pagePath | localePath(locale) | absoluteUrl }}">
-  {% if meta.ogImage %}
-  <meta property="og:image" content="{{ meta.ogImage }}">
+  <meta property="og:url" content="{{ currentUrl }}">
+  <meta property="og:image" content="{{ ogImg }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ meta.ogImage }}">
+  <meta name="twitter:image" content="{{ ogImg }}">
   {% if ogTitle %}<meta name="twitter:title" content="{{ ogTitle }}">{% endif %}
   {% if ogDesc %}<meta name="twitter:description" content="{{ ogDesc }}">{% endif %}
-  {% endif %}
+  {% if not isDeprecated %}
   {% for l in site.locales %}
   <link rel="alternate" hreflang="{{ l.code }}" href="{{ pagePath | localePath(l.code) | absoluteUrl }}">
   {% endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ pagePath | absoluteUrl }}">
-  {% if meta.icon %}<link rel="icon" href="{{ meta.icon | replace('../', '') }}" type="{% if '.svg' in meta.icon %}image/svg+xml{% else %}image/png{% endif %}">{% endif %}
+  {% endif %}
+  <link rel="icon" href="{{ iconHref }}" type="{% if '.svg' in iconHref %}image/svg+xml{% else %}image/png{% endif %}">
   <style>{% include "css/lang-switcher.css" %}</style>
   {% if meta.styles %}<style>{{ meta.styles | safe }}</style>{% endif %}
   {% if app %}<style>{% include "css/app-hero.css" %}</style>{% endif %}
+  {% if app and not isDeprecated and pageName == "index" %}<style>{% include "css/ai-seo.css" %}</style>{% endif %}
+  {% set ldJson = {
+    pageType: "app" if app else "site-index",
+    locale: locale,
+    app: app,
+    pageName: pageName,
+    pageUrl: currentUrl,
+    title: pageTitle,
+    description: desc,
+    ogImage: ogImg,
+    seo: seo
+  } | jsonLd %}
+  {% if ldJson %}<script type="application/ld+json">{{ ldJson | safe }}</script>{% endif %}
 </head>
 <body>
   {% include "partials/lang-switcher.njk" %}

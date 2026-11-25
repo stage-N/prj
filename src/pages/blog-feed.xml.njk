@@ -1,0 +1,28 @@
+---
+permalink: /blog/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>STAGEN ブログ</title>
+  <subtitle>1人法人・プロダクト開発・制度整理のメモ</subtitle>
+  <link href="https://sta3e-n.com/blog/feed.xml" rel="self"/>
+  <link href="https://sta3e-n.com/blog/"/>
+  {% if collections.blogPosts.length %}
+  <updated>{{ collections.blogPosts[0].date | rfc3339Date }}</updated>
+  {% endif %}
+  <id>https://sta3e-n.com/blog/</id>
+  <author>
+    <name>株式会社stageN (STAGEN)</name>
+    <email>contact@sta3e-n.com</email>
+  </author>
+  {%- for post in collections.blogPosts %}
+  <entry>
+    <title>{{ post.data.title | xmlEscape }}</title>
+    <link href="{{ ("https://sta3e-n.com" ~ post.url) | xmlEscape }}"/>
+    <updated>{{ post.date | rfc3339Date }}</updated>
+    <id>{{ ("https://sta3e-n.com" ~ post.url) | xmlEscape }}</id>
+    <summary>{{ (post.data.description or "") | xmlEscape }}</summary>
+  </entry>
+  {%- endfor %}
+</feed>

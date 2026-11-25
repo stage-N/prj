@@ -1,0 +1,65 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# STAGEN (株式会社stageN / STAGEN Inc.) — Complete Product & Company Reference
+
+Last Updated: {{ seo.lastUpdated }}
+
+## Company Overview
+
+- **Legal Name:** {{ seo.organization.name | safe }} ({{ seo.organization.alternateName[1] | safe }})
+- **Founded:** {{ seo.organization.foundingDate }}
+- **Corporate Number:** {{ seo.organization.corporateNumber }} (Qualified Invoice Issuer: {{ seo.organization.taxID }})
+- **Representative:** {{ seo.organization.founder | safe }}
+- **Address:** 〒{{ seo.organization.address.postalCode }} {{ seo.organization.address.addressRegion | safe }}{{ seo.organization.address.addressLocality | safe }}{{ seo.organization.address.streetAddress | safe }}
+- **Certifications / Declarations:** {{ seo.organization.awards | join(", ") | safe }}
+- **Domains:** `sta3e-n.com` (Corporate site, product landing pages, privacy/support, blog) & `*.sta3e-n.online` (Web applications)
+- **Summary (JA):** {{ seo.organization.summary.ja | safe }}
+- **Summary (EN):** {{ seo.organization.summary.en | safe }}
+- **Summary (KO):** {{ seo.organization.summary.ko | safe }}
+
+---
+
+## Active Products (19)
+{% for slug in site.activeApps -%}
+{% set appData = seo.apps[slug] -%}
+{% set ja = appData.locales.ja -%}
+{% set en = appData.locales.en %}
+### {{ en.name | safe }} / {{ ja.name | safe }} (`{{ slug }}`)
+
+- **Official Page:** https://sta3e-n.com/{{ slug }}/ ([EN](https://sta3e-n.com/en/{{ slug }}/) · [KO](https://sta3e-n.com/ko/{{ slug }}/))
+- **Markdown Spec:** https://sta3e-n.com/{{ slug }}/index.md
+- **Platforms:** {{ appData.operatingSystem | safe }}
+{% if appData.webUrl %}- **Web App:** {{ appData.webUrl }}
+{% endif -%}
+{% if appData.appStoreUrl %}- **App Store:** {{ appData.appStoreUrl }}
+{% endif -%}
+{% if appData.playStoreUrl %}- **Google Play:** {{ appData.playStoreUrl }}
+{% endif -%}
+- **GitHub:** {{ appData.githubUrl }}
+- **Target Audience:** {{ en.targetAudience | safe }} / {{ ja.targetAudience | safe }}
+- **Pricing:** {{ en.pricingSummary | safe }} ({{ ja.pricingSummary | safe }})
+- **Data & Privacy:** {{ en.dataStorage | safe }}
+{% if en.compliance %}- **Compliance / Notes:** {{ en.compliance | safe }}
+{% endif %}
+**Summary (EN):** {{ en.oneLiner | safe }}
+
+**Summary (JA):** {{ ja.oneLiner | safe }}
+
+**Key Features:**
+{% for feat in en.features -%}
+- {{ feat | safe }}
+{% endfor %}
+**FAQ:**
+{% for faq in en.faqs -%}
+- **Q: {{ faq.q | safe }}**
+  A: {{ faq.a | safe }}
+{% endfor %}
+---
+{% endfor %}
+
+## Recent Blog Articles (Japanese)
+{% for post in collections.blogPosts %}
+- [{{ post.data.title | safe }}](https://sta3e-n.com{{ post.url }}) ({{ post.date | isoDate }}) — {{ post.data.description | safe }}
+{%- endfor %}

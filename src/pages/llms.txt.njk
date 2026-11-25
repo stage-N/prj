@@ -1,0 +1,33 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# STAGEN (株式会社stageN / STAGEN Inc.)
+
+> {{ seo.organization.summary.en | safe }}
+
+- Canonical Site: https://sta3e-n.com/
+- Corporate Entity: {{ seo.organization.name | safe }} ({{ seo.organization.alternateName[1] | safe }}), founded {{ seo.organization.foundingDate }}, Corporate No. {{ seo.organization.corporateNumber }}
+- Security & Compliance: {{ seo.organization.awards | join(" / ") | safe }}
+- Full Product Reference: https://sta3e-n.com/llms-full.txt
+
+## Core Company Pages
+
+- [STAGEN Home (JA)](https://sta3e-n.com/): Corporate overview, vision, roadmap, and all 19 active products ([EN](https://sta3e-n.com/en/) · [KO](https://sta3e-n.com/ko/) · [Markdown](https://sta3e-n.com/index.md))
+- [CEO Message](https://sta3e-n.com/message/): Founder statement and product philosophy
+- [Information Security Basic Policy](https://sta3e-n.com/security-policy/): IPA SECURITY ACTION (2-Star) declaration and corporate registry details
+- [Blog](https://sta3e-n.com/blog/): Development notes, tax/legal guides, and product case studies ([Atom Feed](https://sta3e-n.com/blog/feed.xml))
+- [Contact](https://sta3e-n.com/contact/): Product and business inquiries
+
+## Products by Cluster
+{% for cluster in seo.clusters %}
+### {{ cluster.name.en | safe }} ({{ cluster.name.ja | safe }})
+{% for slug in cluster.apps -%}
+{% set appData = seo.apps[slug] -%}
+- [{{ appData.locales.en.name | safe }} ({{ appData.locales.ja.name | safe }})](https://sta3e-n.com/{{ slug }}/): {{ appData.locales.en.oneLiner | safe }}{% if appData.webUrl %} Web App: {{ appData.webUrl }}{% endif %} ([Markdown](https://sta3e-n.com/{{ slug }}/index.md))
+{% endfor -%}
+{% endfor %}
+## Optional
+
+- [Sitemap XML](https://sta3e-n.com/sitemap.xml)
+- [Full Context Markdown](https://sta3e-n.com/llms-full.txt)

@@ -1,0 +1,42 @@
+<h1>개인정보 처리방침</h1>
+  <p>주식회사 STAGEN(이하 "당사")은 Stillpoint(스틸포인트, 이하 "본 서비스") 이용자의 프라이버시를 존중하며 개인정보 보호에 힘씁니다.</p>
+
+  <div class="highlight">
+    <strong>본 서비스는 자기 성찰 보조 도구이며 의료·심리치료가 아닙니다. 위기 상황에서는 지역 상담 기관이나 긴급 서비스를 이용해 주세요.</strong>
+  </div>
+
+  <h2>1. 수집하는 정보</h2>
+  <ul>
+    <li><strong>계정 등록 시:</strong> 이메일 주소와 해시된 비밀번호를 Cloudflare D1에 보관합니다.</li>
+    <li><strong>세션·성찰 데이터:</strong> 생각거리, AI 질문, 음성에서 변환된 텍스트 성찰, 턴 시간 등을 동기화를 위해 서버에 저장합니다.</li>
+    <li><strong>Premium 구독 시:</strong> Stripe / App Store / Google Play 및 RevenueCat을 통해 구독 상태를 동기화하며 구독 식별 ID만 저장합니다.</li>
+    <li><strong>접속 로그:</strong> Cloudflare 인프라 로그(IP 주소, 요청 시각 등)가 기술적으로 기록될 수 있습니다.</li>
+  </ul>
+
+  <h2>2. AI 처리</h2>
+  <p>텍스트화된 성찰 내용은 소크라테스식 심화 질문을 생성하기 위해 당사 백엔드를 거쳐 Google Gemini API(또는 폴백 시 Cloudflare Workers AI)로 전송될 수 있으며, 생성된 질문은 세션의 일부로 저장됩니다.</p>
+  <p>음성 인식은 원칙적으로 단말기 내 인식 또는 브라우저 Web Speech API를 사용하며, 당사가 원본 음성 파일을 제3자 STT로 전송하지 않습니다(OS·브라우저 구현에 따라 다를 수 있음).</p>
+
+  <h2>3. 데이터 보관 기간 (Free)</h2>
+  <p>Free 플랜 아카이브는 최근 7일분입니다. 기한이 지난 세션은 표시되지 않을 뿐 아니라 <strong>서버에서도 삭제</strong>됩니다. Premium은 무제한 보관됩니다.</p>
+
+  <h2>4. 제3자 서비스</h2>
+  <ul>
+    <li><strong>Stripe / RevenueCat / App Store / Google Play:</strong> 결제 및 구독</li>
+    <li><strong>Google Gemini API / Cloudflare Workers AI:</strong> 심화 질문 생성</li>
+    <li><strong>Cloudflare:</strong> 호스팅·D1·KV</li>
+  </ul>
+
+  <h2>5. 제3자 제공</h2>
+  <p>법령에 근거한 경우를 제외하고 이용자의 개인정보를 제3자에게 판매·제공하지 않습니다.</p>
+
+  <h2>6. 문의</h2>
+  <p>본 방침에 관한 문의는 <a href="support.html">지원 페이지</a>로 연락해 주세요.</p>
+
+  <h2>7. 방침의 변경</h2>
+  <p>본 방침은 사전 예고 없이 변경될 수 있으며, 본 페이지에 게시된 시점부터 효력이 발생합니다.</p>
+
+  <div class="footer">
+    <p>제정일: 2026년 7월 20일</p>
+    <p>주식회사 STAGEN</p>
+  </div>

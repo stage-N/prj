@@ -258,6 +258,12 @@
         "desc": "",
         "ogTitle": "Support | ZaiTap",
         "ogDesc": ""
+      },
+      "pro": {
+        "title": "ZaiTap for Administrative Scriveners | Founding Partner Pre-Registration",
+        "desc": "Founding Partner pre-registration for licensed Japanese administrative scriveners on ZaiTap. Zero setup cost, 60-day free Pro trial, 50% off first year (¥7,400/mo), and permanent Founding Partner badge.",
+        "ogTitle": "ZaiTap for Administrative Scriveners - Founding Partner Recruitment",
+        "ogDesc": "Immigration API residence platform. 60-day free Pro trial and 50% off year one for up to 50 founding offices."
       }
     },
     "ko": {
@@ -278,6 +284,12 @@
         "desc": "",
         "ogTitle": "지원 | ZaiTap",
         "ogDesc": ""
+      },
+      "pro": {
+        "title": "ZaiTap for 행정서사 | 창립 공인 파트너 사전 모집",
+        "desc": "출입국재류수속 API 연동 앱 ZaiTap의 정식 출시에 앞서 창립 공인 파트너 행정서사를 사전 모집합니다. 초기 비용 0원, 60일 Pro 무료 체험, 첫해 50% 할인(월 ¥7,400).",
+        "ogTitle": "ZaiTap for 행정서사 - 창립 공인 파트너 사전 모집",
+        "ogDesc": "초기 비용 0원·60일 무료 체험·첫해 50% 할인 및 영구 창립 파트너 배지 부여."
       }
     }
   },

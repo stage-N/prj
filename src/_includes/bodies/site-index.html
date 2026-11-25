@@ -19,6 +19,7 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <header class="hero">
     <canvas id="heroCanvas" aria-hidden="true"></canvas>
     <div class="hero-bg" aria-hidden="true"></div>
@@ -26,7 +27,7 @@
     <div class="hero-inner">
       <img src="assets/branding/logo-inverted.svg" alt="STAGEN" class="hero-logo">
       <div class="hero-slogan" id="heroSlogan">
-        <p>人が活躍できる場は１つではない。</p>
+        <h1>人が活躍できる場は１つではない。</h1>
         <p>身を置く場所が増えれば、世界も広がる。</p>
         <p>勢いでやってみる。想像もしてなかった光景を、そのステージで。</p>
       </div>
@@ -134,6 +135,16 @@
           <p>STAGENは、複数のステージで実用的なプロダクトを届ける会社です。各種アプリケーションソフトウェア、コンピュータシステム、Webサイトの企画・制作・運営を手がけています。</p>
           <p>税務管理、労働安全、ビジネスツール、教育など、多様な分野でユーザーに寄り添ったプロダクトを開発・提供。企画から開発、運用・保守まで一貫してサポートします。</p>
           <p><strong>We deliver on time, on budget, and on spec.</strong> — 期日・予算・仕様を守ることが、すべてのステージの土台です。</p>
+          <table class="corp-summary-table" aria-label="会社概要">
+            <tbody>
+              <tr><th>商号</th><td>株式会社stageN（STAGEN Inc.）</td></tr>
+              <tr><th>設立</th><td>2022年</td></tr>
+              <tr><th>代表者</th><td>代表取締役 趙貞來</td></tr>
+              <tr><th>法人番号</th><td>6011001150364（適格請求書発行事業者: T6011001150364）</td></tr>
+              <tr><th>所在地</th><td>〒150-0002 東京都渋谷区渋谷2-19-15 宮益坂ビルディング609</td></tr>
+              <tr><th>ドメイン</th><td>sta3e-n.com（コーポレート・LP・ブログ）／ *.sta3e-n.online（Webアプリ）</td></tr>
+            </tbody>
+          </table>
           <div class="about-badges">
             <a href="/security-policy/" class="about-badge-card about-security-card">
               <div class="about-badge-logo about-security-logo">
@@ -205,7 +216,13 @@
     <div class="container">
       <span class="section-label reveal">Products</span>
       <h2 class="section-title reveal">プロダクト</h2>
-      <p class="section-lead reveal">STAGENが開発・運営するアプリケーション一覧です。各プロダクトの詳細ページからご覧いただけます。</p>
+      <p class="section-lead reveal">STAGENが開発・運営する19のプロダクトです。各プロダクトの詳細ページから仕様・料金・FAQをご覧いただけます。</p>
+      <div class="cluster-summary" aria-label="プロダクト分野">
+        <div class="cluster-chip"><strong>1人法人・経理・税務</strong>Zeiro / ラクビル / ZeiCal</div>
+        <div class="cluster-chip"><strong>労働安全・在留手続</strong>熱中症レコーダー Pro / 熱中症アラート / ZaiTap</div>
+        <div class="cluster-chip"><strong>メディア・教養・内省</strong>Touten / Banjem / NewsPrism / Phrase Flow 5種 / Stillpoint</div>
+        <div class="cluster-chip"><strong>教育・読書・投資分析</strong>Fuzen / Forest School / PagePace / StockPulse</div>
+      </div>
       <div class="products-grid">
 
         <article class="product-card reveal">
@@ -635,6 +652,7 @@
       </details>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-inner">
@@ -675,11 +693,13 @@
             <li><a href="/security-policy/">情報セキュリティ基本方針</a></li>
             <li><a href="#purpose">事業目的</a></li>
             <li><a href="#services">事業内容</a></li>
+            <li><a href="/llms.txt">llms.txt (AI仕様)</a></li>
           </ul>
         </div>
         <div>
           <h4>プロダクト</h4>
           <ul>
+            <li><a href="zaitap/">ZaiTap</a></li>
             <li><a href="zeical/">ZeiCal</a></li>
             <li><a href="wbgt-recorder/">熱中症レコーダー Pro</a></li>
             <li><a href="wbgt-alert/">熱中症アラート</a></li>
@@ -689,12 +709,15 @@
             <li><a href="fuzen/">Fuzen</a></li>
             <li><a href="stock-pulse/">StockPulse</a></li>
             <li><a href="touten/">Touten</a></li>
-            <li><a href="phraseflow/">Phrase Flow</a></li>
-            <li><a href="stillpoint/">Stillpoint</a></li>
-            <li><a href="pagepace/">PagePace</a></li>
-            <!-- <li><a href="briefforge/">BriefForge</a></li> -->
             <li><a href="banjem/">Banjem</a></li>
             <li><a href="newsprism/">NewsPrism</a></li>
+            <li><a href="phraseflow/">Phrase Flow</a></li>
+            <li><a href="phraseflow-christianity/">今日のみことば</a></li>
+            <li><a href="phraseflow-buddhism/">今日の仏経</a></li>
+            <li><a href="phraseflow-islam/">今日のクルアーン</a></li>
+            <li><a href="phraseflow-religion/">今日の宗教のことば</a></li>
+            <li><a href="stillpoint/">Stillpoint</a></li>
+            <li><a href="pagepace/">PagePace</a></li>
           </ul>
         </div>
       </div>
@@ -732,7 +755,7 @@
 
     // Hero slogan stagger
     (function initHero() {
-      const lines = document.querySelectorAll('#heroSlogan p');
+      const lines = document.querySelectorAll('#heroSlogan > *');
       const principle = document.getElementById('heroPrinciple');
       const actions = document.getElementById('heroActions');
 

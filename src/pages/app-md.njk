@@ -1,0 +1,70 @@
+---
+pagination:
+  data: site.activeApps
+  size: 1
+  alias: appSlug
+permalink: "/{{ appSlug }}/index.md"
+eleventyExcludeFromCollections: true
+---
+{%- set appData = seo.apps[appSlug] -%}
+{%- set ja = appData.locales.ja -%}
+{%- set en = appData.locales.en -%}
+{%- set ko = appData.locales.ko -%}
+# {{ ja.name | safe }} ({{ en.name | safe }})
+
+- **Canonical URL:** https://sta3e-n.com/{{ appSlug }}/
+- **English:** https://sta3e-n.com/en/{{ appSlug }}/
+- **Korean:** https://sta3e-n.com/ko/{{ appSlug }}/
+- **Operator:** {{ seo.organization.name | safe }} (STAGEN)
+- **Platforms:** {{ appData.operatingSystem | safe }}
+{% if appData.webUrl %}- **Web App:** {{ appData.webUrl }}
+{% endif -%}
+{% if appData.appStoreUrl %}- **App Store:** {{ appData.appStoreUrl }}
+{% endif -%}
+{% if appData.playStoreUrl %}- **Google Play:** {{ appData.playStoreUrl }}
+{% endif -%}
+- **GitHub:** {{ appData.githubUrl }}
+- **Privacy Policy:** https://sta3e-n.com/{{ appSlug }}/privacy.html
+- **Support & FAQ:** https://sta3e-n.com/{{ appSlug }}/support.html
+- **Last Updated:** {{ appData.dateModified }}
+
+## Overview
+
+- **JA:** {{ ja.oneLiner | safe }}
+- **EN:** {{ en.oneLiner | safe }}
+- **KO:** {{ ko.oneLiner | safe }}
+
+## Specifications
+
+| Item | Detail (JA) | Detail (EN) |
+|---|---|---|
+| Target Audience | {{ ja.targetAudience | safe }} | {{ en.targetAudience | safe }} |
+| Pricing | {{ ja.pricingSummary | safe }} | {{ en.pricingSummary | safe }} |
+| Data Storage | {{ ja.dataStorage | safe }} | {{ en.dataStorage | safe }} |
+{% if ja.compliance %}| Compliance / Notes | {{ ja.compliance | safe }} | {{ en.compliance | safe }} |
+{% endif %}
+
+## Key Features (JA)
+{% for feat in ja.features -%}
+- {{ feat | safe }}
+{% endfor %}
+## Key Features (EN)
+{% for feat in en.features -%}
+- {{ feat | safe }}
+{% endfor %}
+## Frequently Asked Questions (JA)
+{% for item in ja.faqs %}
+### Q. {{ item.q | safe }}
+{{ item.a | safe }}
+{% endfor %}
+## Frequently Asked Questions (EN)
+{% for item in en.faqs %}
+### Q. {{ item.q | safe }}
+{{ item.a | safe }}
+{% endfor %}
+## Related Products
+{% for rel in appData.relatedApps -%}
+{% set relApp = seo.apps[rel] -%}
+{% if relApp %}- [{{ relApp.locales.ja.name | safe }}](https://sta3e-n.com/{{ rel }}/): {{ relApp.locales.ja.oneLiner | safe }}
+{% endif -%}
+{% endfor %}

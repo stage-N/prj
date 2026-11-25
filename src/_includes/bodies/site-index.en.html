@@ -19,6 +19,7 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <header class="hero">
     <canvas id="heroCanvas" aria-hidden="true"></canvas>
     <div class="hero-bg" aria-hidden="true"></div>
@@ -26,7 +27,7 @@
     <div class="hero-inner">
       <img src="assets/branding/logo-inverted.svg" alt="STAGEN" class="hero-logo">
       <div class="hero-slogan" id="heroSlogan">
-        <p>There isn't just one place where people can thrive.</p>
+        <h1>There isn't just one place where people can thrive.</h1>
         <p>The more places you have to stand, the wider your world becomes.</p>
         <p>Move with momentum. Discover scenes you never imagined—on that stage.</p>
       </div>
@@ -134,6 +135,16 @@
           <p>STAGEN is a company that delivers practical products across multiple stages. We plan, build, and operate application software, computer systems, and websites.</p>
           <p>From tax management and occupational safety to business tools and education, we develop and provide products that stay close to users across diverse fields. We support you end to end—from planning and development through operations and maintenance.</p>
           <p><strong>We deliver on time, on budget, and on spec.</strong> — Meeting deadlines, budgets, and specifications is the foundation of every stage.</p>
+          <table class="corp-summary-table" aria-label="Company Profile">
+            <tbody>
+              <tr><th>Legal Name</th><td>STAGEN Inc. (株式会社stageN)</td></tr>
+              <tr><th>Founded</th><td>2022</td></tr>
+              <tr><th>Representative</th><td>Jeongrae Jo, CEO</td></tr>
+              <tr><th>Corporate No.</th><td>6011001150364 (Qualified Invoice Issuer: T6011001150364)</td></tr>
+              <tr><th>Headquarters</th><td>2-19-15-609 Shibuya, Shibuya-ku, Tokyo 150-0002, Japan</td></tr>
+              <tr><th>Domains</th><td>sta3e-n.com (Corporate, LPs, Blog) / *.sta3e-n.online (Web Apps)</td></tr>
+            </tbody>
+          </table>
           <div class="about-badges">
             <a href="/en/security-policy/" class="about-badge-card about-security-card">
               <div class="about-badge-logo about-security-logo">
@@ -205,7 +216,13 @@
     <div class="container">
       <span class="section-label reveal">Products</span>
       <h2 class="section-title reveal">Products</h2>
-      <p class="section-lead reveal">Applications developed and operated by STAGEN. Visit each product page for details.</p>
+      <p class="section-lead reveal">19 applications and SaaS products developed and operated by STAGEN. Visit each product page for specifications, pricing, and FAQs.</p>
+      <div class="cluster-summary" aria-label="Product clusters">
+        <div class="cluster-chip"><strong>Accounting &amp; Tax</strong>Zeiro / Rakubill / ZeiCal</div>
+        <div class="cluster-chip"><strong>Safety &amp; Immigration</strong>Heat Stroke Recorder Pro / Alert / ZaiTap</div>
+        <div class="cluster-chip"><strong>Media &amp; Wisdom</strong>Touten / Banjem / NewsPrism / Phrase Flow (5) / Stillpoint</div>
+        <div class="cluster-chip"><strong>Learning &amp; Investing</strong>Fuzen / Forest School / PagePace / StockPulse</div>
+      </div>
       <div class="products-grid">
 
         <article class="product-card reveal">
@@ -635,6 +652,7 @@
       </details>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-inner">
@@ -675,11 +693,13 @@
             <li><a href="/en/security-policy/">Information Security Policy</a></li>
             <li><a href="#purpose">Corporate Purpose</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="/llms.txt">llms.txt (AI Directory)</a></li>
           </ul>
         </div>
         <div>
           <h4>Products</h4>
           <ul>
+            <li><a href="zaitap/">ZaiTap</a></li>
             <li><a href="zeical/">ZeiCal</a></li>
             <li><a href="wbgt-recorder/">Heat Stroke Recorder Pro</a></li>
             <li><a href="wbgt-alert/">Heat Stroke Alert</a></li>
@@ -689,12 +709,15 @@
             <li><a href="fuzen/">Fuzen</a></li>
             <li><a href="stock-pulse/">StockPulse</a></li>
             <li><a href="touten/">Touten</a></li>
-            <li><a href="phraseflow/">Phrase Flow</a></li>
-            <li><a href="stillpoint/">Stillpoint</a></li>
-            <li><a href="pagepace/">PagePace</a></li>
-            <!-- <li><a href="briefforge/">BriefForge</a></li> -->
             <li><a href="banjem/">Banjem</a></li>
             <li><a href="newsprism/">NewsPrism</a></li>
+            <li><a href="phraseflow/">Phrase Flow</a></li>
+            <li><a href="phraseflow-christianity/">Daily Verse</a></li>
+            <li><a href="phraseflow-buddhism/">Daily Sutra</a></li>
+            <li><a href="phraseflow-islam/">Daily Quran</a></li>
+            <li><a href="phraseflow-religion/">Daily Sacred Verse</a></li>
+            <li><a href="stillpoint/">Stillpoint</a></li>
+            <li><a href="pagepace/">PagePace</a></li>
           </ul>
         </div>
       </div>
@@ -732,7 +755,7 @@
 
     // Hero slogan stagger
     (function initHero() {
-      const lines = document.querySelectorAll('#heroSlogan p');
+      const lines = document.querySelectorAll('#heroSlogan > *');
       const principle = document.getElementById('heroPrinciple');
       const actions = document.getElementById('heroActions');
 
